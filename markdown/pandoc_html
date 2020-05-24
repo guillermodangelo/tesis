@@ -1,0 +1,8 @@
+pandoc \
+	-V \
+	papersize:a4 \
+	--css=pandoc.css \
+	-s avance_mt.txt \
+	--bibliography demografia.bib \
+	--csl /home/guille/Zotero/styles/apa.csl \
+	-o succes.pdf
