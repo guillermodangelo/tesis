@@ -1,0 +1,2 @@
+cd /home/guillermo/Documentos/git/tesis/
+./pandoc_export_pdf.sh tesis.md tesis.pdf
