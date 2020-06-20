@@ -152,13 +152,13 @@ Table: Diferencias entre la teoría neoclásica y la NELM, asumiendo la similitu
 
 Las siguientes teorías hacen énfasis en las meso y micro-estructuras creadas por los migrantes en el proceso migratorio y que permiten la continuidad del flujo en el tiempo y espacio, es decir la perpetuación del flujo migratorio [@dehaas2015].
 
-La **teoría de las redes migratorias** explica como los migrantes establecen y mantienen lazos con otros migrantes y con familiares y amigos en el lugar de origen, y como de estos vínculos pueden emerger redes sociales [@dehaas2015]. Dicha red social puede facilitar futuras migraciones, en tanto operan como un capital social que disminuye el costo de migrar (económico, social, psicológico) y entran en un proceso de feedback, ya que cuanto más expandida sea la red más se adaptaría al concepto de capital social y cumpliría la función mencionada anteriormente. Los migrantes ya asentados pueden oficiar como puerta de entrada para nuevos migrantes y el desarrollo de comunidades migrantes en el país de destino puede disminuir los costos de migrar, pero también desarrollar una infraestructura económica propia que cumpla esa función (lugares de culto, asociaciones, tiendas, cafés, servicios profesionales, etc.) A su vez, puede dar lugar a una verdadera “industria de la migración” [@dehaas2015].
+La **teoría de las redes migratorias** explica como los migrantes establecen y mantienen lazos con otros migrantes y con familiares y amigos en el lugar de origen, y como de estos vínculos pueden emerger redes sociales [@dehaas2015]. Dicha red social puede facilitar futuras migraciones, en tanto operan como un capital social que disminuye el costo de migrar (económico, social, psicológico) y entran en un proceso de feedback o retroalimentación, ya que cuanto más expandida sea la red más se adaptaría al concepto de capital social y cumpliría la función mencionada anteriormente. Los migrantes ya asentados pueden oficiar como puerta de entrada para nuevos migrantes y el desarrollo de comunidades migrantes en el país de destino puede disminuir los costos de migrar, pero también desarrollar una infraestructura económica propia que cumpla esa función (lugares de culto, asociaciones, tiendas, cafés, servicios profesionales, etc.) A su vez, puede dar lugar a una verdadera “industria de la migración” [@dehaas2015].
 
 En lo que refiere a las migraciones internas, la teoría de las redes podría tenes más asidero en países de gran extensión y diversidad, en los cuales una migración interna se puede asimilar a una internacional en ciertos aspectos, por ejemplo en distancias, idioma, cultura y etnia. En cambio, en Uruguay resulta bastante difícil vislumbrar la posibilidad de aplicar dicho marco conceptual para en análisis de migraciones internas.
 
 La **teoría de los sistemas migratorios** se centra en como la migración está intrínsecamente vinculada a otras formas de intercambio, en particular al flujo de bienes, ideas y dinero; y como esto afecta las condiciones en las cuales la migración tiene lugar en una primera instancia, tanto en origen como en destino [@dehaas2015].
 
-El pionero en el desarrollo de esta teoría fue el geógrafo Akin Mabogunje -@mabogunje1970, quien hizo énfasis en la importancia de los mecanismos de feedback o retroalimentación, mediante los cuales la información acerca de la recepción de los migrantes y su progreso en la localidad de destino es transmitida al lugar de origen, centrándose en las migraciones rural-urbano dentro de África. Los sistemas migratorios vinculan a las personas, familias y comunidades en el espacio, lo cual alienta migraciones sobre caminos espaciales determinados, y desalienta otros caminos, teniendo como resultado unos intercambios relativamente estables que conforman una estructura geográfica que persiste en el tiempo y espacio [@dehaas2015]. El principal aporte de Mabogunje fue enfocar la atención en la migración como un sistema circular, independiente, progresivamente complejo y auto-modificable [@pryor1981].
+El pionero en el desarrollo de esta teoría fue el geógrafo Akin Mabogunje -@mabogunje1970, quien hizo énfasis en la importancia de los mecanismos de feedback, mediante los cuales la información acerca de la recepción de los migrantes y su progreso en la localidad de destino es transmitida al lugar de origen, centrándose en las migraciones rural-urbano dentro de África. Los sistemas migratorios vinculan a las personas, familias y comunidades en el espacio, lo cual alienta migraciones sobre caminos espaciales determinados, y desalienta otros caminos, teniendo como resultado unos intercambios relativamente estables que conforman una estructura geográfica que persiste en el tiempo y espacio [@dehaas2015]. El principal aporte de Mabogunje fue enfocar la atención en la migración como un sistema circular, independiente, progresivamente complejo y auto-modificable [@pryor1981].
 
 La implicación de mayor relevancia en la teoría de los sistemas migratorios es que una forma de intercambio, como el comercio, puede llevar a otras, como el flujo de personas, en ambas direcciones. A su vez los flujos migratorios pueden favorecer otros flujos: comerciales, de capital, viajes y turismo, etc. [@dehaas2015].
 
@@ -175,7 +175,7 @@ En los albores de la revolución industrial en los países de Europa occidental,
 
 Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto a la transición demográfica propiamente dicha, según Skeldon -@skeldon2012: “Essentially, it is a macro‐level description based on the experience of Western Europe and North America, which relates in an intuitive way notional changes in migration with shifts in fertility and mortality” [Esencialmente es una descripción a nivel macro basada en la experiencia de Europa occidental y Norteamérica, que relaciona en forma intuitiva los cambios hipotéticos en las migraciones con los cambios en fecundidad y mortalidad] (p. 159).
 
-![Transición migratoria [@dehaas2015].](/home/guillermo/Documentos/git/tesis/imagenes/transicion_migra.pdf)
+![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.pdf)
 
 
 
@@ -187,7 +187,7 @@ Los procesos migratorios son la suma de un complejo conjunto de factores e inter
 
 Los autores proponen un esquema muy claro para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
 
-![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](/home/guillermo/Documentos/git/tesis/imagenes/migration_pathways.pdf)
+![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.pdf)
 
 Proponen que X e Y son dos países diferentes, a su vez, Xa, Xb, Ya e Yb son regiones dentro de esos países, donde Xa es una región rural, Xb es un centro urbano, como una ciudad capital, Ya es una ciudad principal e Yb una región provincial.
 
@@ -281,6 +281,19 @@ Entre los primeros antecedentes de los modelos de interacción espacial se encue
 Más cerca en el tiempo, los aportes de Allan Wilson -@wilson1971 complejizan los primigenios abordajes “gravitacionales”. Wilson introduce el concepto de “modelos de interacción espacial”, dejando atrás la nomenclatura de inspiración newtoniana. Además, propone una mejor justificación teórica, proponiendo una familia de cuatro modelos, diferenciados por la información conocida para limitar o condicionar los valores que la interacción puede tomar. En su esencia, los modelos de interacción espacial son formas estadísticas del modelo gravitatorio, incluyendo como factores la población en origen y en destino, la distancia entre ellos y alguna medida de competencia o atractividad [@raymer2007].
 
 Teniendo los aportes de Wilson como basamento, los modelos de interacción espacial han sido aplicados a fenómenos de diversa índole, como migraciones, transporte público y movilidades pendulares, análisis locacional (orientado a la localización de actividades comerciales, por ejemplo), entre otros tópicos [@fotheringham2001; @mallozzi2017]. Esa variedad de aplicaciones se puede asociar a la capacidad explicativa y predictiva de los modelos [@santos1994].
+
+
+## Antecedentes del estudio de la migración interna en Uruguay
+
+Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos solo Maldonado, Canelones,
+San José, Colonia y Salto tienen un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y sus propios procesos de suburbanización).
+En el mismo sentido, Montevideo viene perdiendo población desde el Censo de 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa [@koolhaas2013].
+
+Atendiendo a la pirámide de población del Uruguay a partir de los datos del Ceno 2011 y su comparación con la pirámide de los migrantes recientes (quienes declaraban haber vivido hace 5 años en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013].
+
+![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total. Se puede apreciar la estructura más joven de la población de migrantes recientes y la mayor incidencia en las mujeres jóvenes (tramos entre 15 y 29 años), probablemente asociada a una mayor tasa de escolarización terciaria](mapas_graficas/piramide_mig.pdf)
+
+La propensión a migrar de los jóvenes se explica por las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
 
 
@@ -380,6 +393,9 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 - Promedio de años de escolarización en la provincia de origen
 - Stock de migrantes anteriores entre las provincias i y j
 - Variables dummy para indicar migración entre regiones o migración hacia Estanbul
+
+
+
 
 
 [//]: # NOTAS:
