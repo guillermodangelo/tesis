@@ -226,7 +226,7 @@ Durante los años 50s y 60s, tomando la iniciativa de Schaefer, geógrafos de la
 
 El auge de la geografía cuantitativa pavimentó el camino para el surgimiento de los abordajes basados en modelos espaciales predictivos, entre ellos los modelos de interacción espacial, siendo Allan Wilson uno de sus principales referentes -@wilson1971.
 
-<> agregar referencias a Zipf
+[//]: # agregar referencias a Zipf
 
 Hacia la década de los 70s, alentados por los cambios políticos, económicos y culturales que estaban teniendo lugar, el abordaje cuantitativo comienza a ser duramente cuestionado, calificado de positivista, carente se sustentos teóricos y de potencia explicativa, al tiempo que surgen nuevos abordajes cualitativos [@birkin2019]: estamos ante el nacimiento de la geografía crítica [@correa1990].
 
