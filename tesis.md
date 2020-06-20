@@ -285,21 +285,51 @@ Teniendo los aportes de Wilson como basamento, los modelos de interacción espac
 
 ## Antecedentes del estudio de la migración interna en Uruguay
 
+Existen varios antecedentes del estudio de las migraciones internas en Uruguay. Según Macadar y Domínguez, dichos aportes se orientan tradicionalmente a explorar las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales, identificando al funcionamiento del sistema productivo agropecuario y la estructura de tenencia de la tierra como factores explicativos de esta tendencia demográfica [@macadar2008]. Es así que se asocia la producción agrícola intensiva a las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas al desarrollo de “ciudades primadas” [@macadar2008].
+
+
+Las fuentes cuantitativas principales para el estudio de la migración interna en Uruguay son los censos 1963, 1975, 1985, 1996 y 2011.
+
+En línea generales, Montevideo presenta una tendencia al estancamiento en el crecimiento de su población desde el año 1963 [@bengochea2011] y una pérdida de población desde el 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa, así como a emigración internacional [@koolhaas2013; @bengochea2011].
+
+
+A partir de los datos del Censo de 1985 se constata una reducción del atractivo de la zona litoral, suroeste y de Montevideo, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen o destino al departamento de Montevideo [@calvo1995].
+
+El censo de 1996 permite identificar un aumento importante de la población en la costa del departamento de Canelones junto con un decrecimiento
+poblacional en Montevideo [@bengochea2011; @pellegrino2009]. A su vez se identifica un saldo migratorio negativo de los departamentos de la frontera noreste para con Montevideo, revirtiéndose el fenómeno que aconteció durante la década de los 80s [@macadar2008] y emerge el departamento de Maldonado como atractor de migración interna [@bengochea2011].
+
+
 Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos solo Maldonado, Canelones,
-San José, Colonia y Salto tienen un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y sus propios procesos de suburbanización).
-En el mismo sentido, Montevideo viene perdiendo población desde el Censo de 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa [@koolhaas2013].
+San José, Colonia y Salto tienen un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y sus propios procesos de suburbanización).
 
-Atendiendo a la pirámide de población del Uruguay a partir de los datos del Ceno 2011 y su comparación con la pirámide de los migrantes recientes (quienes declaraban haber vivido hace 5 años en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013].
 
-![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total. Se puede apreciar la estructura más joven de la población de migrantes recientes y la mayor incidencia en las mujeres jóvenes (tramos entre 15 y 29 años), probablemente asociada a una mayor tasa de escolarización terciaria](mapas_graficas/piramide_mig.pdf)
+| cat.        | 1970/1975 |  %    | 1980/1985 | %     | 1991/1996 |%      | 2006/2011 |%      |
+|-------------|-----------|-------|-----------|-------|-----------|-------|-----------|-------|
+| Migrante    | 160.341   | 5,8%  | 181.541   | 6,1%  | 180.404   | 5,7%  | 148.759   | 4,5%  |
+| No migrante | 2.628.088 | 94,2% | 2.773.700 | 93,9% | 2.983.359 | 94,3% | 3.137.118 | 95,5% |
+| Total       | 2.788.429 | 100%  | 2.955.241 | 100%  | 3.163.763 | 100%  | 3.285.877 | 100%  |
+
+
+Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d).
+
+Atendiendo a la pirámide de población del Uruguay a partir de los datos del Ceno 2011 y su comparación con la pirámide de los migrantes recientes (quienes declaraban haber vivido hace 5 años en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. A su vez se evidencia que la migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
+
+
+![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total.](mapas_graficas/piramide_mig.pdf)
 
 La propensión a migrar de los jóvenes se explica por las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
+En el mismo sentido, al representar en forma gráfica la estructura de la población de los migrantes recientes, desagregando según si emigraron hacia Montevideo, se movieron entre otros departamentos o emigraron desde Montevideo permite identificar situaciones diferentes, en particular el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
+
+![Pirámide de población de  migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
 
 
 [^1]: Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
 
 [^2]: La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
+
+
+
 
 
 \newpage
@@ -354,6 +384,8 @@ En particular los censos 1996 y 2011 incorporaron algunas preguntas que serán p
 
 Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
 
+
+Esta preguntas permiten distinguir dos tipos de flujos: migración absoluta y migración reciente [@macadar2008]. La migración absoluta refiere a la migración desde el lugar de nacimiento, en tanto que la reciente refiere al lugar de residencia 5 años antes [@macadar2008].
 
 Se explorará la posibilidad de juntar micro-datos de varias Encuestas Continua de Hogares, que permitan una actualización de los datos a nivel departamental.
 
@@ -435,6 +467,7 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
 La base de persona del censo [@ine2011d] se filtra según el siguiente criterio:
+
 - Lugar de residencia 5 años antes (variable "PERMI07") con valores:
     - "2" (en otra localidad o paraje de este departamento)
     - "3" (en otro departamento)
