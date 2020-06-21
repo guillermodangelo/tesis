@@ -285,22 +285,19 @@ Teniendo los aportes de Wilson como basamento, los modelos de interacción espac
 
 ## Antecedentes del estudio de la migración interna en Uruguay
 
-Existen varios antecedentes del estudio de las migraciones internas en Uruguay. Según Macadar y Domínguez, dichos aportes se orientan tradicionalmente a explorar las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales, identificando al funcionamiento del sistema productivo agropecuario y la estructura de tenencia de la tierra como factores explicativos de esta tendencia demográfica [@macadar2008]. Es así que se asocia la producción agrícola intensiva a las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas al desarrollo de “ciudades primadas” [@macadar2008].
 
+Los primeros antecedentes se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008], estableciendo una asociación entre la producción agrícola intensiva, las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas y el desarrollo de “ciudades primadas” [@macadar2008].
 
-Las fuentes cuantitativas principales para el estudio de la migración interna en Uruguay son los censos 1963, 1975, 1985, 1996 y 2011.
+Las fuentes cuantitativas principales para el estudio de la migración interna en Uruguay son los censos (1963, 1975, 1985, 1996 y 2011).
 
-En línea generales, Montevideo presenta una tendencia al estancamiento en el crecimiento de su población desde el año 1963 [@bengochea2011] y una pérdida de población desde el 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa, así como a emigración internacional [@koolhaas2013; @bengochea2011].
+En línea generales, Montevideo presenta una tendencia al estancamiento en el crecimiento de su población desde el año 1963 [@bengochea2011] y una pérdida de población desde el 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa así como la emigración internacional, dado que gran parte de los emigrantes internacionales residían en Montevideo [@koolhaas2013; @bengochea2011].
 
+A partir de los datos del Censo de 1985 se constata una reducción del atractivo de la zona litoral, suroeste y de Montevideo, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen y destino al departamento de Montevideo [@calvo1995].
 
-A partir de los datos del Censo de 1985 se constata una reducción del atractivo de la zona litoral, suroeste y de Montevideo, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen o destino al departamento de Montevideo [@calvo1995].
-
-El censo de 1996 permite identificar un aumento importante de la población en la costa del departamento de Canelones junto con un decrecimiento
+El censo de 1996 permite identificar un aumento importante de la población en la costa del departamento de Canelones junto con el ya mencionado decrecimiento
 poblacional en Montevideo [@bengochea2011; @pellegrino2009]. A su vez se identifica un saldo migratorio negativo de los departamentos de la frontera noreste para con Montevideo, revirtiéndose el fenómeno que aconteció durante la década de los 80s [@macadar2008] y emerge el departamento de Maldonado como atractor de migración interna [@bengochea2011].
 
-
-Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos solo Maldonado, Canelones,
-San José, Colonia y Salto tienen un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y sus propios procesos de suburbanización).
+Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José, Colonia y Salto tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
 
 
 | cat.        | 1970/1975 |  %    | 1980/1985 | %     | 1991/1996 |%      | 2006/2011 |%      |
@@ -312,14 +309,20 @@ San José, Colonia y Salto tienen un saldo migratorio interno positivo [@koolhaa
 
 Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d).
 
-Atendiendo a la pirámide de población del Uruguay a partir de los datos del Ceno 2011 y su comparación con la pirámide de los migrantes recientes (quienes declaraban haber vivido hace 5 años en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. A su vez se evidencia que la migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
+Atendiendo a la pirámide de población del Uruguay a partir de los datos del censo 2011 y su comparación con la pirámide de los migrantes recientes (quienes declararon que 5 años atrás vivían en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. A su vez se evidencia que la migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
+
+La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
 
 ![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total.](mapas_graficas/piramide_mig.pdf)
 
-La propensión a migrar de los jóvenes se explica por las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
+En el mismo sentido, se puede representar en forma gráfica la estructura de la población de los migrantes recientes, desagregándolos según los siguientes orígenes y destinos:
 
-En el mismo sentido, al representar en forma gráfica la estructura de la población de los migrantes recientes, desagregando según si emigraron hacia Montevideo, se movieron entre otros departamentos o emigraron desde Montevideo permite identificar situaciones diferentes, en particular el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
+- Quienes que emigraron desde otros departamentos hacia Montevideo.
+- Quienes emigraron entre departamentos (excluyendo Montevideo).
+- Quienes emigraron desde Montevideo hacía otros departamentos.
+
+Mediante pirámides de población se puede dar cuenta de las diferentes estructuras que dichas poblaciones presentan. En primer lugar el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
 ![Pirámide de población de  migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
 
