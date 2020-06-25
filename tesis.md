@@ -175,26 +175,26 @@ En los albores de la revolución industrial en los países de Europa occidental,
 
 Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto a la transición demográfica propiamente dicha, según Skeldon -@skeldon2012: “Essentially, it is a macro‐level description based on the experience of Western Europe and North America, which relates in an intuitive way notional changes in migration with shifts in fertility and mortality” [Esencialmente es una descripción a nivel macro basada en la experiencia de Europa occidental y Norteamérica, que relaciona en forma intuitiva los cambios hipotéticos en las migraciones con los cambios en fecundidad y mortalidad] (p. 159).
 
-![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.pdf)
+![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.jpg)
 
 
 ### Diálogo entre migraciones internacionales e internas
 
 Los procesos migratorios son la suma de un complejo conjunto de factores e interacciones que llevan a individuos y familias a migrar, y que luego influencian en el curso de dicha migración.
 
-*¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?*. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer los vínculos entre ambas, aunque en primer lugar traen a discusión la diferenciación entre ambos tipos de migración, ya que a veces el límite entre ambas puede ser difuso, dado que la distancia no tiene tanta relevancia (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de frontera, como el espacio Schengen, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el lo hace hacia otro.
+*¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?*. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer vínculos entre ambos marcos teóricos, aunque en primer lugar traen a discusión la diferenciación entre dichos tipos de migración, ya que a veces el límite entre ellas puede ser difuso, dado que la distancia puede no tener una relevancia central (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de fronteras, como el espacio Schengen en Europa, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el lo hace hacia otro.
 
-Los autores proponen un esquema muy claro para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
+Los autores proponen el siguiente esquema para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
 
-![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.pdf)
+![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.jpg)
 
-Proponen que X e Y son dos países diferentes, a su vez, Xa, Xb, Ya e Yb son regiones dentro de esos países, donde Xa es una región rural, Xb es un centro urbano, como una ciudad capital, Ya es una ciudad principal e Yb una región provincial.
+Según el esquema, *X* e *Y* representan a dos países diferentes. A su vez, *Xa*, *Xb*, *Ya* e *Yb* son regiones dentro de esos países ficticios, donde *Xa* es una región rural, *Xb* es un centro urbano (como una ciudad capital), *Ya* es una ciudad principal e *Yb* una región provincial.
 
 Con respecto a la integración teórica, las hipótesis de la transición de la movilidad de Zelinsky -@zelinsky1971, ya mencionadas anteriormente, son consideradas el intento más ambicioso en ese sentido [@king2010]. Para Zelinsky existía una aumento en las movilidades en el espacio-tiempo y esta regularidad era un componente del proceso de modernización [@skeldon2012].
 
 Las críticas a dicho vinculo son las siguientes:
 
-- Idealización de las sociedades pre-modernas como estáticas.
+- Presentan una visión idealizada de las sociedades pre-modernas, concibiéndolas como sociedades estáticas en las cuales los movimientos de población eran muy poco comunes.
 
 - El paralelismo y continuidad entre la transición demográfica y la migratoria sin aportar evidencia de cómo se influenciaban mutuamente.
 
