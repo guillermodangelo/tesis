@@ -15,16 +15,16 @@ output: pdf_document
 
 # Fundamentación
 
-Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan lo social, lo económico y las relaciones espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015]. Aunque los límites disciplinares son necesariamente difusos, esto radica en qué los objetos de estudio y los métodos suelen ser compartidos, por ende es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en el sentido que otorga prioridad al componente espacial de los fenómenos [@puyol1995].
-Si bien hay antecedentes del estudio de las migraciones internas en Uruguay desde una perspectiva sociológica y demográfica, no se ha profundizado sobre el componente espacial de esas migraciones. Se considera valioso atender a ese aspecto del fenómeno, ya que, desde nuestro marco teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. Las migraciones se ven influidas por el espacio geográfico, por ejemplo generándose migraciones más intensas entre localidades cercanas, y en ese proceso también modifican y (re)construyen el espacio.
+Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en el sentido que otorga especial relevancia al componente espacial de los fenómenos [@puyol1995].
+Comsideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. Las migraciones se ven influidas por el espacio geográfico, por ejemplo generándose migraciones más intensas entre localidades cercanas, y en ese proceso también modifican y (re)construyen el espacio.
 
 \newpage
 
-# Marco teórico
+# Marco teórico y antecedentes
 
 
-El marco teórico se divide en tres apartados. El primero se titula *Introducción a las teorías migratorias*, y en el mismo se revisan las teorías migratorias y su vinculación con las migraciones internas.
-El segundo se titula *El espacio geográfico en las migraciones* y consta de una breve revisión del concepto de “espacio geográfico” y sus posibles relaciones con el abordaje de las migraciones internas que se propone realizar en la investigación. Finalmente, en el apartado *La interacción espacial y su modelación* se analizan los fundamentos teóricos de la interacción espacial y los abordajes para su análisis.
+El marco teórico se divide en tres apartados. En el primero se revisan las teorías migratorias y su vinculación con las migraciones internas.
+En el segundo se realiza una breve revisión del concepto de “espacio geográfico” y sus posibles relaciones con el abordaje de las migraciones internas que se propone realizar en la investigación. Finalmente, en el tercer apartado se analizan los fundamentos teóricos de la interacción espacial y los abordajes para su análisis. Luego se incluye una somera revisión de antecedentes del estudio de las migraciones internas en Uruguay.
 
 
 
@@ -178,10 +178,9 @@ Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto 
 ![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.pdf)
 
 
-
 ### Diálogo entre migraciones internacionales e internas
 
-Los procesos migratorios son la suma de un complejo conjunto de factores e interacciones que llevan a la migración e influencian su curso.
+Los procesos migratorios son la suma de un complejo conjunto de factores e interacciones que llevan a individuos y familias a migrar, y que luego influencian en el curso de dicha migración.
 
 *¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?*. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer los vínculos entre ambas, aunque en primer lugar traen a discusión la diferenciación entre ambos tipos de migración, ya que a veces el límite entre ambas puede ser difuso, dado que la distancia no tiene tanta relevancia (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de frontera, como el espacio Schengen, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el lo hace hacia otro.
 
