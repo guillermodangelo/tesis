@@ -8,9 +8,7 @@ pandoc "$1"\
     	-V mainfont="Liberation Serif" \
 	-V linkcolor:blue \
 	--bibliography "markdown/bibliografia.bib" \
-	--csl "markdown/apa-6th-edition.csl" \
+	--csl "markdown/apa.csl" \
 	--pdf-engine=xelatex \
-	-Vlang=es-419 \
+	-V lang=es \
 	-o "$2"
-
-

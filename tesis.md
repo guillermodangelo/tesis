@@ -7,6 +7,7 @@ figureTitle: "Figura"
 numbersections: true
 toc: true
 output: pdf_document
+lang: es
 ---
 <div style="text-align: justify"> 
 
@@ -20,7 +21,7 @@ Si bien hay antecedentes del estudio de las migraciones internas en Uruguay desd
 
 \newpage
 
-# Marco teórico
+# Marco teórico y antecedentes
 
 
 El marco teórico se divide en tres apartados. El primero se titula *Introducción a las teorías migratorias*, y en el mismo se revisan las teorías migratorias y su vinculación con las migraciones internas.
@@ -347,7 +348,7 @@ La pregunta general que guiará este trabajo de investigación es la siguiente: 
 
 
 
-# Objetivos
+## Objetivos
 
 Objetivo general
 - Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial con base en los censos de 1996 y 2011.
@@ -591,12 +592,27 @@ RMSE = 322,3049
 \end{landscape}
 
 
+
+# Pasos a seguir
+
+Con respecto al marco teórico y los antecedentes: profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación.
+
+Con respecto a la metodología y resultados:
+
+- Recopilar fuentes de datos no utilizadas (principalmente censos 85 y 96)
+- Profundizar en los problemas de la aplicación de los modelos
+
+
+
 </div>
 
 
 \newpage
 
 
+
+
 # Bibliografía
 
 
+</div>
