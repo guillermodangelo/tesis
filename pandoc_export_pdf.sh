@@ -10,7 +10,7 @@ pandoc "$1"\
 	--bibliography "markdown/bibliografia.bib" \
 	--csl "markdown/apa-6th-edition.csl" \
 	--pdf-engine=xelatex \
-	-Vlang=es-419 \
+	-V lang=es \
 	-o "$2"
 
 
