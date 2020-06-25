@@ -11,6 +11,7 @@ lang: es
 mainfont: "Helvetica LT Std"
 fontsize: 11pt
 linkcolor: blue
+output: pdf_document
 header-includes: |
     \usepackage{hyperref}
     \hypersetup{
@@ -25,7 +26,6 @@ header-includes: |
     \captionsetup[figure]{name=Figura, labelfont=bf}
     \usepackage{pdflscape}
     \usepackage{booktabs}
-output: pdf_document
 ---
 
 <div style="text-align: justify"> 
@@ -499,9 +499,7 @@ Esos datos también pueden ser representados como una matríz simétrica de dobl
 
 \newpage
 \begin{landscape}
-
 \input{tablas/matriz_orig_dest.tex}
-
 \end{landscape}
 
 
@@ -535,7 +533,7 @@ En el modelo restringido en origen $O_{i}$ no tiene parámetro dado que refiere 
 
 La forma multiplicativa del modelo puede ser modificada, re-especificado el modelo como un modelo de regresión de Poisson [@dennett2018]. Para ello se aplica el logaritmo al lado derecho de la ecuación, y asumiendo que están logarítmicamente vinculados a la media con distribución de Poisson  ($\lambda_{ij}$) de la variable $T_{ij}$, se obtiene
 
-4   $$ \lambda_{ij} = \exp( \mu_{i} + \alpha \ln W_{j} - \beta \ln d_{ij} )$$
+4 $$ \lambda_{ij} = \exp( \mu_{i} + \alpha \ln W_{j} - \beta \ln d_{ij} )$$
 
 
 Reemplazamos la variable independiente (los estimados $T_{ij}$) por la media de la distribución de Poisson $\lambda_{ij}$, la cual se asume como modelada por una combinación lineal de las variables del modelo.
@@ -554,9 +552,8 @@ El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7830. El
 
 Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-valor menor a 0,05: Durazno, Río Negro, Rocha y Treinta y Tres (no podemos rechazar la hipótesis nula).
 
-#### Estimación del modelo restringido en origen
 
-Los parámetros calculados se insertan en la ecuación nro. 4.
+A partir de los parámetros calculados se procede a la estimación del modelo restringido en origen. Los parámetros se insertan en la ecuación nro. 4.
 
 $$ \lambda_{ij} = \exp( \mu_{i} + 0,8527 ln W_{j}  + 0,7830 ln d_{ij} )$$
 
@@ -564,11 +561,10 @@ Se recuperan los valores $\mu_{i}$ que el modelo devuelve para cada departamento
 
 A continuación se presenta el resultado de la estimación del modelo en forma de matriz.
 
+
 \newpage
 \begin{landscape}
-
 \input{tablas/prodsim_matriz_orig_dest.tex}
-
 \end{landscape}
 
 
@@ -576,24 +572,40 @@ Se puede apreciar como en la columna "Total" los valores se mantienen con respec
 
 $$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
 
-
 El modelo presenta los siguientes valores de bondad de ajuste:
+
 $R²$ = 0,9738
 
 RMSE = 322,3049
 
 
+### Modelo de interacción espacial de doble restricción
+
+A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior.
+
+
+5 $$T_{ij} = A_{i}O_{i}B_{i}D_{j}d_{ij}^{-\beta }$$
+
+dónde
+
+6 $$O_{i} = \sum_{j}T_{ij}$$
+
+7 $$D_{j} = \sum_{i}T_{ij}$$
+
+8 $$A_{i} = \frac{1}{\sum_{j}B_{j}D_{j}d_{ij}^{-\beta}}$$
+
+9 $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
+
+
+
+La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
+
+
+
 
 \newpage
-\begin{landscape}
 
-\input{tablas/matriz_orig_dest.tex}
-
-\end{landscape}
-
-
-
-# Pasos a seguir
+# Cómo seguir...
 
 Con respecto al marco teórico y los antecedentes: profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación.
 
@@ -603,16 +615,8 @@ Con respecto a la metodología y resultados:
 - Profundizar en los problemas de la aplicación de los modelos
 
 
-
-</div>
-
-
 \newpage
 
-
-
-
 # Bibliografía
-
 
 </div>

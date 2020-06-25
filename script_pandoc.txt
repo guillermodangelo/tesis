@@ -1,2 +1,2 @@
-cd /home/guillermo/Documentos/git/tesis/
+cd /home/guillermo/Documentos/GitHub/tesis/
 ./pandoc_export_pdf.sh tesis.md tesis.pdf
