@@ -3,21 +3,39 @@ title: 'Modelos de interacción espacial y migración interna en Uruguay'
 author: Guillermo D'Angelo
 date: Junio 2020
 footer: true
+geometry: "a4paper, margin=2cm"
 figureTitle: "Figura"
 numbersections: true
 toc: true
-output: pdf_document
 lang: es
+mainfont: "Helvetica LT Std"
+fontsize: 11pt
+linkcolor: blue
+header-includes: |
+    \usepackage{hyperref}
+    \hypersetup{
+      pdftitle={Modelos de interacción espacial y migración interna en Uruguay},
+      pdfauthor={Guillermo D'Angelo},
+      pdfsubject={Geografía de la Población},
+      pdfkeywords={demografía,geografía de la población,migración interna}
+    }
+    \usepackage{caption}
+    \captionsetup{font=small}
+    \captionsetup[table]{name=Cuadro, labelfont=bf}
+    \captionsetup[figure]{name=Figura, labelfont=bf}
+    \usepackage{pdflscape}
+    \usepackage{booktabs}
+output: pdf_document
 ---
-<div style="text-align: justify"> 
 
+<div style="text-align: justify"> 
 
 \newpage
 
 # Fundamentación
 
 Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en el sentido que otorga especial relevancia al componente espacial de los fenómenos [@puyol1995].
-Comsideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. Las migraciones se ven influidas por el espacio geográfico, por ejemplo generándose migraciones más intensas entre localidades cercanas, y en ese proceso también modifican y (re)construyen el espacio.
+Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. Las migraciones se ven influidas por el espacio geográfico, por ejemplo generándose migraciones más intensas entre localidades cercanas, y en ese proceso también modifican y (re)construyen el espacio.
 
 \newpage
 
@@ -227,8 +245,6 @@ Durante los años 50s y 60s, tomando la iniciativa de Schaefer, geógrafos de la
 
 El auge de la geografía cuantitativa pavimentó el camino para el surgimiento de los abordajes basados en modelos espaciales predictivos, entre ellos los modelos de interacción espacial, siendo Allan Wilson uno de sus principales referentes -@wilson1971.
 
-[//]: # agregar referencias a Zipf
-
 Hacia la década de los 70s, alentados por los cambios políticos, económicos y culturales que estaban teniendo lugar, el abordaje cuantitativo comienza a ser duramente cuestionado, calificado de positivista, carente se sustentos teóricos y de potencia explicativa, al tiempo que surgen nuevos abordajes cualitativos [@birkin2019]: estamos ante el nacimiento de la geografía crítica [@correa1990].
 
 Los críticos identificaron un “fetichismo espacial” en la geografía cuantitativa, dado que las relaciones sociales pretendían ser tratadas puramente como relaciones espaciales. Esta crítica dio lugar a nuevos abordajes orientados al análisis de procesos, introduciéndose el concepto de “espacio relacional”, según el cual el espacio está imbricado en las relaciones sociales a través de las prácticas [@gregory2009]. Desde la perspectiva del espacio relacional, se entiende que el espacio absoluto y relativo no se pueden separar, y torna la mirada hacia los sistemas sociales que producen diferentes estructuras espaciales [@kuhlke2006]. En ese sentido, el espacio es un agente (entre otros) en la construcción de las relaciones sociales y económicas, y a su vez es construido por dichas relaciones y prácticas sociales [@kitchin2009]. Esta visión fue introducida primeramente por los denominadas geógrafos radicales, por ejemplo los marxistas o feministas [@kitchin2009].
@@ -333,8 +349,6 @@ Mediante pirámides de población se puede dar cuenta de las diferentes estructu
 
 
 
-
-
 \newpage
 
 
@@ -350,21 +364,27 @@ La pregunta general que guiará este trabajo de investigación es la siguiente: 
 ## Objetivos
 
 Objetivo general
+
 - Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial con base en los censos de 1996 y 2011.
 
 Objetivos específicos
+
 - Describir las migraciones internas en Uruguay según los censos 1985, 1996 y 2011.
+
 - Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
+
 - Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
+
 - Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
+
 - Discutir la pertinencia de factores asociados a las migraciones internas.
 
 
 
 
-Desde esta perspectiva, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial. En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial [^3], pero orientada movilidad por trabajo. Sin embargo, existen varios antecedentes de la aplicación de la metodología al tema migraciones en otros países, por lo cual consideramos viable usar la metodología para el estudio de las migraciones internas del Uruguay y la simulación de escenarios posibles. El interés por las simulaciones y la aplicación de los modelos de interacción espacial no remite exclusivamente a un interés metodológico sino también en valor para, por ejemplo, orientar políticas de desarrollo urbano y ordenamiento territorial.
+Desde esta perspectiva, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial. En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. Sin embargo, existen varios antecedentes de la aplicación de la metodología al tema migraciones en otros países, por lo cual consideramos viable usar la metodología para el estudio de las migraciones internas del Uruguay y la simulación de escenarios posibles. El interés por las simulaciones y la aplicación de los modelos de interacción espacial no remite exclusivamente a un interés metodológico sino también en valor para, por ejemplo, orientar políticas de desarrollo urbano y ordenamiento territorial.
 
-[^3]: Trabajo inédito, buscar cita y referencia
+[^3]: Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
 
 \newpage
 
@@ -396,9 +416,6 @@ Con respecto a los datos geográficos, se utilizarán dos insumos básicos: la c
 
 Según la revisión bibliográfica y de antecedentes, una de las variables necesarias para aplicar un modelo de interacción espacial es la distancia entre las unidades espaciales que se vayan a tomar en cuenta. Para ello es necesario el cálculo de una matriz de distancias origen-destino, y para el cálculo de dicha matriz se debe determinar un punto dentro de cada departamento que será tomado como origen-destino, a partir del cual se calcula la distancia hacia todos los demás puntos que representan los departamentos, y desde todos esos puntos hacia el primero.
 
-En el caso de los departamentos, en lugar de tomar el centroide de cada polígono que conforma la unidad geoestadística, se optó por tomar el punto de la capital departamental según la capa de puntos de localidades INE. Dicha decisión se basa en que en general los centroides coinciden con zonas rurales poco pobladas, siendo que población se concentra en zonas puntuales, y la capitales departamentales ofician como proxy de dicho dato. A partir de estos 19 puntos se calculó la matriz origen-destino a través del la "Distance Matrix API", ofrecida por Google, y consultada mediante una función de Python. Este método es usado para obtener las distancias como si se fuera conduciendo un vehículo por calles y rutas, en lugar de la distancia euclidiana.
-
- Más avanzado el proyecto se seleccionará alguno de los métodos para calcular el centro de población de cada departamento (a partir del censo 2011) y se utilizará dicha capa de puntos en lugar de la localidades, aunque se considera que los cambios no sería sustanciales. La misma consideración aplica para el uso de otras técnicas para el cálculo de la matriz origen-destino.
 
 
 ## Factores asociados a las migraciones internas
@@ -409,8 +426,6 @@ El estudio de las migraciones internas está relacionado a los procesos de migra
 Existen varias razones que pueden estar detrás del interés de migrar de una personas y la concreción de dicho movimiento, a continuación se analizan algunos de los factores que según la literatura se asocian al proceso migratorio.
 
 La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
-
-
 
 Weidlich et. al [@weidlich1988] identificaron cuatro factores clave en la migración interna para el caso de la Alemania Federal de posguerra, utilizando análisis de regresión:
 
@@ -429,18 +444,6 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 - Stock de migrantes anteriores entre las provincias i y j
 - Variables dummy para indicar migración entre regiones o migración hacia Estanbul
 
-
-
-
-
-[//]: # NOTAS:
-[//]: #  Ver las distancias funcionales en el artículo de Plane 1984
-[//]: # Ver determinantes de la migración interna, tal vez algo de internacional en el artículo de Mayda.
-
-
-revisar
-https://www.tandfonline.com/doi/abs/10.1080/13511610.1994.9968397
-http://research.sabanciuniv.edu/14167/
 
 
 ## Análisis exploratorio de datos
@@ -502,14 +505,12 @@ Esos datos también pueden ser representados como una matríz simétrica de dobl
 \end{landscape}
 
 
-Siguiendo la estructura de datos presentada anteriormente (tabla de díadas orígen-destino), se contruye un conjunto de datos conteniendo la siguiente información para cada díada de departamentos:
+Siguiendo la estructura de datos presentada anteriormente (tabla de díadas origen-destino), se construye un conjunto de datos conteniendo la siguiente información para cada díada de departamentos:
 
 - Totales de personas que declaran haber vivido antes en el departamento de origen
 - La población total en origen y destino
 - El PBI en el departamento de destino y el logaritmo de dicho valor
 - La distancia entre cada centro medio de población y el logaritmo de dicho valor
-
-
 
 
 

@@ -1,29 +1,8 @@
-# realiza el producto cartesiano para obtener todas las combinaciones posibles de localidades
-deptos_cent = deptos[['nombre', 'centroide']]
-deptos_cent['key'] = 0
-df_prod_cartesiano = deptos_cent.merge(deptos_cent, on='key', how='outer')
-df_prod_cartesiano.drop(columns=['key'], inplace=True)
-
-df_prod_cartesiano.rename(columns={'nombre_x': 'ori', 'nombre_y': 'des'}, inplace=True)
-df_prod_cartesiano = df_prod_cartesiano[df_prod_cartesiano['ori'] != df_prod_cartesiano['des']]
-
-# resetea el índice para que vaya de 0 a 341
-df_prod_cartesiano = df_prod_cartesiano.reset_index(drop=True)
-
-print(df_prod_cartesiano.shape)
-df_prod_cartesiano.tail()
+[//]: # NOTAS:
+[//]: #  Ver las distancias funcionales en el artículo de Plane 1984
+[//]: # Ver determinantes de la migración interna, tal vez algo de internacional en el artículo de Mayda.
 
 
-
-
-# genera líneas iterando sobre todos los puntos, y las guarda en formato WKT en una lista
-lineas=[]
-for i in range(0, 341):
-  lineas.append(LineString([df_prod_cartesiano['centroide_x'][i], df_prod_cartesiano['centroide_y'][i]]).wkt)
-
-# genera un df conteniendo geometrías de tipo línea en formato WKT (en realidad gurdadas como texto)
-df_lineas = pd.DataFrame(lineas, columns=['geometry'])
-df_lineas['geometry'] = df_lineas['geometry'].apply(wkt.loads)
-
-# convierte a geopandas data frame
-links = gpd.GeoDataFrame(df_lineas, geometry='geometry')
+revisar
+https://www.tandfonline.com/doi/abs/10.1080/13511610.1994.9968397
+http://research.sabanciuniv.edu/14167/
