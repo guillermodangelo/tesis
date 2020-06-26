@@ -9,8 +9,10 @@ numbersections: true
 toc: true
 lang: es
 mainfont: "Helvetica LT Std"
-fontsize: 11pt
+fontsize: 12pt
+linestretch: 1
 linkcolor: blue
+citecolor: grey
 output: pdf_document
 header-includes: |
     \usepackage{hyperref}
@@ -468,7 +470,7 @@ $$
 En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
 
 
-![Mapa de centroides, capitales departamentales y centro medio de población calculado según las fórmulas mencionadas.](/home/guillermo/Documentos/git/tesis/mapas_graficas/centro_poblacion.pdf)
+![Mapa de centroides, capitales departamentales y centro medio de población calculado según las fórmulas mencionadas.](mapas_graficas/centro_poblacion.pdf)
 
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
@@ -494,7 +496,7 @@ La tabla resultante contiene un departamento de origen, uno de destino y una can
 Table: Tabla de díadas orígen-destino, referida por códigos INE de departamentos.
 
 
-Esos datos también pueden ser representados como una matríz simétrica de doble entrada. Se utilizan los códigos INE de departamentos como identificadores.
+Esos datos también pueden ser representados como una matriz simétrica de doble entrada. Se utilizan los códigos INE de departamentos como identificadores.
 
 
 \newpage
@@ -543,7 +545,7 @@ En esta ecuación $mu_{i}$ es el equivalente al factor de balance $A_{i}$. Pero 
 El primer modelo se corrió con las variables departamento de destino, logaritmo del PBI departamental en destino y logaritmo de la distancia. 
 
 
-\input{tablas/mro.tex}
+\input{tablas/prodSim.tex}
 
 
 De los resultados se desprende un parámetro $\alpha$ relacionado a la actractividad del destino con un valor de 0,8527.
@@ -597,11 +599,30 @@ dónde
 9 $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
 
 
-
 La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
 
 
+\input{tablas/doubSim.tex}
 
+<!---
+De los resultados se desprende un parámetro $\alpha$ relacionado a la actractividad del destino con un valor de 0,8196.
+
+El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7130. El coeficiente para cada origen  es el valor registrado $A_{i}O_{i}$ para ese origen.
+
+
+MEJORAR ESTO!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-valor menor a 0,05: Durazno, Río Negro, Rocha y Treinta y Tres (no podemos rechazar la hipótesis nula).
+
+-->
+
+\newpage
+\begin{landscape}
+\input{tablas/doubsim_matriz_orig_dest.tex}
+\end{landscape}
+
+COmparando la matriz de valores estimados mediante el modelo de restricción doble con la matriz de datos relevado en el censo se puede ver como los valores totales de origen y destino $O_{i}$ y $D_{j}$ se mantienen prácticamente iguales, con algunas diferencias producto del redondeo.
 
 \newpage
 
