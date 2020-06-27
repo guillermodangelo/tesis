@@ -427,14 +427,15 @@ Existen varias razones que pueden estar detrás del interés de migrar de una pe
 
 La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
 
-Weidlich et. al [@weidlich1988] identificaron cuatro factores clave en la migración interna para el caso de la Alemania Federal de posguerra, utilizando análisis de regresión:
+Weidlich et. al -@weidlich1988 identificaron cuatro factores clave en la migración interna para el caso de la Alemania Federal de posguerra, utilizando análisis de regresión:
 
 - Ingreso real *per cápita*
 - Puesto de trabajo vacantes
 - Índice de estructura de inversiones
 - Número de personas empleadas
 
-Algunas investigaciones de los determinantes económicos y no económicos de la migración interna en Estados Unidos [@cebula2005; @cebula2006] identifican variables asociadas a la migración interestatal. Algunas variables están relacionadas con la calidad de vida (incidencia de luz solar, número de crímenes violentos por 100.000 habs, superficie de parques estatales por 100.000 habs., número de sitios de deposición final de residuos peligrosos, temperatura máxima diaria en enero por estado). Por otro lado identifican como significativo el costo de vida en destino y la variable "ingresos esperados en destino" (el inrgeso *per cápita* multiplicado por la tasa de empleo, ambos factores según datos de 1999).
+Algunas investigaciones de los determinantes económicos y no económicos de la migración interna en Estados Unidos [@cebula2005; @cebula2006] identifican variables asociadas a la migración interestatal. Algunas variables están relacionadas con la calidad de vida (incidencia de luz solar, número de crímenes violentos por 100.000 habs., superficie de parques estatales por 100.000 habs., número de sitios de deposición final de residuos peligrosos, temperatura máxima diaria en enero por estado). Por otro lado identifican como significativo el costo de vida en destino y la variable "ingresos esperados en destino" (el ingreso *per cápita* multiplicado por la tasa de empleo, ambos factores según datos de 1999).
+
 En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se identificaron las siguientes variables con incidencia estadísticamente significativa (al 1%) sobre los flujos migratorios:
 
 - Distancia entre provincias
@@ -444,6 +445,7 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 - Stock de migrantes anteriores entre las provincias i y j
 - Variables dummy para indicar migración entre regiones o migración hacia Estanbul
 
+Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
 
 
 ## Análisis exploratorio de datos
@@ -472,7 +474,7 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
-La base de persona del censo [@ine2011d] se filtra según el siguiente criterio:
+La base de personas del censo [@ine2011d] se filtra según el siguiente criterio:
 
 - Lugar de residencia 5 años antes (variable "PERMI07") con valores:
     - "2" (en otra localidad o paraje de este departamento)
@@ -494,7 +496,7 @@ La tabla resultante contiene un departamento de origen, uno de destino y una can
 Table: Tabla de díadas orígen-destino, referida por códigos INE de departamentos.
 
 
-Esos datos también pueden ser representados como una matriz simétrica de doble entrada. Se utilizan los códigos INE de departamentos como identificadores.
+Esos datos también pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
 
 \newpage
@@ -537,7 +539,7 @@ La forma multiplicativa del modelo puede ser modificada, re-especificado el mode
 
 Reemplazamos la variable independiente (los estimados $T_{ij}$) por la media de la distribución de Poisson $\lambda_{ij}$, la cual se asume como modelada por una combinación lineal de las variables del modelo.
 
-En esta ecuación $mu_{i}$ es el equivalente al factor de balance $A_{i}$. Pero en la terminología de una regresión log-lineal se pueden describir como variables dummy. En la práctica, en el modelo de regresión $mu_{i}$ será tomado como un predictor categórico, por ende en el modelo de regresión de Poisson los valores de $O_{i}$ son reemplazados por un identificador categórico del origen, por ejemplo el código INE o el nombre del departamento [@dennett2018].
+En esta ecuación $\mu_{i}$ es el equivalente al vector $A_{i}O_{i}$, pero en la terminología de una regresión log-lineal se pueden describir como variables dummy. En la práctica, en el modelo de regresión $\mu_{i}$ será tomado como un predictor categórico, por ende en el modelo de regresión de Poisson los valores de $O_{i}$ son reemplazados por un identificador categórico del origen, por ejemplo el código INE o el nombre del departamento [@dennett2018].
 
 El primer modelo se corrió con las variables departamento de destino, logaritmo del PBI departamental en destino y logaritmo de la distancia. 
 
@@ -587,7 +589,7 @@ RMSE = 322,3049
 
 ### Modelo de interacción espacial de doble restricción
 
-A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, sino que tiene que ser relativas a ambos [@dennett2018].
+A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, por el contrario estas variables deben ser relativas a ambos [@dennett2018].
 
 
 5 $$T_{ij} = A_{i}O_{i}B_{i}D_{j}d_{ij}^{-\beta }$$
@@ -603,7 +605,7 @@ dónde
 9 $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
 
 
-La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
+La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B_{j}$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
 
 A continuación se presentan los resultados de correr el modelo:
 
@@ -642,10 +644,10 @@ Con respecto al marco teórico y los antecedentes: profundizar en la imbricació
 
 Con respecto a la metodología y resultados:
 
-- Recopilar fuentes de datos no utilizadas (principalmente censos 85 y 96)
-- Profundizar en los problemas de la aplicación de los modelos
+- Recopilar fuentes de datos no utilizadas (principalmente censos 85 y 96).
+- Profundizar en los problemas de la aplicación de los modelos.
 - Profundizar en el relevamiento bibliográfico de factores asociados a la migración interna, ya que de ese relevamiento se seleccionarán las variables a utilizar en los modelos.
-- Añadir más variables asociadas a la migración interna en el modelo
+- Añadir más variables asociadas a la migración interna en el modelo.
 - Explorar diferentes funciones de decaimiento por la distancia.
 - Modelar con localidades.
 - Modelar excluyendo Montevideo.
