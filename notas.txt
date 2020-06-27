@@ -1,6 +1,10 @@
-[//]: # NOTAS:
-[//]: #  Ver las distancias funcionales en el artículo de Plane 1984
-[//]: # Ver determinantes de la migración interna, tal vez algo de internacional en el artículo de Mayda.
+NOTAS
+
+Ver las distancias funcionales en el artículo de Plane 1984
+Ver determinantes de la migración interna, tal vez algo de internacional en el artículo de Mayda.
+Analizar el tema de la intersección en el SIM doble, en el simple se usa el truquito del -1 pero según
+Dennet no serviría para el doble
+
 
 
 revisar

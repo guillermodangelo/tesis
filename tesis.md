@@ -331,7 +331,6 @@ Atendiendo a la pirámide de población del Uruguay a partir de los datos del ce
 
 La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
-
 ![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total.](mapas_graficas/piramide_mig.pdf)
 
 En el mismo sentido, se puede representar en forma gráfica la estructura de la población de los migrantes recientes, desagregándolos según los siguientes orígenes y destinos:
@@ -348,7 +347,6 @@ Mediante pirámides de población se puede dar cuenta de las diferentes estructu
 [^1]: Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
 
 [^2]: La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
-
 
 
 \newpage
@@ -509,9 +507,8 @@ Siguiendo la estructura de datos presentada anteriormente (tabla de díadas orig
 
 - Totales de personas que declaran haber vivido antes en el departamento de origen
 - La población total en origen y destino
-- El PBI en el departamento de destino y el logaritmo de dicho valor
+- El PBI en el departamento de destino y el logaritmo de dicho valor [@opp2016]
 - La distancia entre cada centro medio de población y el logaritmo de dicho valor
-
 
 
 ### Modelo de interacción espacial restringido en origen
@@ -540,7 +537,7 @@ La forma multiplicativa del modelo puede ser modificada, re-especificado el mode
 
 Reemplazamos la variable independiente (los estimados $T_{ij}$) por la media de la distribución de Poisson $\lambda_{ij}$, la cual se asume como modelada por una combinación lineal de las variables del modelo.
 
-En esta ecuación $mu_{i}$ es el equivalente al factor de balance $A_{i}$. Pero en la terminología de una regresión log-lineal se pueden describir como variables dummy. En la práctica, en el modelo de regresión $mu_{i}$ será tomado como un predictor categórico, por ende en el modelo de regresión de Poisson los valores de $O_{i}$ son reemplazados por un identificador categórico del origen (por ejemplo el código INE del departamento, o directamente su nombre)
+En esta ecuación $mu_{i}$ es el equivalente al factor de balance $A_{i}$. Pero en la terminología de una regresión log-lineal se pueden describir como variables dummy. En la práctica, en el modelo de regresión $mu_{i}$ será tomado como un predictor categórico, por ende en el modelo de regresión de Poisson los valores de $O_{i}$ son reemplazados por un identificador categórico del origen, por ejemplo el código INE o el nombre del departamento [@dennett2018].
 
 El primer modelo se corrió con las variables departamento de destino, logaritmo del PBI departamental en destino y logaritmo de la distancia. 
 
@@ -552,7 +549,7 @@ De los resultados se desprende un parámetro $\alpha$ relacionado a la actractiv
 
 El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7830. El coeficiente para cada origen es el valor registrado $A_{i}O_{i}$ para ese origen.
 
-Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-valor menor a 0,05: Durazno, Río Negro, Rocha y Treinta y Tres (no podemos rechazar la hipótesis nula).
+Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-valor mayor a 0,05: Durazno, Río Negro, Rocha y Treinta y Tres (no podemos rechazar la hipótesis nula).
 
 
 A partir de los parámetros calculados se procede a la estimación del modelo restringido en origen. Los parámetros se insertan en la ecuación nro. 4.
@@ -570,9 +567,16 @@ A continuación se presenta el resultado de la estimación del modelo en forma d
 \end{landscape}
 
 
-Se puede apreciar como en la columna "Total" los valores se mantienen con respecto a la tabulación de los datos originales (salvo pequeñas variaciones producto del redondeo). En tanto en la fila "Total" los valores son totalmente diferentes. Esto evidencia la restricción que caracteriza el modelo, ya que se toman los valores conocidos en origen como limitante. Se puede expresar de la siguiente forma:
+Se puede apreciar como en la columna "Total" los valores se mantienen con respecto a la tabulación de los datos originales (salvo pequeñas variaciones producto del redondeo). En tanto en la fila "Total" los valores son totalmente diferentes. Esto evidencia la restricción que caracteriza el modelo, ya que se toman los valores conocidos en origen como limitante.
+
+Se puede expresar de la siguiente forma:
 
 $$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
+
+y
+
+$$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} \neq D_{j}$$
+
 
 El modelo presenta los siguientes valores de bondad de ajuste:
 
@@ -583,7 +587,7 @@ RMSE = 322,3049
 
 ### Modelo de interacción espacial de doble restricción
 
-A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior.
+A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, sino que tiene que ser relativas a ambos [@dennett2018].
 
 
 5 $$T_{ij} = A_{i}O_{i}B_{i}D_{j}d_{ij}^{-\beta }$$
@@ -601,32 +605,38 @@ dónde
 
 La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
 
+A continuación se presentan los resultados de correr el modelo:
+
 
 \input{tablas/doubSim.tex}
 
-<!---
-De los resultados se desprende un parámetro $\alpha$ relacionado a la actractividad del destino con un valor de 0,8196.
+De los resultados se desprende un parámetro $\alpha$ relacionado a la actractividad del destino con un valor de 0,8490.
 
-El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7130. El coeficiente para cada origen  es el valor registrado $A_{i}O_{i}$ para ese origen.
+El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7130. 
 
+El coeficiente para cada origen o destino es el valor registrado $A_{i}O_{i}$ para ese origen o destino.
 
-MEJORAR ESTO!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-valor menor a 0,05: Durazno, Río Negro, Rocha y Treinta y Tres (no podemos rechazar la hipótesis nula).
-
--->
+A continuación de presenta la matriz de origen destino con los valores estimados a partir de los coeficientes calculados anteriormente.
 
 \newpage
 \begin{landscape}
 \input{tablas/doubsim_matriz_orig_dest.tex}
 \end{landscape}
 
-COmparando la matriz de valores estimados mediante el modelo de restricción doble con la matriz de datos relevado en el censo se puede ver como los valores totales de origen y destino $O_{i}$ y $D_{j}$ se mantienen prácticamente iguales, con algunas diferencias producto del redondeo.
+Comparando la matriz de valores estimados mediante el modelo de restricción doble con la matriz de datos relevados en el censo se puede ver como los valores totales de origen y destino $O_{i}$ y $D_{j}$ se mantienen prácticamente iguales, con algunas diferencias producto del redondeo, lo que equivale a la siguientes afirmaciones:
+
+$$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
+
+y
+
+$$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
+
 
 \newpage
 
-# Cómo seguir...
+
+
+# Cómo seguir.
 
 Con respecto al marco teórico y los antecedentes: profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación.
 
@@ -634,9 +644,16 @@ Con respecto a la metodología y resultados:
 
 - Recopilar fuentes de datos no utilizadas (principalmente censos 85 y 96)
 - Profundizar en los problemas de la aplicación de los modelos
+- Profundizar en el relevamiento bibliográfico de factores asociados a la migración interna, ya que de ese relevamiento se seleccionarán las variables a utilizar en los modelos.
+- Añadir más variables asociadas a la migración interna en el modelo
+- Explorar diferentes funciones de decaimiento por la distancia.
+- Modelar con localidades.
+- Modelar excluyendo Montevideo.
+- Analizar posibles efectos de sobredispersión en Poisson y su posible mejora usando un modelos de regresión binomial negativa.
 
 
 \newpage
+
 
 # Bibliografía
 
