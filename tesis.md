@@ -28,6 +28,9 @@ header-includes: |
     \captionsetup[figure]{name=Figura, labelfont=bf}
     \usepackage{pdflscape}
     \usepackage{booktabs}
+    \usepackage{numprint}
+    \npthousandsep{.}
+    \npdecimalsign{,}
 ---
 
 <div style="text-align: justify"> 
