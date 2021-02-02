@@ -90,11 +90,11 @@ A su vez, los autores identifican dos paradigmas principales en los cuales agrup
  
 - Las migraciones se aceleran en tanto el movimiento es más fácil, por ejemplo si hay medios de transporte disponibles y las infraestructuras asociadas a los mismos.
 
-- Las mujeres tienden a moverse a distancias más cortas que los hombres.
+- Las mujeres tienden a moverse a distancias más cortas que los hombres; sin embargo identifica que las mujeres migran más [@rees2019].
 
 - Las migraciones en una dirección generan una corriente migratoria opuesta.
 
-Según Joaquín Arango -@arango1985, los puntos a resaltar de los aportes de Ravenstein son: la detección empírica de algunas características del proceso migratorio, el predominio del móvil económico, el uso implícito del marco *“push-pull”* y la preferencia otorgada a los factores de atracción (*“pull”*). En cuanto a las omisiones, Arango menciona la ausencia de un referencia a los mecanismos que inician los procesos migratorios (es decir cómo se desencadenan en un primera instancia), la existencia de obstáculos u oportunidades intermedias entre *push* y *pull*, la regionalidad e historicidad de las migraciones y su carácter selectivo. Para el presente trabajo es interesante destacar como Ravenstein ya vislumbraba la incidencia de la distancia como factor de estímulo/desestímulo de los procesos migratorios.
+Según Joaquín Arango -@arango1985, los puntos a resaltar de los aportes de Ravenstein son: la detección empírica de algunas características del proceso migratorio, el predominio del móvil económico, el uso implícito del marco *“push-pull”* y la preferencia otorgada a los factores de atracción (*“pull”*). En cuanto a las omisiones, Arango menciona la ausencia de un referencia a los mecanismos que inician los procesos migratorios (es decir cómo se desencadenan en un primera instancia), la existencia de obstáculos u oportunidades intermedias entre *push* y *pull*, la regionalidad e historicidad de las migraciones y su carácter selectivo. Para el presente trabajo es interesante destacar como Ravenstein ya vislumbraba la incidencia de la distancia como factor de estímulo/desestímulo de los procesos migratorios, anticipandose a los futuros modelos gravitatorios [@rees2019].
 
 
 ###  Teorías dentro del paradigma funcionalista
