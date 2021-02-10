@@ -1,2 +1,2 @@
 # tesis
-Repositorio privado, tesis de maestría de Guillermo D'Angelo.
+Repositorio tesis de maestría de Guillermo D'Angelo.
