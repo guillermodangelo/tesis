@@ -341,7 +341,7 @@ En el mismo sentido, se puede representar en forma gráfica la estructura de la 
 - Quienes emigraron entre departamentos (excluyendo Montevideo).
 - Quienes emigraron desde Montevideo hacía otros departamentos.
 
-Mediante pirámides de población se puede dar cuenta de las diferentes estructuras que dichas poblaciones presentan. En primer lugar el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
+Mediante pirámides de población se puede dar cuenta de las diferentes estructuras que dichas poblaciones presentan. En primer lugar el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas de quienes migran desde Montevideo, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
 ![Pirámides de población de migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
 
@@ -475,15 +475,38 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
-La base de personas del censo [@ine2011d] se filtra según el siguiente criterio:
+
+Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno.
+
+Según la información disponible en Censo INE [@ine2011d], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores: 
 
 - Lugar de residencia 5 años antes (variable "PERMI07") con valores:
     - "2" (en otra localidad o paraje de este departamento)
     - "3" (en otro departamento)
-    
-Se excluyen habitantes de localidades rurales.
+  
+############################################################################################################################################################################################################################################################################################################################
 
-La tabla resultante contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal.
+Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas sin localidad INE asignada. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia de abordaje. EN segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
+
+############################################################################################################################################################################################################################################################################################################################
+
+
+### El perfil de la migración interna
+
+En el apartado 2.4, referido a los antecedentes del estudio de la migración interna en Uruguay, ya se puntualizaban algunas características de la población migrante interna:
+
+- el perfil más joven y feminizado de quienes migran hacia Montevideo.
+
+- el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, de quienes migran desde Montevideo.
+
+
+
+
+###############################################################################
+
+
+
+Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal.
 
 
 |Cod. dpto. origen |Cod. dpto. destino |Pers. Migrantes |
