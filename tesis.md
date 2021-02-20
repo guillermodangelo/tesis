@@ -343,7 +343,7 @@ En el mismo sentido, se puede representar en forma gráfica la estructura de la 
 
 Mediante pirámides de población se puede dar cuenta de las diferentes estructuras que dichas poblaciones presentan. En primer lugar el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
-![Pirámide de población de  migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
+![Pirámides de población de migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
 
 
 [^1]: Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
@@ -371,7 +371,7 @@ Objetivo general
 
 Objetivos específicos
 
-- Describir las migraciones internas en Uruguay según los censos 1985, 1996 y 2011.
+- Describir las migraciones internas en Uruguay en función de variables demográficas específicas: sexo, edad y nivel educativo.
 
 - Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
 
@@ -380,7 +380,6 @@ Objetivos específicos
 - Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
 
 - Discutir la pertinencia de factores asociados a las migraciones internas.
-
 
 
 
