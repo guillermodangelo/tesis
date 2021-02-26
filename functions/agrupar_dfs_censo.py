@@ -1,0 +1,58 @@
+def agrupar_por_tramos(df, col_tramo, col_edad, col_sexo):
+    """
+    Esta función agrupa por tramos, edad y sexo
+    un pandas dataframe con datos del Censo 2011
+    para ser usado para graficar pirámides de población
+    """
+    import pandas as pd
+    import numpy as np
+    
+    # genera lista con cortes, para reclasificar el dataframe
+    bins = [0 if i==-1 else i for i in range(-1,95,5)]
+
+    # etiquetas con los tramos de edad usuales en pirámides de población
+    labels = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49',
+             '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80-84', '85-89', '90-94', '+95']
+
+    # calcula tramos de edad
+    df[col_tramo] = pd.cut(df[col_edad], bins= bins, include_lowest=False, labels=labels[:19])
+    df[col_tramo] = np.where(df[col_edad] > 94 , labels[-1], df[col_tramo])
+    df[col_tramo] = np.where(df[col_edad] == 0 ,  labels[0], df[col_tramo])
+
+    # agrupa
+    df_group = df.groupby([col_sexo, col_tramo]).size().reset_index()
+    
+    # renombra vars
+    df_group.rename(columns={col_sexo: 'sexo', 0:'personas'}, inplace=True)
+    
+    # calcula porcentajes
+    df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
+    
+    # pasa varones a negativo para grafica a la izquierda del eje central
+    df_group.loc[df_group.sexo == 1, 'personas'] = -df_group['personas']
+    df_group.loc[df_group.sexo == 1, 'porc_pers'] = -df_group['porc_pers']
+    
+    # genera etiqueta del sexo
+    df_group['sexo_label'] = np.where(df_group['sexo'] ==1, 'varones', 'mujeres')
+    
+    return df_group
+
+
+def agrupar_por_edades(df, col_edad):
+    "Agrupa edades para graficar"
+    
+    import pandas as pd
+    import numpy as np
+    
+    # agrupa
+    df_group = df.groupby([col_edad]).size().reset_index()
+    # renombra vars
+    df_group.rename(columns={col_edad: 'edad', 0:'personas'}, inplace=True)
+    # calcula porcentajes
+    df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
+    # genera vectores de edades del 0 asl 111, para pegar   
+    col_pegue = pd.DataFrame(np.arange(0, 112), columns=['edad'])
+    # pega con edades
+    df_group_pegue = col_pegue.merge(df_group, how='left', on='edad')
+    
+    return df_group_pegue
