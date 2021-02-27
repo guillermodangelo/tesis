@@ -91,5 +91,18 @@ def grupos_de_edad(df, col_edad):
     df_group.rename(columns={0:'personas'}, inplace=True)
     # calcula porcentajes
     df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
-        
-    return df_group.porc_pers.values.tolist()
+    # enlista resultados
+    lista_valores = df_group.porc_pers.values.tolist()
+    
+    # chequea que todos lo tramos de edad tengan valor, o pone 0 en la lista
+    if sum(df.grupo_edad==1) == 0:
+        lista_valores.insert(0, 0)
+    if sum(df.grupo_edad==2) == 0:
+        lista_valores.insert(1, 0)
+    if sum(df.grupo_edad==3) == 0:
+        lista_valores.insert(2, 0)
+    if sum(df.grupo_edad==4) == 0:
+        lista_valores.insert(3, 0)
+    
+    return lista_valores
+
