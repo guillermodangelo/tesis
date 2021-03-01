@@ -1,3 +1,14 @@
+def cargar_censo():
+    "Carga datos del Censo INE 2011"
+    import pandas as pd
+    import numpy as np    
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"')
+    # reemplaza el valor 5555 en edad (variable PERNA01) por NaNs
+    censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
+
+    return censo
+
 def cargar_data_eda():
     "Carga datos a ser usados en el EDA"
     import pandas as pd

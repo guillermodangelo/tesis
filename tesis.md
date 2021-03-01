@@ -42,7 +42,46 @@ header-includes: |
 Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en el sentido que otorga especial relevancia al componente espacial de los fenómenos [@puyol1995].
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. Las migraciones se ven influidas por el espacio geográfico, por ejemplo generándose migraciones más intensas entre localidades cercanas, y en ese proceso también modifican y (re)construyen el espacio.
 
+
 \newpage
+
+
+# Planteo del problema y pregunta de investigación
+
+
+Tal cual se mencionó anteriormente, el estudio de las migraciones internas es pertinente para la Demografía en tanto la migración es uno de los factores del cambio demográfico. Asumiendo el componente espacial que implican los movimientos de población, el abordaje con técnicas de la geografía humana se considera adecuado.
+
+La pregunta general que guiará este trabajo de investigación es la siguiente: ¿cuál será la magnitud de la migración interna en Uruguay entre 2012 y el horizonte 2025?
+
+
+
+## Objetivos
+
+Objetivo general
+
+- Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial con base en los censos de 1996 y 2011.
+
+Objetivos específicos
+
+- Describir las migraciones internas en Uruguay en función de variables demográficas específicas: sexo, edad y nivel educativo.
+
+- Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
+
+- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
+
+- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
+
+- Discutir la pertinencia de factores asociados a las migraciones internas.
+
+
+
+Desde esta perspectiva, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial. En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. Sin embargo, existen varios antecedentes de la aplicación de la metodología al tema migraciones en otros países, por lo cual consideramos viable usar la metodología para el estudio de las migraciones internas del Uruguay y la simulación de escenarios posibles. El interés por las simulaciones y la aplicación de los modelos de interacción espacial no remite exclusivamente a un interés metodológico sino también en valor para, por ejemplo, orientar políticas de desarrollo urbano y ordenamiento territorial.
+
+[^3]: Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
+
+
+\newpage
+
 
 # Marco teórico y antecedentes
 
@@ -307,13 +346,13 @@ Teniendo los aportes de Wilson como basamento, los modelos de interacción espac
 ## Antecedentes del estudio de la migración interna en Uruguay
 
 
-Los primeros antecedentes se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008], estableciendo una asociación entre la producción agrícola intensiva, las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas y el desarrollo de “ciudades primadas” [@macadar2008].
+Los primeros antecedentes se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008], estableciendo una asociación entre la producción agrícola intensiva, las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas y el desarrollo de “ciudades primadas”, es decir ciudades concentradoras de población y recursos económicos por oposición a un medio rural poco poblado y poco dinámico económicamente [@macadar2008].
 
-Las fuentes cuantitativas principales para el estudio de la migración interna en Uruguay son los censos (1963, 1975, 1985, 1996 y 2011).
+Las principales fuentes cuantitativas para el estudio de la migración interna en Uruguay son los censos de población, que en la segunda mitad del siglo XX fueron ejecutados en 1963, 1975, 1985, 1996 y 2011.
 
 En línea generales, Montevideo presenta una tendencia al estancamiento en el crecimiento de su población desde el año 1963 [@bengochea2011] y una pérdida de población desde el 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa así como la emigración internacional, dado que gran parte de los emigrantes internacionales residían en Montevideo [@koolhaas2013; @bengochea2011].
 
-A partir de los datos del Censo de 1985 se constata una reducción del atractivo de la zona litoral, suroeste y de Montevideo, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen y destino al departamento de Montevideo [@calvo1995].
+A partir de los datos del Censo de 1985 se constata una **reducción del atractivo de la zona litoral, suroeste y de Montevideo**, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen y destino al departamento de Montevideo [@calvo1995].
 
 El censo de 1996 permite identificar un aumento importante de la población en la costa del departamento de Canelones junto con el ya mencionado decrecimiento poblacional en Montevideo [@bengochea2011; @pellegrino2009]. A su vez se identifica un saldo migratorio negativo de los departamentos de la frontera noreste para con Montevideo, revirtiéndose el fenómeno que aconteció durante la década de los 80s [@macadar2008] y emerge el departamento de Maldonado como atractor de migración interna [@bengochea2011].
 
@@ -329,21 +368,11 @@ Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, C
 
 Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d).
 
-Atendiendo a la pirámide de población del Uruguay a partir de los datos del censo 2011 y su comparación con la pirámide de los migrantes recientes (quienes declararon que 5 años atrás vivían en otra localidad) se puede comprobar que la migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. A su vez se evidencia que la migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
+La migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. La migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
 
 La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
-![Pirámide de población Censo INE 2011 y pirámide de migrantes recientes (en colores), ambas expresadas como porcentajes de su total.](mapas_graficas/piramide_mig.pdf)
-
-En el mismo sentido, se puede representar en forma gráfica la estructura de la población de los migrantes recientes, desagregándolos según los siguientes orígenes y destinos:
-
-- Quienes que emigraron desde otros departamentos hacia Montevideo.
-- Quienes emigraron entre departamentos (excluyendo Montevideo).
-- Quienes emigraron desde Montevideo hacía otros departamentos.
-
-Mediante pirámides de población se puede dar cuenta de las diferentes estructuras que dichas poblaciones presentan. En primer lugar el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas de quienes migran desde Montevideo, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
-
-![Pirámides de población de migrantes recientes hacia Montevideo, entre otros departamentos o desde Montevideo, expresadas como porcentajes de su total.](mapas_graficas/piramides_mig_recientes.pdf)
+También se ha identificados el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas de quienes migran desde Montevideo, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
 
 [^1]: Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
@@ -354,38 +383,42 @@ Mediante pirámides de población se puede dar cuenta de las diferentes estructu
 \newpage
 
 
-# Planteo del problema y pregunta de investigación
+
+# Análisis exploratorio de datos
+
+A continuación se presenta un análisis exploratorio de datos, como continuidad al relevamiento de antecedentes planteado en el apartado anterior.
+
+La primera definición será identificar el grupo de migrantes internos recientes en los microdatos del Censo INE 2011. En vistas de la simplicidad, se prefirió reducir este grupo a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia anterior.
+
+El total de migrantes internos, según la definición anterior, es de 148.759
+personas.
+
+<!---
+########################################
+# Ver si acá hay que citar a Bengochea #
+########################################
+-->
+
+Podemos dividir este grupo en tres categorías de migrantes internos, siguiendo a **¿¿¿Bengochea???**
+
+- Con origen en el interior del país pero residentes el Montevideo: 42.444 personas
+
+- Migrantes con origen en Montevideo pero residentes en el Interior: 58.655 personas
+
+- Con origen y residencia en el Interior, pero en departamentos distintos: 47.660 personas
 
 
-Tal cual se mencionó anteriormente, el estudio de las migraciones internas es pertinente para la Demografía en tanto la migración es uno de los factores del cambio demográfico. Asumiendo el componente espacial que implican los movimientos de población, el abordaje con técnicas de la geografía humana se considera adecuado.
+El índice de masculinidad para migrantes recientes hacia Montevideo es de 80 hombres por cada 100 mujeres, para migrantes desde Montevideo hacia el interior es de 92.4 en tanto que para migrantes entre departamentos del interior es de 102.2 hombres por cada 100 mujeres.
 
-La pregunta general que guiará este trabajo de investigación es la siguiente: ¿cuál será la magnitud de la migración interna en Uruguay entre 2012 y el horizonte 2025?
-
-
-
-## Objetivos
-
-Objetivo general
-
-- Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial con base en los censos de 1996 y 2011.
-
-Objetivos específicos
-
-- Describir las migraciones internas en Uruguay en función de variables demográficas específicas: sexo, edad y nivel educativo.
-
-- Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
-
-- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
-
-- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
-
-- Discutir la pertinencia de factores asociados a las migraciones internas.
+El índice de masculinidad para el total de la población es de 92.3 hombres por cada 100 mujeres.
 
 
 
-Desde esta perspectiva, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial. En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. Sin embargo, existen varios antecedentes de la aplicación de la metodología al tema migraciones en otros países, por lo cual consideramos viable usar la metodología para el estudio de las migraciones internas del Uruguay y la simulación de escenarios posibles. El interés por las simulaciones y la aplicación de los modelos de interacción espacial no remite exclusivamente a un interés metodológico sino también en valor para, por ejemplo, orientar políticas de desarrollo urbano y ordenamiento territorial.
+![Índice de masculinidad para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
-[^3]: Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
+
+
+
 
 \newpage
 
