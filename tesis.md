@@ -401,11 +401,13 @@ personas.
 
 Podemos dividir este grupo en tres categorías de migrantes internos, siguiendo a **¿¿¿Bengochea???**
 
-- Con origen en el interior del país pero residentes el Montevideo: 42.444 personas
+que denominaremos grupo 1, 2 y 3 a lo largo del presente análisis:
 
-- Migrantes con origen en Montevideo pero residentes en el Interior: 58.655 personas
+- Grupo 1: 42.444 personas con origen en el interior del país pero residentes el Montevideo.
 
-- Con origen y residencia en el Interior, pero en departamentos distintos: 47.660 personas
+- Grupo 2: 58.655 personas migrantes con origen en Montevideo pero residentes en el Interior. 
+
+- Grupo 3: 47.660 personas con origen y residencia en el Interior, pero en departamentos distintos.
 
 
 El índice de masculinidad para migrantes recientes hacia Montevideo es de 80 hombres por cada 100 mujeres, para migrantes desde Montevideo hacia el interior es de 92.4 en tanto que para migrantes entre departamentos del interior es de 102.2 hombres por cada 100 mujeres.
@@ -414,11 +416,15 @@ El índice de masculinidad para el total de la población es de 92.3 hombres por
 
 
 
-![Índice de masculinidad para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
+![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
+Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, es decir a mujeres que migran temporalmente a Montevideo en su juventud para cursar estudios univeristarios, dado que la oferta de formación se concentra el Montevideo. Por la oposición, el grupo 3 presente una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
+Los mismos datos se ven reflejados en la gráfica de la distribución por sexo.
 
+![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf)
 
+En lo que refiere a la composición por edades...
 
 \newpage
 
