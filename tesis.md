@@ -415,37 +415,48 @@ El índice de masculinidad para migrantes recientes hacia Montevideo es de 80 ho
 El índice de masculinidad para el total de la población es de 92.3 hombres por cada 100 mujeres.
 
 
-
 ![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
-Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, es decir a mujeres que migran temporalmente a Montevideo en su juventud para cursar estudios univeristarios, dado que la oferta de formación se concentra el Montevideo. Por la oposición, el grupo 3 presente una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
-Los mismos datos se ven reflejados en la gráfica de la distribución por sexo.
+Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, lo cual se analizará más adelante. Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
+
+La gráfica de la distribución por sexo coincide con las apreciaciones anteriores.
 
 ![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf)
 
-En lo que refiere a la composición por edades, la edades medianas, para cada grupo son de 23, 32 y 28 años respectivamente, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo uno que es considerablemente más joven que el total de la población.
+Atendiendo a la composición por edades, la **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo uno que es considerablemente más joven que el total de la población.
+
 
 ![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf)
 
-La distribución por grupos de edades evidencia dicha estructura por edades, con mayor concentración de la población en el tramos de las personas económicamente activas en los grupos migrantes, siendo el grupo 1 en el cual esta población tiene mayor presencia.
+
+La distribución por grupos de edades evidencia dicha estructura, con mayor concentración de la población en el tramo de las personas económicamente activas en los grupos migrantes, siendo el grupo 1 en el cual esta población tiene mayor presencia.
+
 
 ![Distribución por grupos de edades.](mapas_graficas/eda_004_dist_grupos_edad.pdf)
 
-La gráfica de líneas de la distribución por edades brinda un poco más de detalle sobre la conformación de los grupos en cuanto a la variable edad. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
+
+La gráfica de líneas de la distribución por edades brinda un poco más de detalle sobre la conformación estructura de los grupos. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la edad característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
 Los grupos 2 y 3 también están conformados por niños y jóvenes, por oposición al grupo 1; pero el grupo 2 presenta mayor proporción de niños y menor de jóvenes, lo cual estaría indicando que refiere a hogares de parejas en el tramo 25-35 años, con niños.
+
 
 ![Distribución de edades.](mapas_graficas/eda_006_distribucion_edades.pdf)
 
-Estos indicadores se pueden integrar en pirámides de población, que dan cuenta en forma de la estructura de la población en forma más abarcativa.
-La pirámide de los migrantes internos, como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más femenizada, sobre todo en los tramos de edad entre 15 y 34 años.
+
+Estos indicadores se pueden integrar en pirámides de población, que dan cuenta en forma de la estructura de la población en forma más abarcadora.
+La pirámide de los migrantes internos, como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
 
 
 ![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
 
 
+Las pirámides de población pueden brindar información sobre la composición por edad y por sexo en forma más integral.
 
 
+![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
+
+
+Otro factor de interés es el nivel educativo de la población migrante interna.
 
 
 \newpage
