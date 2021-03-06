@@ -456,7 +456,23 @@ Las pirámides de población pueden brindar información sobre la composición p
 ![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
 
 
-Otro factor de interés es el nivel educativo de la población migrante interna.
+Otro factor de interés es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 destaca por quienes declaran asistir tanto a centro públicos como privados.
+
+
+![Asistencia a centros educativos](mapas_graficas/eda_007_asistencia_educacion.pdf)
+
+
+El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios.
+
+
+![Nivel educativo actual](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
+
+
+En cuanto al nivel educativo más alta alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución similar.
+
+
+![Máximo nivel educativo alcanzado](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
+
 
 
 \newpage
