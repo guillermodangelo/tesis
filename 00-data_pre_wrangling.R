@@ -27,7 +27,10 @@ vars <- c('DPTO',
           'LOC',
           'SECC',
           'SEGM',
+          'HOGID',
           'PERPH02',
+          'PERPA01',
+          'PERER02',
           'PERNA01',
           'PERNA02',
           'PERMI01',
@@ -68,14 +71,18 @@ vars <- c('DPTO',
 
 
 p_filter <- p[vars]
+
 save(p_filter, file="personas_censo_migrac.RData")
 
-rm(p)
 gc()
 
-# guarda como CSV
+# guarda como GZIP
 write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
 
-write.csv(p_filter, file='personas_censo_2011.csv', row.names=F)
+setwd("/home/guillermo/Documentos/GitHub/tesis/tablas")
+
+write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
+
+#write.csv(p_filter, file='personas_censo_2011.csv', row.names=F)
 
 
