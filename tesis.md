@@ -386,9 +386,13 @@ También se ha identificados el perfil más joven y feminizado de quienes migran
 
 # Análisis exploratorio de datos
 
-A continuación se presenta un análisis exploratorio de datos, como continuidad al relevamiento de antecedentes planteado en el apartado anterior.
+En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presente un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica, desde la perspectiva de la demografía.
 
-La primera definición será identificar el grupo de migrantes internos recientes en los microdatos del Censo INE 2011. En vistas de la simplicidad, se prefirió reducir este grupo a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia anterior.
+En primer lugar se procede a operacionalizar el concepto de "migrante interno", según las opciones que presenta el Censo INE 2011. Una primera distinción podría ser entre los "migrantes absolutos", es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y po otro lado los "migrantes recientes". Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría "migrante reciente" como unidad de análisis.
+
+Una opción para operacionalizar dicha categoría a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia anterior.
+
+
 
 El total de migrantes internos, según la definición anterior, es de 148.759
 personas.

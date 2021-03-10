@@ -24,6 +24,33 @@ def cargar_censo():
     return censo
 
 
+def cargar_censo_muestra(muestra, variables):
+    "Carga muestra datos del Censo INE 2011"
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
+    # reemplaza el valor 5555 en edad (variable PERNA01) por NaNs
+    censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
+
+    return censo.sample(muestra).reset_index(drop=True)
+
+
+def cargar_censo_vars(variables):
+    "Carga datos del Censo INE 2011"
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
+    return censo
+
+def cargar_censo_nrows(nrows):
+    "Carga muestra datos del Censo INE 2011"
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', nrows=nrows)
+    # reemplaza el valor 5555 en edad (variable PERNA01) por NaNs
+    censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
+
+    return censo
+
+
+
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     # PBI departamental
