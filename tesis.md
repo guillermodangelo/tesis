@@ -392,9 +392,9 @@ En primer lugar se procede a operacionalizar el concepto de "migrante interno", 
 
 Una opción para operacionalizar dicha categoría a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia anterior.
 
+#### AGREGA MAPA DE MIGRANTES RECIENTES POR DEPTO
 
-
-El total de migrantes internos, según la definición anterior, es de 148.759
+El total de migrantes internos, según la definición tomadas, es de 148.759
 personas.
 
 <!---
@@ -422,13 +422,13 @@ El índice de masculinidad para el total de la población es de 92.3 hombres por
 ![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
 
-Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, lo cual se analizará más adelante. Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
+Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por su femenización [@bengochea2011]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
 La gráfica de la distribución por sexo coincide con las apreciaciones anteriores.
 
 ![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf)
 
-Atendiendo a la composición por edades, la **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo uno que es considerablemente más joven que el total de la población.
+Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población.
 
 
 ![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf)
