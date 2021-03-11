@@ -390,16 +390,19 @@ En continuidad con la revisión de antecedentes sobre el estudio de la migració
 
 En primer lugar se procede a operacionalizar el concepto de "migrante interno", según las opciones que presenta el Censo INE 2011. Una primera distinción podría ser entre los "migrantes absolutos", es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y po otro lado los "migrantes recientes". Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría "migrante reciente" como unidad de análisis.
 
-Una opción para operacionalizar dicha categoría a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia anterior.
+Una opción para operacionalizar dicha categoría a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
 
-#### AGREGA MAPA DE MIGRANTES RECIENTES POR DEPTO
+El total de migrantes internos según la definición tomada, es de 148.759
+personas, distrubidas en los diferentes departamentos, según se expresa en el siguiente mapa.
 
-El total de migrantes internos, según la definición tomadas, es de 148.759
-personas.
+![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf)
+
+El rol de Montevideo como receptor se puede vincular a la historica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general.
+
 
 <!---
 ########################################
-# Ver si acá hay que citar a Bengochea #
+# Ver si acá hay que citar a Bengochea # leer trabajo de OIM 2009
 ########################################
 -->
 
@@ -422,7 +425,7 @@ El índice de masculinidad para el total de la población es de 92.3 hombres por
 ![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
 
-Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por su femenización [@bengochea2011]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
+Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza ser feminizada [@bengochea2011]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
 La gráfica de la distribución por sexo coincide con las apreciaciones anteriores.
 
