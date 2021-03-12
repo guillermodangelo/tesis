@@ -31,6 +31,14 @@ header-includes: |
     \usepackage{numprint}
     \npthousandsep{.}
     \npdecimalsign{,}
+    \usepackage{float}
+    \let\origfigure\figure
+    \let\endorigfigure\endfigure
+    \renewenvironment{figure}[1][2] {
+        \expandafter\origfigure\expandafter[H]
+    } {
+        \endorigfigure
+    }
 ---
 
 <div style="text-align: justify"> 
@@ -386,35 +394,27 @@ También se ha identificados el perfil más joven y feminizado de quienes migran
 
 # Análisis exploratorio de datos
 
-En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presente un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica, desde la perspectiva de la demografía.
+En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica, con un enfoque demográfico.
 
-En primer lugar se procede a operacionalizar el concepto de "migrante interno", según las opciones que presenta el Censo INE 2011. Una primera distinción podría ser entre los "migrantes absolutos", es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y po otro lado los "migrantes recientes". Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría "migrante reciente" como unidad de análisis.
+En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011. En primer lugar podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
 
-Una opción para operacionalizar dicha categoría a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
+El censo INE 2011 permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
 
 El total de migrantes internos según la definición tomada, es de 148.759
 personas, distrubidas en los diferentes departamentos, según se expresa en el siguiente mapa.
 
 ![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf)
 
-El rol de Montevideo como receptor se puede vincular a la historica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general.
+El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de la mancha urbana que conforma la ciudad de Montevideo hacia el este, en la zona de la Ciudad de la Costa, como suburbanización.
+Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son quienes lideran. Lo mencionado para los valores absolutos en el caso de Canelones también aplica e los valores porcentuales. En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.
 
+El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2011], que para el presente análisis denominaremos grupo 1, 2 y 3:
 
-<!---
-########################################
-# Ver si acá hay que citar a Bengochea # leer trabajo de OIM 2009
-########################################
--->
+- **Grupo 1**: 42.444 personas con origen en el interior del país pero residentes el Montevideo.
 
-Podemos dividir este grupo en tres categorías de migrantes internos, siguiendo a **¿¿¿Bengochea???**
+- **Grupo 2**: 58.655 personas migrantes con origen en Montevideo pero residentes en el Interior del país.
 
-que denominaremos grupo 1, 2 y 3 a lo largo del presente análisis:
-
-- Grupo 1: 42.444 personas con origen en el interior del país pero residentes el Montevideo.
-
-- Grupo 2: 58.655 personas migrantes con origen en Montevideo pero residentes en el Interior. 
-
-- Grupo 3: 47.660 personas con origen y residencia en el Interior, pero en departamentos distintos.
+- **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
 
 
 El índice de masculinidad para migrantes recientes hacia Montevideo es de 80 hombres por cada 100 mujeres, para migrantes desde Montevideo hacia el interior es de 92.4 en tanto que para migrantes entre departamentos del interior es de 102.2 hombres por cada 100 mujeres.
@@ -425,7 +425,7 @@ El índice de masculinidad para el total de la población es de 92.3 hombres por
 ![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
 
 
-Los valores de la gráfica nos indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza ser feminizada [@bengochea2011]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
+Los valores mencionados indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por ser feminizada [@bengochea2011; @universidaddelarepublica2013]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
 La gráfica de la distribución por sexo coincide con las apreciaciones anteriores.
 
@@ -457,13 +457,13 @@ La pirámide de los migrantes internos, como es de esperar, concentra población
 ![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
 
 
-Las pirámides de población pueden brindar información sobre la composición por edad y por sexo en forma más integral.
+Las pirámides de población pueden brindar información sobre la composición por edad y por sexo en forma más integral. En este caso, comparando las pirámides de los grupos 1, 2 y 3, se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
 
 
 ![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
 
 
-Otro factor de interés es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 destaca por quienes declaran asistir tanto a centro públicos como privados.
+Otro factor de interés es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados.
 
 
 ![Asistencia a centros educativos](mapas_graficas/eda_007_asistencia_educacion.pdf)
@@ -488,7 +488,7 @@ En cuanto al nivel educativo más alta alcanzado, se puede apreciar que los grup
 # Estrategia metodológica y fuentes de información
 
 
-La principal fuente de información para el presente trabajo serán los censos 1985, 1996 y 2011 realizados por el Instituto Nacional de Estadística (INE).
+La principal fuente de información para el presente trabajo serán los censos 1996 y 2011 realizados por el Instituto Nacional de Estadística (INE).
 En particular los censos 1996 y 2011 incorporaron algunas preguntas que serán pertinentes al presente trabajo y se presentan en el siguiente cuadro.
 
 | Preguntas en censo 1996 | Preguntas en censo 2011 |
@@ -504,9 +504,6 @@ En particular los censos 1996 y 2011 incorporaron algunas preguntas que serán p
 Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
 
 
-Esta preguntas permiten distinguir dos tipos de flujos: migración absoluta y migración reciente [@macadar2008]. La migración absoluta refiere a la migración desde el lugar de nacimiento, en tanto que la reciente refiere al lugar de residencia 5 años antes [@macadar2008].
-
-Se explorará la posibilidad de juntar micro-datos de varias Encuestas Continua de Hogares, que permitan una actualización de los datos a nivel departamental.
 
 Con respecto a los datos geográficos, se utilizarán dos insumos básicos: la capa de departamentos y la de localidades del INE. Los departamentos son unidades geoestadística y político-administrativas de segundo nivel de gobierno, la localidades son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
 

@@ -1,12 +1,12 @@
+import pandas as pd
+import numpy as np
+    
 def agrupar_por_tramos(df, col_tramo, col_edad, col_sexo):
     """
     Esta función agrupa por tramos, edad y sexo
     un pandas dataframe con datos del Censo 2011
     para ser usado para graficar pirámides de población
-    """
-    import pandas as pd
-    import numpy as np
-    
+    """  
     # genera lista con cortes, para reclasificar el dataframe
     bins = [0 if i==-1 else i for i in range(-1,95,5)]
 
@@ -40,10 +40,6 @@ def agrupar_por_tramos(df, col_tramo, col_edad, col_sexo):
 
 def agrupar_por_edades(df, col_edad):
     "Agrupa edades para graficar"
-    
-    import pandas as pd
-    import numpy as np
-    
     # agrupa
     df_group = df.groupby([col_edad]).size().reset_index()
     # renombra vars
@@ -61,8 +57,6 @@ def agrupar_por_edades(df, col_edad):
 
 def grupos_de_edad(df, col_edad):
     "Calcula porcentaje de personas por grupos de edad: 0 a 3, 4 a 17, 18 a 64 y >64 "
-    import pandas as pd
-    import numpy as np
     df.loc[df[col_edad].between(0,   3),  'grupo_edad'] = 1
     df.loc[df[col_edad].between(4, 17),  'grupo_edad'] = 2
     df.loc[df[col_edad].between(18, 64),  'grupo_edad'] = 3
@@ -89,10 +83,40 @@ def grupos_de_edad(df, col_edad):
     return lista_valores
 
 
+def grupos_de_edad_mig(df, col_edad):
+    "Calcula porcentaje de personas por grupos de edad:"
+
+    df.loc[df[col_edad].between(0,   4),  'grupo_edad'] = 1
+    df.loc[df[col_edad].between(5, 14),  'grupo_edad'] = 2
+    df.loc[df[col_edad].between(15, 34),  'grupo_edad'] = 3
+    df.loc[df[col_edad].between(35, 64),  'grupo_edad'] = 4
+    df.loc[df[col_edad] > 64,  'grupo_edad'] = 5
+    df_group = df.groupby(['grupo_edad']).size().reset_index()
+    
+    # renombra vars
+    df_group.rename(columns={0:'personas'}, inplace=True)
+    # calcula porcentajes
+    df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
+    # enlista resultados
+    lista_valores = df_group.porc_pers.values.tolist()
+    
+    # chequea que todos lo tramos de edad tengan valor, sino pone 0 en la lista
+    if sum(df.grupo_edad==1) == 0:
+        lista_valores.insert(0, 0)
+    if sum(df.grupo_edad==2) == 0:
+        lista_valores.insert(1, 0)
+    if sum(df.grupo_edad==3) == 0:
+        lista_valores.insert(2, 0)
+    if sum(df.grupo_edad==4) == 0:
+        lista_valores.insert(3, 0)
+    if sum(df.grupo_edad==5) == 0:
+        lista_valores.insert(4, 0)
+    
+    return lista_valores
+
+
 def grupos_de_dependencia(df, col_edad):
     "Calcula porcentaje de personas por grupos de edad: 0 a 14, 15 a 64 y >64 "
-    import pandas as pd
-    import numpy as np
     df.loc[df[col_edad].between(0,   14),  'grupo_edad'] = 1
     df.loc[df[col_edad].between(15, 64),  'grupo_edad'] = 2
     df.loc[df[col_edad] > 64,  'grupo_edad'] = 3
