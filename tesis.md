@@ -414,7 +414,7 @@ personas, distribuidas en los diferentes departamentos.
 
 ![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
 
-El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, en la zona de la Ciudad de la Costa, como proceso de suburbanización [@hernandez1999; @folgar2005; @dangelo2016].
+El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, en la zona de la Ciudad de la Costa, como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
 
 Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.** 
 
@@ -443,12 +443,11 @@ El índice de masculinidad para el grupo 1 es de 80 hombres por cada 100 mujeres
 
 Los valores mencionados indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por ser feminizada [@bengochea2011; @universidaddelarepublica2013]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
-La gráfica de la distribución por sexo, presentada en la figura \ref{porcentaje_sexo}, coincide con las apreciaciones anteriores.
+La\ [@fig:porcen_sexo] ilustra la distribución por sexo dentro de los grupos, coincidiendo con las apreciaciones anteriores.
 
-![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.\label{porcentaje_sexo}](mapas_graficas/eda_002_porcentaje_sexo.pdf)
+![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf){#fig:porcen_sexo}
 
-Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población, tal cual se puede apreciar en la\ [@fig:edad_mediana]
-
+Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población.
 
 ![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf){#fig:edad_mediana}
 
@@ -468,22 +467,32 @@ Los grupos 2 y 3 también están conformados por niños y jóvenes, por oposici�
 
 
 La distribución por sexo y tramos de edad se puede integrar en pirámides de población, que dan cuenta de la estructura de la población en forma más abarcadora.
-La pirámide de los migrantes internos (figura \ref{piramide_mig}), como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
+La pirámide de los migrantes internos, como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
 
 
-![Pirámides de población del total de población y de los migrantes internos.\label{piramide_mig}](mapas_graficas/eda_011_piramide_mig.pdf)
+![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
 
 
-Comparando las pirámides de los grupos 1, 2 y 3 en la figura \ref{piramides_mig_rec}, se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
+Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec], se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
 
 
-![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.\label{piramides_mig_rec}](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
+![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf){#fig:piramides_mig_rec}
 
 
-Otro factor de interés para la caracterización es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados (figura \ref{asist_centros})
+Para profundizar en las diferencias del grupo 1 con el resto de los grupo, se analiza el promedio de personas que componen los hogares dentro de los cuales hay al menos una persona migrante.
 
 
-![Asistencia a centros educativos. \label{asist_centros}](mapas_graficas/eda_007_asistencia_educacion.pdf)
+![Promedio de personas por hogar, excluyendo hogares colectivos](mapas_graficas/eda_015_promedio_personas_hogar_sin_hogcol.pdf){#fig:prom_perso_hogar}
+
+En el mismo sentido, el porcentaje de personas migrantes internas viviendo en hogares colectivos, como ser hogares estudiantiles, es mucho mayor en el grupo 1.
+
+![Porcentaje de personas viviendo en hogares colectivos](mapas_graficas/eda_016_porcent_viviendas_colectivas.pdf){#fig:viv_colectivas}
+
+
+Otro factor de interés para la caracterización es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados.
+
+
+![Asistencia a centros educativos.](mapas_graficas/eda_007_asistencia_educacion.pdf)
 
 
 El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios (figura \ref{nivel_edu_actual}).
