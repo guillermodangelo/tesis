@@ -3,14 +3,16 @@ title: 'Modelos de interacción espacial y migración interna en Uruguay'
 author: Guillermo D'Angelo
 date: Junio 2020
 footer: true
-geometry: "a4paper, margin=2cm"
+geometry: "a4paper, margin=2.5cm"
 figureTitle: "Figura"
+tableTitle: "Tabla"
+tblPrefix: "tabla"
 numbersections: true
 toc: true
 lang: es
 mainfont: "Helvetica LT Std"
 fontsize: 12pt
-linestretch: 1
+linestretch: 1.15
 linkcolor: blue
 citecolor: grey
 output: pdf_document
@@ -85,7 +87,7 @@ Objetivos específicos
 
 Desde esta perspectiva, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial. En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. Sin embargo, existen varios antecedentes de la aplicación de la metodología al tema migraciones en otros países, por lo cual consideramos viable usar la metodología para el estudio de las migraciones internas del Uruguay y la simulación de escenarios posibles. El interés por las simulaciones y la aplicación de los modelos de interacción espacial no remite exclusivamente a un interés metodológico sino también en valor para, por ejemplo, orientar políticas de desarrollo urbano y ordenamiento territorial.
 
-[^3]: Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
+[^3]:Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
 
 
 \newpage
@@ -108,7 +110,7 @@ El estudio de las migraciones en general se divide entre internacional e interna
 
 El conocimiento convencional deriva en forma automática hacia algunos factores que pueden ser determinantes en el proceso migratorio: diferencias geográficas de ingresos monetarios, empleo y oportunidades de desarrollo personal [@king2012]. Sin embargo la decisión y posibilidad de migrar no se ve relacionada en forma unívoca a estos factores, siendo un fenómeno complejo.
 
-Los inicios de la teorización sobre las migraciones datan de fines del siglo XIX [@dehaas2015]. Hacia los años 1980s, el foco de la producción académica relativa a migraciones comienza a virar del estudio de las migraciones internas a las internacionales, al punto que hoy *“migración”* refiere en general a *“migración internacional”*, aún siendo las migraciones internas más importantes si se atiende a la cantidad de personas que involucran ambos fenómenos [@king2010; @king2012].
+Los inicios de la teorización sobre las migraciones datan de fines del siglo XIX [@dehaas2015]. Hacia los años 1980s, el foco de la producción académica relativa a migraciones comienza a virar del estudio de las migraciones internas a las internacionales, al punto que hoy “migración” refiere en general a “migración internacional”, aún siendo las migraciones internas más importantes si se atiende a la cantidad de personas que involucran ambos fenómenos [@king2010; @king2012].
 
 De Haas et. al. -@dehaas2015 diferencian, siguiendo a @massey1993, entre aquellas teorías orientadas las causas de la migración y aquellas orientadas a los impactos en las sociedades emisoras o receptoras. Los autores proponen un esquema que permite categorizar los procesos migratorios y las teorías que los abordan, conceptualizando a los movimientos migratorios como el resultado de la interacción entre estructuras macro y micro, en tanto proponen la existencia de meso-estructuras que vinculan las dos anteriormente mencionadas, proveyendo una explicación para la continuidad espacio-temporal de los procesos migratorios.
 
@@ -216,7 +218,7 @@ Un aspecto a considerar, que relaciona la NELM con las teorías neoclásicas, es
 | Asunciones de contexto económico      | Mercados que funcionan bien | Mercados imperfectos o inexistentes |
 | Contextualización del ingreso         | Absoluto                    | Relativo a otros grupos             |
 
-Table: Diferencias entre la teoría neoclásica y la NELM, asumiendo la similitud de que ambas son un modelo de decisión a nivel micro [@massey1993].
+Table: Diferencias entre la teoría neoclásica y la NELM, asumiendo la similitud de que ambas son un modelo de decisión a nivel micro [@massey1993]. {#tbl:teorias}
 
 
 #### Redes y teorías de los sistemas migratorios
@@ -240,13 +242,16 @@ Aunque las teorías presentadas son de importancia para comprender el rol de la 
 
 Tanto el paradigma funcionalista como el histórico-estructural atribuyen la migración a desigualdades espaciales, asunción que lleva a que las políticas migratorias en general la enfoquen como “un problema a ser resuelto”, y la solución será el desarrollo en los lugares de origen [@dehaas2015]. Sin embargo esto contradice las observaciones empíricas, dado que en general los países de importante inmigración no son los más pobres y que los emigrantes de los países más pobres provienen de familias relativamente pudientes; es así que surge un nuevo abordaje teórico que permite asociar el desarrollo económico al aumento de los flujos migratorios, las teorías de la transición migratoria.
 
-Estas teorías ven a la migración como una parte intrínseca de un proceso de desarrollo más amplio, transformación social y globalización [@dehaas2015]. La idea fue originalmente introducida por Zelinsky -@zelinsky1971, quien relacionó las fases de la transición demográfica y el proceso de desarrollo simultáneo. Las sociedades premodernas en general se caracterizan por limitadas migraciones circulares, en tanto que todas las formas de movilidad interna e internacional aumentan al comienzo de la transición a causa del crecimiento demográfico (ver gráfica 2).
+Estas teorías ven a la migración como una parte intrínseca de un proceso de desarrollo más amplio, transformación social y globalización [@dehaas2015]. La idea fue originalmente introducida por Zelinsky -@zelinsky1971, quien relacionó las fases de la transición demográfica y el proceso de desarrollo simultáneo. Las sociedades premodernas en general se caracterizan por limitadas migraciones circulares, en tanto que todas las formas de movilidad interna e internacional aumentan al comienzo de la transición a causa del crecimiento demográfico (ver\ [@fig:trans_migra]).
 
-En los albores de la revolución industrial en los países de Europa occidental, la urbanización, otra transición que implica movimiento rural-urbano, pudo haber aumentado la mortalidad en una primera instancia, debido a la aglomeración de muchas personas en condiciones miserables, mortalidad que luego se redujo, entre otros factores, por las mejoras en salud pública. Esos movimientos rural-urbano, los cuales es probable que también hayan ocasionado algunas migraciones de retorno a posteriori, pueden haber funcionado como agentes para la difusión de otras pautas culturales, como la baja fertilidad, que componen la denominada transición demográfica [@skeldon2012].
+En los albores de la revolución industrial en los países de Europa occidental, la urbanización, otra transición que implica movimiento rural-urbano, pudo haber aumentado la mortalidad en una primera instancia, debido a la aglomeración de muchas personas en condiciones miserables, mortalidad que luego se redujo, entre otros factores, por las mejoras en salud pública. Esos movimientos rural-urbano, los cuales es probable que también hayan ocasionado algunas migraciones de retorno *a posteriori*, pueden haber funcionado como agentes para la difusión de otras pautas culturales, como la baja fertilidad, que componen la denominada transición demográfica [@skeldon2012].
+
+
+![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.jpg){#fig:trans_migra}
+
 
 Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto a la transición demográfica propiamente dicha, según Skeldon -@skeldon2012: “Essentially, it is a macro‐level description based on the experience of Western Europe and North America, which relates in an intuitive way notional changes in migration with shifts in fertility and mortality” [Esencialmente es una descripción a nivel macro basada en la experiencia de Europa occidental y Norteamérica, que relaciona en forma intuitiva los cambios hipotéticos en las migraciones con los cambios en fecundidad y mortalidad] (p. 159).
 
-![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.jpg)
 
 
 ### Diálogo entre migraciones internacionales e internas
@@ -255,9 +260,9 @@ Los procesos migratorios son la suma de un complejo conjunto de factores e inter
 
 *¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?*. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer vínculos entre ambos marcos teóricos, aunque en primer lugar traen a discusión la diferenciación entre dichos tipos de migración, ya que a veces el límite entre ellas puede ser difuso, dado que la distancia puede no tener una relevancia central (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de fronteras, como el espacio Schengen en Europa, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el lo hace hacia otro.
 
-Los autores proponen el siguiente esquema para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
+Los autores proponen el esquema de la\ [@fig:migration_pathways] para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
 
-![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.jpg)
+![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.jpg){#fig:migration_pathways}
 
 Según el esquema, *X* e *Y* representan a dos países diferentes. A su vez, *Xa*, *Xb*, *Ya* e *Yb* son regiones dentro de esos países ficticios, donde *Xa* es una región rural, *Xb* es un centro urbano (como una ciudad capital), *Ya* es una ciudad principal e *Yb* una región provincial.
 
@@ -323,7 +328,7 @@ El espacio de flujos conformado por y en torno a las migraciones es destacable. 
 
 Cambiando la escala de análisis, es posible relacionar el espacio de flujos con otros fenómenos que trascienden las dinámicas internas. Por ejemplo, la oferta de puestos de trabajo en determinada localidad puede ser un gran atractor, y generar migraciones de mano de obra desde una o varias localidades cercanas. A su vez, este proceso puede estar insertado en flujos globales, como los flujos de capital o la consolidación nuevas filiales industriales por parte de empresas multinacionales [@trajtenberg1999]. Por otro lado, la provisión de personal técnico o profesional altamente calificado y los cargos de gerencia pueden implicar migraciones desde otros países, facilitados por la propia empresa, siendo el país de origen de la multinacional uno de los posibles orígenes.
 
-Además de las concepciones de espacio vertidas, los aportes de geógrafos latinoamericanos también pueden brindar herramientas útiles para conceptualizar el espacio. El geógrafo brasileño Roberto Lobato Corrêa -@correa1990, en un abordaje basado en Marx y Lefebre, considera a la Geografía como una ciencia social, por ende su objeto de estudio es la sociedad, aunque se objetiva de forma diferente que en otras ciencias sociales. La objetivación de la Geografía la orienta al **estudio de la organización espacial**. Dicha organización espacial tiene su materialidad, es una “segunda naturaleza”, originada en la transformación de la naturaleza primitiva mediada por las relaciones sociales de producción, una naturaleza “antropizada”. Si pensamos en la migración interna, ciertos aspectos de esa materialización están presentes en las configuraciones de los patrones migratorios. Las *“rugosidades”* (expresión que Corrêa toma de Milton Santos), en tanto marcas del pasado fijadas en el espacio, permanecen y se evidencian, por ejemplo, cuando determinada ciudad concentra gran parte de las funciones, la población y las actividades económicas. Dicha urbanización seguramente funcione como un atractor de población, en tanto haya gran oferta de servicios y oportunidades económicas, entonces la organización espacial también está ejerciendo una influencia en la configuración de determinados movimientos migratorios.
+Además de las concepciones de espacio vertidas, los aportes de geógrafos latinoamericanos también pueden brindar herramientas útiles para conceptualizar el espacio. El geógrafo brasileño Roberto Lobato Corrêa -@correa1990, en un abordaje basado en Marx y Lefebre, considera a la Geografía como una ciencia social, por ende su objeto de estudio es la sociedad, aunque se objetiva de forma diferente que en otras ciencias sociales. La objetivación de la Geografía la orienta al **estudio de la organización espacial**. Dicha organización espacial tiene su materialidad, es una “segunda naturaleza”, originada en la transformación de la naturaleza primitiva mediada por las relaciones sociales de producción, una naturaleza “antropizada”. Si pensamos en la migración interna, ciertos aspectos de esa materialización están presentes en las configuraciones de los patrones migratorios. Las **“rugosidades”** (expresión que Corrêa toma de Milton Santos), en tanto marcas del pasado fijadas en el espacio, permanecen y se evidencian, por ejemplo, cuando determinada ciudad concentra gran parte de las funciones, la población y las actividades económicas. Dicha urbanización seguramente funcione como un atractor de población, en tanto haya gran oferta de servicios y oportunidades económicas, entonces la organización espacial también está ejerciendo una influencia en la configuración de determinados movimientos migratorios.
 Descartando la posibilidad de un espacio absoluto, se considera que ciertas características de ese espacio de flujos se pueden modelar, aceptando que todo modelo es un simplificación y que sería reduccionista pensar que algo tan complejo como el espacio, la sociedad y los sujetos puede explicarse del mismo modo.
 
 
@@ -374,7 +379,7 @@ Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, C
 | Total       | 2.788.429 | 100%  | 2.955.241 | 100%  | 3.163.763 | 100%  | 3.285.877 | 100%  |
 
 
-Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d).
+Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d). {#tbl:mig_recientes}
 
 La migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. La migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
 
@@ -383,9 +388,9 @@ La propensión a migrar de los jóvenes se puede comprender atendiendo a las car
 También se ha identificados el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas de quienes migran desde Montevideo, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
 
-[^1]: Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
+[^1]:Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
 
-[^2]: La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
+[^2]:La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
 
 
 \newpage
@@ -394,19 +399,30 @@ También se ha identificados el perfil más joven y feminizado de quienes migran
 
 # Análisis exploratorio de datos
 
-En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica, con un enfoque demográfico.
+En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica con un enfoque demográfico.
 
-En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011. En primer lugar podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
+En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011 [@ine2011].
 
-El censo INE 2011 permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo INE 2011 es delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
+Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
+
+El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, es necesario delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
 
 El total de migrantes internos según la definición tomada, es de 148.759
-personas, distrubidas en los diferentes departamentos, según se expresa en el siguiente mapa.
+personas, distribuidas en los diferentes departamentos.
 
-![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf)
+![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
 
-El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de la mancha urbana que conforma la ciudad de Montevideo hacia el este, en la zona de la Ciudad de la Costa, como suburbanización.
-Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son quienes lideran. Lo mencionado para los valores absolutos en el caso de Canelones también aplica e los valores porcentuales. En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.
+El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, en la zona de la Ciudad de la Costa, como proceso de suburbanización [@hernandez1999; @folgar2005; @dangelo2016].
+
+Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.** 
+
+
+
+<---
+buscar cita
+>---
+
+
 
 El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2011], que para el presente análisis denominaremos grupo 1, 2 y 3:
 
@@ -417,68 +433,67 @@ El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2
 - **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
 
 
-El índice de masculinidad para migrantes recientes hacia Montevideo es de 80 hombres por cada 100 mujeres, para migrantes desde Montevideo hacia el interior es de 92.4 en tanto que para migrantes entre departamentos del interior es de 102.2 hombres por cada 100 mujeres.
-
-El índice de masculinidad para el total de la población es de 92.3 hombres por cada 100 mujeres.
+El índice de masculinidad para el grupo 1 es de 80 hombres por cada 100 mujeres, para el grupo 2 de 92.4 y para el grupo tres es de 102.2 hombres por cada 100 mujeres. Dichos datos se presentan en forma gráfica en la\ [@fig:barras_mascul].
 
 
-![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf)
+![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf){#fig:barras_mascul}
 
 
 Los valores mencionados indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por ser feminizada [@bengochea2011; @universidaddelarepublica2013]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
-La gráfica de la distribución por sexo coincide con las apreciaciones anteriores.
+La gráfica de la distribución por sexo, presentada en la figura \ref{porcentaje_sexo}, coincide con las apreciaciones anteriores.
 
-![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf)
+![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.\label{porcentaje_sexo}](mapas_graficas/eda_002_porcentaje_sexo.pdf)
 
-Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población.
-
-
-![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf)
+Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población, tal cual se puede apreciar en la\ [@fig:edad_mediana]
 
 
-La distribución por grupos de edades evidencia dicha estructura, con mayor concentración de la población en el tramo de las personas económicamente activas en los grupos migrantes, siendo el grupo 1 en el cual esta población tiene mayor presencia.
+![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf){#fig:edad_mediana}
 
 
-![Distribución por grupos de edades.](mapas_graficas/eda_004_dist_grupos_edad.pdf)
+La distribución por grupos de edades en la\ [@fig:grupos_edades]
+evidencia dicha estructura, con mayor concentración de la población en el tramo de las personas económicamente activas en los grupos migrantes, siendo el grupo 1 en el cual esta población tiene mayor presencia.
+
+
+![Distribución por grupos de edades.](mapas_graficas/eda_004_dist_grupos_edad.pdf){#fig:grupos_edades}
 
 
 La gráfica de líneas de la distribución por edades brinda un poco más de detalle sobre la conformación estructura de los grupos. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la edad característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
 Los grupos 2 y 3 también están conformados por niños y jóvenes, por oposición al grupo 1; pero el grupo 2 presenta mayor proporción de niños y menor de jóvenes, lo cual estaría indicando que refiere a hogares de parejas en el tramo 25-35 años, con niños.
 
 
-![Distribución de edades.](mapas_graficas/eda_006_distribucion_edades.pdf)
+![Distribución de edades, porcentaje dentro de cada grupo.\label{distri_edades}](mapas_graficas/eda_006_distribucion_edades.pdf)
 
 
-Estos indicadores se pueden integrar en pirámides de población, que dan cuenta en forma de la estructura de la población en forma más abarcadora.
-La pirámide de los migrantes internos, como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
+La distribución por sexo y tramos de edad se puede integrar en pirámides de población, que dan cuenta de la estructura de la población en forma más abarcadora.
+La pirámide de los migrantes internos (figura \ref{piramide_mig}), como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
 
 
-![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
+![Pirámides de población del total de población y de los migrantes internos.\label{piramide_mig}](mapas_graficas/eda_011_piramide_mig.pdf)
 
 
-Las pirámides de población pueden brindar información sobre la composición por edad y por sexo en forma más integral. En este caso, comparando las pirámides de los grupos 1, 2 y 3, se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
+Comparando las pirámides de los grupos 1, 2 y 3 en la figura \ref{piramides_mig_rec}, se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
 
 
-![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
+![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.\label{piramides_mig_rec}](mapas_graficas/eda_012_piramides_mig_recientes.pdf)
 
 
-Otro factor de interés es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados.
+Otro factor de interés para la caracterización es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados (figura \ref{asist_centros})
 
 
-![Asistencia a centros educativos](mapas_graficas/eda_007_asistencia_educacion.pdf)
+![Asistencia a centros educativos. \label{asist_centros}](mapas_graficas/eda_007_asistencia_educacion.pdf)
 
 
-El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios.
+El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios (figura \ref{nivel_edu_actual}).
 
 
-![Nivel educativo actual](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
+![Nivel educativo actual. \label{nivel_edu_actual}](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
 
 
-En cuanto al nivel educativo más alta alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución similar.
+En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población (figura \ref{max_nivel_edu}).
 
 
-![Máximo nivel educativo alcanzado](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
+![Máximo nivel educativo alcanzado. \label{max_nivel_edu}](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
 
 
 
@@ -541,7 +556,7 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
 
 
-## Análisis exploratorio de datos
+## Pre-procesamiento de datos
 
 A continuación se presenta un primer análisis basado en los datos del Censo INE 2011 [@ine2011d], publicados en la página web del Instituto. Se realizó un pre-procesamiento para seleccionar variables relevantes, reduciendo el volumen de datos y por tanto los requerimientos informáticos para su acceso.
 
@@ -576,26 +591,8 @@ Según la información disponible en Censo INE [@ine2011d], el criterio más ade
     - "2" (en otra localidad o paraje de este departamento)
     - "3" (en otro departamento)
   
-############################################################################################################################################################################################################################################################################################################################
 
 Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas sin localidad INE asignada. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia de abordaje. EN segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
-
-############################################################################################################################################################################################################################################################################################################################
-
-
-### El perfil de la migración interna
-
-En el apartado 2.4, referido a los antecedentes del estudio de la migración interna en Uruguay, ya se puntualizaban algunas características de la población migrante interna:
-
-- el perfil más joven y feminizado de quienes migran hacia Montevideo.
-
-- el perfil de familias completas, integradas por parejas de entre 30 y 40 años con niños, de quienes migran desde Montevideo.
-
-
-
-
-###############################################################################
-
 
 
 Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal.
@@ -614,12 +611,17 @@ Table: Tabla de díadas orígen-destino, referida por códigos INE de departamen
 
 Esos datos también pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
-
+<!---
+PAGEBREAK
+-->
 \newpage
 \begin{landscape}
 \input{tablas/matriz_orig_dest.tex}
 \end{landscape}
+<!---
 
+PAGEBREAKLANDSCAPE
+-->
 
 Siguiendo la estructura de datos presentada anteriormente (tabla de díadas origen-destino), se construye un conjunto de datos conteniendo la siguiente información para cada díada de departamentos:
 

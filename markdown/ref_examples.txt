@@ -1,0 +1,5 @@
+\ [@fig:mapa_gemelo]
+{#fig:mapa_gemelo}
+
+
+{#tbl:teorias}
