@@ -3,12 +3,14 @@ title: 'Modelos de interacción espacial y migración interna en Uruguay'
 author: Guillermo D'Angelo
 date: Junio 2020
 footer: true
-geometry: "a4paper, margin=2.5cm"
+geometry: "a4paper, left=2.54cm,right=2.54cm,top=1.91cm,bottom=1.91cm"
 figureTitle: "Figura"
 tableTitle: "Tabla"
 tblPrefix: "tabla"
 numbersections: true
 toc: true
+lot: true
+lof: true
 lang: es
 mainfont: "Helvetica LT Std"
 fontsize: 12pt
@@ -458,11 +460,11 @@ evidencia dicha estructura, con mayor concentración de la población en el tram
 ![Distribución por grupos de edades.](mapas_graficas/eda_004_dist_grupos_edad.pdf){#fig:grupos_edades}
 
 
-La gráfica de líneas de la distribución por edades brinda un poco más de detalle sobre la conformación estructura de los grupos. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la edad característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
+La\ [@fig:distri_edades] presenta la distribución por edades, brindando un poco más de detalle sobre la conformación estructura de los grupos. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la edad característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
 Los grupos 2 y 3 también están conformados por niños y jóvenes, por oposición al grupo 1; pero el grupo 2 presenta mayor proporción de niños y menor de jóvenes, lo cual estaría indicando que refiere a hogares de parejas en el tramo 25-35 años, con niños.
 
 
-![Distribución de edades, porcentaje dentro de cada grupo.\label{distri_edades}](mapas_graficas/eda_006_distribucion_edades.pdf)
+![Distribución de edades, porcentaje dentro de cada grupo.](mapas_graficas/eda_006_distribucion_edades.pdf){#fig:distri_edades}
 
 
 La distribución por sexo y tramos de edad se puede integrar en pirámides de población, que dan cuenta de la estructura de la población en forma más abarcadora.
