@@ -479,7 +479,7 @@ Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec]
 ![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf){#fig:piramides_mig_rec}
 
 
-Para profundizar en las diferencias del grupo 1 con el resto de los grupo, se analiza el promedio de personas que componen los hogares dentro de los cuales hay al menos una persona migrante.
+Para profundizar en las diferencias del grupo 1 con el resto de los grupos, se analiza el promedio de personas que componen los hogares dentro de los cuales hay al menos una persona migrante. En general los hogares que conforman el grupo 1 tienen menos integrantes, y los del grupo 3 tienen más. Se excluyen de estos cálculos a los hogares colectivos (pensiones, hogares estudiantiles, cuarteles miitares, prisiones, etc.)
 
 
 ![Promedio de personas por hogar, excluyendo hogares colectivos](mapas_graficas/eda_015_promedio_personas_hogar_sin_hogcol.pdf){#fig:prom_perso_hogar}
