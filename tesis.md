@@ -160,6 +160,7 @@ Según la teoría neoclásica, la migración sería una parte del desarrollo eco
 
 A nivel macro la migración es vista como un proceso que optimiza la localización de los factores de producción: hace menos escasa la mano de obra en destino y más escasa en el origen, siguiendo el capital la dirección contraría; ese proceso tenderá a la convergencia de los ingresos entre ambas localidades. En otras palabras, hay un flujo de mano de obra desde los países no desarrollados hacia los desarrollados y un contra-flujo de capital, estimulada por altas tasas de retorno de inversiones, que dará paso al desarrollo en la nación de origen de la migración y concluirá el proceso en la convergencia de ambos estados como países desarrollados [@massey1993]. A nivel micro, el migrante es considerado como un individuo que actúa en forma racional, y que basa la decisión de migrar en un cálculo de costo-beneficio con el objetivo de maximizar sus ingresos.
 
+
 A modo de críticas, la asunción de que los individuos son actores racionales, que maximizan utilidad recurriendo a una comparación sistemática del costo y beneficio de migrar o permanecer en el origen, puede considerarse un supuesto demasiado fuerte. En el mismo sentido, parecería demasiado aventurado dar por cierto que los migrantes potenciales manejan perfectamente la información relativa a los salarios y oportunidades de empleo en el país de destino [@dehaas2015]. Vale destacar que a pesar estas críticas, las formulaciones neoclásicas fueron el sustento de intelectual de muchas políticas inmigratorias [@massey1993]. Con respecto al presente trabajo, se puede arriesgar que la oferta de empleo (o de oportunidades económicas en un sentido más amplio) sea como factor relevante en los procesos migratorios internos. Sin embargo la existencia de un flujo contrario de capital contrario a la corriente migratoria no se desprende como una consecuencia necesaria, por el contrario se esperaría que dichos procesos consoliden desigualdades espaciales preexistentes.
 
 Tanto a las teorías basadas en modelos “push-pull” como la neoclásica dan un lugar marginal a la capacidad de agencia de las personas, es decir a su capacidad de actuar con base en intenciones conscientes y tomar decisiones en forma independiente.
@@ -401,22 +402,19 @@ También se ha identificados el perfil más joven y feminizado de quienes migran
 
 # Análisis exploratorio de datos
 
-En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, como forma de dar un marco general a la parte analítica con un enfoque demográfico.
+En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, para dar un marco general con un enfoque demográfico.
 
 En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011 [@ine2011].
 
 Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
 
-El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, es necesario delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes.
-
-El total de migrantes internos según la definición tomada, es de 148.759
-personas, distribuidas en los diferentes departamentos.
+El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, es necesario delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
 
 ![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
 
-El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como de actividad económica en general. Canelones también figura como atractor, y en parte puede ser asociado a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, en la zona de la Ciudad de la Costa, como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
+El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como a la concentración de actividad económica en general. El departamento de Canelones también figura como atractor, y en parte se puede asociar a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, incorporando la zona costera de Canelones (Ciudad de la Costa), como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
 
-Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.** 
+Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.**
 
 
 
@@ -434,53 +432,50 @@ El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2
 
 - **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
 
+A continuación se presentarán diversos indicadores referidos a dichos tres grupos, para facilitar su carcterización.
+
+## Estructura de la población
+
+### Distribución por sexo
 
 El índice de masculinidad para el grupo 1 es de 80 hombres por cada 100 mujeres, para el grupo 2 de 92.4 y para el grupo tres es de 102.2 hombres por cada 100 mujeres. Dichos datos se presentan en forma gráfica en la\ [@fig:barras_mascul].
 
-
 ![Índice de masculinidad (mujeres cada 100 hombres) para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_001_barras_masculinidad.pdf){#fig:barras_mascul}
 
-
-Los valores mencionados indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por ser feminizada [@bengochea2011; @universidaddelarepublica2013]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior al Censo 2011). Por la oposición, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
+Los valores mencionados indican la mayor proporción de mujeres en el grupo 1, posiblemente asociado a la matrícula universitaria, ya que esta se caracteriza por ser feminizada [@bengochea2011; @universidaddelarepublica2013]. Además la oferta educativa de la Universidad de la República, la principal universidad del país y de carácter público, se concentra en Montevideo (el impulso a la descentralización de la Udelar fue posterior a la realización del Censo 2011). Por el contrario, el grupo 3 presenta una leve masculinización con respecto a la mediana del país, posiblemente asociado a migraciones por trabajo relacionadas al sector agropecuario o al medio rural.
 
 La\ [@fig:porcen_sexo] ilustra la distribución por sexo dentro de los grupos, coincidiendo con las apreciaciones anteriores.
 
 ![Distribución por sexo para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_002_porcentaje_sexo.pdf){#fig:porcen_sexo}
 
-Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1 que es considerablemente más joven que el total de la población.
+### Composición por edades
+
+Atendiendo a la composición por edades, las **edades medianas** para cada grupo son de **23, 32 y 28 años respectivamente**, en tanto el valor para el país es de 34 años. Es decir que son poblaciones levemente más jóvenes, con excepción del grupo 1, que es considerablemente más joven que el total de la población.
 
 ![Edades medianas para el total de personas y para los subconjuntos de migrantes internos recientes.](mapas_graficas/eda_003_edades_medianas.pdf){#fig:edad_mediana}
-
 
 La distribución por grupos de edades en la\ [@fig:grupos_edades]
 evidencia dicha estructura, con mayor concentración de la población en el tramo de las personas económicamente activas en los grupos migrantes, siendo el grupo 1 en el cual esta población tiene mayor presencia.
 
-
 ![Distribución por grupos de edades.](mapas_graficas/eda_004_dist_grupos_edad.pdf){#fig:grupos_edades}
-
 
 La\ [@fig:distri_edades] presenta la distribución por edades, brindando un poco más de detalle sobre la conformación estructura de los grupos. El grupo 1 presenta un pico en el tramo 18-25 años, coincidente con la edad característica de los estudiantes universitarios, en tanto el grupo 2 presenta más concentración en el grupo 25-35 años. El grupo 3 presenta concentración en las edades 18-25 años, pero también abarca personas en el grupo 25-35 años.
 Los grupos 2 y 3 también están conformados por niños y jóvenes, por oposición al grupo 1; pero el grupo 2 presenta mayor proporción de niños y menor de jóvenes, lo cual estaría indicando que refiere a hogares de parejas en el tramo 25-35 años, con niños.
 
-
 ![Distribución de edades, porcentaje dentro de cada grupo.](mapas_graficas/eda_006_distribucion_edades.pdf){#fig:distri_edades}
 
+### Pirámides de población
 
 La distribución por sexo y tramos de edad se puede integrar en pirámides de población, que dan cuenta de la estructura de la población en forma más abarcadora.
 La pirámide de los migrantes internos, como es de esperar, concentra población en las edades económicamente activas en comparación con la pirámide de todo el conjunto de población censada. A su vez, es una población más feminizada, sobre todo en los tramos de edad entre 15 y 34 años.
 
-
 ![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
 
-
-Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec], se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad.
-
+Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec], se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad. En particular la estructura de la pimrámide correspondiente al grupo 2, que estará indicando hogares conformados por parejas de mediana edad y con niños, posiblemente muchos refieran a movimientos desde Montevideo hacia la costa de Canelones, en el marco del proceso de metropolización anteriomente mencionado.
 
 ![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf){#fig:piramides_mig_rec}
 
-
 Para profundizar en las diferencias del grupo 1 con el resto de los grupos, se analiza el promedio de personas que componen los hogares dentro de los cuales hay al menos una persona migrante. En general los hogares que conforman el grupo 1 tienen menos integrantes, y los del grupo 3 tienen más. Se excluyen de estos cálculos a los hogares colectivos (pensiones, hogares estudiantiles, cuarteles miitares, prisiones, etc.)
-
 
 ![Promedio de personas por hogar, excluyendo hogares colectivos](mapas_graficas/eda_015_promedio_personas_hogar_sin_hogcol.pdf){#fig:prom_perso_hogar}
 
@@ -488,31 +483,23 @@ En el mismo sentido, el porcentaje de personas migrantes internas viviendo en ho
 
 ![Porcentaje de personas viviendo en hogares colectivos](mapas_graficas/eda_016_porcent_viviendas_colectivas.pdf){#fig:viv_colectivas}
 
+### Nivel educativo
 
 Otro factor de interés para la caracterización es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados.
 
-
 ![Asistencia a centros educativos.](mapas_graficas/eda_007_asistencia_educacion.pdf)
 
+El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios.
 
-El grupo 1 también se diferencia en cuánto al nivel educativo actual en el momento del censo, con la preeminencia de aquellos cursando estudios terciarios, principalmente universitarios (figura \ref{nivel_edu_actual}).
+![Nivel educativo actual.](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
 
+En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población.
 
-![Nivel educativo actual. \label{nivel_edu_actual}](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
-
-
-En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población (figura \ref{max_nivel_edu}).
-
-
-![Máximo nivel educativo alcanzado. \label{max_nivel_edu}](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
-
-
+![Máximo nivel educativo alcanzado.](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
 
 \newpage
 
-
 # Estrategia metodológica y fuentes de información
-
 
 La principal fuente de información para el presente trabajo serán los censos 1996 y 2011 realizados por el Instituto Nacional de Estadística (INE).
 En particular los censos 1996 y 2011 incorporaron algunas preguntas que serán pertinentes al presente trabajo y se presentan en el siguiente cuadro.
