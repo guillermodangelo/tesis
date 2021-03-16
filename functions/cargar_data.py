@@ -101,6 +101,19 @@ def cargar_data_metod():
     censo = cargar_censo()
     pbi = cargar_pbi()
     md = cargar_matriz_distancias()
-    deptos, localidad, centro_pobls, capital = cargar_datos_geo()
+    deptos, localidad, centro_pobl, capital = cargar_datos_geo()
     
-    return censo, pbi, md, deptos, localidad, centro_pobls, capital
+    return censo, pbi, md, deptos, localidad, centro_pobl, capital
+
+
+def filter_df_censo(df):
+    "Filtra datos del censo para quedarse solo con migrantes internos recientes"
+    mgr = df.loc[df.PERMI07 == 3].reset_index(drop=True)
+    # identifica depto de residencia anterior, creando var "depto_origen"
+    mgr.insert(0, 'depto_origen', mgr.loc[:,('PERMI07_2')])
+    # convierte a integer
+    mgr.loc[:,('depto_origen')] = mgr.loc[:,('depto_origen')].astype(int)
+    # renombra DPTO
+    mgr.rename(columns={'DPTO': 'depto_destino'}, inplace=True)
+
+    return mgr

@@ -483,7 +483,7 @@ En el mismo sentido, el porcentaje de personas migrantes internas viviendo en ho
 
 ![Porcentaje de personas viviendo en hogares colectivos](mapas_graficas/eda_016_porcent_viviendas_colectivas.pdf){#fig:viv_colectivas}
 
-### Nivel educativo
+## Nivel educativo
 
 Otro factor de interés para la caracterización es el nivel educativo de la población migrante interna. En lo que refiere a la asistencia a un centro educativo, el grupo 1 se destaca por quienes declaran asistir tanto a centros públicos como privados.
 
