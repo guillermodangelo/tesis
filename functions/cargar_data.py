@@ -117,3 +117,18 @@ def filter_df_censo(df):
     mgr.rename(columns={'DPTO': 'depto_destino'}, inplace=True)
 
     return mgr
+
+
+def cargar_nombres():
+    list_names = ['Montevideo', 'Artigas', 'Canelones', 'Cerro Largo', 'Colonia', 'Durazno',
+                  'Flores', 'Florida', 'Lavalleja','Maldonado', 'Paysandú', 'Río Negro', 'Rivera',
+                  'Rocha', 'Salto', 'San José', 'Soriano', 'Tacuarembó', 'Treinta y Tres']
+    
+    return list_names
+
+
+def cargar_matriz_deptos():
+    "Carga matriz de migrantes internos entre deptos"
+    matrix = pd.read_csv('tablas/matriz_deptos.csv', skiprows=2, index_col='depto_origen').values.tolist()   
+    return matrix
+        
