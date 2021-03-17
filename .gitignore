@@ -1,2 +1,6 @@
 
 *.xls#
+capas/ine_deptos_generalizada.gpkg-wal
+*.gpkg-shm
+*.gpkg-wal
+*.gpkg-shm
