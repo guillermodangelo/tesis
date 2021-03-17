@@ -50,7 +50,6 @@ def cargar_censo_nrows(nrows):
     return censo
 
 
-
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     # PBI departamental
