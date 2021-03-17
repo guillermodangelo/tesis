@@ -414,6 +414,15 @@ El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto m
 
 El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como a la concentración de actividad económica en general. El departamento de Canelones también figura como atractor, y en parte se puede asociar a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, incorporando la zona costera de Canelones (Ciudad de la Costa), como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
 
+Dicho proceso puede ser constado analizando las principales localidades de destino de los migrantes internos que anteriormente residían en Montevideo. Tal cual se constata en las\ [@fig:mig_ori_mvo] y\ [@fig:mig_ori_mvo_zoom] el destino de preferencia es el área metropolitana en primer lugar, en particular la costa de Canelones, seguido de otras localidades costeras.
+
+![Migrantes internos con origen en Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_pais.pdf){#fig:mig_ori_mvo}
+
+Los 7 principales destinos corresponden a localidades del área metrpolitana, y suman el 27% de las personas migrantes interna con origen den Montevideo.
+
+![Migrantes internos con origen en Montevideo, zoom a área metropolitana de Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_zoom_am.pdf){#fig:mig_ori_mvo_zoom}
+
+
 Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.**
 
 
@@ -431,6 +440,12 @@ El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2
 - **Grupo 2**: 58.655 personas migrantes con origen en Montevideo pero residentes en el Interior del país.
 
 - **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
+
+
+
+
+
+
 
 A continuación se presentarán diversos indicadores referidos a dichos tres grupos, para facilitar su carcterización.
 
