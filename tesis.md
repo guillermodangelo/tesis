@@ -54,18 +54,13 @@ header-includes: |
 Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en tanto otorga una relevancia particular al componente espacial de los fenómenos [@puyol1995].
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. A modo de ejemplo vale mencionar como las migraciones se ven influidas por el espacio geográfico, generándose migraciones más intensas entre localidades cercanas o migraciones muy débiles entre localidades remotas, y en ese proceso también modifican y (re)construyen el espacio.
 
-
 \newpage
-
 
 # Planteo del problema y pregunta de investigación
 
-
-Tal cual se mencionó anteriormente, el estudio de las migraciones internas es pertinente para la Demografía en tanto la migración es uno de los factores del cambio demográfico. Asumiendo el componente espacial que implican los movimientos de población, el abordaje con técnicas de la geografía humana se considera adecuado.
+El estudio de las migraciones internas es pertinente para la Demografía en tanto la migración es uno de los factores del cambio demográfico. Asumiendo el componente espacial que implican los movimientos de población, el abordaje con técnicas de la geografía humana se considera adecuado.
 
 La pregunta general que guiará este trabajo de investigación es la siguiente: ¿cuál será la magnitud de la migración interna en Uruguay entre 2012 y el horizonte 2025?
-
-
 
 ## Objetivos
 
@@ -100,8 +95,6 @@ En el segundo se realiza una breve revisión del concepto de “espacio geográf
 
 ## Introducción a las teorías migratorias
 
-La migración es entendida como movilidad geográfica de las personas para el cambio de residencia usual atravesando fronteras de unidades geográficas determinadas y por un período de tiempo considerable [@siegel2004]. La migración, luego de la fecundidad y la mortalidad, es el tercer factor que afecta el cambio poblacional en un área determinada [@preston2000]. La referencia a esas unidades espaciales, configuran a la migración como un proceso socio-espacial [@garrocho1996].
-
 Las migraciones internas difieren de la **movilidad residencial** y la **movilidad pendular**. La movilidad residencial implica “mudanzas” de menor jerarquía en términos de la distancia entre la antigua y la nueva residencia, en comparación con la migración. Estos cambios le permitirían a la persona que se muda mantener el mismo trabajo y frecuentar los mismos grupos sociales [@dennett2018]. Por otro lado, la movilidad pendular es aquella que tiene frecuencia diaria o semanal, con el fin de asistir a lugares de trabajo o centros de estudio. A pesar de las anteriores definiciones, es necesario aclarar que la migración interna y la movilidad residencial forman en realidad un continuo, no existiendo un criterio absolutamente claro de demarcación entre ambas [@dennett2018], es decir que  la separación de estos dos conceptos es esquiva desde el punto de vista teórico pero puede ser resuelta operativamente. En la misma línea argumental, vale destacar que tanto el concepto de residencia como la unidad espacial que se tome de referencia, alteraran el concepto de migración, y esta característica diferencia a las migraciones de otras variables demográficas: nacimientos y defunciones son fenómenos absolutos en tanto migrar es relativo [@macadar2009].
 El estudio de las migraciones en general se divide entre internacional e interna, entre otras varias posibilidades de clasificación (como voluntarias o forzadas, temporales o permanentes, etc.).
 
@@ -113,8 +106,8 @@ De Haas et. al. -@dehaas2015 diferencian, siguiendo a @massey1993, entre aquella
 
 |  | Macro\-estructuras | Meso\-estructuras | Micro\-estructuras |
 |------------|-------------------------------------------|------------------------------------|----------------------------------------------------------|
-| Def. | Factores institucionales de gran escala | Vínculo entre macro y micro escala | Prácticas, lazos familiares y creencias de los migrantes |
-| Ejs. | Economía política del mercado mundial | Redes migratorias |  |
+| Definición | Factores institucionales de gran escala | Vínculo entre macro y micro escala | Prácticas, lazos familiares y creencias de los migrantes |
+| Ejemplos | Economía política del mercado mundial | Redes migratorias |  |
 |  | Relaciones entre estados\-nación | Comunidades de inmigrantes |  |
 |  | Políticas estatales de control migratorio | “Industria” de la migración |  |
 
@@ -126,17 +119,17 @@ A su vez, los autores identifican dos paradigmas principales en los cuales agrup
 
  Las “leyes de la migración”, formuladas por Ravenstein en el siglo XIX, se consideran la primera teorización sobre migración y se derivan de sus observaciones de la migración interna [@king2010]. Analizando fuentes de datos demográficos oficiales de varios países, Ravenstein identificó a algunas generalizaciones empíricas que aún hoy son consideradas relevantes [@arango1985; @gregory2009]. A modo de ejemplo:
 
- - El rol de la distancia como factor de estímulo, o por el contrario como “fricción” (hay más movimientos de corta distancia que de larga distancia).
- 
- - Las personas migran para mejorar sus circunstancias económicas, por ende se dirigen a lugares donde haya concentración de oportunidades económicas, en particular hacia las ciudades.
- 
+- El rol de la distancia como factor de estímulo, o por el contrario como “fricción” (hay más movimientos de corta distancia que de larga distancia).
+
+- Las personas migran para mejorar sus circunstancias económicas, por ende se dirigen a lugares donde haya concentración de oportunidades económicas, en particular hacia las ciudades.
+
 - Las migraciones se aceleran en tanto el movimiento es más fácil, por ejemplo si hay medios de transporte disponibles y las infraestructuras asociadas a los mismos.
 
 - Las mujeres tienden a moverse a distancias más cortas que los hombres; sin embargo identifica que las mujeres migran más [@rees2019].
 
 - Las migraciones en una dirección generan una corriente migratoria opuesta.
 
-Según Joaquín Arango -@arango1985, los puntos a resaltar de los aportes de Ravenstein son: la detección empírica de algunas características del proceso migratorio, el predominio del móvil económico, el uso implícito del marco *“push-pull”* y la preferencia otorgada a los factores de atracción (*“pull”*). En cuanto a las omisiones, Arango menciona la ausencia de un referencia a los mecanismos que inician los procesos migratorios (es decir cómo se desencadenan en un primera instancia), la existencia de obstáculos u oportunidades intermedias entre *push* y *pull*, la regionalidad e historicidad de las migraciones y su carácter selectivo. Para el presente trabajo es interesante destacar como Ravenstein ya vislumbraba la incidencia de la distancia como factor de estímulo/desestímulo de los procesos migratorios [@poot2016], anticipándose a los futuros modelos gravitatorios [@rees2019].
+Según Joaquín Arango -@arango1985, los puntos a resaltar de los aportes de Ravenstein son: la detección empírica de algunas características del proceso migratorio, el predominio del móvil económico, el uso implícito del marco *“push-pull”* y la preferencia otorgada a los factores de atracción (*“pull”*). En cuanto a las omisiones, Arango menciona la ausencia de una referencia a los mecanismos que inician los procesos migratorios (es decir cómo se desencadenan en una primera instancia), la existencia de obstáculos u oportunidades intermedias entre *push* y *pull*, la regionalidad e historicidad de las migraciones y su carácter selectivo. Para el presente trabajo es interesante destacar como Ravenstein ya vislumbraba la incidencia de la distancia como factor de estímulo/desestímulo de los procesos migratorios [@poot2016], anticipándose a los futuros modelos gravitatorios [@rees2019].
 
 ### Teorías dentro del paradigma funcionalista
 
@@ -150,9 +143,9 @@ Según la teoría neoclásica, la migración sería una parte del desarrollo eco
 
 A nivel macro la migración es vista como un proceso que optimiza la localización de los factores de producción: hace menos escasa la mano de obra en destino y más escasa en el origen, siguiendo el capital la dirección contraría; ese proceso tenderá a la convergencia de los ingresos entre ambas localidades. En otras palabras, hay un flujo de mano de obra desde los países no desarrollados hacia los desarrollados y un contra-flujo de capital, estimulada por altas tasas de retorno de inversiones, que dará paso al desarrollo en la nación de origen de la migración y concluirá el proceso en la convergencia de ambos estados como países desarrollados [@massey1993]. A nivel micro, el migrante es considerado como un individuo que actúa en forma racional, y que basa la decisión de migrar en un cálculo de costo-beneficio con el objetivo de maximizar sus ingresos.
 
-A modo de críticas, la asunción de que los individuos son actores racionales, que maximizan utilidad recurriendo a una comparación sistemática del costo y beneficio de migrar o permanecer en el origen, puede considerarse un supuesto demasiado fuerte. En el mismo sentido, parecería demasiado aventurado dar por cierto que los migrantes potenciales manejan perfectamente la información relativa a los salarios y oportunidades de empleo en el país de destino [@dehaas2015]. Vale destacar que a pesar estas críticas, las formulaciones neoclásicas fueron el sustento de intelectual de muchas políticas inmigratorias [@massey1993]. Con respecto al presente trabajo, se puede arriesgar que la oferta de empleo (o de oportunidades económicas en un sentido más amplio) sea como factor relevante en los procesos migratorios internos. Sin embargo la existencia de un flujo contrario de capital contrario a la corriente migratoria no se desprende como una consecuencia necesaria, por el contrario se esperaría que dichos procesos consoliden desigualdades espaciales preexistentes.
+A modo de críticas, la asunción de que los individuos son actores racionales, que maximizan su utilidad recurriendo a una comparación sistemática del costo y beneficio de migrar o permanecer en el origen, puede considerarse un supuesto demasiado fuerte. En el mismo sentido, parecería demasiado aventurado dar por cierto que los migrantes potenciales manejan perfectamente la información relativa a los salarios y oportunidades de empleo en el país de destino [@dehaas2015]. Vale destacar que a pesar de estas críticas, las formulaciones neoclásicas fueron el sustento intelectual de muchas políticas inmigratorias [@massey1993]. Con respecto al presente trabajo, se puede arriesgar que la oferta de empleo (o de oportunidades económicas en un sentido más amplio) sea un factor relevante en los procesos migratorios internos. Sin embargo, la existencia de un flujo de capital contrario a la corriente migratoria no se desprende como una consecuencia necesaria, por el contrario se esperaría que dichos procesos consoliden desigualdades espaciales preexistentes.
 
-Tanto a las teorías basadas en modelos “push-pull” como la neoclásica dan un lugar marginal a la capacidad de agencia de las personas, es decir a su capacidad de actuar con base en intenciones conscientes y tomar decisiones en forma independiente.
+Tanto a teorías basadas en modelos “push-pull” como la neoclásica dan un lugar marginal a la capacidad de agencia de las personas, es decir a su capacidad de actuar con base en intenciones conscientes y tomar decisiones en forma independiente.
 
 ### Teorías dentro paradigma histórico-estructural
 
@@ -231,17 +224,17 @@ Tanto el paradigma funcionalista como el histórico-estructural atribuyen la mig
 
 Estas teorías ven a la migración como una parte intrínseca de un proceso de desarrollo más amplio, transformación social y globalización [@dehaas2015]. La idea fue originalmente introducida por Zelinsky -@zelinsky1971, quien relacionó las fases de la transición demográfica y el proceso de desarrollo simultáneo. Las sociedades premodernas en general se caracterizan por limitadas migraciones circulares, en tanto que todas las formas de movilidad interna e internacional aumentan al comienzo de la transición a causa del crecimiento demográfico (ver\ [@fig:trans_migra]).
 
-En los albores de la revolución industrial en los países de Europa occidental, la urbanización, otra transición que implica movimiento rural-urbano, pudo haber aumentado la mortalidad en una primera instancia, debido a la aglomeración de muchas personas en condiciones miserables, mortalidad que luego se redujo, entre otros factores, por las mejoras en salud pública. Esos movimientos rural-urbano, los cuales es probable que también hayan ocasionado algunas migraciones de retorno *a posteriori*, pueden haber funcionado como agentes para la difusión de otras pautas culturales, como la baja fertilidad, que componen la denominada transición demográfica [@skeldon2012].
+En los albores de la revolución industrial en los países de Europa occidental, la urbanización, otra transición que implica movimiento rural-urbano, pudo haber aumentado la mortalidad en una primera instancia, debido a la aglomeración de muchas personas en condiciones miserables, mortalidad que luego se redujo, entre otros factores, por las mejoras en salud pública. Esos movimientos rural-urbano, los cuales es probable que también hayan ocasionado algunas migraciones de retorno *a posteriori*, pueden haber funcionado como agentes para la difusión de otras pautas culturales, como la baja fecundidad, que componen la denominada transición demográfica [@skeldon2012].
 
 ![Transición migratoria [@dehaas2015].](imagenes/transicion_migra.jpg){#fig:trans_migra}
 
-Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto a la transición demográfica propiamente dicha, según Skeldon -@skeldon2012: “Essentially, it is a macro‐level description based on the experience of Western Europe and North America, which relates in an intuitive way notional changes in migration with shifts in fertility and mortality” [Esencialmente es una descripción a nivel macro basada en la experiencia de Europa occidental y Norteamérica, que relaciona en forma intuitiva los cambios hipotéticos en las migraciones con los cambios en fecundidad y mortalidad] (p. 159).
+Las críticas a esta teoría se asemejan a algunas de las vertidas con respecto a la transición demográfica propiamente dicha. Según Skeldon -@skeldon2012: es esencialmente una descripción a nivel macro basada en la experiencia de Europa occidental y Norteamérica, que relaciona en forma intuitiva los cambios hipotéticos en las migraciones con los cambios en fecundidad y mortalidad (traducción propia).
 
 ### Diálogo entre migraciones internacionales e internas
 
 Los procesos migratorios son la suma de un complejo conjunto de factores e interacciones que llevan a individuos y familias a migrar, y que luego influencian en el curso de dicha migración.
 
-*¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?*. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer vínculos entre ambos marcos teóricos, aunque en primer lugar traen a discusión la diferenciación entre dichos tipos de migración, ya que a veces el límite entre ellas puede ser difuso, dado que la distancia puede no tener una relevancia central (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de fronteras, como el espacio Schengen en Europa, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el lo hace hacia otro.
+¿Cómo se pueden relacionar las teorías de la migración internacional con los abordajes de migración interna?. King y Skeldon -@king2010 proponen algunos puntos de contacto a partir de los cuales se pueden establecer vínculos entre ambos marcos teóricos, aunque en primer lugar traen a discusión la diferenciación entre dichos tipos de migración, ya que a veces el límite entre ellas puede ser difuso, dado que la distancia puede no tener una relevancia central (ej.: una migración interna de miles de kilómetros dentro de un país grande, como EE.UU., Rusia, China o Brasil, en comparación con una entre estados fronterizos europeos). A su vez existen nuevos “tipos” de fronteras, como el espacio Schengen en Europa, y las fronteras pueden cambiar de acuerdo a los vaivenes (geo)políticos. De todas formas los autores reconocen la división entre ambas migraciones, entendiendo que sí hay una diferencia entre el individuo que migra dentro de su estado y el que lo hace hacia otro.
 
 Los autores proponen el esquema de la\ [@fig:migration_pathways] para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
 
@@ -329,7 +322,7 @@ Los flujos de población se pueden conceptualizar como intercambios entre dos en
 
 Las definiciones de atracción o “masa” entendidas como las características atractoras o expulsoras por un lado, y la “fuerza” entendida como los flujos entre dos entidades por otro, son una analogía con ley de gravedad de Newton, lo cual determinó que su denominación inicial fuera “modelos gravitacionales” [@delgado2003; @molho1986].
 
-Es posible interpretar la relación entre localidades y departamentos como una red o grafo, donde cada nodo es origen/destino, la conexión entre ellos, denominada “arco”, es el flujo de personas y el “peso” de esa conexión es la magnitud de ese flujo. Sobre dicho “peso” se pueden aplicar ponderadores como la distancia/costo [@miranda2012]. En una red de n localidades, existen n<sup>2</sup> – n arcos direccionales posibles, si se excluyen las conexiones de un nodo consigo mismo [@chun2008]. La red puede ser física, por ejemplo la red de transporte, o abstracta. Para el caso del análisis de las migraciones, si tomamos en cuenta que lo que interesaría es la magnitud de personas que migran y nos los caminos que usan para migrar, la red sería abstracta [@chun2008]. Vale mencionar que la referencia a redes no refiere a la teoría de “redes migratorias” [@dehaas2015].
+Es posible interpretar la relación entre localidades y departamentos como una red o grafo, donde cada nodo es origen/destino, la conexión entre ellos, denominada “arco”, es el flujo de personas y el “peso” de esa conexión es la magnitud de ese flujo. Sobre dicho “peso” se pueden aplicar ponderadores como la distancia/costo [@miranda2012]. En una red de n localidades, existen (n x n ) – n arcos direccionales posibles, si se excluyen las conexiones de un nodo consigo mismo [@chun2008]. La red puede ser física, por ejemplo la red de transporte, o abstracta. Para el caso del análisis de las migraciones, si tomamos en cuenta que lo que interesaría es la magnitud de personas que migran y nos los caminos que usan para migrar, la red sería abstracta [@chun2008]. Vale mencionar que la referencia a redes no refiere a la teoría de “redes migratorias” [@dehaas2015].
 
 El término “distancia” en general refiere a la distancia física en este abordaje, pero sabemos que las percepciones subjetivas de la distancia varían de persona a persona y dicha subjetividad podría ser relevante en un fenómeno que tiene un componente relativo a una decisión humana [@claeson1968].
 Entre los primeros antecedentes de los modelos de interacción espacial se encuentran los aportes de Reilly [@reilly1931], quien analizando actividades comerciales propuso una relación positiva entre la magnitud de flujos de consumidores entre localidades y la población residente en dichas localidades, en tanto que una relación negativa con el cuadrado de las distancias que las separa [@garrocho2003]. Reilly se basó en esos dos supuestos para elaborar un sencillo modelo, a posteriori denominado “Ley de Reilly” y que fue simiente de los futuros modelos de interacción espacial.
@@ -369,6 +362,31 @@ También se ha identificados el perfil más joven y feminizado de quienes migran
 [^1]:Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
 
 [^2]:La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
+
+\newpage
+
+# Marco metodológico
+
+## Fuentes de información
+
+La principal fuente de información para el presente trabajo serán los censos 1996 y 2011 realizados por el Instituto Nacional de Estadística (INE).
+En particular los censos 1996 y 2011 incorporaron preguntas relativas a la migración interna y se presentan en el siguiente cuadro.
+
+| Preguntas en censo 1996 | Preguntas en censo 2011 |
+|---|---|
+| En qué localidad o paraje vive habitualmente | Localización de la vivienda/hogar/persona |
+| En qué localidad o paraje paso a vivir cuando nació | Lugar de nacimiento |
+| "Si reside en Uruguay y nació en el extranjero, ¿en qué año llegó al Uruguay para vivir en él?" | Año de llegada a Uruguay |
+|  | Período de llegada a Uruguay |
+|  | Tiempo de residencia sin interrupciones en esta ciudad o localidad |
+|  | Lugar de residencia anterior |
+| En qué localidad o paraje vivía habitualmente hace 5 años en esta fecha | Lugar de residencia cinco años antes |
+
+Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
+
+En lo que refiere a capas de información grográfica, fueron empleadas las capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, la localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
+
+Según la revisión bibliográfica y de antecedentes, una de las variables necesarias para aplicar un modelo de interacción espacial es la distancia entre las unidades espaciales que se vayan a tomar en cuenta. Para ello es necesario el cálculo de una matriz de distancias origen-destino, y para el cálculo de dicha matriz se debe determinar un punto dentro de cada departamento que será tomado como origen-destino, a partir del cual se calcula la distancia hacia todos los demás puntos que representan los departamentos, y desde todos esos puntos hacia el primero.
 
 \newpage
 
@@ -483,26 +501,6 @@ En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grup
 
 \newpage
 
-# Estrategia metodológica y fuentes de información
-
-La principal fuente de información para el presente trabajo serán los censos 1996 y 2011 realizados por el Instituto Nacional de Estadística (INE).
-En particular los censos 1996 y 2011 incorporaron algunas preguntas que serán pertinentes al presente trabajo y se presentan en el siguiente cuadro.
-
-| Preguntas en censo 1996 | Preguntas en censo 2011 |
-|---|---|
-| En qué localidad o paraje vive habitualmente | Localización de la vivienda/hogar/persona |
-| En qué localidad o paraje paso a vivir cuando nació | Lugar de nacimiento |
-| "Si reside en Uruguay y nació en el extranjero, ¿en qué año llegó al Uruguay para vivir en él?" | Año de llegada a Uruguay |
-|  | Período de llegada a Uruguay |
-|  | Tiempo de residencia sin interrupciones en esta ciudad o localidad |
-|  | Lugar de residencia anterior |
-| En qué localidad o paraje vivía habitualmente hace 5 años en esta fecha | Lugar de residencia cinco años antes |
-
-Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
-
-Con respecto a los datos geográficos, se utilizarán dos insumos básicos: la capa de departamentos y la de localidades del INE. Los departamentos son unidades geoestadística y político-administrativas de segundo nivel de gobierno, la localidades son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
-
-Según la revisión bibliográfica y de antecedentes, una de las variables necesarias para aplicar un modelo de interacción espacial es la distancia entre las unidades espaciales que se vayan a tomar en cuenta. Para ello es necesario el cálculo de una matriz de distancias origen-destino, y para el cálculo de dicha matriz se debe determinar un punto dentro de cada departamento que será tomado como origen-destino, a partir del cual se calcula la distancia hacia todos los demás puntos que representan los departamentos, y desde todos esos puntos hacia el primero.
 
 ## Factores asociados a las migraciones internas
 
@@ -532,11 +530,9 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 
 Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
 
-## Pre-procesamiento de datos
+# Primera aplicación de un modelo de interación espacial
 
-A continuación se presenta un primer análisis basado en los datos del Censo INE 2011 [@ine2011d], publicados en la página web del Instituto. Se realizó un pre-procesamiento para seleccionar variables relevantes, reduciendo el volumen de datos y por tanto los requerimientos informáticos para su acceso.
-
-Como capas de información geográfica se cuenta la capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
+A continuación se presenta una primera aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 [@ine2011d], publicados en la página web del Instituto. Como capas de información geográfica se accedió a las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
 
 Se incluye una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
 
