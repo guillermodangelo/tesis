@@ -131,3 +131,43 @@ def cargar_matriz_deptos():
     matrix = pd.read_csv('tablas/matriz_deptos.csv', skiprows=2, index_col='depto_origen').values.tolist()   
     return matrix
         
+
+def format_depto(df, column):
+    "Formatea strings de departameto, AM y total"
+    deptos_dict = {
+        'AREA METRO': 'Área metropolitana',
+        'MONTEVIDEO': 'Montevideo',
+        'ARTIGAS': 'Artigas',
+        'CANELONES': 'Canelones',
+        'CERRO LARGO': 'Cerro Largo',
+        'COLONIA': 'Colonia',
+        'DURAZNO': 'Durazno',
+        'FLORES': 'Flores',
+        'FLORIDA': 'Florida',
+        'LAVALLEJA': 'Lavalleja',
+        'MALDONADO': 'Maldonado',
+        'PAYSANDU': 'Paysandú',
+        'RIO NEGRO': 'Río Negro',
+        'RIVERA': 'Rivera',
+        'ROCHA': 'Rocha',
+        'SALTO': 'Salto',
+        'SAN JOSE': 'San José',
+        'SORIANO': 'Soriano',
+        'TACUAREMBO': 'Tacuarembó',
+        'TREINTA Y TRES': 'Treinta y Tres',
+        'TOTAL':'Total',
+        'Total':'Total'
+        }
+
+    return df[column].map(deptos_dict)
+
+
+def loc_decode(df):
+    "Decodifica codlocs INE"
+    locs = pd.read_csv('tablas/localidades_censales_2011.csv',
+                  dtype= {'departamento': str,'localidad': str, 'codloc': str,},
+                  usecols=['departamento','localidad','codloc'])
+                  
+    merge_loc = df.merge(locs, left_on='loc_destino', right_on='codloc').drop('codloc', axis=1)
+
+    return  merge_loc

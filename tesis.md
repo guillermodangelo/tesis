@@ -390,17 +390,44 @@ Dicho proceso puede ser constado analizando las principales localidades de desti
 
 ![Migrantes internos con origen en Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_pais.pdf){#fig:mig_ori_mvo}
 
-**Los 7 principales destinos corresponden a localidades del área metrpolitana, y suman el 27% de las personas migrantes interna con origen den Montevideo. Esta realidad plantea un debate: ¿es válido considerar esos movimientos como migraciones internas o sería más preciso categorizarlas como simples cambios de residencia?**
+Los 7 principales destinos corresponden a localidades del área metrpolitana, y suman el 27% de las personas migrantes interna con origen den Montevideo.
 
 ![Migrantes internos con origen en Montevideo, zoom a área metropolitana de Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_zoom_am.pdf){#fig:mig_ori_mvo_zoom}
+
+En el mismo sentido, considerando las localidades del área metropolitana como una entidad conjunta que aglomera partes de Canelones y San José (Ciudad del Plata), el resultado del destino de los migrantes recientes con orígen en Montevideo se puede apreciar en la\ [@tbl:mig_am].
+
+| Entidad geográfica   |   personas |   porcentaje |
+|:---------------------|-----------:|-------------:|
+| Área metropolitana   |      32750 |        58.45 |
+| Artigas              |        894 |         1.6  |
+| Canelones (no A.M.)  |       1989 |         3.55 |
+| Cerro Largo          |       1355 |         2.42 |
+| Colonia              |       2015 |         3.6  |
+| Durazno              |        930 |         1.66 |
+| Flores               |        339 |         0.61 |
+| Florida              |        886 |         1.58 |
+| Lavalleja            |        746 |         1.33 |
+| Maldonado            |       3830 |         6.84 |
+| Paysandú             |       1059 |         1.89 |
+| Río Negro            |        821 |         1.47 |
+| Rivera               |       1626 |         2.9  |
+| Rocha                |       1211 |         2.16 |
+| Salto                |       1480 |         2.64 |
+| San José (no A.M.)   |        921 |         1.64 |
+| Soriano              |       1117 |         1.99 |
+| Tacuarembó           |       1329 |         2.37 |
+| Treinta y Tres       |        730 |         1.3  |
+| Total                |      56028 |       100    |
+
+Table: Migrantes recientes con origen en Montevideo, por departamentos y area metropolitana de Montevideo. {#tbl:mig_am}
+
+**Esta realidad plantea un debate: ¿es adecuado considerar esos movimientos como migraciones internas o sería más preciso categorizarlas como simples cambios de residencia?**
 
 Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.**
 
 <---
 buscar cita
 >---
-
-
 
 El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2011], que para el presente análisis denominaremos grupo 1, 2 y 3:
 
