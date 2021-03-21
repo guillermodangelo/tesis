@@ -107,12 +107,12 @@ Los inicios de la teorización sobre las migraciones datan de fines del siglo XI
 
 De Haas et. al. -@dehaas2015 diferencian, siguiendo a @massey1993, entre aquellas teorías orientadas las causas de la migración y aquellas orientadas a los impactos en las sociedades emisoras o receptoras. Los autores proponen un esquema que permite categorizar los procesos migratorios y las teorías que los abordan, conceptualizando a los movimientos migratorios como el resultado de la interacción entre estructuras macro y micro, en tanto proponen la existencia de meso-estructuras que vinculan las dos anteriormente mencionadas, proveyendo una explicación para la continuidad espacio-temporal de los procesos migratorios.
 
-|  | Macro\-estructuras | Meso\-estructuras | Micro\-estructuras |
+|            | Macro\-estructuras                        | Meso\-estructuras                  | Micro\-estructuras                                       |
 |------------|-------------------------------------------|------------------------------------|----------------------------------------------------------|
-| Definición | Factores institucionales de gran escala | Vínculo entre macro y micro escala | Prácticas, lazos familiares y creencias de los migrantes |
-| Ejemplos | Economía política del mercado mundial | Redes migratorias |  |
-|  | Relaciones entre estados\-nación | Comunidades de inmigrantes |  |
-|  | Políticas estatales de control migratorio | “Industria” de la migración |  |
+| Definición | Factores institucionales de gran escala   | Vínculo entre macro y micro escala | Prácticas, lazos familiares y creencias de los migrantes |
+| Ejemplos   | Economía política del mercado mundial     | Redes migratorias                  |                                                          |
+|            | Relaciones entre estados\-nación          | Comunidades de inmigrantes         |                                                          |
+|            | Políticas estatales de control migratorio | “Industria” de la migración        |                                                          |
 
 Table: Estructuras que intervienen en los procesos migratorios [@dehaas2015]
 
