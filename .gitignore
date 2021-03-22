@@ -5,3 +5,4 @@ capas/ine_deptos_generalizada.gpkg-wal
 *.gpkg-wal
 *.gpkg-shm
 *.lof
+*.docx#
