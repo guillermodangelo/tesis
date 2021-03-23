@@ -55,7 +55,8 @@ Este proyecto de investigación se enmarca en la geografía de la población, su
 
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. A modo de ejemplo vale mencionar como las migraciones se ven influidas por el espacio geográfico, generándose migraciones más intensas entre localidades cercanas o migraciones muy débiles entre localidades remotas, y en ese proceso también modifican y (re)construyen el espacio.
 
-En lo que refiere a la geografía de la población uruguaya, que se concentra altamente en departamentos costeros, en tanto estos son concetradores de la actividad económica, atendenr al fenómenos de la migración interna puede ser de utilidad para producir insumos que permitan conceptualizar, anticipar y discutir los flujos de población, para la creación de políticas de población y más ampliamente políticas de desarrollo en general (desarrollo regional, descentalización, empleo, transporte, urbanización y ordenamiento territorial).
+Otro aspecto que jerarquiza el estudio de las migraciones internas es el referido a las políticas de población, de desarrollo urbano, desarrollo regional y ordenamiento territorial.
+En el caso de Uruguay, para el cual se preveé una continuidad del proceso urbanizador, así como de la presión demográfica sobre el área metropolitanas de Montevideo y las zonas costeras [@calvo2012a], generar insumos para la reflexión sobre la elaboración de políticas de migración interna en clave de desarrollo urbano es de gran relevancia.
 
 \newpage
 
