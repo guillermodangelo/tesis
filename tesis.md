@@ -329,6 +329,7 @@ Las definiciones de atracción o “masa” entendidas como las características
 Es posible interpretar la relación entre localidades y departamentos como una red o grafo, donde cada nodo es origen/destino, la conexión entre ellos, denominada “arco”, es el flujo de personas y el “peso” de esa conexión es la magnitud de ese flujo. Sobre dicho “peso” se pueden aplicar ponderadores como la distancia/costo [@miranda2012]. En una red de n localidades, existen (n x n ) – n arcos direccionales posibles, si se excluyen las conexiones de un nodo consigo mismo [@chun2008]. La red puede ser física, por ejemplo la red de transporte, o abstracta. Para el caso del análisis de las migraciones, si tomamos en cuenta que lo que interesaría es la magnitud de personas que migran y nos los caminos que usan para migrar, la red sería abstracta [@chun2008]. Vale mencionar que la referencia a redes no refiere a la teoría de “redes migratorias” [@dehaas2015].
 
 El término “distancia” en general refiere a la distancia física en este abordaje, pero sabemos que las percepciones subjetivas de la distancia varían de persona a persona y dicha subjetividad podría ser relevante en un fenómeno que tiene un componente relativo a una decisión humana [@claeson1968].
+
 Entre los primeros antecedentes de los modelos de interacción espacial se encuentran los aportes de Reilly [@reilly1931], quien analizando actividades comerciales propuso una relación positiva entre la magnitud de flujos de consumidores entre localidades y la población residente en dichas localidades, en tanto que una relación negativa con el cuadrado de las distancias que las separa [@garrocho2003]. Reilly se basó en esos dos supuestos para elaborar un sencillo modelo, a posteriori denominado “Ley de Reilly” y que fue simiente de los futuros modelos de interacción espacial.
 
 Más cerca en el tiempo, los aportes de Allan Wilson -@wilson1971 complejizan los primigenios abordajes “gravitacionales”. Wilson introduce el concepto de “modelos de interacción espacial”, dejando atrás la nomenclatura de inspiración newtoniana. Además, propone una mejor justificación teórica, proponiendo una familia de cuatro modelos, diferenciados por la información conocida para limitar o condicionar los valores que la interacción puede tomar. En su esencia, los modelos de interacción espacial son formas estadísticas del modelo gravitatorio, incluyendo como factores la población en origen y en destino, la distancia entre ellos y alguna medida de competencia o atractividad [@raymer2007].
@@ -337,17 +338,9 @@ Teniendo los aportes de Wilson como basamento, los modelos de interacción espac
 
 ## Antecedentes del estudio de la migración interna en Uruguay
 
-Los primeros antecedentes se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008], estableciendo una asociación entre la producción agrícola intensiva, las urbanizaciones intermedias y el mayor desarrollo de la región sur, y por otro lado las prácticas extensivas y el desarrollo de “ciudades primadas”, es decir ciudades concentradoras de población y recursos económicos por oposición a un medio rural poco poblado y poco dinámico económicamente [@macadar2008].
+Los primeros antecedentes se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008]. Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta COntínua e Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
 
-Las principales fuentes cuantitativas para el estudio de la migración interna en Uruguay son los censos de población, que en la segunda mitad del siglo XX fueron ejecutados en 1963, 1975, 1985, 1996 y 2011.
-
-En línea generales, Montevideo presenta una tendencia al estancamiento en el crecimiento de su población desde el año 1963 [@bengochea2011] y una pérdida de población desde el 1996, debido a la radicación de personas en Canelones y San José, particularmente Ciudad de la Costa así como la emigración internacional, dado que gran parte de los emigrantes internacionales residían en Montevideo [@koolhaas2013; @bengochea2011].
-
-A partir de los datos del Censo de 1985 se constata una **reducción del atractivo de la zona litoral, suroeste y de Montevideo**, creciendo las localidades que conforman el área metropolitana de la capital [@macadar2008], al tiempo que adquiere importancia como región receptora el noroeste del país, asociada al tipo de cambio favorable y las dinámicas de la frontera con Brasil [@macadar1995; @bengochea2011]. No obstante lo mencionado, las principales corrientes migratorias siguieron teniendo como origen y destino al departamento de Montevideo [@calvo1995].
-
-El censo de 1996 permite identificar un aumento importante de la población en la costa del departamento de Canelones junto con el ya mencionado decrecimiento poblacional en Montevideo [@bengochea2011; @pellegrino2009]. A su vez se identifica un saldo migratorio negativo de los departamentos de la frontera noreste para con Montevideo, revirtiéndose el fenómeno que aconteció durante la década de los 80s [@macadar2008] y emerge el departamento de Maldonado como atractor de migración interna [@bengochea2011].
-
-Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José, Colonia y Salto tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
+Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José y Colonia tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
 
 | cat.        | 1970/1975 |  %    | 1980/1985 | %     | 1991/1996 |%      | 2006/2011 |%      |
 |-------------|-----------|-------|-----------|-------|-----------|-------|-----------|-------|
@@ -357,15 +350,39 @@ Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, C
 
 Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d). {#tbl:mig_recientes}
 
-La migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. La migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011].
-
-La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
+La migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. La migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011]. La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
 También se ha identificados el perfil más joven y feminizado de quienes migran hacia Montevideo. Por otro lado, el perfil de familias completas de quienes migran desde Montevideo, integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
+
+Tal cual se mencionó anteriormente, no existen antecedentes específicos de uso de modelos de interacción espacial aplicados a migraciones internas en Uruguay. En ese sentido, la presente investigación cubre un vacío en la literatura acdémica al respecto. **COMPLETAR**
 
 [^1]:Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
 
 [^2]:La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
+
+## Modelos de interacción espacial en el estudio de la migraciones
+
+Existen bastantes antecedentes regionales e internacionales de aplicaciones específicas de modelos de interacción espacial al análisis de migraciones, tanto internas como internacionales.
+
+**idea: distribución de distancias contra edades y sexos en migrantes recientes**
+
+
+Referido a España, Santos -@santos1994 aplica modelos de interacción espacial a matrices de flujos migratorios interregionales en dos períodos diferentes (1970 y 1990), usando datos censales y con intenciones explicativas, no predictivas. A la matriz de flujos se incorporan las distancias euclidianas relativas, la jerarquía urbana medida por el volumen de la población, un factor de rechazo de los lugares de origen medido por el porcentaje de la población activa agraria, un factor de atracción de los lugares de destino medido por el porcentaje de población con empleos en el sector industrial y el nivel de los salarios y una variable *dummy* indicando la contigüidad geográfica (es decir si hay o no limites compartidos), llegando a la siguiente expresión del modelo:
+
+(@) $$T_{ij} = K P_{i}^{\alpha} P_{j}^{\beta} d_{ij} ^{-\gamma} e^{\lambda b_{ij}}$$
+
+En ambos casos (1970 y 1990) el volumen de población de los lugares de origen y destino, o “jerarquía urbana”, se identifican como los factores más estables y relevantes para explicar las causas de la migración.
+
+Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacción espacial condicionado en origen para simular flujos de migración interna en México, también a escala interregional, y sobre esa base genera escenarios migratorios hipotéticos.
+
+La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
+
+Dennet -@dennett2018 aplica a la migración interna en Australia tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble.
+
+Se extraen flujos de migración y las siguientes variables: población total, tasa de desempleo, ingreso mediano semanal y porcentaje de hogares cuya vivienda es alquilada. A partir de esos datos se construye la matriz origen-destino entre 15 unidades geoestadísiticas que cubren todo el territorio australiano. En las tres aplicaciones usa un modelo de regresión de Poisson para seleccionar los coeficientes que mejor ajustan el modelo. Los modelos estimados se utilizan para predecir los flujos migratorios entre las unidades geoestadísiticas.
+
+
+**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, poot. stillwell, yano, yaojung, sarra y shen , lamonica, ** 
 
 \newpage
 
@@ -569,13 +586,9 @@ Se incluye una matriz de distancias entre cada centro medio de población, calcu
 
 Se prefirió usar el centro medio de población, en detrimento del centroide o la capital departamental. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
-$$
-\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}
-$$
+(@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
 
-$$
-\overline{Y}_w=\frac{\sum_{i=1}^{n}w_{i}Y_{i}}{\sum_{i=1}^{n} w_{i}}
-$$
+(@) $$\overline{Y}_w=\frac{\sum_{i=1}^{n}w_{i}Y_{i}}{\sum_{i=1}^{n} w_{i}}$$
 
 En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
 
@@ -632,19 +645,19 @@ A continuación se presenta una primera aplicación del modelo restringido en or
 
 El modelo se define de la siguiente forma:
 
-1 $$T_{ij} = A_{i}O_{i}W_{j}^{\alpha}d_{ij}^{-\beta}$$
+(@) $$T_{ij} = A_{i}O_{i}W_{j}^{\alpha}d_{ij}^{-\beta}$$
 
 dónde
 
-2 $$O_{i} = \sum_{j}T_{ij}$$
+(@) $$O_{i} = \sum_{j}T_{ij}$$
 
-3 $$A_{i} = \frac{1}{\sum_{j}W_{j}^{\alpha}d_{ij}^{-\beta}}$$
+(@) $$A_{i} = \frac{1}{\sum_{j}W_{j}^{\alpha}d_{ij}^{-\beta}}$$
 
 En el modelo restringido en origen $O_{i}$ no tiene parámetro dado que refiere valores conocidos. $A_{i}$ es un factor de balance que refiere a cada origen $i$. Más específicamente $A_{i}$ permite que la suma de los valores estimados sea igual al total conocido $O_{i}$
 
 La forma multiplicativa del modelo puede ser modificada, re-especificado el modelo como un modelo de regresión de Poisson [@dennett2018]. Para ello se aplica el logaritmo al lado derecho de la ecuación, y asumiendo que están logarítmicamente vinculados a la media con distribución de Poisson  ($\lambda_{ij}$) de la variable $T_{ij}$, se obtiene
 
-4 $$ \lambda_{ij} = \exp( \mu_{i} + \alpha \ln W_{j} - \beta \ln d_{ij} )$$
+(@) $$ \lambda_{ij} = \exp( \mu_{i} + \alpha \ln W_{j} - \beta \ln d_{ij} )$$
 
 Reemplazamos la variable independiente (los estimados $T_{ij}$) por la media de la distribución de Poisson $\lambda_{ij}$, la cual se asume como modelada por una combinación lineal de las variables del modelo.
 
@@ -662,7 +675,7 @@ Se identifican cuatro departamentos para los cuales el modelo no devuelve un p-v
 
 A partir de los parámetros calculados se procede a la estimación del modelo restringido en origen. Los parámetros se insertan en la ecuación nro. 4.
 
-$$ \lambda_{ij} = \exp( \mu_{i} + 0,8527 ln W_{j}  + 0,7830 ln d_{ij} )$$
+(@) $$\lambda_{ij} = \exp( \mu_{i} + 0,8527 ln W_{j}  + 0,7830 ln d_{ij} )$$
 
 Se recuperan los valores $\mu_{i}$ que el modelo devuelve para cada departamento.
 
@@ -677,11 +690,11 @@ Se puede apreciar como en la columna "Total" los valores se mantienen con respec
 
 Se puede expresar de la siguiente forma:
 
-$$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
+(@) $$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
 
 y
 
-$$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} \neq D_{j}$$
+(@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} \neq D_{j}$$
 
 El modelo presenta los siguientes valores de bondad de ajuste:
 
@@ -693,17 +706,17 @@ RMSE = 322,3049
 
 A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, por el contrario estas variables deben ser relativas a ambos [@dennett2018].
 
-5 $$T_{ij} = A_{i}O_{i}B_{i}D_{j}d_{ij}^{-\beta }$$
+(@) $$T_{ij} = A_{i}O_{i}B_{i}D_{j}d_{ij}^{-\beta }$$
 
 dónde
 
-6 $$O_{i} = \sum_{j}T_{ij}$$
+(@) $$O_{i} = \sum_{j}T_{ij}$$
 
-7 $$D_{j} = \sum_{i}T_{ij}$$
+(@) $$D_{j} = \sum_{i}T_{ij}$$
 
-8 $$A_{i} = \frac{1}{\sum_{j}B_{j}D_{j}d_{ij}^{-\beta}}$$
+(@) $$A_{i} = \frac{1}{\sum_{j}B_{j}D_{j}d_{ij}^{-\beta}}$$
 
-9 $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
+(@) $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
 
 La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B_{j}$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
 
@@ -726,11 +739,11 @@ A continuación de presenta la matriz de origen destino con los valores estimado
 
 Comparando la matriz de valores estimados mediante el modelo de restricción doble con la matriz de datos relevados en el censo se puede ver como los valores totales de origen y destino $O_{i}$ y $D_{j}$ se mantienen prácticamente iguales, con algunas diferencias producto del redondeo, lo que equivale a la siguientes afirmaciones:
 
-$$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
+(@) $$\sum_{j}T_{ij} = \sum_{j}\lambda_{ij} = O_{i}$$
 
 y
 
-$$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
+(@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
 \newpage
 
