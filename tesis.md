@@ -362,12 +362,16 @@ Tal cual se mencionó anteriormente, no existen antecedentes específicos de uso
 
 ## Modelos de interacción espacial en el estudio de la migraciones
 
-Existen bastantes antecedentes regionales e internacionales de aplicaciones específicas de modelos de interacción espacial al análisis de migraciones, tanto internas como internacionales.
-
 **idea: distribución de distancias contra edades y sexos en migrantes recientes**
 
+A pesar de no contar con antecedentes nacionales de uso de modelos de interacción espacial para el estudio de las migraciones, existen varios antecedentes internacionales de su aplicación, tanto para el estudio de las migraciones internas como internacionales.
 
-Referido a España, Santos -@santos1994 aplica modelos de interacción espacial a matrices de flujos migratorios interregionales en dos períodos diferentes (1970 y 1990), usando datos censales y con intenciones explicativas, no predictivas. A la matriz de flujos se incorporan las distancias euclidianas relativas, la jerarquía urbana medida por el volumen de la población, un factor de rechazo de los lugares de origen medido por el porcentaje de la población activa agraria, un factor de atracción de los lugares de destino medido por el porcentaje de población con empleos en el sector industrial y el nivel de los salarios y una variable *dummy* indicando la contigüidad geográfica (es decir si hay o no limites compartidos), llegando a la siguiente expresión del modelo:
+
+
+
+
+
+Referido a España, Santos -@santos1994 aplicó modelos de interacción espacial a matrices de flujos migratorios interregionales en dos períodos diferentes (1970 y 1990), usando datos censales y con intenciones explicativas, no predictivas. A la matriz de flujos se incorporan las distancias euclidianas relativas, la jerarquía urbana medida por el volumen de la población, un factor de rechazo de los lugares de origen medido por el porcentaje de la población activa agraria, un factor de atracción de los lugares de destino medido por el porcentaje de población con empleos en el sector industrial y el nivel de los salarios y una variable *dummy* indicando la contigüidad geográfica (es decir si hay o no limites compartidos), llegando a la siguiente expresión del modelo:
 
 (@) $$T_{ij} = K P_{i}^{\alpha} P_{j}^{\beta} d_{ij} ^{-\gamma} e^{\lambda b_{ij}}$$
 
@@ -377,12 +381,16 @@ Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacci
 
 La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
 
-Dennet -@dennett2018 aplica a la migración interna en Australia tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble.
+En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interregional en Nueva Zelanda. A su vez, los autores identifican un aumento  reciente en el interés académico por los modelos gravitatorios y las miraciones, que atribuyne en parte a la mayor disponibilidad de datos diádicos y por el mayor flujo de personas (ya sea por migraciones o movilidad pendulares)
+
+
+Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas implementadas en software R [@dennett2012; @dennett2018]. La primera refiere a la aplicación sobre datos de migración interna de Austria [@dennett2018]. La segunda se enfoca en la migración interna en Australia, aplicando tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble [@dennett2018].
 
 Se extraen flujos de migración y las siguientes variables: población total, tasa de desempleo, ingreso mediano semanal y porcentaje de hogares cuya vivienda es alquilada. A partir de esos datos se construye la matriz origen-destino entre 15 unidades geoestadísiticas que cubren todo el territorio australiano. En las tres aplicaciones usa un modelo de regresión de Poisson para seleccionar los coeficientes que mejor ajustan el modelo. Los modelos estimados se utilizan para predecir los flujos migratorios entre las unidades geoestadísiticas.
 
 
-**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, poot. stillwell, yano, yaojung, sarra y shen , lamonica, ** 
+
+**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, poot. stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
 
 \newpage
 
@@ -595,6 +603,14 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 ![Mapa de centroides, capitales departamentales y centro medio de población calculado según las fórmulas mencionadas.](mapas_graficas/centro_poblacion.pdf)
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
+
+Where do you start?
+In this paper the example of closed migration flow system will be used for demonstration, although the general principles can be applied to any similar flow system. The spatial interaction modelling process can be divided into two phases: The first involves fitting the model to existing data and calibrating ‘best fit’ parameters. This can be an end in itself when the model is used for exploratory analysis, as goodness-of-fit statistics allow the model builder to assess how well the model has been specified or how well the assumptions that have been made in the model are able to reproduce observed reality. The model parameters can also be interpreted with direct reference to the real world, for example with distance decay parameters allowing the assessment of the frictional effect of distance on migration moves (Fotheringham, and O'Kelly 1989). The second phase in the modelling process uses the calibrated parameters from the first phase as inputs into new estimation models which can produce flow approximations for missing or incomplete data.
+
+[@dennett2012]
+
+
+
 
 Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno.
 
