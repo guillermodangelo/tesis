@@ -281,13 +281,13 @@ Durante los años 50s y 60s, tomando la iniciativa de Schaefer, geógrafos de la
 
 El auge de la geografía cuantitativa pavimentó el camino para el surgimiento de los abordajes basados en modelos espaciales predictivos, entre ellos los modelos de interacción espacial, siendo Allan Wilson uno de sus principales referentes -@wilson1971.
 
-Hacia la década de los 70s, alentados por los cambios políticos, económicos y culturales que estaban teniendo lugar, el abordaje cuantitativo comienza a ser duramente cuestionado, calificado de positivista, carente de sustentos teóricos y de potencia explicativa, al tiempo que surgen nuevos abordajes cualitativos [@birkin2019]: estamos ante el nacimiento de la geografía crítica [@correa1990].
+Hacia la década de los 70s, alentados por los cambios políticos, económicos y culturales que estaban teniendo lugar, el abordaje cuantitativo comienza a ser duramente cuestionado, calificado de positivista, carente de sustentos teóricos y de potencia explicativa, al tiempo que surgen nuevos abordajes cualitativos [@birkin2019]. Estamos ante el nacimiento de la geografía crítica [@correa1990].
 
 Los críticos identificaron un “fetichismo espacial” en la geografía cuantitativa, dado que las relaciones sociales pretendían ser tratadas puramente como relaciones espaciales. Esta crítica dio lugar a nuevos abordajes orientados al análisis de procesos, introduciéndose el concepto de “espacio relacional”, según el cual el espacio está imbricado en las relaciones sociales a través de las prácticas [@gregory2009]. Desde la perspectiva del espacio relacional, se entiende que el espacio absoluto y relativo no se pueden separar, y torna la mirada hacia los sistemas sociales que producen diferentes estructuras espaciales [@kuhlke2006]. En ese sentido, el espacio es un agente (entre otros) en la construcción de las relaciones sociales y económicas, y a su vez es construido por dichas relaciones y prácticas sociales [@kitchin2009]. Esta visión fue introducida primeramente por los denominadas geógrafos radicales, por ejemplo los marxistas o feministas [@kitchin2009].
 
 Posteriormente, entrada la década de los años 80s, los abordajes cuantitativos y la modelación espacial volvieron a cobrar relevancia, facilitadas por las nuevas posibilidades brindadas por los avances en tecnologías informáticas, y en particular por la mayor capacidad de cómputo [@birkin2019].
 
-En los párrafos anteriores se intentó resumir en forma muy somera el devenir teórico de la  Geografía, en particular en su relación con el concepto de “espacio", cuya definición es siempre elusiva y responde a la concepción teórica desde la cual se lo aborda. En suma, se identificaron tres grandes acepciones del espacio: absoluto, relativo y relacional.
+En los párrafos anteriores se intentó resumir en forma somera el devenir teórico de la  Geografía, en particular en su relación con el concepto de “espacio", cuya definición es siempre elusiva y responde al marco teórico desde la cual se lo aborda. En suma, se identificaron tres grandes acepciones del espacio: absoluto, relativo y relacional.
 
 En cuanto a la complejidad del fenómeno y su relación con las diferentes acepciones del espacio geográfico, vale mencionar las diferentes conceptualizaciones que se pueden hacer de la “distancia”, enunciadas por Waldo Tobler -@tobler2004: métrica, elipsoidal, en unidades de tiempo o costo de viaje, distancia Manhattan, riemmanianas o de Finsler, distancia social, topológica y ordinal; a las que cabría agregar la distancia funcional [@claeson1968]. Todas estas concepciones de distancia se relacionan con un abordaje diferente del espacio geográfico, y como consecuencia “proximidad” o “lejanía” pueden significar cosas diferentes según cada concepción [@tobler2004]. A modo de ejemplo,  señalamos otro aspecto de gran relevancia: la percepción de la distancia, la cual es necesariamente subjetiva y su importancia no es menor en tanto que los movimientos migratorios tienen por protagonistas a sujetos [@claeson1968], Esto refiere a que el espacio vivido difiere plenamente de aquel espacio absoluto, en tanto los comportamientos espaciales humanos están basados un espacio cognitivo, es decir una construcción del pensamiento [@kitchin2009]. Sin embargo, la posibilidad de operacionalizar la percepción espacial, en este caso la de las distancias, implicaría un trabajo cualitativo y escapa a los objetivos de la presente investigación.
 
@@ -381,16 +381,19 @@ Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacci
 
 La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
 
-En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interregional en Nueva Zelanda. A su vez, los autores identifican un aumento  reciente en el interés académico por los modelos gravitatorios y las miraciones, que atribuyne en parte a la mayor disponibilidad de datos diádicos y por el mayor flujo de personas (ya sea por migraciones o movilidad pendulares)
+En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interna en Nueva Zelanda. Como particularidad vale mencionar la inclusión de las migraciones internacionales como parte del modelo. Dado que la formulación del modelo aplicado es de tipo logarítmica, a las díadas con flujos nulos (es decir sin flujos) se les imputa un valor de 0,5.
+Otra característica a destacar del estudio es el uso de varias medidas de distancias, así como distancias/tiempo históricas complemenetadas con distancias/tiempo actuales (obtenidas de Google Maps).
 
+Como resultado no identifican que el acortamiento de las distancias y tiempos de viajes entre localidades haya implicado un aumento de los flujos migratorios.
+*A posteriori* los autores analizan las posibilidades de incorporación de proyecciones demográficas a nivel subnacional.
+
+Finalmente, los autores destacan el aumento reciente en el interés académico por los modelos gravitatorios y las miraciones, que atribuyen en parte a la mayor disponibilidad de datos diádicos y por el mayor flujo de personas (ya sea por migraciones o movilidad pendulares).
 
 Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas implementadas en software R [@dennett2012; @dennett2018]. La primera refiere a la aplicación sobre datos de migración interna de Austria [@dennett2018]. La segunda se enfoca en la migración interna en Australia, aplicando tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble [@dennett2018].
 
 Se extraen flujos de migración y las siguientes variables: población total, tasa de desempleo, ingreso mediano semanal y porcentaje de hogares cuya vivienda es alquilada. A partir de esos datos se construye la matriz origen-destino entre 15 unidades geoestadísiticas que cubren todo el territorio australiano. En las tres aplicaciones usa un modelo de regresión de Poisson para seleccionar los coeficientes que mejor ajustan el modelo. Los modelos estimados se utilizan para predecir los flujos migratorios entre las unidades geoestadísiticas.
 
-
-
-**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, poot. stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
+**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, etzo, peeters, piras y aldashev (sobre variables determinantes de la migración interna), stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
 
 \newpage
 
@@ -592,7 +595,7 @@ A continuación se presenta una primera aplicación de modelos de interacción e
 
 Se incluye una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
 
-Se prefirió usar el centro medio de población, en detrimento del centroide o la capital departamental. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
+Se prefirió usar el centro medio de población en lugar del centroide o la capital departamental, en forma similar a la desición tomada por Poot et al. -@poot2016, en el entendido de que el centro medio representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
 (@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
 
@@ -765,7 +768,11 @@ y
 
 # Cómo seguir.
 
-Con respecto al marco teórico y los antecedentes: profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación.
+Con respecto al marco teórico y los antecedentes:
+
+- Profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación
+- Referenciar el paper de Anderson (2011) sobre modelos gravitatorios
+- Referenciar enciclopedia del GIS en el apartado "La interacción espacial y su modelación"
 
 Con respecto a la metodología y resultados:
 
