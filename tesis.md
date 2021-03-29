@@ -121,7 +121,7 @@ A su vez, los autores identifican dos paradigmas principales en los cuales agrup
 
 ### Las primeras contribuciones
 
- Las “leyes de la migración”, formuladas por Ravenstein en el siglo XIX, se consideran la primera teorización sobre migración y se derivan de sus observaciones de la migración interna [@king2010]. Analizando fuentes de datos demográficos oficiales de varios países, Ravenstein identificó a algunas generalizaciones empíricas que aún hoy son consideradas relevantes [@arango1985; @gregory2009]. A modo de ejemplo:
+ Las “leyes de la migración”, formuladas por Ravenstein en el siglo XIX, se consideran la primera teorización sobre migración y se derivan de sus observaciones de la migración interna [@king2010]. Analizando fuentes de datos demográficos oficiales de varios países, Ravenstein identificó a algunas generalizaciones empíricas que aún hoy son consideradas relevantes [@arango1985; @gregory2009; @he2003]. A modo de ejemplo:
 
 - El rol de la distancia como factor de estímulo, o por el contrario como “fricción” (hay más movimientos de corta distancia que de larga distancia).
 
@@ -381,19 +381,40 @@ Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacci
 
 La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
 
+Los autores He y Pooler -@he2003 aplicaron un modelo de interacción espacial restringido en origen y con variables adicionales, para modelar la migración inter-provincial en China  a partir de datos de los períodos 1982-87 y 1985-90, usando como función de la distancia una función de potencia inversa. Las variables adicionales fueron: la migración pasada en origen y destino (llamada *stock* de migrantes) y una medida de inversión promedio anual.
+La formulación del modelo es la siguiente:
+
+(@) $$M_{ij} = h_{j} s_{ij} A_{i} O_{i} d_{ij} ^{-\beta}$$
+
+dónde $$A_{i}$$ es el factor de balance, definido cómo:
+
+(@) $$A_{i} = \left[{\sum_{j} h_{j} s_{ij} d_{ij}^{-\beta}} \right]^{-1}$$
+
+M_{ij} es el valor de migrantes entre provincias que predice el modelo.
+h_{j} es el promedio de la  inversión anual total
+s_{ij} es el stock de migrantes
+O_{i} es el valor de migrantes salientes
+d_{ij} ^{-\beta} es la función de distancia
+
+El stock de migrantes se justifica en la producción teórica relativa a la migración en cadena, prosteriormente relacionada a la teoría de las redes sociales, la cual los autores identifican como relevante en las migraciones internas de China, principalmente en el marco de los movimientos rural-urbano.
+
+Para seleccionar la variable adicional en destino, analizaron la correlación entre seis variables relevantes y luego calibraron el modelo con las seis variables, para seleccionar aquella que mejorara la performance del mismo. A partir de esos dos criterios concluyen que lo más adecuado es incluir la variable "inversión promedio total anual".
+
+Como conclusión destacan la mayor precisión alcanzada por el modelo con variables agregadas por sobre el modelo convencional.
+
+
 En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interna en Nueva Zelanda. Como particularidad vale mencionar la inclusión de las migraciones internacionales como parte del modelo. Dado que la formulación del modelo aplicado es de tipo logarítmica, a las díadas con flujos nulos (es decir sin flujos) se les imputa un valor de 0,5.
 Otra característica a destacar del estudio es el uso de varias medidas de distancias, así como distancias/tiempo históricas complemenetadas con distancias/tiempo actuales (obtenidas de Google Maps).
 
-Como resultado no identifican que el acortamiento de las distancias y tiempos de viajes entre localidades haya implicado un aumento de los flujos migratorios.
-*A posteriori* los autores analizan las posibilidades de incorporación de proyecciones demográficas a nivel subnacional.
+Como resultado no identifican que el acortamiento de las distancias y tiempos de viajes entre localidades haya implicado un aumento de los flujos migratorios. *A posteriori* los autores analizan las posibilidades de incorporación de proyecciones demográficas a nivel subnacional.
 
 Finalmente, los autores destacan el aumento reciente en el interés académico por los modelos gravitatorios y las miraciones, que atribuyen en parte a la mayor disponibilidad de datos diádicos y por el mayor flujo de personas (ya sea por migraciones o movilidad pendulares).
 
-Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas implementadas en software R [@dennett2012; @dennett2018]. La primera refiere a la aplicación sobre datos de migración interna de Austria [@dennett2018]. La segunda se enfoca en la migración interna en Australia, aplicando tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble [@dennett2018].
+Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas implementadas en software R [@dennett2012; @dennett2018]. La primera refiere a la aplicación sobre datos de migración interna de Austria [@dennett2012]. La segunda se enfoca en la migración interna en Australia, aplicando tres de los cuatro modelos de la familia de Wilson: restringido en origen, restringido en destino y de resitricción doble [@dennett2018]. Se extraen flujos de migración y las siguientes variables: población total, tasa de desempleo, ingreso mediano semanal y porcentaje de hogares cuya vivienda es alquilada. A partir de esos datos se construye la matriz origen-destino entre 15 unidades geoestadísiticas que cubren todo el territorio australiano. En las tres aplicaciones usa un modelo de regresión de Poisson para seleccionar los coeficientes que mejor ajustan el modelo. Los modelos estimados se utilizan para predecir los flujos migratorios entre las unidades geoestadísiticas.
 
-Se extraen flujos de migración y las siguientes variables: población total, tasa de desempleo, ingreso mediano semanal y porcentaje de hogares cuya vivienda es alquilada. A partir de esos datos se construye la matriz origen-destino entre 15 unidades geoestadísiticas que cubren todo el territorio australiano. En las tres aplicaciones usa un modelo de regresión de Poisson para seleccionar los coeficientes que mejor ajustan el modelo. Los modelos estimados se utilizan para predecir los flujos migratorios entre las unidades geoestadísiticas.
+Del mismo autor se relevó un el desarrollo de un modelo de interacción espacial multinel para la estimación de la migración interregional en Europa [@dennett2013].
 
-**Faltan papers por referenciar: dennet, li, He, Nakaya?, pirani, etzo, peeters, piras y aldashev (sobre variables determinantes de la migración interna), stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
+**Faltan papers por referenciar: dennet, li, He, Nakaya?, etzo, peeters, piras y aldashev (sobre variables determinantes de la migración interna), stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
 
 \newpage
 
