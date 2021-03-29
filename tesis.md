@@ -381,6 +381,8 @@ Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacci
 
 La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
 
+Yano el al. -@yano2003 aplicaron modelos de interacción espacial para comparar las conductas migratorios en Japón y Gran Bretaña con datos de princiìos de los años 90s, identificando que en ambos casos el grado en que afecta la distancia como factor de disuación de la migración se mantiene en ambos países. Por otro lado, encuentran diferencias en las preferencias de hacia donde migrar, siendo las grande áreas urbanas más atractivas para los migrantes internos en Japón, hecho que los autores relacionan con diferencias culturales y por encontrarse ambos países en momentos diferentes del desarrollo.
+
 Los autores He y Pooler -@he2003 aplicaron un modelo de interacción espacial restringido en origen y con variables adicionales, para modelar la migración inter-provincial en China  a partir de datos de los períodos 1982-87 y 1985-90, usando como función de la distancia una función de potencia inversa. Las variables adicionales fueron: la migración pasada en origen y destino (llamada *stock* de migrantes) y una medida de inversión promedio anual.
 La formulación del modelo es la siguiente:
 
@@ -398,9 +400,9 @@ d_{ij} ^{-\beta} es la función de distancia
 
 El stock de migrantes se justifica en la producción teórica relativa a la migración en cadena, prosteriormente relacionada a la teoría de las redes sociales, la cual los autores identifican como relevante en las migraciones internas de China, principalmente en el marco de los movimientos rural-urbano.
 
-Para seleccionar la variable adicional en destino, analizaron la correlación entre seis variables relevantes y luego calibraron el modelo con las seis variables, para seleccionar aquella que mejorara la performance del mismo. A partir de esos dos criterios concluyen que lo más adecuado es incluir la variable "inversión promedio total anual".
+Para seleccionar la variable adicional en destino, analizaron la correlación entre seis variables relevantes y luego calibraron el modelo con las seis variables, para seleccionar aquella que mejorara la performance del mismo. A partir de esos dos criterios concluyen que lo más adecuado es incluir la variable "inversión promedio total anual". Como conclusión destacan la mayor precisión alcanzada por el modelo con variables agregadas por sobre el modelo convencional.
 
-Como conclusión destacan la mayor precisión alcanzada por el modelo con variables agregadas por sobre el modelo convencional.
+Por su parte, Yaojung et at. -@yaojun2019 realizaron un índice de atractividad relativa para la prefecturas de China, siguiendo el trabajo desarrollado por Fotheringham et al. -@fotheringham2000. Los autores concluyne que la región central de China es la menos atractiva para los migrantes, que las grandes ciudades son más atractivas que las medianas y pequeñas y que la atractividad es variables según los grupos de edad y el nivel educativo de los migrantes.
 
 
 En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interna en Nueva Zelanda. Como particularidad vale mencionar la inclusión de las migraciones internacionales como parte del modelo. Dado que la formulación del modelo aplicado es de tipo logarítmica, a las díadas con flujos nulos (es decir sin flujos) se les imputa un valor de 0,5.
@@ -414,7 +416,7 @@ Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas imp
 
 Del mismo autor se relevó un el desarrollo de un modelo de interacción espacial multinel para la estimación de la migración interregional en Europa [@dennett2013].
 
-**Faltan papers por referenciar: dennet, li, He, Nakaya?, etzo, peeters, piras y aldashev (sobre variables determinantes de la migración interna), stillwell (flowerdew 2010), yano, yaojung, sarra y shen , lamonica** 
+**Faltan papers por referenciar: dennet, li, peeters, stillwell (flowerdew 2010), sarra y shen , lamonica, Zhiqiang (en stillwell 2010), haynes 2020** 
 
 \newpage
 
@@ -609,6 +611,8 @@ En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se ide
 - Variables dummy para indicar migración entre regiones o migración hacia Estanbul
 
 Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
+**ver etzo 2011**
+**cambiar estructura**
 
 # Primera aplicación de un modelo de interación espacial
 
