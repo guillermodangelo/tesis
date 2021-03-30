@@ -412,7 +412,7 @@ Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas imp
 
 Del mismo autor se relevó un el desarrollo de un modelo de interacción espacial multinel para la estimación de la migración interregional en Europa [@dennett2013].
 
-Una de las limitantes de los modelos de interacción espacial presentes en la literatura, refiere al sesgo de endogeneidad por variables omitidas. Tal como se establece en la revisión teórica, la migración no es considerada un proceso aleatorio, sino que emerge de las decisiones de los migrantes, las cuales son tomadas en determinados contextos espaciales [@peeters2012].
+Una de las limitantes de los modelos de interacción espacial presentes en la literatura, refiere al sesgo de endogeneidad por variables omitidas. Tal como se establece en la revisión teórica, la migración no es considerada un proceso aleatorio, sino que emerge de las decisiones de los migrantes, las cuales son tomadas en determinados contextos espaciales [@peeters2012]. Peeters -@peeters2012 propone dar cuenta de las particularidades de la estrucutra espacial utilizando pendientes bilatereales, es decir entre cada díada.
 
 **Faltan papers por referenciar: dennet, peeters, stillwell (flowerdew 2010), sarra y shen , lamonica, Zhiqiang (en stillwell 2010), haynes 2020** 
 
