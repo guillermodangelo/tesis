@@ -366,11 +366,6 @@ Tal cual se mencionó anteriormente, no existen antecedentes específicos de uso
 
 A pesar de no contar con antecedentes nacionales de uso de modelos de interacción espacial para el estudio de las migraciones, existen varios antecedentes internacionales de su aplicación, tanto para el estudio de las migraciones internas como internacionales.
 
-
-
-
-
-
 Referido a España, Santos -@santos1994 aplicó modelos de interacción espacial a matrices de flujos migratorios interregionales en dos períodos diferentes (1970 y 1990), usando datos censales y con intenciones explicativas, no predictivas. A la matriz de flujos se incorporan las distancias euclidianas relativas, la jerarquía urbana medida por el volumen de la población, un factor de rechazo de los lugares de origen medido por el porcentaje de la población activa agraria, un factor de atracción de los lugares de destino medido por el porcentaje de población con empleos en el sector industrial y el nivel de los salarios y una variable *dummy* indicando la contigüidad geográfica (es decir si hay o no limites compartidos), llegando a la siguiente expresión del modelo:
 
 (@) $$T_{ij} = K P_{i}^{\alpha} P_{j}^{\beta} d_{ij} ^{-\gamma} e^{\lambda b_{ij}}$$
@@ -380,6 +375,8 @@ En ambos casos (1970 y 1990) el volumen de población de los lugares de origen y
 Para el caso de México, Garrocho -@garrocho1996 utilizó un modelo de interacción espacial condicionado en origen para simular flujos de migración interna en México, también a escala interregional, y sobre esa base genera escenarios migratorios hipotéticos.
 
 La aplicación del modelo se divide en dos partes. En primer lugar la calibración (cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria) para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la modificación de los valores para generar escenarios probables [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
+
+Boyle et al. -@boyle1998 modelaron la migración entre los distritos electorales de Hereford y Worcester, Inglaterra, entre 1990 y 1991. Como conclusión se destacacan que la función de distancia más apropiada fue la exponencial negativa, en lugar de la función potencial. Con respecto a las variables adicionales, se encuentran asociaciones positivas con el tamaño poblacional, la finalización de viviendas privadas nuevas durante el período de estudio y la presencia de vivienda pública (*council housing*).
 
 Yano el al. -@yano2003 aplicaron modelos de interacción espacial para comparar las conductas migratorios en Japón y Gran Bretaña con datos de princiìos de los años 90s, identificando que en ambos casos el grado en que afecta la distancia como factor de disuación de la migración se mantiene en ambos países. Por otro lado, encuentran diferencias en las preferencias de hacia donde migrar, siendo las grande áreas urbanas más atractivas para los migrantes internos en Japón, hecho que los autores relacionan con diferencias culturales y por encontrarse ambos países en momentos diferentes del desarrollo.
 
@@ -402,10 +399,9 @@ El stock de migrantes se justifica en la producción teórica relativa a la migr
 
 Para seleccionar la variable adicional en destino, analizaron la correlación entre seis variables relevantes y luego calibraron el modelo con las seis variables, para seleccionar aquella que mejorara la performance del mismo. A partir de esos dos criterios concluyen que lo más adecuado es incluir la variable "inversión promedio total anual". Como conclusión destacan la mayor precisión alcanzada por el modelo con variables agregadas por sobre el modelo convencional.
 
-Por su parte, Yaojung et at. -@yaojun2019 realizaron un índice de atractividad relativa para la prefecturas de China, siguiendo el trabajo desarrollado por Fotheringham et al. -@fotheringham2000. Los autores concluyne que la región central de China es la menos atractiva para los migrantes, que las grandes ciudades son más atractivas que las medianas y pequeñas y que la atractividad es variables según los grupos de edad y el nivel educativo de los migrantes.
+Por su parte, Yaojung et at. -@yaojun2019 realizaron un índice de atractividad relativa para la prefecturas de China, siguiendo el trabajo desarrollado por Fotheringham et al. -@fotheringham2000. Los autores concluyne que la región central de China es la menos atractiva para los migrantes, que las grandes ciudades son más atractivas que las medianas y pequeñas y que la atractividad es variables según los grupos de edad y el nivel educativo de los migrantes. Otros abordajes del caso de China prefirieiron el modelo de radiación, aduciendo la mayor simplicidad del mismo [@li2017].
 
-
-En el *paper* de Poot. et al -@poot2016 se aplican modelos de interacción espacial para el análisis de la migración interna en Nueva Zelanda. Como particularidad vale mencionar la inclusión de las migraciones internacionales como parte del modelo. Dado que la formulación del modelo aplicado es de tipo logarítmica, a las díadas con flujos nulos (es decir sin flujos) se les imputa un valor de 0,5.
+Poot. et al -@poot2016 aplican modelos de interacción espacial para el análisis de la migración interna en Nueva Zelanda. Como particularidad vale mencionar la inclusión de las migraciones internacionales como parte del modelo. Dado que la formulación del modelo aplicado es de tipo logarítmica, a las díadas con flujos nulos (es decir sin flujos) se les imputa un valor de 0,5.
 Otra característica a destacar del estudio es el uso de varias medidas de distancias, así como distancias/tiempo históricas complemenetadas con distancias/tiempo actuales (obtenidas de Google Maps).
 
 Como resultado no identifican que el acortamiento de las distancias y tiempos de viajes entre localidades haya implicado un aumento de los flujos migratorios. *A posteriori* los autores analizan las posibilidades de incorporación de proyecciones demográficas a nivel subnacional.
@@ -416,7 +412,9 @@ Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas imp
 
 Del mismo autor se relevó un el desarrollo de un modelo de interacción espacial multinel para la estimación de la migración interregional en Europa [@dennett2013].
 
-**Faltan papers por referenciar: dennet, li, peeters, stillwell (flowerdew 2010), sarra y shen , lamonica, Zhiqiang (en stillwell 2010), haynes 2020** 
+Una de las limitantes de los modelos de interacción espacial presentes en la literatura, refiere al sesgo de endogeneidad por variables omitidas. Tal como se establece en la revisión teórica, la migración no es considerada un proceso aleatorio, sino que emerge de las decisiones de los migrantes, las cuales son tomadas en determinados contextos espaciales [@peeters2012].
+
+**Faltan papers por referenciar: dennet, peeters, stillwell (flowerdew 2010), sarra y shen , lamonica, Zhiqiang (en stillwell 2010), haynes 2020** 
 
 \newpage
 
