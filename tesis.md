@@ -1,7 +1,7 @@
 ---
 title: 'Modelos de interacción espacial y migración interna en Uruguay'
 author: Guillermo D'Angelo
-date: Junio 2020
+date: Abril 2021
 footer: true
 geometry: "a4paper, left=2.54cm,right=2.54cm,top=1.91cm,bottom=1.91cm"
 figureTitle: "Figura"
@@ -28,7 +28,7 @@ header-includes: |
     }
     \usepackage{caption}
     \captionsetup{font=small}
-    \captionsetup[table]{name=Cuadro, labelfont=bf}
+    \captionsetup[table]{name=Tabla, labelfont=bf}
     \captionsetup[figure]{name=Figura, labelfont=bf}
     \usepackage{pdflscape}
     \usepackage{booktabs}
@@ -108,7 +108,7 @@ Los inicios de la teorización sobre las migraciones datan de fines del siglo XI
 
 De Haas et. al. -@dehaas2015 diferencian, siguiendo a @massey1993, entre aquellas teorías orientadas las causas de la migración y aquellas orientadas a los impactos en las sociedades emisoras o receptoras. Los autores proponen un esquema que permite categorizar los procesos migratorios y las teorías que los abordan, conceptualizando a los movimientos migratorios como el resultado de la interacción entre estructuras macro y micro, en tanto proponen la existencia de meso-estructuras que vinculan las dos anteriormente mencionadas, proveyendo una explicación para la continuidad espacio-temporal de los procesos migratorios.
 
-|            | Macro\-estructuras                        | Meso\-estructuras                  | Micro\-estructuras                                       |
+|            | Macroestructuras                        | Mesoestructuras                  | Microestructuras                                       |
 |------------|-------------------------------------------|------------------------------------|----------------------------------------------------------|
 | Definición | Factores institucionales de gran escala   | Vínculo entre macro y micro escala | Prácticas, lazos familiares y creencias de los migrantes |
 | Ejemplos   | Economía política del mercado mundial     | Redes migratorias                  |                                                          |
@@ -242,7 +242,7 @@ Los procesos migratorios son la suma de un complejo conjunto de factores e inter
 
 Los autores proponen el esquema de la\ [@fig:migration_pathways] para graficar las posibles continuidades o “escalonamientos” entre ambos tipos de migraciones, identificando 10 caminos posibles para la migración en función de su carácter de interna o internacional y de la posibilidad del retorno:
 
-![Los 10 caminos de las migraciones (“migration pathways”) identificados por King y Skeldon (2010).](imagenes/migration_pathways.jpg){#fig:migration_pathways}
+![Los 10 caminos de las migraciones (*migration pathways*) identificados por King y Skeldon (2010).](imagenes/migration_pathways.jpg){#fig:migration_pathways}
 
 Según el esquema, *X* e *Y* representan a dos países diferentes. A su vez, *Xa*, *Xb*, *Ya* e *Yb* son regiones dentro de esos países ficticios, donde *Xa* es una región rural, *Xb* es un centro urbano (como una ciudad capital), *Ya* es una ciudad principal e *Yb* una región provincial.
 
@@ -348,7 +348,7 @@ Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, C
 | No migrante | 2.628.088 | 94,2% | 2.773.700 | 93,9% | 2.983.359 | 94,3% | 3.137.118 | 95,5% |
 | Total       | 2.788.429 | 100%  | 2.955.241 | 100%  | 3.163.763 | 100%  | 3.285.877 | 100%  |
 
-Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con  datos del @ine2011d). {#tbl:mig_recientes}
+Table: Migrantes recientes según los censos 1975, 1985 y 1996 [@macadar2008; @bengochea2011] y 2011 (elaboración propia con datos del @ine2011c). {#tbl:mig_recientes}
 
 La migración es más intensa en las edades económicamente activas y en los jóvenes [@koolhaas2013]. La migración reciente tiene más incidencia en mujeres jóvenes, probablemente asociada a la feminización de la matrícula universitaria y a la atracción de Montevideo por la existencia de mayor oferta laboral para las mujeres [@bengochea2011]. La propensión a migrar de los jóvenes se puede comprender atendiendo a las características de ese período vital: formación de pareja, inicio de la vida reproductiva, inicio de estudios terciarios, inicio de la vida laboral, etc. [@koolhaas2013].
 
@@ -620,7 +620,7 @@ Existen diversas investigaciones al respecto, que aún quedan pendientes de aná
 
 # Primera aplicación de un modelo de interación espacial
 
-A continuación se presenta una primera aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 [@ine2011d], publicados en la página web del Instituto. Como capas de información geográfica se accedió a las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
+A continuación se presenta una primera aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 [@ine2011c], publicados en la página web del Instituto. Como capas de información geográfica se accedió a las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
 
 Se incluye una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
 
@@ -636,8 +636,7 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
 
-Where do you start?
-In this paper the example of closed migration flow system will be used for demonstration, although the general principles can be applied to any similar flow system. The spatial interaction modelling process can be divided into two phases: The first involves fitting the model to existing data and calibrating ‘best fit’ parameters. This can be an end in itself when the model is used for exploratory analysis, as goodness-of-fit statistics allow the model builder to assess how well the model has been specified or how well the assumptions that have been made in the model are able to reproduce observed reality. The model parameters can also be interpreted with direct reference to the real world, for example with distance decay parameters allowing the assessment of the frictional effect of distance on migration moves (Fotheringham, and O'Kelly 1989). The second phase in the modelling process uses the calibrated parameters from the first phase as inputs into new estimation models which can produce flow approximations for missing or incomplete data.
+**Where do you start? In this paper the example of closed migration flow system will be used for demonstration, although the general principles can be applied to any similar flow system. The spatial interaction modelling process can be divided into two phases: The first involves fitting the model to existing data and calibrating ‘best fit’ parameters. This can be an end in itself when the model is used for exploratory analysis, as goodness-of-fit statistics allow the model builder to assess how well the model has been specified or how well the assumptions that have been made in the model are able to reproduce observed reality. The model parameters can also be interpreted with direct reference to the real world, for example with distance decay parameters allowing the assessment of the frictional effect of distance on migration moves (Fotheringham, and O'Kelly 1989). The second phase in the modelling process uses the calibrated parameters from the first phase as inputs into new estimation models which can produce flow approximations for missing or incomplete data.**
 
 [@dennett2012]
 
@@ -646,7 +645,7 @@ In this paper the example of closed migration flow system will be used for demon
 
 Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno.
 
-Según la información disponible en Censo INE [@ine2011d], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores:
+Según la información disponible en Censo INE [@ine2011c], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores:
 
 - Lugar de residencia 5 años antes (variable "PERMI07") con valores:
   - "2" (en otra localidad o paraje de este departamento)
