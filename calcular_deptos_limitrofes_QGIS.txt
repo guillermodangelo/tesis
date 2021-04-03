@@ -1,0 +1,8 @@
+https://spatialthoughts.com/2020/04/08/calculating-shared-border-lengths/
+
+array_to_string(array_remove_all(aggregate(
+layer:= 'ine_deptos_generalizada',
+aggregate:='array_agg',
+expression:= cod_ine,
+filter:=intersects($geometry, geometry(@parent))
+), "cod_ine"))
