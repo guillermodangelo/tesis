@@ -71,6 +71,8 @@ def cargar_datos_geo():
     "Carga capas de información geográfica"
     # carga capa departamentos INE pg
     deptos = gpd.read_file('capas/ine_deptos.gpkg')
+    # carga capa departamentos INE con geometrías simplificadas
+    deptos_sim = gpd.read_file('capas/ine_deptos_generalizada.gpkg')
     # agrega centroides de departamentos
     deptos['centroide'] = deptos['geometry'].centroid
     # carga capa localidades INE pt
@@ -81,7 +83,7 @@ def cargar_datos_geo():
     # filtra capitales departamentales de las localidades INE
     capital = localidad[localidad.CAPITAL==True].reset_index(drop=True)
     
-    return deptos, localidad, centro_pobl, capital
+    return deptos, deptos_sim, localidad, centro_pobl, capital
     
 
 
@@ -100,9 +102,9 @@ def cargar_data_metod():
     censo = cargar_censo()
     pbi = cargar_pbi()
     md = cargar_matriz_distancias()
-    deptos, localidad, centro_pobl, capital = cargar_datos_geo()
+    deptos, deptos_sim, localidad, centro_pobl, capital = cargar_datos_geo()
     
-    return censo, pbi, md, deptos, localidad, centro_pobl, capital
+    return censo, pbi, md, deptos, deptos_sim, localidad, centro_pobl, capital
 
 
 def filter_df_censo(df):

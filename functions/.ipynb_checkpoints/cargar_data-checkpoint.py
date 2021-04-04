@@ -50,7 +50,6 @@ def cargar_censo_nrows(nrows):
     return censo
 
 
-
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     # PBI departamental
@@ -72,6 +71,8 @@ def cargar_datos_geo():
     "Carga capas de información geográfica"
     # carga capa departamentos INE pg
     deptos = gpd.read_file('capas/ine_deptos.gpkg')
+    # carga capa departamentos INE con geometrías simplificadas
+    deptos_sim = gpd.read_file('capas/ine_deptos_generalizada.gpkg')
     # agrega centroides de departamentos
     deptos['centroide'] = deptos['geometry'].centroid
     # carga capa localidades INE pt
@@ -82,7 +83,7 @@ def cargar_datos_geo():
     # filtra capitales departamentales de las localidades INE
     capital = localidad[localidad.CAPITAL==True].reset_index(drop=True)
     
-    return deptos, localidad, centro_pobl, capital
+    return deptos, deptos_sim, localidad, centro_pobl, capital
     
 
 
@@ -101,9 +102,9 @@ def cargar_data_metod():
     censo = cargar_censo()
     pbi = cargar_pbi()
     md = cargar_matriz_distancias()
-    deptos, localidad, centro_pobl, capital = cargar_datos_geo()
+    deptos, deptos_sim, localidad, centro_pobl, capital = cargar_datos_geo()
     
-    return censo, pbi, md, deptos, localidad, centro_pobl, capital
+    return censo, pbi, md, deptos, deptos_sim, localidad, centro_pobl, capital
 
 
 def filter_df_censo(df):
@@ -125,4 +126,50 @@ def cargar_nombres():
                   'Rocha', 'Salto', 'San José', 'Soriano', 'Tacuarembó', 'Treinta y Tres']
     
     return list_names
+
+
+def cargar_matriz_deptos():
+    "Carga matriz de migrantes internos entre deptos"
+    matrix = pd.read_csv('tablas/matriz_deptos.csv', skiprows=2, index_col='depto_origen').values.tolist()   
+    return matrix
         
+
+def format_depto(df, column):
+    "Formatea strings de departameto, AM y total"
+    deptos_dict = {
+        'AREA METRO': 'Área metropolitana',
+        'MONTEVIDEO': 'Montevideo',
+        'ARTIGAS': 'Artigas',
+        'CANELONES': 'Canelones',
+        'CERRO LARGO': 'Cerro Largo',
+        'COLONIA': 'Colonia',
+        'DURAZNO': 'Durazno',
+        'FLORES': 'Flores',
+        'FLORIDA': 'Florida',
+        'LAVALLEJA': 'Lavalleja',
+        'MALDONADO': 'Maldonado',
+        'PAYSANDU': 'Paysandú',
+        'RIO NEGRO': 'Río Negro',
+        'RIVERA': 'Rivera',
+        'ROCHA': 'Rocha',
+        'SALTO': 'Salto',
+        'SAN JOSE': 'San José',
+        'SORIANO': 'Soriano',
+        'TACUAREMBO': 'Tacuarembó',
+        'TREINTA Y TRES': 'Treinta y Tres',
+        'TOTAL':'Total',
+        'Total':'Total'
+        }
+
+    return df[column].map(deptos_dict)
+
+
+def loc_decode(df):
+    "Decodifica codlocs INE"
+    locs = pd.read_csv('tablas/localidades_censales_2011.csv',
+                  dtype= {'departamento': str,'localidad': str, 'codloc': str,},
+                  usecols=['departamento','localidad','codloc'])
+                  
+    merge_loc = df.merge(locs, left_on='loc_destino', right_on='codloc').drop('codloc', axis=1)
+
+    return  merge_loc
