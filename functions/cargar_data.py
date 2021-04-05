@@ -58,6 +58,14 @@ def cargar_pbi():
     return pbi
 
 
+def cargar_vecindad():
+    "Carga datos sobre vecindad de deptos"  
+    # Vecindad
+    vecindad = pd.read_csv('tablas/deptos_vecinos.csv')
+    
+    return vecindad
+
+
 def cargar_matriz_distancias():
     "Carga matriz de distancias entre centros de población"
     # matriz de distancias
@@ -95,16 +103,6 @@ def cargar_data_eda():
 
     return censo, pbi, md
 
-
-
-def cargar_data_metod():
-    "Carga datos a ser usados en el apartado metodológico"
-    censo = cargar_censo()
-    pbi = cargar_pbi()
-    md = cargar_matriz_distancias()
-    deptos, deptos_sim, localidad, centro_pobl, capital = cargar_datos_geo()
-    
-    return censo, pbi, md, deptos, deptos_sim, localidad, centro_pobl, capital
 
 
 def filter_df_censo(df):
