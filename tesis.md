@@ -636,9 +636,9 @@ A continuación se presenta una primera aplicación de modelos de interacción e
 
 Dado que los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, podrían ser entidades aespaciales), y que el proceso requirió un gran esfuerzo de realización, se considera conveniente dar cuenta del proceso de producción de dichos datos.
 
-### Matriz de distancias
+### Matriz de distancia
 
-Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
+Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19). Luego se calculo el logaritmo de dicho valor.
 
 Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, en el entendido de que representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
@@ -654,17 +654,21 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 La población, a veces llamada "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es simplemente el conteo de personas de cada entidad.
 
-Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádicos direccionales que representa el flujo de migrantes recientes del departamento A la B.
+Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádico direccional que representa el flujo de migrantes recientes del departamento A la B.
 
 Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
-### Producto bruto interno a nivel departamental
+### Actividad económica
 
-El PBI en el departamento de destino y el logaritmo de dicho valor [@opp2016]
+Se extrajeron los valores de PBI departamental para el año 2014 estimados por el Observatorio "Territorio Uruguay" de la Oficina de Planeamiento y Presupuesto [@opp2016]
 
 ### Vecindad
 
-Según la bibliografía relevada (**citar**) y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas. A parte de la vencindad se calculó la distancia del límite compartido. De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y por otro lado una variable diádica cuantitiva, con la magnitud de la distancia limítrofe compartida
+Según la bibliografía relevada (**citar**) y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
+
+Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se enmendaron los errores topológicos presentes en la capa, utilizando el software QGIS [@qgisassociation2021].
+
+A parte de la vencindad se calculó la distancia del límite compartido. De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que comparten límites se suma una una variable diádica con el largo del límite compartido.
 
 ###
 
@@ -735,7 +739,7 @@ Reemplazamos la variable independiente (los estimados $T_{ij}$) por la media de 
 
 En esta ecuación $\mu_{i}$ es el equivalente al vector $A_{i}O_{i}$, pero en la terminología de una regresión log-lineal se pueden describir como variables dummy. En la práctica, en el modelo de regresión $\mu_{i}$ será tomado como un predictor categórico, por ende en el modelo de regresión de Poisson los valores de $O_{i}$ son reemplazados por un identificador categórico del origen, por ejemplo el código INE o el nombre del departamento [@dennett2018].
 
-El primer modelo se corrió con las variables departamento de destino, logaritmo del PBI departamental en destino y logaritmo de la distancia. 
+El primer modelo se corrió con las variables departamento de destino, logaritmo del PBI departamental en destino y logaritmo de la distancia.
 
 \input{tablas/prodSim.tex}
 
