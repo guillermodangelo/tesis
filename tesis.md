@@ -632,9 +632,15 @@ Existen diversas investigaciones al respecto, que aún quedan pendientes de aná
 
 A continuación se presenta una primera aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 [@ine2011c], publicados en la página web del Instituto. Como capas de información geográfica se accedió a las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
 
-Se incluye una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
+## Generación de datos diádicos
 
-Se prefirió usar el centro medio de población en lugar del centroide o la capital departamental [@poot2016, @flowerdew2010], en el entendido de que el centro medio representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
+Dado que los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, podrían ser entidades aespaciales), y que el proceso requirió un gran esfuerzo de realización, se considera conveniente dar cuenta del proceso de producción de dichos datos.
+
+### Matriz de distancias
+
+Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
+
+Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, en el entendido de que representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
 (@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
 
@@ -643,6 +649,26 @@ Se prefirió usar el centro medio de población en lugar del centroide o la capi
 En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
 
 ![Mapa de centroides, capitales departamentales y centro medio de población calculado según las fórmulas mencionadas.](mapas_graficas/centro_poblacion.pdf)
+
+### Población y migrantes internos
+
+La población, a veces llamada "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es simplemente el conteo de personas de cada entidad.
+
+Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádicos direccionales que representa el flujo de migrantes recientes del departamento A la B.
+
+Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
+
+### Producto bruto interno a nivel departamental
+
+El PBI en el departamento de destino y el logaritmo de dicho valor [@opp2016]
+
+### Vecindad
+
+Según la bibliografía relevada (**citar**) y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas. A parte de la vencindad se calculó la distancia del límite compartido. De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y por otro lado una variable diádica cuantitiva, con la magnitud de la distancia limítrofe compartida
+
+###
+
+- La distancia entre cada centro medio de población y el logaritmo de dicho valor
 
 Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
 
@@ -663,7 +689,7 @@ Según la información disponible en Censo INE [@ine2011c], el criterio más ade
   
 Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas sin localidad INE asignada. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia de abordaje. EN segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
 
-Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
+
 
 <!---
 PAGEBREAK
@@ -680,9 +706,10 @@ PAGEBREAKLANDSCAPE
 Siguiendo la estructura de datos presentada anteriormente (tabla de díadas origen-destino), se construye un conjunto de datos conteniendo la siguiente información para cada díada de departamentos:
 
 - Totales de personas que declaran haber vivido antes en el departamento de origen
+- 
 - La población total en origen y destino
-- El PBI en el departamento de destino y el logaritmo de dicho valor [@opp2016]
-- La distancia entre cada centro medio de población y el logaritmo de dicho valor
+
+
 
 ### Modelo de interacción espacial restringido en origen
 
