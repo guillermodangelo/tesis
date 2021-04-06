@@ -52,8 +52,8 @@ def cargar_censo_nrows(nrows):
 
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
-    # PBI departamental
-    pbi = pd.read_csv('tablas/pbi_departamental.csv')
+    cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
+    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols)
     
     return pbi
 
