@@ -52,10 +52,18 @@ def cargar_censo_nrows(nrows):
 
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
-    # PBI departamental
-    pbi = pd.read_csv('tablas/pbi_departamental.csv')
+    cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
+    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols)
     
     return pbi
+
+
+def cargar_vecindad():
+    "Carga datos sobre vecindad de deptos"  
+    # Vecindad
+    vecindad = pd.read_csv('tablas/deptos_vecinos.csv')
+    
+    return vecindad
 
 
 def cargar_matriz_distancias():
@@ -95,16 +103,6 @@ def cargar_data_eda():
 
     return censo, pbi, md
 
-
-
-def cargar_data_metod():
-    "Carga datos a ser usados en el apartado metodológico"
-    censo = cargar_censo()
-    pbi = cargar_pbi()
-    md = cargar_matriz_distancias()
-    deptos, deptos_sim, localidad, centro_pobl, capital = cargar_datos_geo()
-    
-    return censo, pbi, md, deptos, deptos_sim, localidad, centro_pobl, capital
 
 
 def filter_df_censo(df):
@@ -162,6 +160,33 @@ def format_depto(df, column):
         }
 
     return df[column].map(deptos_dict)
+
+
+def decode_depto(df, column):
+    "Decodifica departamento INE"
+    deptos_dict = {
+    1: 'MONTEVIDEO',
+    2: 'ARTIGAS',
+    3: 'CANELONES',
+    4: 'CERRO LARGO',
+    5: 'COLONIA',
+    6: 'DURAZNO',
+    7: 'FLORES',
+    8: 'FLORIDA',
+    9: 'LAVALLEJA',
+    10: 'MALDONADO',
+    11: 'PAYSANDU',
+    12: 'RIO NEGRO',
+    13: 'RIVERA',
+    14: 'ROCHA',
+    15: 'SALTO',
+    16: 'SAN JOSE',
+    17: 'SORIANO',
+    18: 'TACUAREMBO',
+    19: 'TREINTA Y TRES'
+        }
+    return df[column].map(deptos_dict)
+
 
 
 def loc_decode(df):

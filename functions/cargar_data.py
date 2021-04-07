@@ -162,6 +162,33 @@ def format_depto(df, column):
     return df[column].map(deptos_dict)
 
 
+def decode_depto(df, column):
+    "Decodifica departamento INE"
+    deptos_dict = {
+    1: 'MONTEVIDEO',
+    2: 'ARTIGAS',
+    3: 'CANELONES',
+    4: 'CERRO LARGO',
+    5: 'COLONIA',
+    6: 'DURAZNO',
+    7: 'FLORES',
+    8: 'FLORIDA',
+    9: 'LAVALLEJA',
+    10: 'MALDONADO',
+    11: 'PAYSANDU',
+    12: 'RIO NEGRO',
+    13: 'RIVERA',
+    14: 'ROCHA',
+    15: 'SALTO',
+    16: 'SAN JOSE',
+    17: 'SORIANO',
+    18: 'TACUAREMBO',
+    19: 'TREINTA Y TRES'
+        }
+    return df[column].map(deptos_dict)
+
+
+
 def loc_decode(df):
     "Decodifica codlocs INE"
     locs = pd.read_csv('tablas/localidades_censales_2011.csv',
