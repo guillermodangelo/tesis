@@ -50,6 +50,39 @@ def cargar_censo_nrows(nrows):
     return censo
 
 
+def cargar_migrantes_internos():
+    "Carga datos de migrantes internos recientes del Censo INE 2011"
+    df = pd.read_csv('tablas/censo_2011_migrantes_internos.gz', compression='gzip', header=0, sep=',', quotechar='"')
+
+    return df
+
+
+def recuperar_poblacion_2011():
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion = [1318755,
+                73377,
+                520173,
+                84698,
+                123203,
+                57084,
+                25050,
+                67047,
+                58815,
+                164298,
+                113107,
+                54765,
+                103473,
+                68088,
+                124861,
+                108304,
+                82594,
+                90051,
+                48134]
+    data_tuples = list(zip(depid, poblacion))
+    
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
