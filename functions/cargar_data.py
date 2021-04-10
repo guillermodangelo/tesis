@@ -221,6 +221,32 @@ def decode_depto(df, column):
     return df[column].map(deptos_dict)
 
 
+def decode_depto_short(df, column):
+    "Decodifica departamento INE, abreviado"
+    deptos_dict = {
+    1:	'Mvdeo.',
+    2:	'Artigas',
+    3:	'Can.',
+    4:	'C. Largo',
+    5:	'Colonia',
+    6:	'Durazno',
+    7:	'Flores',
+    8:	'Florida',
+    9:	'Lavalleja',
+    10:	'Maldonado',
+    11:	'Paysandú',
+    12:	'R. Negro',
+    13:	'Rivera',
+    14:	'Rocha',
+    15:	'Salto',
+    16:	'San José',
+    17:	'Soriano',
+    18:	'Tacuarembó',
+    19:	'T. y Tres'
+        }
+    return df[column].map(deptos_dict)
+
+
 
 def loc_decode(df):
     "Decodifica codlocs INE"
