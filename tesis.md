@@ -100,7 +100,7 @@ Su formulación más básica corresponde al modelo sin restricciones [@okelly200
 
 (@) $$ M_{ij} = kV_{i} W_{j} d_{ij}^{-\beta} $$
  
-Donde $M_{ij}$ es la interacción esperada entre origen *i* y destino *j*; $V_{i}$ y $W_{j}$ representan las masas de origen y destino respectivamente; y $d_{ij}$ elevado a la ${-\beta}$ es el efecto de la distancia, que disminuye o disuade las interacciones [@okelly2009]. Los índices *'i'* y '*j*' refieren a entidades geográficas, que en conjunto forman una díada, y entre los cuales existe un flujo [@okelly2009]. Luego se pueden aplicar restricciones en origen o destino [@patuelli2016] y sumar variables que se consideran explicativas de desterminados flujos que se quieran modelar.
+Donde $M_{ij}$ es la interacción esperada entre origen *i* y destino *j*; $V_{i}$ y $W_{j}$ representan las masas de origen y destino respectivamente; y $d_{ij}$ elevado a la ${-\beta}$ es el efecto de la distancia, que disminuye o disuade las interacciones [@okelly2009]. Los índices *'i'* y '*j*' refieren a entidades geográficas, que en conjunto forman una díada, y entre los cuales existe un flujo [@okelly2009]. Luego se pueden aplicar restricciones en origen o destino [@patuelli2016] y sumar variables que se consideran explicativas de determinados flujos que se quieran modelar.
 
 Desde la perspectiva de la geografía de la población, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial.
 
@@ -451,9 +451,13 @@ En particular los censos 1996 y 2011 incorporaron preguntas relativas a la migra
 
 Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
 
-En lo que refiere a capas de información grográfica, fueron empleadas las capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, la localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
+En lo que refiere a capas de información geográfica, fueron empleadas las capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, las localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
 
-Según la revisión bibliográfica y de antecedentes, una de las variables necesarias para aplicar un modelo de interacción espacial es la distancia entre las unidades espaciales que se vayan a tomar en cuenta. Para ello es necesario el cálculo de una matriz de distancias origen-destino, y para el cálculo de dicha matriz se debe determinar un punto dentro de cada departamento que será tomado como origen-destino, a partir del cual se calcula la distancia hacia todos los demás puntos que representan los departamentos, y desde todos esos puntos hacia el primero.
+Con la combinación de los datos geográficos y los censales se realizaron ciertas operaciones para producir nueva información geográfica, las cuales se detalla en el apartado "Generación de datos diádicos".
+
+Como datos relativos a la actividad económica, se extrajeron los valores de PBI departamental para el año 2014 estimados por el Observatorio "Territorio Uruguay" de la Oficina de Planeamiento y Presupuesto [@opp2016]
+
+
 
 \newpage
 
@@ -606,27 +610,12 @@ Existen varias razones que pueden estar detrás del interés de migrar de una pe
 
 La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
 
-Weidlich et. al -@weidlich1988 identificaron cuatro factores clave en la migración interna para el caso de la Alemania Federal de posguerra, utilizando análisis de regresión:
-
-- Ingreso real *per cápita*
-- Puesto de trabajo vacantes
-- Índice de estructura de inversiones
-- Número de personas empleadas
-
-Algunas investigaciones de los determinantes económicos y no económicos de la migración interna en Estados Unidos [@cebula2005; @cebula2006] identifican variables asociadas a la migración interestatal. Algunas variables están relacionadas con la calidad de vida (incidencia de luz solar, número de crímenes violentos por 100.000 habs., superficie de parques estatales por 100.000 habs., número de sitios de deposición final de residuos peligrosos, temperatura máxima diaria en enero por estado). Por otro lado identifican como significativo el costo de vida en destino y la variable "ingresos esperados en destino" (el ingreso *per cápita* multiplicado por la tasa de empleo, ambos factores según datos de 1999).
-
-En un estudio de migracion interprovincial en Turquía [@filiztekin2008], se identificaron las siguientes variables con incidencia estadísticamente significativa (al 1%) sobre los flujos migratorios:
-
-- Distancia entre provincias
-- Tasa de desempleo en origen y destino
-- Proporción de personas jóvenes (entre 12 y 25 años)
-- Promedio de años de escolarización en la provincia de origen
-- Stock de migrantes anteriores entre las provincias i y j
-- Variables dummy para indicar migración entre regiones o migración hacia Estanbul
+Varias investigaciones han identificado variables económicas relacionadas con la migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@weidlich1988, @cebula2005; @cebula2006; @filiztekin2008]. A su vez, se identifican aspecto sociales (como la incidencia del crime violento) o ambientales (como las horas de luz solar, o la superficie de parques públicos) [@cebula2005; @cebula2006].
+Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias o variable *dummy* para representar particularidades de determinado país o región [@filiztekin2008]
 
 Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
+
 **ver etzo 2011**
-**cambiar estructura**
 
 # Aplicación de un modelo de interación espacial
 
@@ -658,9 +647,7 @@ Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se
 
 Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
-### Actividad económica
 
-Se extrajeron los valores de PBI departamental para el año 2014 estimados por el Observatorio "Territorio Uruguay" de la Oficina de Planeamiento y Presupuesto [@opp2016]
 
 ### Vecindad
 
