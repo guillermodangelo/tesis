@@ -194,6 +194,7 @@ Otro problema emergente, muy conocido en el ámbito del análisis espacial, es e
 
 A modo de cierre, vale destacar la diversidad de variables explicativas usadas por todos los casos referenciados. Sin embargo, en varios se utiliza una metodología *stepwise* para identificar la relevancia de cada variable, es decir que se corren varias veces los modelos agreagando y quintando variables (seleccionadas previamente con un criterior teórico) hasta llegar a aquel conjunto reducido de variables que presentan mayor poder explicativo.
 
+\newpage
 
 # Marco teórico
 
@@ -451,6 +452,11 @@ En particular los censos 1996 y 2011 incorporaron preguntas relativas a la migra
 
 Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
 
+
+Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno. Según la información disponible en Censo INE [@ine2011c], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores: "en otra localidad o paraje de este departamento" y "en otro departamento"
+  
+Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas asignadas a la localidad INE rural, cuya expresión geográfica se limita a toda la superficie del departamento que no se considera urbana, por ende es demasiado amplia. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia u otra fuente de datos. En segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
+
 En lo que refiere a capas de información geográfica, fueron empleadas las capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, las localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
 
 Con la combinación de los datos geográficos y los censales se realizaron ciertas operaciones para producir nueva información geográfica, las cuales se detalla en el apartado "Generación de datos diádicos".
@@ -458,12 +464,25 @@ Con la combinación de los datos geográficos y los censales se realizaron ciert
 Como datos relativos a la actividad económica, se extrajeron los valores de PBI departamental para el año 2014 estimados por el Observatorio "Territorio Uruguay" de la Oficina de Planeamiento y Presupuesto [@opp2016]
 
 
+## Factores asociados a las migraciones internas
+
+El estudio de las migraciones internas está relacionado a los procesos de migración rural-urbano, propios de las sociedades pre-transición demográfica. Sin embargo, Uruguay vivió la transición demográfica en forma temprana en comparación con sus pares latinoamericanos, y presenta un alto grado de urbanización, con un medio rural escasamente poblado.
+
+Existen varias razones que pueden estar detrás del interés de migrar de una personas y la concreción de dicho movimiento, a continuación se analizan algunos de los factores que según la literatura se asocian al proceso migratorio.
+
+La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
+
+Varias investigaciones han identificado variables económicas relacionadas con la migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@weidlich1988, @cebula2005; @cebula2006; @filiztekin2008]. A su vez, se identifican aspecto sociales (como la incidencia del crime violento) o ambientales (como las horas de luz solar, o la superficie de parques públicos) [@cebula2005; @cebula2006].
+Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias o variable *dummy* para representar particularidades de determinado país o región [@filiztekin2008]
+
+Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
+
+**ver etzo 2011**
 
 \newpage
 
-# Análisis exploratorio de datos
 
-**idea: distribución de distancias contra edades y sexos en migrantes recientes**
+# Análisis exploratorio de datos
 
 En continuidad con la revisión de antecedentes sobre el estudio de la migración interna en Uruguay, se presenta un análisis exploratorio de los datos censales, para dar un marco general con un enfoque demográfico.
 
@@ -471,7 +490,7 @@ En primer lugar se procede a operacionalizar el concepto de **migrante interno**
 
 Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
 
-El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, es necesario delimitarla a aquellas personas que declararon vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
+El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, tal cual se mencionó anteriormente, se identifica el subgrupo que declaró vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
 
 ![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
 
@@ -512,13 +531,9 @@ En el mismo sentido, considerando las localidades del área metropolitana como u
 
 Table: Migrantes recientes con origen en Montevideo, por departamentos y area metropolitana de Montevideo. {#tbl:mig_am}
 
-**Esta realidad plantea un debate: ¿es adecuado considerar esos movimientos como migraciones internas o sería más preciso categorizarlas como simples cambios de residencia?**
+Esta realidad plantea un debate: **¿es adecuado considerar esos movimientos como migraciones internas o sería más preciso categorizarlas como simples cambios de residencia?**
 
-Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. **En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción.**
-
-<---
-buscar cita
->---
+Aunque Montevideo sea un atractor relevante en números absolutos, si atendemos al porcentaje de población migrante interna con respecto a la población total de cada departamento, Canelones y Maldonado son los departamentos que lideran. En el caso de Maldonado, se puede atribuir al dinamismo económico derivado de la actividad turística, así como del sector de la construcción (**buscar cita**).
 
 El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2011], que para el presente análisis denominaremos grupo 1, 2 y 3:
 
@@ -529,12 +544,7 @@ El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2
 - **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
 
 
-
-
-
-
-
-A continuación se presentarán diversos indicadores referidos a dichos tres grupos, para facilitar su carcterización.
+A continuación se presentarán diversos indicadores referidos a dichos tres grupos, a modo de carcterización.
 
 ## Estructura de la población
 
@@ -599,23 +609,8 @@ En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grup
 
 ![Máximo nivel educativo alcanzado.](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
 
+
 \newpage
-
-
-## Factores asociados a las migraciones internas
-
-El estudio de las migraciones internas está relacionado a los procesos de migración rural-urbano, propios de las sociedades pre-transición demográfica. Sin embargo, Uruguay vivió la transición demográfica en forma temprana en comparación con sus pares latinoamericanos, y presenta un alto grado de urbanización, con un medio rural escasamente poblado.
-
-Existen varias razones que pueden estar detrás del interés de migrar de una personas y la concreción de dicho movimiento, a continuación se analizan algunos de los factores que según la literatura se asocian al proceso migratorio.
-
-La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
-
-Varias investigaciones han identificado variables económicas relacionadas con la migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@weidlich1988, @cebula2005; @cebula2006; @filiztekin2008]. A su vez, se identifican aspecto sociales (como la incidencia del crime violento) o ambientales (como las horas de luz solar, o la superficie de parques públicos) [@cebula2005; @cebula2006].
-Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias o variable *dummy* para representar particularidades de determinado país o región [@filiztekin2008]
-
-Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
-
-**ver etzo 2011**
 
 # Aplicación de un modelo de interación espacial
 
@@ -647,62 +642,15 @@ Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se
 
 Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
-
-
 ### Vecindad
 
-Según la bibliografía relevada (**citar**) y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
+Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
 
-Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se enmendaron los errores topológicos presentes en la capa, utilizando el software QGIS [@qgisassociation2021].
+Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se enmendaron los errores topológicos presentes en la capa. Los tres procesamientos se realizaron utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
 
-A parte de la vencindad se calculó la distancia del límite compartido. De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que comparten límites se suma una una variable diádica con el largo del límite compartido.
+De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se suma una una variable diádica con el largo del límite compartido.
 
-###
-
-- La distancia entre cada centro medio de población y el logaritmo de dicho valor
-
-Dada la menor complejidad, se comienza por el análisis de los flujos entre departamentos.
-
-**Where do you start? In this paper the example of closed migration flow system will be used for demonstration, although the general principles can be applied to any similar flow system. The spatial interaction modelling process can be divided into two phases: The first involves fitting the model to existing data and calibrating ‘best fit’ parameters. This can be an end in itself when the model is used for exploratory analysis, as goodness-of-fit statistics allow the model builder to assess how well the model has been specified or how well the assumptions that have been made in the model are able to reproduce observed reality. The model parameters can also be interpreted with direct reference to the real world, for example with distance decay parameters allowing the assessment of the frictional effect of distance on migration moves (Fotheringham, and O'Kelly 1989). The second phase in the modelling process uses the calibrated parameters from the first phase as inputs into new estimation models which can produce flow approximations for missing or incomplete data.**
-
-[@dennett2012]
-
-
-
-
-Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno.
-
-Según la información disponible en Censo INE [@ine2011c], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores:
-
-- Lugar de residencia 5 años antes (variable "PERMI07") con valores:
-  - "2" (en otra localidad o paraje de este departamento)
-  - "3" (en otro departamento)
-  
-Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas sin localidad INE asignada. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia de abordaje. EN segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
-
-
-
-<!---
-PAGEBREAK
--->
-\newpage
-\begin{landscape}
-\input{tablas/matriz_orig_dest.tex}
-\end{landscape}
-<!---
-
-PAGEBREAKLANDSCAPE
--->
-
-Siguiendo la estructura de datos presentada anteriormente (tabla de díadas origen-destino), se construye un conjunto de datos conteniendo la siguiente información para cada díada de departamentos:
-
-- Totales de personas que declaran haber vivido antes en el departamento de origen
-- 
-- La población total en origen y destino
-
-
-
-### Modelo de interacción espacial restringido en origen
+## Especificación y calibración de un modelo de interacción espacial restringido en origen
 
 A continuación se presenta una primera aplicación del modelo restringido en origen, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia". El procesamiento es similar al aplicado por [@dennett2018] y su adaptación al lenguaje de programación Python [@lewis2018].
 
@@ -828,6 +776,7 @@ Con respecto a la metodología y resultados:
 - Modelar con localidades.
 - Modelar excluyendo Montevideo.
 - Analizar posibles efectos de sobredispersión en Poisson y su posible mejora usando un modelos de regresión binomial negativa.
+**idea: distribución de distancias contra edades y sexos en migrantes recientes**
 
 \newpage
 

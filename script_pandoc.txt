@@ -1,4 +1,5 @@
 cd /home/guillermo/Documentos/GitHub/tesis/
+
 ./pandoc_export_pdf.sh tesis.md tesis.pdf
 
 pandoc -s tesis.md -o tesis.docx
