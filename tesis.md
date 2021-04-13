@@ -96,7 +96,7 @@ Objetivos específicos
 
 Los modelos de interacción espacial devienen de los modelos gravitorios, los cuales son representaciones matemáticas de la interacción entre dos entidades geográficas, permitiendo medir la importancia de las relaciones existentes entre esas dos entidades [@sanders2013a].
 
-Su formulación más básica corresponde al modelo sin restricciones [@okelly2009; @patuelli2016]:
+Su formulación más básica corresponde al modelo sin restricciones [@okelly2009; @patuelli2016; @champion1998]:
 
 (@) $$ M_{ij} = kV_{i} W_{j} d_{ij}^{-\beta} $$
  
@@ -472,12 +472,17 @@ Existen varias razones que pueden estar detrás del interés de migrar de una pe
 
 La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
 
-Varias investigaciones han identificado variables económicas relacionadas con la migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@weidlich1988, @cebula2005; @cebula2006; @filiztekin2008]. A su vez, se identifican aspecto sociales (como la incidencia del crime violento) o ambientales (como las horas de luz solar, o la superficie de parques públicos) [@cebula2005; @cebula2006].
-Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias o variable *dummy* para representar particularidades de determinado país o región [@filiztekin2008]
+Como variables demográficas, la edad y sexo/género se consideran determinantes en los procesos migratorios, ya que la propensión a migrar varía notablemente con la edad, asociada al ciclo vital de los individuos [@champion1998].
 
-Existen diversas investigaciones al respecto, que aún quedan pendientes de análisis para el presente trabajo.
+Varias investigaciones han identificado variables económicas relacionadas con la atracción de migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@aldashev2011; @aldashev2014; @andrienko2004; @fang2003, @etzo2011; @weidlich1988, @cebula2005; @cebula2006; @filiztekin2008; @piras2017; @royuela2018]. También la recepción de inversión extrangera directa a sido usada como variable explicativa, en función del dinamismo económico que implica para determinadas regiones [@fang2003].
 
-**ver etzo 2011**
+Otros han incorporado factores relativos a la calidad de vida, como la incidencia del crimen violento como factor de disuación, en tanto que las horas de luz solar, la superficie de parques públicos [@cebula2005; @cebula2006] o el grado de urbanización [@royuela2018] han diso identificados como atractores.
+
+Entre los aspectos sociales, vale mencionar los años de escolarización como factor relevante [@royuela2018; @piras2017].
+
+Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias (por ejemplo Fang y Dewen -fang2003 toman las distancias entre provincias por vías férreas para el caso de China), la combinación de la distancia y factores étnicos [@aldashev2014], o variables *dummies* para representar particularidades de determinado país o región [@filiztekin2008; @etzo2011]
+
+**ver variables micro, sugerencia de Martín, ver tambien en Champion 1998**
 
 \newpage
 
