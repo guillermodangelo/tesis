@@ -236,7 +236,7 @@ Según Arango -@arango1985, los puntos a resaltar de los aportes de Ravenstein s
 
 Podemos considerar a Ravenstein como precursor de los modelos “push-pull”, teoría enmarcada en el paradigma funcionalista. Dichos modelos se inspiran en las leyes de gravedad de Newton, identificando las entidades geográficas de origen y destino de migrantes como objetos relacionados por el flujo de migrantes. La relación estará dada por la masa (por ejemplo, cantidad de población) y los factores de atracción-expulsión.
 
-Los modelos push-pull identifican factores económicos, ambientales y demográficos que se asumen como expulsores de la población de ciertos lugares y atractores hacia otros lugares. Cómo crítica principal se resalta su carácter meramente descriptivo, sin profundizar en el rol e interacciones de los factores determinantes de los flujos y su dificultad para explicar la ocurrencia simultánea de emigración e inmigración [@dehaas2015]. Los modelos push-pull son el origen de los “modelos de interacción espacial”. A pesar de las críticas mencionadas, el abordaje conceptual es afín al presente trabajo, en tanto los espacios emisores y atractores se consideran como entidades en interacción, la cual tiene un componente espacial (aunque no sea el único).
+Los modelos push-pull identifican factores económicos, ambientales y demográficos que se asumen como expulsores de la población de ciertos lugares y atractores hacia otros lugares. Cómo crítica principal se resalta su carácter meramente descriptivo, sin profundizar en el rol e interacciones de los factores determinantes de los flujos y su dificultad para explicar la ocurrencia simultánea de emigración e inmigración [@dehaas2015; @vandergaag2003]. Los modelos push-pull son el origen de los “modelos de interacción espacial”. A pesar de las críticas mencionadas, el abordaje conceptual es afín al presente trabajo, en tanto los espacios emisores y atractores se consideran como entidades en interacción, la cual tiene un componente espacial (aunque no sea el único).
 
 Otro enfoque significativo dentro del paradigma funcionalista es la teoría neoclásica de las migraciones, introducida por Todaro -@todaro1969 para explicar las migraciones rural-urbano en los países en desarrollo, ha tenido gran influencia en el desarrollo de políticas públicas migratorias [@massey1993]. También se basa en la tendencia al equilibrio de las fuerzas sociales y es considerada como la teoría de las migraciones más antigua (excluyendo los aportes de Ravenstein por no conformar una “teoría” propiamente dicha).
 
@@ -429,7 +429,7 @@ El término “distancia” en general refiere a la distancia física en este ab
 
 Entre los primeros antecedentes de los modelos de interacción espacial se encuentran los aportes de Reilly [@reilly1931], quien analizando actividades comerciales propuso una relación positiva entre la magnitud de flujos de consumidores entre localidades y la población residente en dichas localidades, en tanto que una relación negativa con el cuadrado de las distancias que las separa [@garrocho2003]. Reilly se basó en esos dos supuestos para elaborar un sencillo modelo, a posteriori denominado “Ley de Reilly” y que fue simiente de los futuros modelos de interacción espacial.
 
-Más cerca en el tiempo, los aportes de Allan Wilson -@wilson1971 complejizan los primigenios abordajes “gravitacionales”. Wilson introduce el concepto de “modelos de interacción espacial”, dejando atrás la nomenclatura de inspiración newtoniana. Además, propone una mejor justificación teórica, proponiendo una familia de cuatro modelos, diferenciados por la información conocida para limitar o condicionar los valores que la interacción puede tomar. En su esencia, los modelos de interacción espacial son formas estadísticas del modelo gravitatorio, incluyendo como factores la población en origen y en destino, la distancia entre ellos y alguna medida de competencia o atractividad [@raymer2007, @haynes2020].
+Más cerca en el tiempo, los aportes de Allan Wilson -@wilson1971 complejizan los primigenios abordajes “gravitacionales”. Wilson introduce el concepto de “modelos de interacción espacial”, dejando atrás la nomenclatura de inspiración newtoniana. Además, propone una mejor justificación teórica, proponiendo una familia de cuatro modelos, diferenciados por la información conocida para limitar o condicionar los valores que la interacción puede tomar. En su esencia, los modelos de interacción espacial son formas estadísticas del modelo gravitatorio, incluyendo como factores la población en origen y en destino, la distancia entre ellos y alguna medida de competencia o atractividad [@vandergaag2003; @raymer2007; @haynes2020].
 
 Teniendo los aportes de Wilson como basamento, los modelos de interacción espacial han sido aplicados a fenómenos de diversa índole, como migraciones, transporte público y movilidades pendulares, análisis locacional (orientado a la localización de actividades comerciales, por ejemplo), entre otros tópicos [@fotheringham2001; @mallozzi2017]. Esa variedad de aplicaciones se puede asociar a la capacidad explicativa y predictiva de los modelos [@santos1994].
 
@@ -466,21 +466,23 @@ Como datos relativos a la actividad económica, se extrajeron los valores de PBI
 
 ## Factores asociados a las migraciones internas
 
-El estudio de las migraciones internas está relacionado a los procesos de migración rural-urbano, propios de las sociedades pre-transición demográfica. Sin embargo, Uruguay vivió la transición demográfica en forma temprana en comparación con sus pares latinoamericanos, y presenta un alto grado de urbanización, con un medio rural escasamente poblado.
-
 Existen varias razones que pueden estar detrás del interés de migrar de una personas y la concreción de dicho movimiento, a continuación se analizan algunos de los factores que según la literatura se asocian al proceso migratorio.
 
-La razón más general, aplicada especialmente a las migraciones no forzadas, es la búsqueda de un ingreso mayor, que aplica con mayor intensidad a los jóvenes [@lucas1997].
+Como variables demográficas, la edad y sexo/género se consideran determinantes en los procesos migratorios, ya que la propensión a migrar varía notablemente con la edad, asociada al ciclo vital de los individuos [@champion1998; @vandergaag2003]. En general, se constata un alta tasa en niños pequeños, con un posterior declive que repunta al comienzo de los 20 años, asociado a las oportunidades educativas y de trabajo. Luego hay un declive asociada a la edad de crianza de los niños, pudiendo aumentar en la edad del retiro [@vandergaag2003]. Esas aseveraciones varían según las características de la sociedad que se analize.
 
-Como variables demográficas, la edad y sexo/género se consideran determinantes en los procesos migratorios, ya que la propensión a migrar varía notablemente con la edad, asociada al ciclo vital de los individuos [@champion1998].
+Varias investigaciones han identificado variables económicas relacionadas con la atracción de migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [vandergaag2003; @lucas1997, @aldashev2011; @aldashev2014; @andrienko2004; @fang2003, @etzo2011; @weidlich1988, @cebula2005; @cebula2006; @filiztekin2008; @piras2017; @royuela2018]. También la recepción de inversión extrangera directa a sido usada como variable explicativa, en función del dinamismo económico que implica para determinadas regiones [@fang2003].
 
-Varias investigaciones han identificado variables económicas relacionadas con la atracción de migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [@aldashev2011; @aldashev2014; @andrienko2004; @fang2003, @etzo2011; @weidlich1988, @cebula2005; @cebula2006; @filiztekin2008; @piras2017; @royuela2018]. También la recepción de inversión extrangera directa a sido usada como variable explicativa, en función del dinamismo económico que implica para determinadas regiones [@fang2003].
+La disponibilidad de vivienda pública [@champion1998; @andrienko2004] o variables relativas a los mercados de vivienda también han sido incorporadas en algunas investigaciones [@vandergaag2003].
 
 Otros han incorporado factores relativos a la calidad de vida, como la incidencia del crimen violento como factor de disuación, en tanto que las horas de luz solar, la superficie de parques públicos [@cebula2005; @cebula2006] o el grado de urbanización [@royuela2018] han diso identificados como atractores.
 
 Entre los aspectos sociales, vale mencionar los años de escolarización como factor relevante [@royuela2018; @piras2017].
 
-Otro estudios refieren a las variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias (por ejemplo Fang y Dewen -fang2003 toman las distancias entre provincias por vías férreas para el caso de China), la combinación de la distancia y factores étnicos [@aldashev2014], o variables *dummies* para representar particularidades de determinado país o región [@filiztekin2008; @etzo2011]
+Algunos estudios también se refieren a variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias (por ejemplo Fang y Dewen -fang2003 toman las distancias entre provincias por vías férreas para el caso de China), la combinación de la distancia y factores étnicos [@aldashev2014], o variables *dummies* para representar particularidades de determinado país o región [@filiztekin2008; @etzo2011]
+
+Dada la relevancia de ciertos aspectos micro que hacen a la desición de migrar, Van Der Gaag et al. -@vandergaag2003 recomiendan incorporar una perspectiva de ciclo de vida, en particular la edad, a la modelación.
+
+
 
 **ver variables micro, sugerencia de Martín, ver tambien en Champion 1998**
 
@@ -734,7 +736,7 @@ dónde
 
 (@) $$B_{j} = \frac{1}{\sum_{j}A_{i}O_{j}d_{ij}^{-\beta}}$$
 
-La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Pero se puede arribar a un valor para ambos factores fijando el valor inicial de $B_{j}$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan.
+La dificultad de este modelo reside en que $A_{i}$ depende de $B_{j}$ y viceversa. Esta utilización de los factores de balance es referida como "maximización de la entropía" [@vandergaag2003], haciendo referencia al concepto de entropía de la ciencias de la información [@wilson1971]. Para sortear esta dificultad se fija el valor inicial de $B_{j}$ en 1, para luego iterar, refinando el valor de cada parámetro en cada iteración, hasta que sea estable, es decir hasta que converjan [@dennett2018].
 
 A continuación se presentan los resultados de correr el modelo:
 
