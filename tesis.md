@@ -131,6 +131,14 @@ Quienes migran desde Montevideo tienen un perfil más joven y feminizado de quie
 
 ## Modelos de interacción espacial y migraciones
 
+Los abordajes para modelar migraciones son variados, siendo los modelos de interacción espacial una de las opciones.
+
+En líneas generales vale mencionar las cuatro categorías propuestas por Champion et al. -@champion1998 para diferenciar los abordajes:abordajes micro o macro; abordajes basados en sieres temporales o de corte transversal.
+
+![Cuatro categorías para diferenciar los abordajes a la modelización de las migraciones según  Champion et al. (1998).](imagenes/migration_modelling_champion.jpg){#fig:migration_app}
+
+Siguendo la caslificación propuesta, los modelos de interacción espacial son un abordaje a nivel macro y de corte transversal.
+
 A pesar de no contar con antecedentes nacionales de uso de modelos de interacción espacial para el estudio de las migraciones, existen varios antecedentes internacionales de su aplicación.
 
 Referido a España, Santos -@santos1994 aplicó modelos de interacción espacial a matrices de flujos migratorios interregionales en dos períodos diferentes (1970 y 1990), usando datos censales y con intenciones explicativas, no predictivas. A la matriz de flujos se incorporan las distancias euclidianas relativas, la jerarquía urbana medida por el volumen de la población, un factor de rechazo de los lugares de origen medido por el porcentaje de la población activa agraria, un factor de atracción de los lugares de destino medido por el porcentaje de población con empleos en el sector industrial y el nivel de los salarios y una variable *dummy* indicando la contigüidad geográfica (es decir si hay o no limites compartidos), llegando a la siguiente expresión del modelo:
@@ -491,7 +499,7 @@ En continuidad con la revisión de antecedentes sobre el estudio de la migració
 
 En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011 [@ine2011].
 
-Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron, y por otro lado los **migrantes recientes** [@busso2009]. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
+Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron, y por otro lado los **migrantes recientes** [@busso2009; @morrison2004]. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
 
 El Censo INE 2011 [@ine2011] permite distinguir ambas categorías. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, tal cual se mencionó anteriormente, se identifica el subgrupo que declaró vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
 
