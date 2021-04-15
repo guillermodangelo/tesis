@@ -57,13 +57,21 @@ Este proyecto de investigación se enmarca en la geografía de la población, su
 
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. A modo de ejemplo vale mencionar como las migraciones se ven influidas por el espacio geográfico, generándose migraciones más intensas entre localidades cercanas o migraciones muy débiles entre localidades remotas, y en ese proceso también modifican y (re)construyen el espacio.
 
-El interés en la proyección de escenarios junto con el estudio de las migracones internas no remite ñunicamente a la posibilidad de explorar la aplicación de una metodología, sino también a la provisión de insumos para las políticas de población, de desarrollo urbano, desarrollo regional y ordenamiento territorial. En el caso de Uruguay, para el cual se preveé una continuidad del proceso urbanizador, así como de la presión demográfica sobre el área metropolitanas de Montevideo y las zonas costeras [@calvo2012a], generar dichos insumos para la reflexión se considera relevante.
+El interés en la proyección de escenarios junto con el estudio de las migraciones internas no remite únicamente a la posibilidad de explorar la aplicación de una metodología, sino también a la provisión de insumos para las políticas de población, de desarrollo urbano, desarrollo regional y ordenamiento territorial. En el caso de Uruguay, para el cual se prevé una continuidad del proceso urbanizador, así como de la presión demográfica sobre el área metropolitana de Montevideo y las zonas costeras [@calvo2012a], generar dichos insumos para la reflexión se considera relevante.
 
-En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. No existen antecedentes nacionales de uso de modelos de interacción espacial aplicados a migraciones internas. En ese sentido, la presente investigación cubre un vacío en la literatura acdémica al respecto.
+Los modelos de interacción espacial devienen de los modelos gravitatorios, los cuales son representaciones matemáticas de la interacción entre dos entidades geográficas, permitiendo medir la importancia de las relaciones existentes entre esas dos entidades [@sanders2013a].
 
+Su formulación más básica corresponde al modelo sin restricciones [@okelly2009; @patuelli2016; @champion1998]:
+
+(@) $$ M_{ij} = kV_{i} W_{j} d_{ij}^{-\beta} $$
+
+Donde $M_{ij}$ representan los flujos entre el origen *i* y destino *j*; $V_{i}$ y $W_{j}$ representan las masas de origen y destino respectivamente; y $d_{ij}$ elevado a la ${-\beta}$ es el efecto de la distancia, que disminuye o disuade las interacciones. Los índices *'i'* y '*j*' refieren a entidades geográficas, que en conjunto forman una díada, y entre los cuales existe un flujo [@okelly2009].
+
+Luego se pueden aplicar restricciones en origen o destino y sumar variables que se consideran explicativas de determinados flujos que se quieran modelar [@patuelli2016].
+
+En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada movilidad por trabajo [^3]. No existen antecedentes nacionales de uso de modelos de interacción espacial aplicados a migraciones internas. En ese sentido, la presente investigación cubre un vacío en la literatura académica al respecto.
 
 [^3]:Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
-
 
 \newpage
 
@@ -71,7 +79,7 @@ En el Uruguay existe un antecedente de investigación utilizando modelos de inte
 
 El estudio de las migraciones internas es pertinente para la Demografía en tanto la migración es uno de los factores del cambio demográfico. Asumiendo el componente espacial que implican los movimientos de población, el abordaje con técnicas de la geografía humana se considera adecuado.
 
-La pregunta general que guiará este trabajo de investigación es la siguiente: ¿cuál será la magnitud de la migración interna en Uruguay entre 2012 y el horizonte 2025?
+La pregunta general que guiará este trabajo de investigación es la siguiente: ¿cuál será la magnitud de la migración interna en Uruguay en 2025?
 
 ## Objetivos
 
@@ -87,26 +95,21 @@ Objetivos específicos
   
 - Explorar el rol que tiene espacio geográfico en las migraciones internas en Uruguay.
 
-- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
+- Calibrar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
 
-- Desarrollar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
+- Calibrar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
 
-- Discutir la pertinencia de factores asociados a las migraciones internas.
+Como preguntas de investigación se proponen las siguientes:
 
+- ¿Cuál es la estructura de la población migrante interna? ¿Cuál es su nivel educativo?
+  
+- ¿Han variado los coeficientes de atractividad entre departamentos? ¿Con qué magnitud?
 
-Los modelos de interacción espacial devienen de los modelos gravitorios, los cuales son representaciones matemáticas de la interacción entre dos entidades geográficas, permitiendo medir la importancia de las relaciones existentes entre esas dos entidades [@sanders2013a].
+- ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
 
-Su formulación más básica corresponde al modelo sin restricciones [@okelly2009; @patuelli2016; @champion1998]:
-
-(@) $$ M_{ij} = kV_{i} W_{j} d_{ij}^{-\beta} $$
- 
-Donde $M_{ij}$ es la interacción esperada entre origen *i* y destino *j*; $V_{i}$ y $W_{j}$ representan las masas de origen y destino respectivamente; y $d_{ij}$ elevado a la ${-\beta}$ es el efecto de la distancia, que disminuye o disuade las interacciones [@okelly2009]. Los índices *'i'* y '*j*' refieren a entidades geográficas, que en conjunto forman una díada, y entre los cuales existe un flujo [@okelly2009]. Luego se pueden aplicar restricciones en origen o destino [@patuelli2016] y sumar variables que se consideran explicativas de determinados flujos que se quieran modelar.
-
-Desde la perspectiva de la geografía de la población, el presente proyecto se propone simular escenarios futuros de migración interna basados en los modelos de interacción espacial.
-
+- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?
 
 \newpage
-
 
 # Antecedentes
 
@@ -114,7 +117,7 @@ A continuación se presenta el relevamiento de antecedentes. Se divide en dos ap
 
 ## La migración interna en Uruguay
 
-Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@macadar2008]. Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
+Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@prates1977; @petruccelli1979; @macadar2008]. Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
 
 Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José y Colonia tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
 
@@ -133,7 +136,7 @@ Quienes migran desde Montevideo tienen un perfil más joven y feminizado de quie
 
 Los abordajes para modelar migraciones son variados, siendo los modelos de interacción espacial una de las opciones.
 
-En líneas generales vale mencionar las cuatro categorías propuestas por Champion et al. -@champion1998 para diferenciar los abordajes:abordajes micro o macro; abordajes basados en sieres temporales o de corte transversal.
+En líneas generales vale mencionar las cuatro categorías propuestas por Champion et al. -@champion1998 para diferenciar los abordajes:abordajes micro o macro; abordajes basados en series temporales o de corte transversal.
 
 ![Cuatro categorías para diferenciar los abordajes a la modelización de las migraciones según  Champion et al. (1998).](imagenes/migration_modelling_champion.jpg){#fig:migration_app}
 
@@ -208,7 +211,6 @@ A modo de cierre, vale destacar la diversidad de variables explicativas usadas p
 
 El marco teórico se divide en tres apartados. En el primero se revisan las teorías migratorias y su vinculación con las migraciones internas. En el segundo se realiza una breve revisión del concepto de “espacio geográfico” y sus posibles relaciones con el abordaje de las migraciones internas que se propone realizar en la investigación. En el tercer apartado se analizan los fundamentos teóricos de la interacción espacial y los abordajes para su análisis.
 
-
 ## Introducción a las teorías migratorias
 
 Las migraciones internas difieren de la **movilidad residencial** y la **movilidad pendular**. La movilidad residencial implica “mudanzas” de menor jerarquía en términos de la distancia entre la antigua y la nueva residencia, en comparación con la migración. Estos cambios le permitirían a la persona que se muda mantener el mismo trabajo y frecuentar los mismos grupos sociales [@dennett2018]. Por otro lado, la movilidad pendular es aquella que tiene frecuencia diaria o semanal, con el fin de asistir a lugares de trabajo o centros de estudio. A pesar de las anteriores definiciones, es necesario aclarar que la migración interna y la movilidad residencial forman en realidad un continuo, no existiendo un criterio absolutamente claro de demarcación entre ambas [@dennett2018], es decir que  la separación de estos dos conceptos es esquiva desde el punto de vista teórico pero puede ser resuelta operativamente. En la misma línea argumental, vale destacar que tanto el concepto de residencia como la unidad espacial que se tome de referencia, alteraran el concepto de migración, y esta característica diferencia a las migraciones de otras variables demográficas: nacimientos y defunciones son fenómenos absolutos en tanto migrar es relativo [@macadar2009].
@@ -221,8 +223,6 @@ Los inicios de la teorización sobre las migraciones datan de fines del siglo XI
 De Haas et. al. -@dehaas2015 diferencian, siguiendo a @massey1993, entre aquellas teorías orientadas las causas de la migración y aquellas orientadas a los impactos en las sociedades emisoras o receptoras. Los autores proponen un esquema que permite categorizar los procesos migratorios y las teorías que los abordan, conceptualizando a los movimientos migratorios como el resultado de la interacción entre estructuras macro y micro, en tanto proponen la existencia de meso-estructuras que vinculan las dos anteriormente mencionadas, proveyendo una explicación para la continuidad espacio-temporal de los procesos migratorios.
 
 A su vez, los autores identifican dos paradigmas principales en los cuales agrupar las teorías que dan origen a los procesos migratorios: el **funcionalista** y el **histórico-estructural**. Según el paradigma funcionalista, la sociedad puede ser analizada como un sistema, como la interacción de diferentes partes interdependientes y tendientes al equilibrio. Por otro lado, el paradigma histórico-estructural pone foco en los factores sociales, económicos, culturales e históricos que constriñen y dirigen el comportamiento de los individuos, en formas que generalmente no tienden al equilibrio, sino que refuerzan los desequilibrios preexistentes [@dehaas2015].
-
-
 
 ### Las primeras contribuciones
 
@@ -441,7 +441,6 @@ Más cerca en el tiempo, los aportes de Allan Wilson -@wilson1971 complejizan lo
 
 Teniendo los aportes de Wilson como basamento, los modelos de interacción espacial han sido aplicados a fenómenos de diversa índole, como migraciones, transporte público y movilidades pendulares, análisis locacional (orientado a la localización de actividades comerciales, por ejemplo), entre otros tópicos [@fotheringham2001; @mallozzi2017]. Esa variedad de aplicaciones se puede asociar a la capacidad explicativa y predictiva de los modelos [@santos1994].
 
-
 \newpage
 
 # Marco metodológico
@@ -460,7 +459,6 @@ En particular los censos 1996 y 2011 incorporaron preguntas relativas a la migra
 
 Table: Preguntas relevantes para el análisis de la migración interna en los censo INE 1996 y 2011.
 
-
 Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos entres las movilidades pendulares, las residenciales y las migraciones, y refiere a la operacionalización del concepto de migrante interno. Según la información disponible en Censo INE [@ine2011c], el criterio más adecuado sería usar los datos relevados en la pregunta "lugar de residencia 5 años antes", la cual puede tomar los siguientes valores: "en otra localidad o paraje de este departamento" y "en otro departamento"
   
 Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas asignadas a la localidad INE rural, cuya expresión geográfica se limita a toda la superficie del departamento que no se considera urbana, por ende es demasiado amplia. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia u otra fuente de datos. En segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
@@ -470,7 +468,6 @@ En lo que refiere a capas de información geográfica, fueron empleadas las capa
 Con la combinación de los datos geográficos y los censales se realizaron ciertas operaciones para producir nueva información geográfica, las cuales se detalla en el apartado "Generación de datos diádicos".
 
 Como datos relativos a la actividad económica, se extrajeron los valores de PBI departamental para el año 2014 estimados por el Observatorio "Territorio Uruguay" de la Oficina de Planeamiento y Presupuesto [@opp2016]
-
 
 ## Factores asociados a las migraciones internas
 
@@ -491,7 +488,6 @@ Algunos estudios también se refieren a variables de stock, por ejemplo el stock
 Dada la relevancia de ciertos aspectos micro que hacen a la desición de migrar, Van Der Gaag et al. -@vandergaag2003 recomiendan incorporar una perspectiva de ciclo de vida, en particular la edad, a la modelación. A su vez, ateniéndonos a la realidad Uruguaya, según el análisis realizado por Macadar y Domínguez -@macadar2008 a partir de datos de la Encuesta de Hogares Ampliada el año 2006, la razón principal de los migrantes es la de "motivos familiares",quedando os motivos laborales y educativos en segundo y tercer lugar. Esas afirmaciones destacan la importancia de considerar otros factores a nivel micro que pueden ser minimizados en abordajes basados exclusivamente en factores macro.
 
 \newpage
-
 
 # Análisis exploratorio de datos
 
@@ -553,7 +549,6 @@ El grupo de migrantes internos puede ser dividido en tres subgrupos [@bengochea2
 - **Grupo 2**: 58.655 personas migrantes con origen en Montevideo pero residentes en el Interior del país.
 
 - **Grupo 3**: 47.660 personas con origen y residencia en el interior, pero en departamentos distintos.
-
 
 A continuación se presentarán diversos indicadores referidos a dichos tres grupos, a modo de carcterización.
 
@@ -619,7 +614,6 @@ El grupo 1 también se diferencia en cuánto al nivel educativo actual en el mom
 En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población.
 
 ![Máximo nivel educativo alcanzado.](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
-
 
 \newpage
 
