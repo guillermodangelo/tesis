@@ -491,11 +491,11 @@ En continuidad con la revisión de antecedentes sobre el estudio de la migració
 
 En primer lugar se procede a operacionalizar el concepto de **migrante interno**, según las opciones que presenta el Censo INE 2011 [@ine2011].
 
-Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron [@bengochea2011], y por otro lado los **migrantes recientes**. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
+Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en un departamento diferente a aquel en que nacieron, y por otro lado los **migrantes recientes** [@busso2009]. Dado que la migración absoluta abarca un horizonte temporal muy amplio, se tomará la categoría migrante reciente como unidad de análisis.
 
-El Censo INE 2011 [@ine2011] permite distinguir los dos tipos de flujos, tanto migración absoluta y migración reciente [@macadar2008]. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, tal cual se mencionó anteriormente, se identifica el subgrupo que declaró vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
+El Censo INE 2011 [@ine2011] permite distinguir ambas categorías. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, tal cual se mencionó anteriormente, se identifica el subgrupo que declaró vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
 
-![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
+![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo} 
 
 El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como a la concentración de actividad económica en general. El departamento de Canelones también figura como atractor, y en parte se puede asociar a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, incorporando la zona costera de Canelones (Ciudad de la Costa), como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
 
