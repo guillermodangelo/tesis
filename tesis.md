@@ -113,7 +113,7 @@ Como preguntas de investigación se proponen las siguientes:
 
 # Antecedentes
 
-A continuación se presenta el relevamiento de antecedentes. Se divide en dos apartados, el primerod dedicado a la migración interna en Uruguay y el segundo a aplicaciones internacionales de modelos de interacción espacial para el estudio de la migración interna.
+A continuación se presenta el relevamiento de antecedentes. Se divide en dos apartados, el primero dedicado a la migración interna en Uruguay y el segundo a aplicaciones internacionales de modelos de interacción espacial para el estudio de la migración interna.
 
 ## La migración interna en Uruguay
 
@@ -499,15 +499,15 @@ Podemos distinguir entre **migrantes absolutos**, es decir aquellos que viven en
 
 El Censo INE 2011 [@ine2011] permite distinguir ambas categorías. Para operacionalizar la categoría de migrante interno reciente a partir de los microdatos del Censo, tal cual se mencionó anteriormente, se identifica el subgrupo que declaró vivir en otro departamento ante la pregunta del Censo referida al lugar de residencia 5 años antes. El total de migrantes internos según la definición tomada es de 148.759 personas.
 
-![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo} 
+![Migrantes internos recientes según el Censo 2011.](mapas_graficas/eda_mapa_gemelo_migrantes.pdf){#fig:mapa_gemelo}
 
 El rol de Montevideo como receptor se puede vincular a la histórica concentración de servicios en la capital [@bengochea2011], así como a la concentración de actividad económica en general. El departamento de Canelones también figura como atractor, y en parte se puede asociar a la metropolización de la ciudad de Montevideo, es decir la expansión de su "mancha urbana" hacia el este, incorporando la zona costera de Canelones (Ciudad de la Costa), como proceso de suburbanización [@hernandez1999b; @folgar2005; @dangelo2016].
 
-Dicho proceso puede ser constado analizando las principales localidades de destino de los migrantes internos que anteriormente residían en Montevideo. Tal cual se constata en las\ [@fig:mig_ori_mvo] y\ [@fig:mig_ori_mvo_zoom] el destino de preferencia es el área metropolitana en primer lugar, en particular la costa de Canelones, seguido de otras localidades costeras.
+Dicho proceso puede ser constatado analizando las principales localidades de destino de los migrantes internos que anteriormente residían en Montevideo. Tal cual se expresa en las\ [@fig:mig_ori_mvo] y\ [@fig:mig_ori_mvo_zoom] el destino de preferencia es el área metropolitana en primer lugar, en particular la costa de Canelones, seguido de otras localidades costeras.
 
 ![Migrantes internos con origen en Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_pais.pdf){#fig:mig_ori_mvo}
 
-Los 7 principales destinos corresponden a localidades del área metrpolitana, y suman el 27% de las personas migrantes interna con origen den Montevideo.
+Los 7 principales destinos corresponden a localidades del área metropolitana, y suman el 27% de las personas migrantes internas con origen en Montevideo.
 
 ![Migrantes internos con origen en Montevideo, zoom a área metropolitana de Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_zoom_am.pdf){#fig:mig_ori_mvo_zoom}
 
