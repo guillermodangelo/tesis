@@ -88,3 +88,28 @@ write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
 #write.csv(p_filter, file='personas_censo_2011.csv', row.names=F)
 
 
+
+
+# censo 1996
+library(foreign)
+
+setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
+
+p <- read.dbf("pob_96.DBF")
+
+
+
+
+vars <- c('DPTO',
+          'LOC',
+          'SECC',
+          'SEGM',
+          'VIVIENDA',
+          'TIPVIV',
+          'HOGARVIV'
+       )
+
+
+p_filter <- p[vars]
+
+save(p_filter, file="personas_censo_96_migrac.RData")
