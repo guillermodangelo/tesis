@@ -79,11 +79,11 @@ save(p_filter, file="personas_censo_migrac.RData")
 gc()
 
 # guarda como GZIP
-write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 
 setwd("/home/guillermo/Documentos/GitHub/tesis/tablas")
 
-write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 
 #write.csv(p_filter, file='personas_censo_2011.csv', row.names=F)
 
@@ -97,8 +97,12 @@ setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
 
 p <- read.dbf("pob_96.DBF")
 
+save(p, file="personas_censo_96.RData")
+rm(list=ls())
+gc()
 
-
+setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
+load("personas_censo_96.RData")
 
 vars <- c('DPTO',
           'LOC',
@@ -106,10 +110,26 @@ vars <- c('DPTO',
           'SEGM',
           'VIVIENDA',
           'TIPVIV',
-          'HOGARVIV'
+          'HOGARVIV',
+          'PARENTESCO',
+          'SEXO',
+          'EDAD',
+          'HACE5AQUI',
+          'HAC5DEPC',
+          'HAC5LOC'
        )
 
 
 p_filter <- p[vars]
 
 save(p_filter, file="personas_censo_96_migrac.RData")
+
+
+# guarda como GZIP
+write.csv(p_filter, file=gzfile('personas_censo_.gz'), row.names=F)
+
+setwd("/home/guillermo/Documentos/GitHub/tesis/tablas")
+
+write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
+
+
