@@ -67,7 +67,7 @@ def cargar_migrantes_internos():
 
 def recuperar_poblacion_2011():
     "Recupera DF con cantidad de habitantes por departamento según censo 2011"
-    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    depid = list(range(1,20))
     poblacion = [1318755,
                 73377,
                 520173,
@@ -93,7 +93,7 @@ def recuperar_poblacion_2011():
 
 def recuperar_poblacion_2011_5años():
     "Recupera DF con cantidad de habitantes de 5 años y más por departamento según censo 2011"
-    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    depid = list(range(1,20))
     poblacion = [1236133,
                  67863,
                  484060,
@@ -212,7 +212,6 @@ def cargar_datos_geo():
     capital = localidad[localidad.CAPITAL==True].reset_index(drop=True)
     
     return deptos, deptos_sim, localidad, centro_pobl, capital
-    
 
 
 def cargar_data_eda():
@@ -250,7 +249,7 @@ def cargar_matriz_deptos():
     "Carga matriz de migrantes internos entre deptos"
     matrix = pd.read_csv('tablas/matriz_deptos.csv', skiprows=2, index_col='depto_origen').values.tolist()   
     return matrix
-        
+
 
 def format_depto(df, column):
     "Formatea strings de departameto, AM y total"
