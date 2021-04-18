@@ -8,6 +8,13 @@ def pad(df, series, nzfill):
     return series_padded
     
     
+def cargar_censo_96():
+    "Carga datos del Censo INE 1996"
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_1996.gz', compression='gzip', header=0, sep=',', quotechar='"')
+    return censo
+
+
 def cargar_censo():
     "Carga datos del Censo INE 2011"
     # Datos censales
@@ -40,6 +47,7 @@ def cargar_censo_vars(variables):
     censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
     return censo
 
+
 def cargar_censo_nrows(nrows):
     "Carga muestra datos del Censo INE 2011"
     # Datos censales
@@ -58,6 +66,7 @@ def cargar_migrantes_internos():
 
 
 def recuperar_poblacion_2011():
+    "Recupera DF con cantidad de habitantes por departamento según censo 2011"
     depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     poblacion = [1318755,
                 73377,
@@ -79,7 +88,85 @@ def recuperar_poblacion_2011():
                 90051,
                 48134]
     data_tuples = list(zip(depid, poblacion))
-    
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
+def recuperar_poblacion_2011_5años():
+    "Recupera DF con cantidad de habitantes de 5 años y más por departamento según censo 2011"
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion = [1236133,
+                 67863,
+                 484060,
+                 78717,
+                 115155,
+                 53162,
+                 23449,
+                 62665,
+                 55247,
+                 153019,
+                 104855,
+                 50375,
+                 95688,
+                 63563,
+                 115058,
+                 100827,
+                 76894,
+                 83814,
+                 44939]
+    data_tuples = list(zip(depid, poblacion))
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
+def recuperar_poblacion_1996():
+    "Recupera DF con cantidad de habitantes por departamento según censo 1996"
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion =  [1344839,
+                 75059,
+                 443053,
+                 82510,
+                 120241,
+                 55716,
+                 25030,
+                 66503,
+                 61085,
+                 127502,
+                 111509,
+                 51713,
+                 98472,
+                 70292,
+                 117597,
+                 96664,
+                 81557,
+                 84919,
+                 49502]
+    data_tuples = list(zip(depid, poblacion))
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
+def recuperar_poblacion_1996_5años():
+    """Recupera DF con cantidad de habitantes de 5 o más años por departamento según censo 1996.
+       Calculado por Macadar y Dominguez (2008)"""
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion =  [1187111,
+                    63587,
+                    384620,
+                    70939,
+                    104493,
+                    48296,
+                    22120,
+                    58308,
+                    53526,
+                    109399,
+                    96318,
+                    44456,
+                    83233,
+                    60922,
+                    99613,
+                    84679,
+                    71254,
+                    72781,
+                    43071]
+    data_tuples = list(zip(depid, poblacion))
     return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 

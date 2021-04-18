@@ -1,4 +1,4 @@
-# guarda como RData
+# guarda como RData (corre en Ubuntu)
 library(foreign)
 setwd("/mnt/c1e28322-6237-43a1-bcf0-c89831b4d46d/censo2011")
 
@@ -90,7 +90,7 @@ write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 
 
 
-# censo 1996
+# censo 1996 (corre en Windows)
 library(foreign)
 
 setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
@@ -101,6 +101,7 @@ save(p, file="personas_censo_96.RData")
 rm(list=ls())
 gc()
 
+# carga lo ya guardado
 setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
 load("personas_censo_96.RData")
 
@@ -126,10 +127,10 @@ save(p_filter, file="personas_censo_96_migrac.RData")
 
 
 # guarda como GZIP
-write.csv(p_filter, file=gzfile('personas_censo_.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 
-setwd("/home/guillermo/Documentos/GitHub/tesis/tablas")
+setwd("C:/Users/user/Documents/GitHub/tesis/tablas")
 
-write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 
 

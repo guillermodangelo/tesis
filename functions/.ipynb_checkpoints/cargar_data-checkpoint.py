@@ -8,6 +8,13 @@ def pad(df, series, nzfill):
     return series_padded
     
     
+def cargar_censo_96():
+    "Carga datos del Censo INE 1996"
+    # Datos censales
+    censo = pd.read_csv('tablas/personas_censo_1996.gz', compression='gzip', header=0, sep=',', quotechar='"')
+    return censo
+
+
 def cargar_censo():
     "Carga datos del Censo INE 2011"
     # Datos censales
@@ -40,6 +47,7 @@ def cargar_censo_vars(variables):
     censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
     return censo
 
+
 def cargar_censo_nrows(nrows):
     "Carga muestra datos del Censo INE 2011"
     # Datos censales
@@ -48,6 +56,92 @@ def cargar_censo_nrows(nrows):
     censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
 
     return censo
+
+
+def cargar_migrantes_internos():
+    "Carga datos de migrantes internos recientes del Censo INE 2011"
+    df = pd.read_csv('tablas/censo_2011_migrantes_internos.gz', compression='gzip', header=0, sep=',', quotechar='"')
+
+    return df
+
+
+def recuperar_poblacion_2011():
+    "Recupera DF con cantidad de habitantes por departamento según censo 2011"
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion = [1318755,
+                73377,
+                520173,
+                84698,
+                123203,
+                57084,
+                25050,
+                67047,
+                58815,
+                164298,
+                113107,
+                54765,
+                103473,
+                68088,
+                124861,
+                108304,
+                82594,
+                90051,
+                48134]
+    data_tuples = list(zip(depid, poblacion))
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
+def recuperar_poblacion_1996():
+    "Recupera DF con cantidad de habitantes por departamento según censo 1996"
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion =  [1344839,
+                 75059,
+                 443053,
+                 82510,
+                 120241,
+                 55716,
+                 25030,
+                 66503,
+                 61085,
+                 127502,
+                 111509,
+                 51713,
+                 98472,
+                 70292,
+                 117597,
+                 96664,
+                 81557,
+                 84919,
+                 49502]
+    data_tuples = list(zip(depid, poblacion))
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
+
+
+def recuperar_poblacion_1996_5años():
+    """Recupera DF con cantidad de habitantes de 5 o más años por departamento según censo 1996.
+       Calculado por Macadar y Dominguez (2008)"""
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    poblacion =  [1201017,
+                    67763,
+                    354937,
+                    73704,
+                    104587,
+                    50178,
+                    22875,
+                    59194,
+                    54854,
+                    99843,
+                    97913,
+                    45446,
+                    85277,
+                    62054,
+                    102271,
+                    82635,
+                    73895,
+                    76472,
+                    43811]
+    data_tuples = list(zip(depid, poblacion))
+    return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 
 def cargar_pbi():
@@ -184,6 +278,32 @@ def decode_depto(df, column):
     17: 'SORIANO',
     18: 'TACUAREMBO',
     19: 'TREINTA Y TRES'
+        }
+    return df[column].map(deptos_dict)
+
+
+def decode_depto_short(df, column):
+    "Decodifica departamento INE, abreviado"
+    deptos_dict = {
+    1:	'Mvdeo.',
+    2:	'Artigas',
+    3:	'Can.',
+    4:	'C. Largo',
+    5:	'Colonia',
+    6:	'Durazno',
+    7:	'Flores',
+    8:	'Florida',
+    9:	'Lavalleja',
+    10:	'Maldonado',
+    11:	'Paysandú',
+    12:	'R. Negro',
+    13:	'Rivera',
+    14:	'Rocha',
+    15:	'Salto',
+    16:	'San José',
+    17:	'Soriano',
+    18:	'Tacuarembó',
+    19:	'T. y Tres'
         }
     return df[column].map(deptos_dict)
 
