@@ -178,6 +178,25 @@ def cargar_pbi():
     return pbi
 
 
+def recuperar_empresas_por_depto():
+    """Recupera DF con cantidad de empresas industriales por departamento
+    a 2013, según datos del OTU (OPP)"""
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    empresas =  [3124, 55, 563, 88, 60, 40, 28, 101, 54, 188, 144, 54, 67, 62, 97, 154, 85, 61, 38]
+    data_tuples = list(zip(depid, empresas))
+    return pd.DataFrame(data_tuples, columns=['DPTO','empresas'])
+
+
+
+def recuperar_parti_pbi():
+    """Recupera DF con cantidad participación percentual en el PBI
+    de cada departamento.
+    Fuente: Observatorio Territorio Uruguay - OPP en base a diversas fuentes"""
+    depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    porc_pbi =  [49.1, 1.5, 10.5, 1.9, 4.9, 1.5, 0.8, 2.0, 1.6, 5.7, 2.7, 2.6, 2.1, 1.9, 2.7, 3.1, 2.2, 2.1, 1.2]
+    data_tuples = list(zip(depid, porc_pbi))
+    return pd.DataFrame(data_tuples, columns=['DPTO','porc_pbi'])
+
 def cargar_vecindad():
     "Carga datos sobre vecindad de deptos"  
     # Vecindad

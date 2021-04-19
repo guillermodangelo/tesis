@@ -136,11 +136,9 @@ Quienes migran desde Montevideo tienen un perfil más joven y feminizado de quie
 
 Los abordajes para modelar migraciones son variados, siendo los modelos de interacción espacial una de las opciones.
 
-En líneas generales vale mencionar las cuatro categorías propuestas por Champion et al. -@champion1998 para diferenciar los abordajes:abordajes micro o macro; abordajes basados en series temporales o de corte transversal.
+En líneas generales vale mencionar las cuatro categorías propuestas por Champion et al. -@champion1998 para diferenciar los abordajes: abordajes micro o macro; abordajes basados en series temporales o de corte transversal. Según dicha clasificación los modelos de interacción espacial son un abordaje a nivel macro y de corte transversal.
 
 ![Cuatro categorías para diferenciar los abordajes a la modelización de las migraciones según  Champion et al. (1998).](imagenes/migration_modelling_champion.jpg){#fig:migration_app}
-
-Siguendo la caslificación propuesta, los modelos de interacción espacial son un abordaje a nivel macro y de corte transversal.
 
 A pesar de no contar con antecedentes nacionales de uso de modelos de interacción espacial para el estudio de las migraciones, existen varios antecedentes internacionales de su aplicación.
 
@@ -226,7 +224,7 @@ A su vez, los autores identifican dos paradigmas principales en los cuales agrup
 
 ### Las primeras contribuciones
 
- Las “leyes de la migración”, formuladas por Ravenstein en el siglo XIX, se consideran la primera teorización sobre migración y se derivan de sus observaciones de la migración interna [@king2010]. Analizando fuentes de datos demográficos oficiales de varios países, Ravenstein identificó a algunas generalizaciones empíricas que aún hoy son consideradas relevantes [@arango1985; @gregory2009; @he2003, @okelly2009, @rees2019]. A modo de ejemplo:
+ Las “leyes de la migración”, formuladas por Ravenstein en el siglo XIX, se consideran la primera teorización sobre migración y se derivan de sus observaciones de la migración interna [@anderson2011; @king2010]. Analizando fuentes de datos demográficos oficiales de varios países, Ravenstein identificó a algunas generalizaciones empíricas que aún hoy son consideradas relevantes [@arango1985; @gregory2009; @he2003, @okelly2009, @rees2019]. A modo de ejemplo:
 
 - El rol de la distancia como factor de estímulo, o por el contrario como “fricción” (hay más movimientos de corta distancia que de larga distancia).
 
@@ -615,6 +613,20 @@ En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grup
 
 ![Máximo nivel educativo alcanzado.](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
 
+## Coeficientes de atracción mutua entre departamentos
+
+Los coeficientes de atracción mutua dan información sobre la intensidad de flujos entre departamentos.
+
+(@) $$CAM = ( (M_{ij} + M_{ji} ) / ( P_{i} + P_{j} ) ) * 1000$$
+
+ Dónde $M_{ij}$ es la corriente del departamento i al j y $M_{ij}$ la del j al i, $P_{i}$ y $P_{j}$ son las poblaciones en origen y destino.
+
+Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 1996.
+
+\input{tablas/prodsim_matriz_orig_dest.tex}
+
+
+
 \newpage
 
 # Aplicación de un modelo de interación espacial
@@ -653,7 +665,7 @@ Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vec
 
 Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se enmendaron los errores topológicos presentes en la capa. Los tres procesamientos se realizaron utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
 
-De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se suma una una variable diádica con el largo del límite compartido.
+De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se suma una variable con el largo del límite compartido.
 
 ## Especificación y calibración de un modelo de interacción espacial restringido en origen
 
@@ -768,14 +780,11 @@ y
 Con respecto al marco teórico y los antecedentes:
 
 - Profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación
-- Referenciar el paper de Anderson (2011) sobre modelos gravitatorios
-- Referenciar enciclopedia del GIS en el apartado "La interacción espacial y su modelación"
 
 Con respecto a la metodología y resultados:
 
-- Recopilar fuentes de datos no utilizadas (principalmente censos 85 y 96).
+- Recopilar fuentes de datos no utilizadas (censo 96).
 - Profundizar en los problemas de la aplicación de los modelos.
-- Profundizar en el relevamiento bibliográfico de factores asociados a la migración interna, ya que de ese relevamiento se seleccionarán las variables a utilizar en los modelos.
 - Añadir más variables asociadas a la migración interna en el modelo.
 - Explorar diferentes funciones de decaimiento por la distancia.
 - Modelar con localidades.
