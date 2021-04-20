@@ -326,7 +326,7 @@ def decode_depto(df, column):
     return df[column].map(deptos_dict)
 
 
-def decode_depto_short(df, column):
+def decode_depto_short(array):
     "Decodifica departamento INE, abreviado"
     deptos_dict = {
     1:	'Mvdeo.',
@@ -349,7 +349,7 @@ def decode_depto_short(df, column):
     18:	'Tacuarembó',
     19:	'T. y Tres'
         }
-    return df[column].map(deptos_dict)
+    return array.map(deptos_dict)
 
 
 
