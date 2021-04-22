@@ -626,6 +626,7 @@ Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 
 \input{tablas/prodsim_matriz_orig_dest.tex}
 
 
+**continuar**
 
 \newpage
 
@@ -781,16 +782,18 @@ Con respecto al marco teórico y los antecedentes:
 
 - Profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación
 
-Con respecto a la metodología y resultados:
+Con respeto al análisis exploratorio:
 
+- Distribución de distancias contra edades y sexos en migrantes recientes
+- Análisis de distancias 1996 vs 2011
+
+Con respecto a la metodología y resultados:
 - Recopilar fuentes de datos no utilizadas (censo 96).
 - Profundizar en los problemas de la aplicación de los modelos.
-- Añadir más variables asociadas a la migración interna en el modelo.
 - Explorar diferentes funciones de decaimiento por la distancia.
 - Modelar con localidades.
 - Modelar excluyendo Montevideo.
 - Analizar posibles efectos de sobredispersión en Poisson y su posible mejora usando un modelos de regresión binomial negativa.
-**idea: distribución de distancias contra edades y sexos en migrantes recientes**
 
 \newpage
 
