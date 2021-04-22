@@ -623,14 +623,9 @@ Los coeficientes de atracción mutua dan información sobre la intensidad de flu
 
 Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 1996.
 
-**arreglar esta tabla**
 \input{tablas/matriz_atr1996.tex}
 
-**continuar**
-
-
 \newpage
-
 
 # Aplicación de un modelo de interación espacial
 
