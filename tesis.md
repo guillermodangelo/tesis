@@ -57,7 +57,7 @@ Este proyecto de investigación se enmarca en la geografía de la población, su
 
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. A modo de ejemplo vale mencionar como las migraciones se ven influidas por el espacio geográfico, generándose migraciones más intensas entre localidades cercanas o migraciones muy débiles entre localidades remotas, y en ese proceso también modifican y (re)construyen el espacio.
 
-El interés en la proyección de escenarios junto con el estudio de las migraciones internas no remite únicamente a la posibilidad de explorar la aplicación de una metodología, sino también a la provisión de insumos para las políticas de población, de desarrollo urbano, desarrollo regional y ordenamiento territorial. En el caso de Uruguay, para el cual se prevé una continuidad del proceso urbanizador, así como de la presión demográfica sobre el área metropolitana de Montevideo y las zonas costeras [@calvo2012a], generar dichos insumos para la reflexión se considera relevante.
+El interés en la proyección de escenarios junto con el estudio de las migraciones internas no remite únicamente a la posibilidad de explorar la aplicación de una metodología, sino también a la provisión de insumos para las políticas de población, de desarrollo urbano, desarrollo regional y ordenamiento territorial. En el caso de Uruguay, para el cual se prevé una continuidad del proceso urbanizador, así como de la presión demográfica sobre el área metropolitana de Montevideo y las zonas costeras [@calvo2012], generar dichos insumos para la reflexión se considera relevante.
 
 Los modelos de interacción espacial devienen de los modelos gravitatorios, los cuales son representaciones matemáticas de la interacción entre dos entidades geográficas, permitiendo medir la importancia de las relaciones existentes entre esas dos entidades [@sanders2013a].
 
@@ -617,18 +617,20 @@ En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grup
 
 Los coeficientes de atracción mutua dan información sobre la intensidad de flujos entre departamentos.
 
-(@) $$CAM = ( (M_{ij} + M_{ji} ) / ( P_{i} + P_{j} ) ) * 1000$$
+(@) $$CAM = \left ( \frac{M_{ij} + M_{ji} }{P_{i} + P_{j}} \right ) \times1000$$
 
  Dónde $M_{ij}$ es la corriente del departamento i al j y $M_{ij}$ la del j al i, $P_{i}$ y $P_{j}$ son las poblaciones en origen y destino.
 
 Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 1996.
 
-\input{tablas/prodsim_matriz_orig_dest.tex}
-
+**arreglar esta tabla**
+\input{tablas/matriz_atr1996.tex}
 
 **continuar**
 
+
 \newpage
+
 
 # Aplicación de un modelo de interación espacial
 

@@ -2,6 +2,6 @@ cd /home/guillermo/Documentos/GitHub/tesis/
 
 ./pandoc_export_pdf.sh tesis.md tesis.pdf
 
-pandoc -s tesis.md -o tesis.docx
 
-pandoc tesis.md --bibliography=myref.bib -o tesis.docx
+./pandoc_export_word.sh tesis.md tesis.docx
+
