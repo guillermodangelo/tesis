@@ -24,10 +24,11 @@ header-includes: |
       pdftitle={Modelos de interacción espacial y migración interna en Uruguay},
       pdfauthor={Guillermo D'Angelo},
       pdfsubject={Geografía de la Población},
-      pdfkeywords={demografía,geografía de la población,migración interna}
+      pdfkeywords={demografía,geografía de la población,migración interna,modelos de interacción espacial}
     }
     \usepackage{float}
     \floatplacement{figure}{H}
+    \floatplacement{table}{H}
     \usepackage{caption}
     \captionsetup{font=small}
     \captionsetup[table]{name=Tabla, labelfont=bf}
@@ -624,6 +625,8 @@ Los coeficientes de atracción mutua dan información sobre la intensidad de flu
 Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 1996.
 
 \input{tablas/matriz_atr1996.tex}
+
+Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden calcular los mismos coeficientes para el 2011.
 
 \newpage
 
