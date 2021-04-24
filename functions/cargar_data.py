@@ -242,7 +242,6 @@ def cargar_data_eda():
     return censo, pbi, md
 
 
-
 def filter_df_censo(df):
     "Filtra datos del censo para quedarse solo con migrantes internos recientes"
     mgr = df.loc[df.PERMI07 == 3].reset_index(drop=True)
@@ -252,6 +251,10 @@ def filter_df_censo(df):
     mgr.loc[:,('depto_origen')] = mgr.loc[:,('depto_origen')].astype(int)
     # renombra DPTO
     mgr.rename(columns={'DPTO': 'depto_destino'}, inplace=True)
+    # agrega código de localidad de origen
+    mgr['loc_origen'] = (mgr.depto_origen.astype('str') + mgr.PERMI07_3.astype(int).astype(str).str.zfill(3))
+    # agrega código de localidad de destino
+    mgr['loc_destino'] = (mgr.depto_destino.astype('str') + mgr.LOC.astype(str).str.zfill(3)).astype(int)
 
     return mgr
 
