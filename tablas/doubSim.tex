@@ -1,58 +1,57 @@
 \begin{center}
 \begin{tabular}{lclc}
 \toprule
-\textbf{Dep. Variable:}                     &  personas\_mig   & \textbf{  No. Observations:  } &      342    \\
-\textbf{Model:}                             &       GLM        & \textbf{  Df Residuals:      } &      304    \\
-\textbf{Model Family:}                      &     Poisson      & \textbf{  Df Model:          } &       37    \\
-\textbf{Link Function:}                     &       log        & \textbf{  Scale:             } &    1.0000   \\
-\textbf{Method:}                            &       IRLS       & \textbf{  Log-Likelihood:    } &   -12551.   \\
-\textbf{Date:}                              & Thu, 06 May 2021 & \textbf{  Deviance:          } &    22874.   \\
-\textbf{Time:}                              &     11:54:10     & \textbf{  Pearson chi2:      } &  2.48e+04   \\
-\textbf{No. Iterations:}                    &        6         & \textbf{                     } &             \\
+\textbf{Dep. Variable:}                    &  personas\_mig   & \textbf{  No. Observations:  } &      342    \\
+\textbf{Model:}                            &       GLM        & \textbf{  Df Residuals:      } &      304    \\
+\textbf{Model Family:}                     &     Poisson      & \textbf{  Df Model:          } &       37    \\
+\textbf{Link Function:}                    &       log        & \textbf{  Scale:             } &    1.0000   \\
+\textbf{Method:}                           &       IRLS       & \textbf{  Log-Likelihood:    } &   -12551.   \\
+\textbf{Date:}                             & Thu, 06 May 2021 & \textbf{  Deviance:          } &    22874.   \\
+\textbf{Time:}                             &     20:26:31     & \textbf{  Pearson chi2:      } &  2.48e+04   \\
+\textbf{No. Iterations:}                   &        6         & \textbf{                     } &             \\
 \bottomrule
 \end{tabular}
 \begin{tabular}{lcccccc}
-                                            & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+                                           & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
 \midrule
-\textbf{Intercept}                          &       0.0557  &        0.018     &     3.137  &         0.002        &        0.021    &        0.091     \\
-\textbf{nom\_depto\_orig[T.CANELONES]}      &      -0.2652  &        0.019     &   -13.633  &         0.000        &       -0.303    &       -0.227     \\
-\textbf{nom\_depto\_orig[T.CERRO LARGO]}    &      -0.3530  &        0.021     &   -17.210  &         0.000        &       -0.393    &       -0.313     \\
-\textbf{nom\_depto\_orig[T.COLONIA]}        &      -0.6452  &        0.020     &   -31.665  &         0.000        &       -0.685    &       -0.605     \\
-\textbf{nom\_depto\_orig[T.DURAZNO]}        &      -0.8956  &        0.022     &   -41.301  &         0.000        &       -0.938    &       -0.853     \\
-\textbf{nom\_depto\_orig[T.FLORES]}         &      -1.8378  &        0.029     &   -63.650  &         0.000        &       -1.894    &       -1.781     \\
-\textbf{nom\_depto\_orig[T.FLORIDA]}        &      -1.1349  &        0.022     &   -52.545  &         0.000        &       -1.177    &       -1.093     \\
-\textbf{nom\_depto\_orig[T.LAVALLEJA]}      &      -1.1729  &        0.022     &   -52.395  &         0.000        &       -1.217    &       -1.129     \\
-\textbf{nom\_depto\_orig[T.MALDONADO]}      &      -0.5582  &        0.020     &   -28.488  &         0.000        &       -0.597    &       -0.520     \\
-\textbf{nom\_depto\_orig[T.MONTEVIDEO]}     &       1.7104  &        0.017     &   103.476  &         0.000        &        1.678    &        1.743     \\
-\textbf{nom\_depto\_orig[T.PAYSANDU]}       &      -0.3186  &        0.020     &   -16.024  &         0.000        &       -0.358    &       -0.280     \\
-\textbf{nom\_depto\_orig[T.RIO NEGRO]}      &      -0.8202  &        0.022     &   -36.774  &         0.000        &       -0.864    &       -0.776     \\
-\textbf{nom\_depto\_orig[T.RIVERA]}         &      -0.1702  &        0.020     &    -8.456  &         0.000        &       -0.210    &       -0.131     \\
-\textbf{nom\_depto\_orig[T.ROCHA]}          &      -0.8116  &        0.022     &   -36.687  &         0.000        &       -0.855    &       -0.768     \\
-\textbf{nom\_depto\_orig[T.SALTO]}          &      -0.0802  &        0.020     &    -4.090  &         0.000        &       -0.119    &       -0.042     \\
-\textbf{nom\_depto\_orig[T.SAN JOSE]}       &      -1.2430  &        0.022     &   -57.139  &         0.000        &       -1.286    &       -1.200     \\
-\textbf{nom\_depto\_orig[T.SORIANO]}        &      -0.5496  &        0.020     &   -27.059  &         0.000        &       -0.589    &       -0.510     \\
-\textbf{nom\_depto\_orig[T.TACUAREMBO]}     &      -0.1954  &        0.019     &   -10.085  &         0.000        &       -0.233    &       -0.157     \\
-\textbf{nom\_depto\_orig[T.TREINTA Y TRES]} &      -0.8797  &        0.023     &   -38.760  &         0.000        &       -0.924    &       -0.835     \\
-\textbf{nom\_depto\_des[T.CANELONES]}       &       0.2298  &        0.029     &     7.999  &         0.000        &        0.173    &        0.286     \\
-\textbf{nom\_depto\_des[T.CERRO LARGO]}     &       0.1919  &        0.030     &     6.419  &         0.000        &        0.133    &        0.250     \\
-\textbf{nom\_depto\_des[T.COLONIA]}         &      -0.3190  &        0.028     &   -11.346  &         0.000        &       -0.374    &       -0.264     \\
-\textbf{nom\_depto\_des[T.DURAZNO]}         &      -0.0632  &        0.031     &    -2.056  &         0.040        &       -0.123    &       -0.003     \\
-\textbf{nom\_depto\_des[T.FLORES]}          &      -0.3382  &        0.036     &    -9.372  &         0.000        &       -0.409    &       -0.267     \\
-\textbf{nom\_depto\_des[T.FLORIDA]}         &      -0.3175  &        0.030     &   -10.708  &         0.000        &       -0.376    &       -0.259     \\
-\textbf{nom\_depto\_des[T.LAVALLEJA]}       &      -0.3194  &        0.031     &   -10.351  &         0.000        &       -0.380    &       -0.259     \\
-\textbf{nom\_depto\_des[T.MALDONADO]}       &       0.2724  &        0.027     &    10.262  &         0.000        &        0.220    &        0.324     \\
-\textbf{nom\_depto\_des[T.MONTEVIDEO]}      &      -0.0855  &        0.030     &    -2.825  &         0.005        &       -0.145    &       -0.026     \\
-\textbf{nom\_depto\_des[T.PAYSANDU]}        &      -0.1558  &        0.029     &    -5.308  &         0.000        &       -0.213    &       -0.098     \\
-\textbf{nom\_depto\_des[T.RIO NEGRO]}       &      -0.3772  &        0.030     &   -12.389  &         0.000        &       -0.437    &       -0.318     \\
-\textbf{nom\_depto\_des[T.RIVERA]}          &       0.1667  &        0.030     &     5.637  &         0.000        &        0.109    &        0.225     \\
-\textbf{nom\_depto\_des[T.ROCHA]}           &       0.0829  &        0.030     &     2.789  &         0.005        &        0.025    &        0.141     \\
-\textbf{nom\_depto\_des[T.SALTO]}           &       0.1101  &        0.029     &     3.802  &         0.000        &        0.053    &        0.167     \\
-\textbf{nom\_depto\_des[T.SAN JOSE]}        &      -0.0703  &        0.027     &    -2.567  &         0.010        &       -0.124    &       -0.017     \\
-\textbf{nom\_depto\_des[T.SORIANO]}         &      -0.3400  &        0.030     &   -11.187  &         0.000        &       -0.400    &       -0.280     \\
-\textbf{nom\_depto\_des[T.TACUAREMBO]}      &       0.2039  &        0.029     &     7.012  &         0.000        &        0.147    &        0.261     \\
-\textbf{nom\_depto\_des[T.TREINTA Y TRES]}  &       0.1106  &        0.031     &     3.539  &         0.000        &        0.049    &        0.172     \\
-\textbf{log\_pbi\_destino}                  &       0.8494  &        0.003     &   248.497  &         0.000        &        0.843    &        0.856     \\
-\textbf{log\_dist}                          &      -0.7135  &        0.004     &  -160.057  &         0.000        &       -0.722    &       -0.705     \\
+\textbf{nom\_depto\_orig[ARTIGAS]}         &      14.0447  &        0.067     &   209.954  &         0.000        &       13.914    &       14.176     \\
+\textbf{nom\_depto\_orig[CANELONES]}       &      13.7795  &        0.056     &   245.266  &         0.000        &       13.669    &       13.890     \\
+\textbf{nom\_depto\_orig[CERRO LARGO]}     &      13.6917  &        0.066     &   207.106  &         0.000        &       13.562    &       13.821     \\
+\textbf{nom\_depto\_orig[COLONIA]}         &      13.3995  &        0.064     &   208.238  &         0.000        &       13.273    &       13.526     \\
+\textbf{nom\_depto\_orig[DURAZNO]}         &      13.1491  &        0.065     &   203.134  &         0.000        &       13.022    &       13.276     \\
+\textbf{nom\_depto\_orig[FLORES]}          &      12.2069  &        0.067     &   182.316  &         0.000        &       12.076    &       12.338     \\
+\textbf{nom\_depto\_orig[FLORIDA]}         &      12.9097  &        0.063     &   204.827  &         0.000        &       12.786    &       13.033     \\
+\textbf{nom\_depto\_orig[LAVALLEJA]}       &      12.8718  &        0.064     &   201.843  &         0.000        &       12.747    &       12.997     \\
+\textbf{nom\_depto\_orig[MALDONADO]}       &      13.4865  &        0.063     &   213.154  &         0.000        &       13.363    &       13.611     \\
+\textbf{nom\_depto\_orig[MONTEVIDEO]}      &      15.7551  &        0.059     &   266.276  &         0.000        &       15.639    &       15.871     \\
+\textbf{nom\_depto\_orig[PAYSANDU]}        &      13.7261  &        0.065     &   211.006  &         0.000        &       13.599    &       13.854     \\
+\textbf{nom\_depto\_orig[RIO NEGRO]}       &      13.2245  &        0.065     &   202.366  &         0.000        &       13.096    &       13.353     \\
+\textbf{nom\_depto\_orig[RIVERA]}          &      13.8745  &        0.066     &   209.632  &         0.000        &       13.745    &       14.004     \\
+\textbf{nom\_depto\_orig[ROCHA]}           &      13.2331  &        0.066     &   201.422  &         0.000        &       13.104    &       13.362     \\
+\textbf{nom\_depto\_orig[SALTO]}           &      13.9645  &        0.066     &   211.910  &         0.000        &       13.835    &       14.094     \\
+\textbf{nom\_depto\_orig[SAN JOSE]}        &      12.8017  &        0.062     &   206.577  &         0.000        &       12.680    &       12.923     \\
+\textbf{nom\_depto\_orig[SORIANO]}         &      13.4951  &        0.065     &   208.987  &         0.000        &       13.368    &       13.622     \\
+\textbf{nom\_depto\_orig[TACUAREMBO]}      &      13.8493  &        0.065     &   212.197  &         0.000        &       13.721    &       13.977     \\
+\textbf{nom\_depto\_orig[TREINTA Y TRES]}  &      13.1650  &        0.066     &   199.889  &         0.000        &       13.036    &       13.294     \\
+\textbf{nom\_depto\_des[T.CANELONES]}      &       1.7617  &        0.026     &    68.885  &         0.000        &        1.712    &        1.812     \\
+\textbf{nom\_depto\_des[T.CERRO LARGO]}    &       0.3463  &        0.030     &    11.615  &         0.000        &        0.288    &        0.405     \\
+\textbf{nom\_depto\_des[T.COLONIA]}        &       0.6366  &        0.027     &    23.375  &         0.000        &        0.583    &        0.690     \\
+\textbf{nom\_depto\_des[T.DURAZNO]}        &      -0.1375  &        0.031     &    -4.468  &         0.000        &       -0.198    &       -0.077     \\
+\textbf{nom\_depto\_des[T.FLORES]}         &      -0.9061  &        0.036     &   -24.902  &         0.000        &       -0.977    &       -0.835     \\
+\textbf{nom\_depto\_des[T.FLORIDA]}        &      -0.1281  &        0.029     &    -4.342  &         0.000        &       -0.186    &       -0.070     \\
+\textbf{nom\_depto\_des[T.LAVALLEJA]}      &      -0.2408  &        0.031     &    -7.816  &         0.000        &       -0.301    &       -0.180     \\
+\textbf{nom\_depto\_des[T.MALDONADO]}      &       1.3627  &        0.025     &    53.762  &         0.000        &        1.313    &        1.412     \\
+\textbf{nom\_depto\_des[T.MONTEVIDEO]}     &       2.8784  &        0.025     &   116.952  &         0.000        &        2.830    &        2.927     \\
+\textbf{nom\_depto\_des[T.PAYSANDU]}       &       0.3837  &        0.029     &    13.261  &         0.000        &        0.327    &        0.440     \\
+\textbf{nom\_depto\_des[T.RIO NEGRO]}      &       0.0782  &        0.030     &     2.598  &         0.009        &        0.019    &        0.137     \\
+\textbf{nom\_depto\_des[T.RIVERA]}         &       0.4657  &        0.029     &    15.847  &         0.000        &        0.408    &        0.523     \\
+\textbf{nom\_depto\_des[T.ROCHA]}          &       0.2618  &        0.030     &     8.834  &         0.000        &        0.204    &        0.320     \\
+\textbf{nom\_depto\_des[T.SALTO]}          &       0.6079  &        0.029     &    21.243  &         0.000        &        0.552    &        0.664     \\
+\textbf{nom\_depto\_des[T.SAN JOSE]}       &       0.4724  &        0.027     &    17.644  &         0.000        &        0.420    &        0.525     \\
+\textbf{nom\_depto\_des[T.SORIANO]}        &       0.0685  &        0.030     &     2.275  &         0.023        &        0.009    &        0.127     \\
+\textbf{nom\_depto\_des[T.TACUAREMBO]}     &       0.4089  &        0.029     &    14.123  &         0.000        &        0.352    &        0.466     \\
+\textbf{nom\_depto\_des[T.TREINTA Y TRES]} &      -0.0533  &        0.031     &    -1.701  &         0.089        &       -0.115    &        0.008     \\
+\textbf{log\_dist}                         &      -0.7135  &        0.004     &  -160.057  &         0.000        &       -0.722    &       -0.705     \\
 \bottomrule
 \end{tabular}
 %\caption{Generalized Linear Model Regression Results}
