@@ -173,7 +173,7 @@ def recuperar_poblacion_1996_5años():
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
-    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols)
+    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols, decimal=',')
     
     return pbi
 
