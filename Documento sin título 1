@@ -1,0 +1,22 @@
+Preguntas para Eugenia:
+
+¿Se podría incorporar variables extra al modelo doblemente restringido?
+
+
+Modelo restringido en origen:
+
+Tengo una variable dummy que identifica aquellos depto. que comparten frontera.
+Para los que comparten frontera, tengo el dato del largo de la frontera compartida.
+Los que no tienen frontera compartida valen null en ese campo.
+Lo que hice fue imputarles 0.0001 a esos null y tomar el
+logaritmo de esa variable como predictor:
+¿es válido ese tratamiento?.
+
+
+Como evaluar autocorrelación espacial
+
+
+Localidades
+
+Como evalua sobredispersión en localidades
+
