@@ -1,4 +1,5 @@
 library(tidyr)
+library(spdep)
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
@@ -20,9 +21,22 @@ summary(model)
 # estimación
 dd_deptos$fitted <- round(fitted(model),0)
 
-
-
-
-
 dd_deptos$fitted
+
+
+# retazo eugenia
+# W=kronecker(w,w)
+# WW=mat2listw(W)
+# 
+# identical(W,listw2mat(WW))
+# 
+# sum(W-listw2mat(WW))
+# 
+# 
+# MEpois1 <- ME(counts~Municipio.o+Municipio.d+prom, data=tabla,
+#               family="poisson", listw=WW, alpha=0.7, verbose=TRUE)
+# str(MEpois1)
+# dim(MEpois1$vectors
+
+
 
