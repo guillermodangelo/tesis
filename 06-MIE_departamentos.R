@@ -1,5 +1,6 @@
 library(tidyr)
 library(spdep)
+library(rgdal)
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
@@ -38,5 +39,8 @@ dd_deptos$fitted
 # str(MEpois1)
 # dim(MEpois1$vectors
 
+
+deptos <- readOGR("capas/ine_deptos_generalizada.gpkg")
+plot(deptos)
 
 
