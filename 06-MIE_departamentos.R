@@ -3,6 +3,9 @@ library(spdep)
 library(sf)
 library(rgdal)
 
+
+
+
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 # modelo poisson R
@@ -61,4 +64,11 @@ names(pesos)
 summary(unlist(pesos$weights))
 
 
+set.seed(987654)
+n <- length(deptos_emp.nb)
+uncorr_x <- rnorm(n)
+rho <- 0.5
+autocorr_x <- invIrW(pesos, rho) %*% uncorr_x
+
+moran_u <- moran.test(uncorr_x, listw = pesos)
 
