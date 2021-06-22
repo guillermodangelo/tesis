@@ -1,6 +1,9 @@
 library(tidyr)
 library(spdep)
+library(sf)
 library(rgdal)
+
+setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
@@ -37,10 +40,25 @@ dd_deptos$fitted
 # MEpois1 <- ME(counts~Municipio.o+Municipio.d+prom, data=tabla,
 #               family="poisson", listw=WW, alpha=0.7, verbose=TRUE)
 # str(MEpois1)
-# dim(MEpois1$vectors
+# dim(MEpois1$vectors)
 
 
-deptos <- readOGR("capas/ine_deptos_generalizada.gpkg")
+deptos <- st_read("capas/ine_deptos_generalizada.gpkg")
 plot(deptos)
+
+empresas <- read.csv('tablas/empresas_por_depto.csv', sep=';')
+
+deptos_emp <-merge(deptos, empresas, by.x='cod_ine', by.y='DPTO')
+
+# vecindad
+deptos_emp.nb <- poly2nb(deptos_emp)
+
+# pesos espaciales
+pesos <- nb2listw(deptos_emp.nb, zero.policy=TRUE, style="W")
+
+names(pesos)
+
+summary(unlist(pesos$weights))
+
 
 
