@@ -44,7 +44,7 @@ dd_deptos$fitted
 
 
 deptos <- st_read("capas/ine_deptos_generalizada.gpkg")
-plot(deptos)
+#plot(deptos)
 
 empresas <- read.csv('tablas/empresas_por_depto.csv', sep=';')
 
@@ -56,9 +56,12 @@ deptos_emp.nb <- poly2nb(deptos_emp)
 # pesos espaciales
 pesos <- nb2listw(deptos_emp.nb, zero.policy=TRUE, style="W")
 
+pesos
+
 names(pesos)
 
 summary(unlist(pesos$weights))
+
 
 
 
