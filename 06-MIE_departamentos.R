@@ -63,5 +63,9 @@ names(pesos)
 summary(unlist(pesos$weights))
 
 
+# Moran's I test
+moran.test(deptos_emp$empresas, listw = pesos)
+#moran.test(deptos_emp$empresas, listw = pesos, randomisation = FALSE)
 
+moran.plot(deptos_emp$empresas, listw = pesos)
 
