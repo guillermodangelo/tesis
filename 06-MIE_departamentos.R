@@ -28,6 +28,22 @@ dd_deptos$fitted <- round(fitted(model),0)
 dd_deptos$fitted
 
 
+c(as.character(seq(0, 19)))
+
+
+w = read.csv('tablas/matriz_deptos.csv', skip=2)
+
+w$depto_origen <- NULL
+
+w = as.matrix(w)
+
+W = kronecker(w,w)
+WW=mat2listw(W)
+
+identical(W,listw2mat(WW))
+
+sum(W-listw2mat(WW))
+
 # retazo eugenia
 # W=kronecker(w,w)
 # WW=mat2listw(W)
@@ -68,4 +84,10 @@ moran.test(deptos_emp$empresas, listw = pesos)
 #moran.test(deptos_emp$empresas, listw = pesos, randomisation = FALSE)
 
 moran.plot(deptos_emp$empresas, listw = pesos)
+
+
+locm <- localmoran(deptos_emp$empresas, listw = pesos)
+locm
+
+
 
