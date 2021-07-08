@@ -91,24 +91,23 @@ Objetivo general
 Objetivos específicos
 
 - Describir las migraciones internas en Uruguay en función de variables demográficas específicas.
-
-- Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
   
-- Explorar el rol que tiene espacio geográfico en las migraciones internas en Uruguay.
+- Explorar el rol del espacio geográfico en las migraciones internas en Uruguay.
 
 - Calibrar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
 
-- Calibrar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
+- Explorar la aplicabilidad de modelos de interacción espacial para la estimación de escenarios de migración interna.
+
 
 Como preguntas de investigación se proponen las siguientes:
 
-- ¿Cuál es la estructura de la población migrante interna? ¿Cuál es su nivel educativo?
+- ¿Cuál es la estructura demográfica de la población migrante interna? ¿Cuál es su nivel educativo?
   
 - ¿Han variado los coeficientes de atractividad entre departamentos? ¿Con qué magnitud?
 
 - ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
 
-- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?
+- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas? ¿Existe autocorrelación espacial en los datos de migración?
 
 \newpage
 
