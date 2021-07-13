@@ -32,10 +32,7 @@ dd_deptos$fitted
 ######################
 ### SIN MONTEVIDEO ###
 ######################
-
-
 dd_deptos_sin_mvo <- dd_deptos[dd_deptos$depto_origen !=1 & dd_deptos$depto_destino !=1,]
-
 
 # model poisson regression using glm()
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
@@ -47,16 +44,13 @@ model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
 summary(model)
 
 # estimación
-dd_deptos_sin_mvo$fitted <- round(fitted(model),0)
+dd_deptos_sin_mvo$fitted <- fitted(model)
 
 dd_deptos_sin_mvo$fitted
 
 
 
 #### PESOS ESPACIALES
-
-
-
 
 w = read.csv('tablas/matriz_deptos.csv', skip=2)
 
@@ -71,12 +65,12 @@ identical(W, listw2mat(WW) )
 
 sum(W-listw2mat(WW))
 
-MEpois1 <- ME(counts~Municipio.o+Municipio.d+prom, data=tabla,
-              family="poisson", listw=WW, alpha=0.7, verbose=TRUE)
+# MEpois1 <- ME(counts~Municipio.o+Municipio.d+prom, data=tabla,
+#               family="poisson", listw=WW, alpha=0.7, verbose=TRUE)
 
-MEpois1 <- ME(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
-                log_pbi_destino + pbi_porcen_des + log_dist -1,
-                family = poisson(link = "log"), listw=WW, alpha=0.7, verbose=TRUE)
+# MEpois1 <- ME(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
+#                 log_pbi_destino + pbi_porcen_des + log_dist -1,
+#                 family = poisson(link = "log"), listw=WW, alpha=0.7, verbose=TRUE)
 
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
                log_pbi_destino + pbi_porcen_des + log_dist -1,
