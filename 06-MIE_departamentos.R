@@ -9,10 +9,8 @@ setwd('/home/guillermo/Documentos/GitHub/tesis/')
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
 
-
 # reemplaza nulos dell largo del límite por 0.0001
 dd_deptos <- dd_deptos %>% replace_na(list(largo_limite = 0.0001))
-
 
 # model poisson regression using glm()
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
