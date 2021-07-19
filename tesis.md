@@ -91,24 +91,23 @@ Objetivo general
 Objetivos específicos
 
 - Describir las migraciones internas en Uruguay en función de variables demográficas específicas.
-
-- Explorar la aplicabilidad de distintos modelos de interacción espacial para la simulación de la migración interna.
   
-- Explorar el rol que tiene espacio geográfico en las migraciones internas en Uruguay.
+- Explorar el rol del espacio geográfico en las migraciones internas en Uruguay.
 
 - Calibrar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
 
-- Calibrar y aplicar un modelo de interacción espacial de las migraciones entre localidades.
+- Explorar la aplicabilidad de modelos de interacción espacial para la estimación de escenarios de migración interna.
+
 
 Como preguntas de investigación se proponen las siguientes:
 
-- ¿Cuál es la estructura de la población migrante interna? ¿Cuál es su nivel educativo?
+- ¿Cuál es la estructura demográfica de la población migrante interna? ¿Cuál es su nivel educativo?
   
 - ¿Han variado los coeficientes de atractividad entre departamentos? ¿Con qué magnitud?
 
 - ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
 
-- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?
+- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas? ¿Existe autocorrelación espacial en los datos de migración?
 
 \newpage
 
@@ -630,17 +629,17 @@ Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden 
 
 \newpage
 
-# Aplicación de un modelo de interación espacial
+# Aplicación de modelos de interación espacial
 
-A continuación se presenta una primera aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 [@ine2011c], publicados en la página web del Instituto. Como capas de información geográfica se accedió a las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
+A continuación se presenta una aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 publicados en su paǵina web [@ine2011c]. A su vez, se utilizan las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
 
 ## Generación de datos diádicos
 
-Dado que los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, podrían ser entidades aespaciales), y que el proceso requirió un gran esfuerzo de realización, se considera conveniente dar cuenta del proceso de producción de dichos datos.
+Los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, también podrían ser entidades aespaciales, dependiendo de la red que se esté analizando). Dado que la recolección y ordenamiento de los datos requirió un gran esfuerzo, se considera conveniente dar cuenta de dicho proceso.
 
 ### Matriz de distancia
 
-Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19). Luego se calculo el logaritmo de dicho valor.
+Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19). Luego se calculó el logaritmo de dicho valor.
 
 Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, en el entendido de que representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
@@ -654,7 +653,7 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 ### Población y migrantes internos
 
-La población, a veces llamada "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es simplemente el conteo de personas de cada entidad.
+La población, también llamada "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es el conteo de personas de cada entidad.
 
 Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádico direccional que representa el flujo de migrantes recientes del departamento A la B.
 
@@ -664,13 +663,13 @@ Los datos pueden ser representados como una matriz, en la cual se utilizan los c
 
 Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
 
-Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se enmendaron los errores topológicos presentes en la capa. Los tres procesamientos se realizaron utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
+Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se corrigieron los errores topológicos presentes, utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
 
-De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se suma una variable con el largo del límite compartido.
+De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se adiciona el datos del largo del límite compartido.
 
-## Especificación y calibración de un modelo de interacción espacial restringido en origen
+## Especificación y calibración de modelos de interacción espacial restringidos en origen
 
-A continuación se presenta una primera aplicación del modelo restringido en origen, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia". El procesamiento es similar al aplicado por [@dennett2018] y su adaptación al lenguaje de programación Python [@lewis2018].
+A continuación se presenta una aplicación de un modelo restringido en origen, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia". El procesamiento es similar al aplicado por [@dennett2018] y su adaptación al lenguaje de programación Python [@lewis2018].
 
 El modelo se define de la siguiente forma:
 
@@ -731,7 +730,7 @@ $R²$ = 0,9738
 
 RMSE = 322,3049
 
-### Modelo de interacción espacial de doble restricción
+## Modelo de interacción espacial de doble restricción
 
 A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, por el contrario estas variables deben ser relativas a ambos [@dennett2018].
 
