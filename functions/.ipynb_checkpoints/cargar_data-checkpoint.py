@@ -173,7 +173,7 @@ def recuperar_poblacion_1996_5años():
 def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
-    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols)
+    pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols, decimal=',')
     
     return pbi
 
@@ -197,6 +197,7 @@ def recuperar_parti_pbi():
     data_tuples = list(zip(depid, porc_pbi))
     return pd.DataFrame(data_tuples, columns=['DPTO','porc_pbi'])
 
+
 def cargar_vecindad():
     "Carga datos sobre vecindad de deptos"  
     # Vecindad
@@ -210,9 +211,13 @@ def cargar_matriz_distancias():
     # matriz de distancias
     md = pd.read_csv('tablas/df_distancias_centro_poblacion.csv')
     md.drop(['latlon_ori', 'latlon_des'], axis=1, inplace=True)
-
     return md
 
+def cargar_matriz_dist_loc():
+    "Carga matriz de distancias entre localidades INE 2011"
+    cols = ['cod_ori', 'cod_des', 'cod', 'distancia_m']
+    md = pd.read_csv('tablas/df_distancias_localidades.csv', usecols=cols)
+    return md
 
 def cargar_datos_geo():
     "Carga capas de información geográfica"
@@ -242,7 +247,6 @@ def cargar_data_eda():
     return censo, pbi, md
 
 
-
 def filter_df_censo(df):
     "Filtra datos del censo para quedarse solo con migrantes internos recientes"
     mgr = df.loc[df.PERMI07 == 3].reset_index(drop=True)
@@ -252,6 +256,10 @@ def filter_df_censo(df):
     mgr.loc[:,('depto_origen')] = mgr.loc[:,('depto_origen')].astype(int)
     # renombra DPTO
     mgr.rename(columns={'DPTO': 'depto_destino'}, inplace=True)
+    # agrega código de localidad de origen
+    mgr['loc_origen'] = (mgr.depto_origen.astype('str') + mgr.PERMI07_3.astype(int).astype(str).str.zfill(3))
+    # agrega código de localidad de destino
+    mgr['loc_destino'] = (mgr.depto_destino.astype('str') + mgr.LOC.astype(str).str.zfill(3)).astype(int)
 
     return mgr
 

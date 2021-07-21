@@ -197,6 +197,7 @@ def recuperar_parti_pbi():
     data_tuples = list(zip(depid, porc_pbi))
     return pd.DataFrame(data_tuples, columns=['DPTO','porc_pbi'])
 
+
 def cargar_vecindad():
     "Carga datos sobre vecindad de deptos"  
     # Vecindad
@@ -210,9 +211,13 @@ def cargar_matriz_distancias():
     # matriz de distancias
     md = pd.read_csv('tablas/df_distancias_centro_poblacion.csv')
     md.drop(['latlon_ori', 'latlon_des'], axis=1, inplace=True)
-
     return md
 
+def cargar_matriz_dist_loc():
+    "Carga matriz de distancias entre localidades INE 2011"
+    cols = ['cod_ori', 'cod_des', 'cod', 'distancia_m']
+    md = pd.read_csv('tablas/df_distancias_localidades.csv', usecols=cols)
+    return md
 
 def cargar_datos_geo():
     "Carga capas de información geográfica"
