@@ -627,6 +627,9 @@ Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 
 
 Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden calcular los mismos coeficientes para el 2011.
 
+\input{tablas/matriz_atr2011.tex}
+
+
 \newpage
 
 # Aplicación de modelos de interación espacial
