@@ -630,6 +630,12 @@ Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden 
 \input{tablas/matriz_atr2011.tex}
 
 
+La representación gráfica de las diferencias entre ambas matrices...
+
+![Diferencia en matrices de atracción mutua 1996-2011.](mapas_graficas/003_eda_delta_coef_1996_2011.pdf)
+
+
+
 \newpage
 
 # Aplicación de modelos de interación espacial

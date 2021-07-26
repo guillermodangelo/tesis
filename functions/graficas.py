@@ -1,6 +1,14 @@
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as font_manager
 
+
+def size_font():
+    "Setea fuentes y tamaños"
+    size = 9
+    font = {'fontname': 'Arial', 'fontsize': size}
+    font_legend = font_manager.FontProperties(family='Arial', style='normal', size=10)
+    return size, font, font_legend
+
 def get_bottoms(lista):
     "Calcula los pisos en gráficas de barras apiladas"
     largo_lista=len(lista)
@@ -29,10 +37,10 @@ def format_ticks(labels, color, ind, font):
     return "Se formatearon los ticks"
 
 
-def save_chart(name):
+def save_chart(name, metadatos_figs):
     "Guarda gráfica en PDF"
     plt.savefig('mapas_graficas/' + name,
                  bbox_inches= 'tight',
-                 metadata= metadatos_figs)
+                 metadata = metadatos_figs)
     
-    return "Se guardó la gráfica en " + 'mapas_graficas/' + name
+    return print("Se guardó la gráfica en " + 'mapas_graficas/' + name)
