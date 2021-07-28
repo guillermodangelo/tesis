@@ -370,3 +370,10 @@ def loc_decode(df):
     merge_loc = df.merge(locs, left_on='loc_destino', right_on='codloc').drop('codloc', axis=1)
 
     return  merge_loc
+
+
+def codif_diada_depto(df):
+    "Codifica díadas por departamento"
+    cod_depto_destino_str = df['depto_destino'].astype(str).str.zfill(2)
+    cod_diada_depto = (df['depto_origen'].astype(str) + cod_depto_destino_str).astype(int)
+    return cod_diada_depto
