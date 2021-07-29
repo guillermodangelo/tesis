@@ -629,11 +629,26 @@ Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden 
 
 \input{tablas/matriz_atr2011.tex}
 
-
 La representación gráfica de las diferencias entre ambas matrices indica una tendencia general a la estabilidad o reducción de la atractividad entre díadas, con algunas excepciones.
 
 ![Diferencia en matrices de atracción mutua 1996-2011.](mapas_graficas/003_eda_delta_coef_1996_2011.pdf)
 
+
+## El rol de la distancia en las migraciones interna
+
+A continuación se presenta un breve análiis descriptivo relativo a la distancia en las migraciones internas, e partir de los censos 1996 y 2011.
+
+Siguiendo los análisis presentes en la literatura, la distancia implica un reducción de flujos migratorios internos, que se puede visualizar graficando la cantidad de flujos contra la distancia de los mismos.
+
+Utilizando la totalidad de flujos del censo 2011 se obtiene la siguiente gráfica.
+
+![Migraciones internas contra distancia en el Censo 2011.](mapas_graficas/003_eda_flujos_vs_distancia_2011.pdf)
+
+En la misma se puede apreciar el rol disuasorio de la distancia, aunque dado el carácter atípico de los flujos con origen y destino Montevideo, es conveniente graficar excluyendo dicho departamento.
+
+![Migraciones interna contra distancia en el Censo 2011, sin Montevideo.](mapas_graficas/003_eda_flujos_vs_distancia_2011_noMVO.pdf)
+
+Dicha disposición es relativamente similar con los datos del Censo 1996.
 
 
 \newpage

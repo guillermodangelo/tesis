@@ -44,3 +44,4 @@ def save_chart(name, metadatos_figs):
                  metadata = metadatos_figs)
     
     return print("Se guardó la gráfica en " + 'mapas_graficas/' + name)
+
