@@ -629,6 +629,12 @@ Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden 
 
 \input{tablas/matriz_atr2011.tex}
 
+Dicha matriz se puede representar en forma gráfica.
+
+
+![Matriz de CAM 2011.](mapas_graficas/003_eda_coef_2011.pdf)
+
+
 La representación gráfica de las diferencias entre ambas matrices indica una tendencia general a la estabilidad o reducción de la atractividad entre díadas, con algunas excepciones.
 
 ![Diferencia en matrices de atracción mutua 1996-2011.](mapas_graficas/003_eda_delta_coef_1996_2011.pdf)
@@ -646,9 +652,28 @@ Utilizando la totalidad de flujos del censo 2011 se obtiene la siguiente gráfic
 
 En la misma se puede apreciar el rol disuasorio de la distancia, aunque dado el carácter atípico de los flujos con origen y destino Montevideo, es conveniente graficar excluyendo dicho departamento.
 
-![Migraciones interna contra distancia en el Censo 2011, sin Montevideo.](mapas_graficas/003_eda_flujos_vs_distancia_2011_noMVO.pdf)
+![Migraciones internas contra distancia en el Censo 2011, sin Montevideo.](mapas_graficas/003_eda_flujos_vs_distancia_2011_noMVO.pdf)
 
 Dicha disposición es relativamente similar con los datos del Censo 1996.
+
+Atendiendo a los valores absolutos de los flujos migratorios de 1996 y 2011, en el período 1991-1996 estos eran mayores en general
+
+![Migraciones internas por tramos de distancias 1996 y 2011, valores absolutos.](mapas_graficas/flujos_censo96vs2011_absolutos.pdf)
+
+Por otro lado, si graficamos la distribución percentual, los datos del 2011 indican mayor concentración en distancias más cortas, en tanto que los del 1996 en ditancias más largas.
+
+![Migraciones internas por tramos de distancias 1996 y 2011, en porcentajes.](mapas_graficas/flujos_censo96vs2011_porcentajes.pdf)
+
+
+Con respecto a la edad y la distancias de los flujos, se identifica un comportamiento similar al ya mencionado, relativo a la mayor incidencia en edades en torno s los 20 años, probablemente asociado a las migraciones para acceder a la educación universitaria.
+
+![Migraciones internas: distancia según edades, 1996-2011.](mapas_graficas/003_eda_edad_vs_distancia.pdf)
+
+En lo que refiere a las diferencias por sexo y su relación con la distancia de los flujos, se identifica una equiparación entres sexos en los datos de 2011, posiblemente asociada a la femenización de la masa de estudiantes universitarios.
+
+![Migraciones internas: distancia según sexo, 1996.](mapas_graficas/003_eda_edad_y_sexo_vs_distancia_1996.pdf)
+
+![Migraciones internas: distancia según sexo, 2011.](mapas_graficas/003_eda_edad_y_sexo_vs_distancia_2011.pdf)
 
 
 \newpage
