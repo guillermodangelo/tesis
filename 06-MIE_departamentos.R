@@ -4,9 +4,6 @@ library(sf)
 library(rgdal)
 library(spatialreg)
 
-
-
-
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 # modelo poisson R

@@ -45,3 +45,9 @@ def save_chart(name, metadatos_figs):
     
     return print("Se guardó la gráfica en " + 'mapas_graficas/' + name)
 
+def hide_spines(axis, todos=True):
+    "Oculta spines"
+    if todos==True:
+        [axis.spines[i].set_visible(False) for i in ['right', 'top', 'left', 'bottom']]
+    else:
+        [axis.spines[i].set_visible(False) for i in ['right', 'top']]
