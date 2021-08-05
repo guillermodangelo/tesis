@@ -1,4 +1,5 @@
 library(tidyr)
+library(dplyr)
 library(spdep)
 library(sf)
 library(rgdal)
@@ -24,8 +25,8 @@ summary(model)
 # estimación
 dd_deptos$fitted <- round(fitted(model),0)
 
-dd_deptos$fitted
-
+mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos))
+mat
 
 ######################
 ### SIN MONTEVIDEO ###
@@ -42,10 +43,11 @@ model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
 summary(model)
 
 # estimación
-dd_deptos_sin_mvo$fitted <- fitted(model)
+dd_deptos_sin_mvo$fitted <- round(fitted(model), 0)
 
-dd_deptos_sin_mvo$fitted
 
+mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos_sin_mvo))
+mat
 
 
 #### PESOS ESPACIALES
