@@ -5,19 +5,30 @@ library(sf)
 library(rgdal)
 library(spatialreg)
 
+
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
+
+#C:\Users\user\Documents\GitHub\tesis
+
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
 
 # reemplaza nulos dell largo del límite por 0.0001
-dd_deptos <- dd_deptos %>% replace_na(list(largo_limite = 0.0001))
+dd_deptos <- dd_deptos %>% replace_na(list(largo_limite = 0))
+
 
 # model poisson regression using glm()
-model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
-               log_pbi_destino + pbi_porcen_des + log_dist -1,
+# restringido en origen
+# estoy aplicando el logartimo dos veces! link="log"
+model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite +
+               pbi_destino + dist - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
+
+table(dd_deptos$nom_depto_orig)
+
+unique(dd_deptos$nom_depto_orig)
 
 # resumen
 summary(model)
@@ -34,13 +45,21 @@ mat
 dd_deptos_sin_mvo <- dd_deptos[dd_deptos$depto_origen !=1 & dd_deptos$depto_destino !=1,]
 
 # model poisson regression using glm()
-model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite) +
-               log_pbi_destino + pbi_porcen_des + log_dist -1,
+# coeficientes muy muy chicos, ver unidades del PBI usadas
+# usar PBI en miles de pesos? miles de dólares?
+# probar con distancia en otras unidades, kms
+model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite +
+               pbi_porcen_des + dist -1,
                 family = poisson(link = "log"),
                 data = dd_deptos_sin_mvo)
 
+# conserva mvdeo como factor!
+table(dd_deptos_sin_mvo$nom_depto_orig)
+
 # resumen
 summary(model)
+
+confint(model)
 
 # estimación
 dd_deptos_sin_mvo$fitted <- round(fitted(model), 0)
@@ -54,14 +73,24 @@ mat
 
 w = read.csv('tablas/matriz_deptos.csv', skip=2)
 
+
 w$depto_origen <- NULL
 
 w = as.matrix(w)
 
-W = kronecker(w,w)
+W = kronecker(aux2, aux2)
+
+W = aux2 %x% aux2
+
+
 WW = mat2listw(W)
 
-identical(W, listw2mat(WW) )
+#listW = listw2mat(WW)
+
+identical(W, listw2mat(WW))
+
+
+max(abs(W-listw2mat(WW)))
 
 sum(W-listw2mat(WW))
 
@@ -103,6 +132,10 @@ deptos_emp <-merge(deptos, empresas, by.x='cod_ine', by.y='DPTO')
 
 # vecindad
 deptos_emp.nb <- poly2nb(deptos_emp)
+
+aux <- nb2listw(deptos_emp.nb)
+
+aux2 <- listw2mat(aux)
 
 # pesos espaciales
 pesos <- nb2listw(deptos_emp.nb, zero.policy=TRUE, style="W")
