@@ -1,0 +1,11 @@
+ver modelaciones con intra regionales,
+enviar papers a Eugenia (los que no usan la diagonal)
+
+Cambiar unidades: distancias a KM, PBI a millones (ver),
+largo límite... Personas queda así
+
+ordenar este script y compartir
+
+posibles salidas:
+4 tablitas, parámetro de la impedancia, con que modelo
+quedarse.
