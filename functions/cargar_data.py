@@ -6,13 +6,28 @@ import geopandas as gpd
 def pad(df, series, nzfill):
     series_padded = df[series].astype(str).str.zfill(nzfill)
     return series_padded
-    
+
+
+def get_codseg(df):
+    codseg = df.DPTO.astype(str) + pad(df, 'SECC', 2) + pad(df, 'SEGM', 3)
+    return codseg
+
     
 def cargar_censo_96():
     "Carga datos del Censo INE 1996"
     # Datos censales
-    censo = pd.read_csv('tablas/personas_censo_1996.gz', compression='gzip', header=0, sep=',', quotechar='"')
-    return censo
+    censo96 = pd.read_csv('tablas/personas_censo_1996.gz', compression='gzip', header=0, sep=',', quotechar='"')
+    return censo96
+
+
+def cargar_marco_96():
+    "Carga datos del marco censal INE 1996"
+    # Datos censales
+    file = 'marcos_censales/MARCO96.xls'
+    marco96 = pd.read_excel(file)
+    marco96['codseg'] = get_codseg(marco96)
+    
+    return marco96
 
 
 def cargar_censo():
