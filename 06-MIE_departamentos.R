@@ -36,8 +36,19 @@ model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite_km +
 # resumen
 summary(model)
 
+
 # estimación
 dd_deptos$fitted <- round(fitted(model),0)
+
+CalcRSquared <- function(observed,estimated){
+  r <- cor(observed,estimated)
+  R2 <- r^2
+  R2
+}
+
+CalcRSquared(dd_deptos$personas_mig, dd_deptos$fitted)
+
+
 
 # convierte a matriz la estimación
 mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos))
@@ -49,9 +60,6 @@ mat
 dd_deptos_sin_mvo <- dd_deptos[dd_deptos$depto_origen !=1 & dd_deptos$depto_destino !=1,]
 
 # model poisson regression using glm()
-# coeficientes muy muy chicos, ver unidades del PBI usadas
-# usar PBI en miles de pesos? miles de dólares?
-# probar con distancia en otras unidades, kms
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite_km +
                pbi_destino_miles_de_millones + dist_km -1,
                 family = poisson(link = "log"),
@@ -65,6 +73,10 @@ confint(model)
 
 # estimación
 dd_deptos_sin_mvo$fitted <- round(fitted(model), 0)
+
+#r cuadrado
+CalcRSquared(dd_deptos_sin_mvo$personas_mig, dd_deptos_sin_mvo$fitted)
+
 
 # estimación como matriz
 mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos_sin_mvo))
