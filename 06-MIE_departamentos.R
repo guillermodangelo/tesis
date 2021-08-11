@@ -10,32 +10,36 @@ setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 #C:\Users\user\Documents\GitHub\tesis
 
-
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
 
-# reemplaza nulos dell largo del límite por 0.0001
-dd_deptos <- dd_deptos %>% replace_na(list(largo_limite = 0))
+# convierte distancia entre deptos de metros a kilómetros
+dd_deptos$dist_km <- dd_deptos$dist/1000
+
+# convierte largo del límite de metros a kilómetros
+dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
+
+# reemplaza nulos del largo del límite por 0.0001
+dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
+
+# convierte PBI departamental a cientos de millones de pesos
+dd_deptos$pbi_destino_miles_de_millones <- dd_deptos$pbi_destino/100000
 
 
 # model poisson regression using glm()
 # restringido en origen
-# estoy aplicando el logartimo dos veces! link="log"
-model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite +
-               pbi_destino + dist - 1 ,
+# Atención!: NO UTLIZAR VARIABLES CON LOGARITMO APLICADO
+model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite_km +
+               pbi_destino_miles_de_millones + dist_km - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
-
-table(dd_deptos$nom_depto_orig)
-
-unique(dd_deptos$nom_depto_orig)
-
 # resumen
 summary(model)
 
 # estimación
 dd_deptos$fitted <- round(fitted(model),0)
 
+# convierte a matriz la estimación
 mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos))
 mat
 
@@ -48,51 +52,51 @@ dd_deptos_sin_mvo <- dd_deptos[dd_deptos$depto_origen !=1 & dd_deptos$depto_dest
 # coeficientes muy muy chicos, ver unidades del PBI usadas
 # usar PBI en miles de pesos? miles de dólares?
 # probar con distancia en otras unidades, kms
-model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite +
-               pbi_porcen_des + dist -1,
+model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite_km +
+               pbi_destino_miles_de_millones + dist_km -1,
                 family = poisson(link = "log"),
                 data = dd_deptos_sin_mvo)
-
-# conserva mvdeo como factor!
-table(dd_deptos_sin_mvo$nom_depto_orig)
 
 # resumen
 summary(model)
 
+# intervalos de confianza
 confint(model)
 
 # estimación
 dd_deptos_sin_mvo$fitted <- round(fitted(model), 0)
 
-
+# estimación como matriz
 mat = as.data.frame.matrix(xtabs(fitted ~ depto_origen + depto_destino, dd_deptos_sin_mvo))
 mat
 
-
-#### PESOS ESPACIALES
+####################
+# Pesos espaciales #
+####################
 
 w = read.csv('tablas/matriz_deptos.csv', skip=2)
-
 
 w$depto_origen <- NULL
 
 w = as.matrix(w)
 
-W = kronecker(aux2, aux2)
-
-W = aux2 %x% aux2
-
+W = kronecker(w, w)
+#W = w %x% w
 
 WW = mat2listw(W)
 
-#listW = listw2mat(WW)
+listW = listw2mat(WW)
 
-identical(W, listw2mat(WW))
+sasa <- list(WW)
 
 
+# chequea identidad
+# por alguna razón no funciona
+identical(W, listW)
+
+# este chequeo sí funciona
 max(abs(W-listw2mat(WW)))
 
-sum(W-listw2mat(WW))
 
 # MEpois1 <- ME(counts~Municipio.o+Municipio.d+prom, data=tabla,
 #               family="poisson", listw=WW, alpha=0.7, verbose=TRUE)
