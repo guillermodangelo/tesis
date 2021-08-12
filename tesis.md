@@ -640,7 +640,7 @@ La representación gráfica de las diferencias entre ambas matrices indica una t
 ![Diferencia en matrices de atracción mutua 1996-2011.](mapas_graficas/003_eda_delta_coef_1996_2011.pdf)
 
 
-## El rol de la distancia en las migraciones interna
+## El rol de la distancia en las migraciones internas
 
 A continuación se presenta un breve análiis descriptivo relativo a la distancia en las migraciones internas, e partir de los censos 1996 y 2011.
 
