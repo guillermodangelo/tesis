@@ -642,7 +642,7 @@ La representación gráfica de las diferencias entre ambas matrices indica una t
 
 ## El rol de la distancia en las migraciones internas
 
-A continuación se presenta un breve análiis descriptivo relativo a la distancia en las migraciones internas, e partir de los censos 1996 y 2011.
+A continuación se presenta un breve análiis descriptivo relativo a la distancia en las migraciones internas, a partir de los censos 1996 y 2011.
 
 Siguiendo los análisis presentes en la literatura, la distancia implica un reducción de flujos migratorios internos, que se puede visualizar graficando la cantidad de flujos contra la distancia de los mismos.
 
@@ -665,7 +665,7 @@ Por otro lado, si graficamos la distribución percentual, los datos del 2011 ind
 ![Migraciones internas por tramos de distancias 1996 y 2011, en porcentajes.](mapas_graficas/flujos_censo96vs2011_porcentajes.pdf)
 
 
-Con respecto a la edad y la distancias de los flujos, se identifica un comportamiento similar al ya mencionado, relativo a la mayor incidencia en edades en torno s los 20 años, probablemente asociado a las migraciones para acceder a la educación universitaria.
+Con respecto a la edad y la distancias de los flujos, se identifica un comportamiento similar al ya mencionado, relativo a la mayor incidencia en edades en torno a los 20 años, probablemente asociado a las migraciones para acceder a la educación universitaria.
 
 ![Migraciones internas: distancia según edades, 1996-2011.](mapas_graficas/003_eda_edad_vs_distancia.pdf)
 
