@@ -1,9 +1,10 @@
 import pandas as pd
 import geopandas as gpd
 import numpy as np
+from shapely.geometry import LineString
 
 def _odline(orig, dest, geo, zonecode):
-    return LineString([deptos[geo[zonecode] == orig].centroid.values[0], geo[geo[zonecode] == dest].centroid.values[0]])
+    return LineString([geo[geo[zonecode] == orig].centroid.values[0], geo[geo[zonecode] == dest].centroid.values[0]])
 
 
 def odflow(flowdata, origin, destination, flow_value, geo, zonecode):
