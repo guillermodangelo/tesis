@@ -6,9 +6,10 @@ library(rgdal)
 library(spatialreg)
 
 
-setwd('/home/guillermo/Documentos/GitHub/tesis/')
+#setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
-#C:\Users\user\Documents\GitHub\tesis
+setwd('C:\Users\user\Documents\GitHub\tesis')
+
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv')
@@ -23,14 +24,14 @@ dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
 dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
 
 # convierte PBI departamental a cientos de millones de pesos
-dd_deptos$pbi_destino_miles_de_millones <- dd_deptos$pbi_destino/100000
+dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
 
 
 # model poisson regression using glm()
 # restringido en origen
 # Atención!: NO UTLIZAR VARIABLES CON LOGARITMO APLICADO
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + largo_limite_km +
-               pbi_destino_miles_de_millones + dist_km - 1 ,
+               pbi_destino_millardos + dist_km - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
 # resumen
