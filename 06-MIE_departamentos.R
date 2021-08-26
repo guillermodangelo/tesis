@@ -8,7 +8,7 @@ library(spatialreg)
 
 #setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
-setwd('C:\Users\user\Documents\GitHub\tesis')
+setwd('C:/Users/user/Documents/GitHub/tesis')
 
 
 # modelo poisson R
