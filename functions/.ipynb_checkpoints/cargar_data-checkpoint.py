@@ -399,3 +399,12 @@ def codif_diada_depto(df):
     cod_depto_destino_str = df['depto_destino'].astype(str).str.zfill(2)
     cod_diada_depto = (df['depto_origen'].astype(str) + cod_depto_destino_str).astype(int)
     return cod_diada_depto
+
+
+def recuperar_crecimiento_pbi():
+    "Recupera la tasa de crecimiento del PBI uruguay del 2014 al 2021"
+    años = list(range(2015,2022))
+    pbi_porc = [0.37, 1.69, 1.63, 0.48, 0.35, -6, 2]
+    data_tuples = list(zip(años, pbi_porc))
+    
+    return pd.DataFrame(data_tuples, columns=['año','pbi_porc'])
