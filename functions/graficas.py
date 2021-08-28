@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as font_manager
+import seaborn as sns
 
 
 def size_font():
@@ -8,6 +9,7 @@ def size_font():
     font = {'fontname': 'Arial', 'fontsize': size}
     font_legend = font_manager.FontProperties(family='Arial', style='normal', size=10)
     return size, font, font_legend
+
 
 def get_bottoms(lista):
     "Calcula los pisos en gráficas de barras apiladas"
@@ -51,3 +53,12 @@ def hide_spines(axis, todos=True):
         [axis.spines[i].set_visible(False) for i in ['right', 'top', 'left', 'bottom']]
     else:
         [axis.spines[i].set_visible(False) for i in ['right', 'top']]
+        
+        
+def plot_gt(x, y, title, subtitle):
+    fig = plt.figure()
+    sns.regplot(x=x, y=y, line_kws={"color": "green"})
+    plt.suptitle(title)
+    plt.title(subtitle)
+    plt.xlabel('Valores estimados')
+    plt.ylabel('Groud truth')

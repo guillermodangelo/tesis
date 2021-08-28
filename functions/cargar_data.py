@@ -3,7 +3,7 @@ import numpy as np
 import geopandas as gpd
 
 def cargar_dd_deptos():
-    dd_deptos = pd.read_csv('tablas/dd_deptos.csv')
+    dd_deptos = pd.read_csv('tablas/dd_deptos.csv', sep=';', decimal=',')
     dd_deptos.loc[dd_deptos.largo_limite.isna(), 'largo_limite'] = 0.0001
     dd_deptos['largo_limite_km'] = dd_deptos.largo_limite/1000
     
