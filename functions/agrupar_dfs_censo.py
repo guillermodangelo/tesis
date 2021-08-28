@@ -138,4 +138,3 @@ def grupos_de_dependencia(df, col_edad):
         lista_valores.insert(2, 0)
     
     return lista_valores
-
