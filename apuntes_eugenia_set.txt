@@ -1,0 +1,16 @@
+interpretación de coeficientes del modelo?
+
+RMSE
+AIC
+
+plots con ggPlot
+
+grafica de comparación de efectos
+(lineas de coeficientes) effect sizes
+
+sankey?
+
+usar como referencia Mvdeo.?
+repasar papers de dennet
+
+
