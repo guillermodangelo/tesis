@@ -6,7 +6,7 @@ def cargar_dd_deptos():
     dd_deptos = pd.read_csv('tablas/dd_deptos.csv', sep=';', decimal=',')
     dd_deptos.loc[dd_deptos.largo_limite.isna(), 'largo_limite'] = 0.0001
     dd_deptos['largo_limite_km'] = dd_deptos.largo_limite/1000
-    
+
     return dd_deptos
 
 
@@ -19,7 +19,7 @@ def get_codseg(df):
     codseg = df.DPTO.astype(str) + pad(df, 'SECC', 2) + pad(df, 'SEGM', 3)
     return codseg
 
-    
+
 def cargar_censo_96():
     "Carga datos del Censo INE 1996"
     # Datos censales
@@ -196,7 +196,7 @@ def cargar_pbi():
     "Carga datos de PBI departamental (OPP)"  
     cols = ['DPTO', 'miles_de_pesos', 'porcentaje_pbi']
     pbi = pd.read_csv('tablas/pbi_departamental.csv', usecols=cols, decimal=',')
-    
+
     return pbi
 
 
@@ -207,7 +207,6 @@ def recuperar_empresas_por_depto():
     empresas =  [3124, 55, 563, 88, 60, 40, 28, 101, 54, 188, 144, 54, 67, 62, 97, 154, 85, 61, 38]
     data_tuples = list(zip(depid, empresas))
     return pd.DataFrame(data_tuples, columns=['DPTO','empresas'])
-
 
 
 def recuperar_parti_pbi():
@@ -224,7 +223,7 @@ def cargar_vecindad():
     "Carga datos sobre vecindad de deptos"  
     # Vecindad
     vecindad = pd.read_csv('tablas/deptos_vecinos.csv')
-    
+
     return vecindad
 
 
@@ -235,11 +234,13 @@ def cargar_matriz_distancias():
     md.drop(['latlon_ori', 'latlon_des'], axis=1, inplace=True)
     return md
 
+
 def cargar_matriz_dist_loc():
     "Carga matriz de distancias entre localidades INE 2011"
     cols = ['cod_ori', 'cod_des', 'cod', 'distancia_m']
     md = pd.read_csv('tablas/df_distancias_localidades.csv', usecols=cols)
     return md
+
 
 def cargar_datos_geo():
     "Carga capas de información geográfica"
@@ -382,6 +383,30 @@ def decode_depto_short(array):
     return array.map(deptos_dict)
 
 
+def decode_depto_pretty(array):
+    "Decodifica departamento INE, formateado"
+    deptos_dict = {
+    1:	'Montevideo',
+    2:	'Artigas',
+    3:	'Canelones',
+    4:	'Cerro Largo',
+    5:	'Colonia',
+    6:	'Durazno',
+    7:	'Flores',
+    8:	'Florida',
+    9:	'Lavalleja',
+    10:	'Maldonado',
+    11:	'Paysandú',
+    12:	'Río Negro',
+    13:	'Rivera',
+    14:	'Rocha',
+    15:	'Salto',
+    16:	'San José',
+    17:	'Soriano',
+    18:	'Tacuarembó',
+    19:	'Treinta y Tres'
+        }
+    return array.map(deptos_dict)
 
 def loc_decode(df):
     "Decodifica codlocs INE"
