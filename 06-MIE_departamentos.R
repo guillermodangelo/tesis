@@ -6,13 +6,13 @@ library(rgdal)
 library(spatialreg)
 
 
-#setwd('/home/guillermo/Documentos/GitHub/tesis/')
+setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
-setwd('C:/Users/user/Documents/GitHub/tesis')
+#setwd('C:/Users/user/Documents/GitHub/tesis')
 
 
 # modelo poisson R
-dd_deptos <- read.csv('tablas/dd_deptos.csv')
+dd_deptos <- read.csv('tablas/dd_deptos.csv', sep=';')
 
 # convierte distancia entre deptos de metros a kilómetros
 dd_deptos$dist_km <- dd_deptos$dist/1000
