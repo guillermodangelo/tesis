@@ -1,0 +1,94 @@
+library(tidyr)
+library(dplyr)
+library(spdep)
+library(sf)
+library(rgdal)
+library(spatialreg)
+
+
+#setwd('/home/guillermo/Documentos/GitHub/tesis/')
+
+setwd("C:/Users/Eugenia/Dropbox/d'angelo")
+
+library(readxl)
+# modelo poisson R
+dd_deptos <- read_excel('dd_deptos.xlsx')
+
+# convierte distancia entre deptos de metros a kilÃ³metros
+dd_deptos$dist_km <- dd_deptos$dist/1000
+
+# convierte largo del lÃ­mite de metros a kilÃ³metros
+dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
+
+# reemplaza nulos del largo del lÃ­mite por 0.0001
+dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
+
+# convierte PBI departamental a cientos de millones de pesos
+dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
+
+dd_deptos$nom_depto_orig<-as.factor(dd_deptos$nom_depto_orig)
+
+# model poisson regression using glm()
+# restringido en origen
+#
+model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
+               log(pbi_destino_millardos) + log(dist_km) - 1 ,
+               family = poisson(link = "log"),
+               data = dd_deptos)
+# resumen
+summary(model)
+
+# intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
+# de un 10%, q=1.1
+
+((1.1)^coefficients(model)[21:23]-1)*100
+
+# o sea al aumentar un 10% el largo del límite, aumentan los flujos de salida un 2.92%
+# al aumentar un 10% el pbi aumentaría en promedio los flujos un 10.07%
+# al aumentar la distancia un 10%, los flujos de salida decaen en un 2.05% en promedio
+
+# la dummie del límte da raro, es negativo, como que estar en la frontera hace que en
+# promedio los flujos de salida decaiga. Esto puede ser porque está Montevideo adentro.
+
+# las dummies dan todas positivas, incluidas Montevideo, como que son todas expulsoras.
+
+# PASO SIGUIENTE, estimar el modelo con Montevideo con categoría de referencia. Para ello se debe
+# agregar la constante y avisarle que tome como categoría de referencia a Montevideo.
+
+
+dd_deptos$nom_depto_orig <- relevel(dd_deptos$nom_depto_orig, ref = "MONTEVIDEO")
+
+model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
+               log(pbi_destino_millardos) + log(dist_km),
+             family = poisson(link = "log"),
+             data = dd_deptos)
+# resumen
+summary(model1)
+
+# la interpretación es similar, pero los parámetros de las dummy son más razonables de interpretar
+# quedan todos negativos respecto a Montevideo, o sea si se está en un departamento
+# del interior, los flujos de salida en promedio decaen, si se los compara con Montevideo.
+
+# me queda la duda ahora de si usar la distancia en lugar del logaritmo, es más fácil de interpretar
+
+# por último pruebo el modelo de la binomial negativa en este contexto, a ver si mejora la predicción
+
+library(MASS)
+model2 <- glm.nb(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
+                log(pbi_destino_millardos) + log(dist_km),
+              data = dd_deptos)
+# resumen
+summary(model2)
+
+
+# medidas de ajuste
+
+library(Metrics)
+
+rmse0=rmse(dd_deptos$personas_mig, fitted(model))
+rmse1=rmse(dd_deptos$personas_mig, fitted(model2))
+
+model$aic
+model2$aic
+
+# es mejor el Poisson según el RMSE
