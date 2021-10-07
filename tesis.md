@@ -779,7 +779,7 @@ $R²$ = 0,9738
 
 RMSE = 322,3049
 
-## Modelo de interacción espacial de doble restricción
+## Modelos de interacción espacial de doble restricción
 
 A continuación se presenta una primera aplicación del modelo doblemente restringido, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia" al igual que se aplicó en el modelo anterior. Con respecto a los modelos restringidos en origen (o en destino) los modelos de restricción doble cargan con la limitación de no permitir la inclusión de variables específicas del origen o del destino, por el contrario estas variables deben ser relativas a ambos [@dennett2018].
 
@@ -822,7 +822,22 @@ y
 
 (@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
+## Selección de modelos de interacción espacial restringidos en origen
+
+Al momento se ha ejemplificado con dos modelos, simplemente con objetivos descriptivos y para conocer su funcionamiento.
+Según la revisión bibliográficay atendiendo a los objetivos de la presente investigación, los modelos con restricciones en origen serían los más adecuados, ya que justamente al ser menos restrictivos, permiten acceder a resultados más diversos.
+
+
+
+
+
+
 \newpage
+
+
+
+
+
 
 # Cómo seguir.
 

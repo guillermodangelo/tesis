@@ -6,10 +6,15 @@ library(rgdal)
 library(spatialreg)
 library(foreign)
 
-
+# ubuntu
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
+# windows
+setwd('C:\Users\user\Documents\GitHub\tesis')
+
+# eugenia
 #setwd("C:/Users/Eugenia/Dropbox/d'angelo")
+
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv', sep=";", dec=",")
