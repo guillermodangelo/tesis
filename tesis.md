@@ -826,6 +826,12 @@ y
 
 ## Visualización de los flujos migratorios y las variables independientes
 
+La visualización de las variables independientes y la variables dependiente, nos puede dar una representación de la correlación entre ambas.
+
+En el caso de los flujos contra la distancia, se puede 
+
+
+![Flujos migratorios contra distancia entre centros medianos de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
 
 
 
