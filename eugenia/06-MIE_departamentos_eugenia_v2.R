@@ -10,7 +10,7 @@ library(foreign)
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 # windows
-setwd('C:\Users\user\Documents\GitHub\tesis')
+setwd("C:/Users/user/Documents/GitHub/tesis")
 
 # eugenia
 #setwd("C:/Users/Eugenia/Dropbox/d'angelo")
@@ -28,7 +28,7 @@ dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
 # convierte PBI departamental a cientos de millones de pesos
 dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
 
-dd_deptos$nom_depto_orig<-as.factor(dd_deptos$nom_depto_orig)
+dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 
 # model poisson regression using glm()
 # restringido en origen
@@ -85,6 +85,8 @@ library(Metrics)
 
 rmse0=rmse(dd_deptos$personas_mig, fitted(model))
 rmse1=rmse(dd_deptos$personas_mig, fitted(model2))
+rmse0
+rmse1
 
 model$aic
 model2$aic

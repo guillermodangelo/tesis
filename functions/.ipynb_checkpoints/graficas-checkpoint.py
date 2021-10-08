@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as font_manager
 import seaborn as sns
 
+metadatos_figs = {'Author': '''Guillermo D'Angelo'''}
 
 def size_font():
     "Setea fuentes y tamaños"
