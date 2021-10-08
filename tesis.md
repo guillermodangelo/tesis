@@ -823,16 +823,17 @@ y
 (@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
 
-
 ## Visualización de los flujos migratorios y las variables independientes
 
 La visualización de las variables independientes y la variables dependiente, nos puede dar una representación de la correlación entre ambas.
 
-En el caso de los flujos contra la distancia, se puede 
-
+En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones.
 
 ![Flujos migratorios contra distancia entre centros medianos de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
 
+Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, se puede apreciar mejor la correlación.
+
+![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medianos de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
 
 
 ## Selección de modelos de interacción espacial restringidos en origen
