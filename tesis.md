@@ -822,6 +822,13 @@ y
 
 (@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
+
+
+## Visualización de los flujos migratorios y las variables independientes
+
+
+
+
 ## Selección de modelos de interacción espacial restringidos en origen
 
 Al momento se ha ejemplificado con dos modelos, simplemente con objetivos descriptivos y para conocer su funcionamiento.
