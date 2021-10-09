@@ -698,7 +698,7 @@ Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al.
 
 En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
 
-![Mapa de centroides, capitales departamentales y centro medio de población calculado según las fórmulas mencionadas.](mapas_graficas/centro_poblacion.pdf)
+![Centroides, capitales y centros medios de población de cada departamento.](mapas_graficas/centro_poblacion.pdf)
 
 ### Población y migrantes internos
 
@@ -825,21 +825,36 @@ y
 
 ## Visualización de los flujos migratorios y las variables independientes
 
-La visualización de las variables independientes y la variables dependiente, nos puede dar una representación de la correlación entre ambas.
+La visualización de las variables independientes y la variables dependiente, nos puede dar una representación de la correlación entre ambas. En este caso se escalan los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1<sup>-2</sup> [@dennett2018].
 
 En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones.
 
-![Flujos migratorios contra distancia entre centros medianos de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
+![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
 
 Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, se puede apreciar mejor la correlación.
 
-![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medianos de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
+![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
+
+Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
+
+El PBI en destino evidencia una leve correlación con los flujos migratorios sobre todo al excluir Montevideo del análisis.
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino.pdf){#fig:flujos_vs_pbi_destino}
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino_sin_MVO.pdf){#fig:flujos_vs_pbi_destino_sin_mvo}
+
+
+
 
 
 ## Selección de modelos de interacción espacial restringidos en origen
 
 Al momento se ha ejemplificado con dos modelos, simplemente con objetivos descriptivos y para conocer su funcionamiento.
-Según la revisión bibliográficay atendiendo a los objetivos de la presente investigación, los modelos con restricciones en origen serían los más adecuados, ya que justamente al ser menos restrictivos, permiten acceder a resultados más diversos.
+Según la revisión bibliográfica y atendiendo a los objetivos de la presente investigación, los modelos con restricciones en origen serían los más adecuados, ya que justamente al ser menos restrictivos, permiten acceder a resultados más diversos.
 
 
 
