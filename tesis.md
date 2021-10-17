@@ -823,11 +823,12 @@ y
 (@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
 
+
 ## Visualización de los flujos migratorios y las variables independientes
 
-La visualización de las variables independientes y la variables dependiente, nos puede dar una representación de la correlación entre ambas. En este caso se escalan los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1<sup>-2</sup> [@dennett2018].
+La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
 
-En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones.
+En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
 
 ![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
 
@@ -838,6 +839,8 @@ Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, s
 Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos
 
 ![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
+
+Elimnando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
 
 ![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
 
@@ -850,11 +853,10 @@ El PBI en destino evidencia una leve correlación con los flujos migratorios sob
 
 
 
-
 ## Selección de modelos de interacción espacial restringidos en origen
 
 Al momento se ha ejemplificado con dos modelos, simplemente con objetivos descriptivos y para conocer su funcionamiento.
-Según la revisión bibliográfica y atendiendo a los objetivos de la presente investigación, los modelos con restricciones en origen serían los más adecuados, ya que justamente al ser menos restrictivos, permiten acceder a resultados más diversos.
+Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
 
 
