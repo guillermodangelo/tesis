@@ -33,6 +33,7 @@ header-includes: |
     \captionsetup{font=small}
     \captionsetup[table]{name=Tabla, labelfont=bf}
     \captionsetup[figure]{name=Figura, labelfont=bf}
+    \usepackage{dcolumn}
     \usepackage{pdflscape}
     \usepackage{booktabs}
     \usepackage{numprint}
@@ -858,6 +859,8 @@ El PBI en destino evidencia una leve correlación con los flujos migratorios sob
 Al momento se ha ejemplificado con dos modelos, simplemente con objetivos descriptivos y para conocer su funcionamiento.
 Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
+
+\input{tablas/test.tex}
 
 
 

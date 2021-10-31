@@ -36,6 +36,7 @@ model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) 
                log(pbi_destino_millardos) + log(dist_km) - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
+
 # resumen
 summary(model)
 
@@ -63,6 +64,11 @@ model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km)
              data = dd_deptos)
 # resumen
 summary(model1)
+
+library(stargazer)
+
+tab <- stargazer(model1, title="Results", align=TRUE, no.space=TRUE)
+write(tab, file="tablas/test.tex")
 
 # la interpretación es similar, pero los parámetros de las dummy son más razonables de interpretar
 # quedan todos negativos respecto a Montevideo, o sea si se está en un departamento
