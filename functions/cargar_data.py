@@ -288,10 +288,13 @@ def filter_df_censo(df):
 
 
 def cargar_nombres():
-    list_names = ['Montevideo', 'Artigas', 'Canelones', 'Cerro Largo', 'Colonia', 'Durazno',
-                  'Flores', 'Florida', 'Lavalleja','Maldonado', 'Paysandú', 'Río Negro', 'Rivera',
-                  'Rocha', 'Salto', 'San José', 'Soriano', 'Tacuarembó', 'Treinta y Tres']
-    
+    list_names = ['Montevideo', 'Artigas', 'Canelones',
+                  'Cerro Largo', 'Colonia', 'Durazno',
+                  'Flores', 'Florida', 'Lavalleja',
+                  'Maldonado', 'Paysandú', 'Río Negro',
+                  'Rivera', 'Rocha', 'Salto', 'San José',
+                  'Soriano', 'Tacuarembó', 'Treinta y Tres']
+
     return list_names
 
 
