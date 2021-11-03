@@ -17,7 +17,6 @@ data$nom_depto_des <-  paste0(data$nom_depto_des, "_")
 
 colnames(data) <- c("source", "target", "value")
 
-data <- data[data$value < 1000, ]
 
 # From these flows we need to create a node data frame: it lists every entities involved in the flow
 nodes <- data.frame(name=c(as.character(data$source),
@@ -25,7 +24,7 @@ nodes <- data.frame(name=c(as.character(data$source),
 
 # With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
 data$IDsource=match(data$source, nodes$name)-1 
-data$IDtarget=match(data$target, nodes$name)-1+18
+data$IDtarget=match(data$target, nodes$name)-1
 
 # prepare colour scale
 ColourScal ='d3.scaleOrdinal() .range(["#FDE725FF","#B4DE2CFF","#6DCD59FF","#35B779FF","#1F9E89FF","#26828EFF","#31688EFF","#3E4A89FF","#482878FF","#440154FF"])'
@@ -35,5 +34,5 @@ sankeyNetwork(Links = data, Nodes = nodes,
               Source = "IDsource", Target = "IDtarget",
               Value = "value", NodeID = "name", 
               sinksRight=FALSE,
-              colourScale=ColourScal, nodeWidth=40, fontSize=13, nodePadding=20)
+              colourScale=ColourScal, nodeWidth=40, fontSize=10, nodePadding=20)
 
