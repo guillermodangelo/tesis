@@ -10,7 +10,7 @@ library(foreign)
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
 
 # windows
-setwd("C:/Users/user/Documents/GitHub/tesis")
+#setwd("C:/Users/user/Documents/GitHub/tesis")
 
 # eugenia
 #setwd("C:/Users/Eugenia/Dropbox/d'angelo")
