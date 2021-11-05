@@ -703,11 +703,23 @@ En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son la
 
 ### Población y migrantes internos
 
-La población, también llamada "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es el conteo de personas de cada entidad.
+La población, que en la biliografía puede econtrarse referida como "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es el conteo de personas de cada entidad.
 
 Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádico direccional que representa el flujo de migrantes recientes del departamento A la B.
 
 Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
+
+En cuanto a la visualización gráfica de dichos datos, los diagramas Sankey son muy adecuados. Para una visualización adecuada se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
+
+![Diagrama Sankey de migraciones internas recientes con orígen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
+
+Los flujos con orígen en Montevideo y Canelones, a parte de ellos mismos como destino (algo ya analizado previamente), se dirigen con mayor intensidad a Maldonado y San José.
+
+![Diagrama Sankey de migraciones internas recientes con orígen en otros departamentos, exceptuando Montevideo o Canelones.](mapas_graficas/sankey/sankey_no_mvo_no_can.png)
+
+A partir de ambos gráficos se resalta el rol de Montevideo y Canelones, tanto como origen como destino. En segundo lugar se destaca Maldonado, fundamentalmente como destino. En un lejano cuarto lugar, aparece el departamento de Colonia como destino.
+
+
 
 ### Vecindad
 
