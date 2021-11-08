@@ -5,6 +5,7 @@ library(sf)
 library(rgdal)
 library(spatialreg)
 library(foreign)
+library(stargazer)
 
 # ubuntu
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
@@ -40,10 +41,18 @@ model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) 
 # resumen
 summary(model)
 
+# exporta resumen a Latex
+stargazer(model, title="MIE restringido en origen",
+          out="tablas/poisson_rest_origen.tex",
+          dep.var.caption='Variable dependiente',
+          header=FALSE, align=FALSE, ci=TRUE, df=TRUE,
+          table.placement = "H", single.row=TRUE, no.space=TRUE)
+
 # intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
 # de un 10%, q=1.1
 
-((1.1)^coefficients(model)[21:23]-1)*100
+q = 1.1
+(q^coefficients(model)[21:23]-1)*100
 
 # o sea al aumentar un 10% el largo del límite, aumentan los flujos de salida un 2.92%
 # al aumentar un 10% el pbi aumentaría en promedio los flujos un 10.07%
@@ -60,15 +69,19 @@ dd_deptos$nom_depto_orig <- relevel(dd_deptos$nom_depto_orig, ref = "MONTEVIDEO"
 
 model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
                log(pbi_destino_millardos) + log(dist_km),
-             family = poisson(link = "log"),
-             data = dd_deptos)
+              family = poisson(link = "log"),
+              data = dd_deptos)
+
 # resumen
 summary(model1)
 
-library(stargazer)
-
-tab <- stargazer(model1, title="Results", align=TRUE, no.space=TRUE)
-write(tab, file="tablas/test.tex")
+# exporta resumen a Latex
+titulo = "MIE restringido en origen con Montevideo como categoría de referencia"
+stargazer(model1, title=titulo,
+          out="tablas/poisson_rest_origen_MVO_ref.tex",
+          dep.var.caption='Variable dependiente',
+          header=FALSE, align=FALSE, ci=TRUE, df=TRUE,
+          table.placement = "H", single.row=TRUE, no.space=TRUE)
 
 # la interpretación es similar, pero los parámetros de las dummy son más razonables de interpretar
 # quedan todos negativos respecto a Montevideo, o sea si se está en un departamento

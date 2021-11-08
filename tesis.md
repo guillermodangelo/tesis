@@ -872,9 +872,27 @@ Al momento se ha ejemplificado con dos modelos, con objetivos descriptivos y par
 Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
 
-\input{tablas/test.tex}
+\input{tablas/poisson_rest_origen.tex}
 
 
+
+log(largo_limite_km) = 2.925532 
+
+log(pbi_destino_millardos) = 10.081307
+
+log(dist_km) = -2.076608 
+
+
+
+Interpretación:
+
+- Al aumentar un 10% el largo del límite, aumentan los flujos de salida un 2.92%
+
+- Al aumentar un 10% el PBI aumentaría en promedio los flujos un 10.07%
+
+- Al aumentar un 10% la distancia, los flujos de salida decaen en un 2.05% en promedio
+
+\input{tablas/poisson_rest_origen_MVO_ref.tex}
 
 
 
@@ -895,6 +913,21 @@ Con respecto a la metodología y resultados:
 - Explorar diferentes funciones de decaimiento por la distancia.
 - Modelar excluyendo Montevideo.
 - Generación de escenarios
+
+Cosas concretas:
+
+1. Escribir capítulo de modelos restringidos en origen
+
+2. Escenarios
+
+3. Tablero streamlit:
+
+    - Que permita seleccionar un flujo, depto_ori <-> depto_des
+    - Pirámides de población para ese flujo
+    - Porcentaje del total de los flujos
+    - Distancia entre centros medios de población
+    - Mapita web
+
 
 \newpage
 

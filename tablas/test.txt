@@ -1,0 +1,36 @@
+
+Results
+========================================================
+                                 Dependent variable:    
+                             ---------------------------
+                                    personas_mig        
+--------------------------------------------------------
+nom_depto_origARTIGAS             3.431*** (0.065)      
+nom_depto_origCANELONES           3.385*** (0.061)      
+nom_depto_origCERRO LARGO         3.141*** (0.065)      
+nom_depto_origCOLONIA             3.133*** (0.062)      
+nom_depto_origDURAZNO             2.768*** (0.063)      
+nom_depto_origFLORES              1.921*** (0.066)      
+nom_depto_origFLORIDA             2.627*** (0.062)      
+nom_depto_origLAVALLEJA           2.477*** (0.063)      
+nom_depto_origMALDONADO           3.221*** (0.062)      
+nom_depto_origMONTEVIDEO          5.891*** (0.058)      
+nom_depto_origPAYSANDU            3.176*** (0.063)      
+nom_depto_origRIO NEGRO           2.718*** (0.063)      
+nom_depto_origRIVERA              3.277*** (0.065)      
+nom_depto_origROCHA               2.779*** (0.064)      
+nom_depto_origSALTO               3.297*** (0.065)      
+nom_depto_origSAN JOSE            2.507*** (0.068)      
+nom_depto_origSORIANO             3.037*** (0.062)      
+nom_depto_origTACUAREMBO          3.201*** (0.064)      
+nom_depto_origTREINTA Y TRES      2.712*** (0.064)      
+dummy_limitTrue                   -2.918*** (0.068)     
+log(largo_limite_km)              0.303*** (0.005)      
+log(pbi_destino_millardos)        1.008*** (0.003)      
+log(dist_km)                      -0.220*** (0.007)     
+--------------------------------------------------------
+Observations                             342            
+Log Likelihood                       -9,459.723         
+Akaike Inf. Crit.                    18,965.450         
+========================================================
+Note:                        *p<0.1; **p<0.05; ***p<0.01
