@@ -26,7 +26,7 @@ dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
 # reemplaza nulos del largo del límite por 0.0001
 dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
 
-# convierte PBI departamental a cientos de millones de pesos
+# convierte PBI departamental a miles de millones de pesos
 dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
 
 dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)

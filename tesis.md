@@ -871,6 +871,19 @@ El PBI en destino evidencia una leve correlación con los flujos migratorios sob
 Al momento se ha ejemplificado con dos modelos, con objetivos descriptivos y para conocer su funcionamiento.
 Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
+En función del relevamiento bibliográfico y de los datos diponibles se deicidió modelar los flujos entre departamentos a partir de las siguientes variables indepedientes:
+
+- Departamento de origen
+
+- Variable *dummy* para identificar departamentos con límites compartidos 
+
+- Largo del límite compartido entre departamentos (unidad: kilómetros)
+
+- PBI en departamento de destino (unidad: miles de millones de pesos)
+
+- Distancia por ruta entre los centros medios de población de cada departamento (unidad: kilómetros)
+
+Los resultados del modelo se pueden apreciar a continuación.
 
 \input{tablas/poisson_rest_origen.tex}
 
