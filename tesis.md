@@ -883,18 +883,22 @@ En función del relevamiento bibliográfico y de los datos diponibles se deicidi
 
 - Distancia por ruta entre los centros medios de población de cada departamento (unidad: kilómetros)
 
-Los resultados del modelo se pueden apreciar a continuación.
+Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 
 \input{tablas/poisson_rest_origen.tex}
 
 
+Los coeficientes presentados pueden ser itnerpretados de la siguiete manera. 
 
-log(largo_limite_km) = 2.925532 
+- Con respecto a la variable "largo_limite", el aumento de un 10% en largo del límite compartido redundaría en un aumento de los flujos de salida del 2,93%.
 
-log(pbi_destino_millardos) = 10.081307
+- Al aumentar un 10% el PBI en el departamento de destino, aumentarían los flujos un 10.08% en promedio.
 
-log(dist_km) = -2.076608 
+- Al aumentar la distancia un 10%, los flujos de salida decaen en un 2.08% en promedio
 
+
+# AGREGAR CUADRO CON TODOS LOS COEF?
+# AGREGAR FORMULA?
 
 
 Interpretación:
@@ -904,6 +908,11 @@ Interpretación:
 - Al aumentar un 10% el PBI aumentaría en promedio los flujos un 10.07%
 
 - Al aumentar un 10% la distancia, los flujos de salida decaen en un 2.05% en promedio
+
+- La variable de límites compartidos no devuelve resultado coherentes (VER)
+
+- Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores (VER)
+
 
 \input{tablas/poisson_rest_origen_MVO_ref.tex}
 

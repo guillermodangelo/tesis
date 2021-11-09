@@ -52,7 +52,10 @@ stargazer(model, title="MIE restringido en origen",
 # de un 10%, q=1.1
 
 q = 1.1
-(q^coefficients(model)[21:23]-1)*100
+(q^coefficients(model)[20:23]-1)*100
+(q^coefficients(model)-1)*100
+
+# ERROR CON LOS COEF??
 
 # o sea al aumentar un 10% el largo del límite, aumentan los flujos de salida un 2.92%
 # al aumentar un 10% el pbi aumentaría en promedio los flujos un 10.07%
