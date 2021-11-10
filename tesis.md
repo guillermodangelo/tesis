@@ -877,11 +877,11 @@ En función del relevamiento bibliográfico y de los datos diponibles se deicidi
 
 - Variable *dummy* para identificar departamentos con límites compartidos 
 
-- Largo del límite compartido entre departamentos (unidad: kilómetros)
+- Largo del límite compartido entre departamentos (en kilómetros)
 
-- PBI en departamento de destino (unidad: miles de millones de pesos)
+- PBI en departamento de destino (en miles de millones de pesos)
 
-- Distancia por ruta entre los centros medios de población de cada departamento (unidad: kilómetros)
+- Distancia por ruta entre los centros medios de población de cada departamento (en kilómetros)
 
 Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 
@@ -896,25 +896,30 @@ Los coeficientes presentados pueden ser itnerpretados de la siguiete manera.
 
 - Al aumentar la distancia un 10%, los flujos de salida decaen en un 2.08% en promedio
 
-
-# AGREGAR CUADRO CON TODOS LOS COEF?
-# AGREGAR FORMULA?
-
-
-Interpretación:
-
-- Al aumentar un 10% el largo del límite, aumentan los flujos de salida un 2.92%
-
-- Al aumentar un 10% el PBI aumentaría en promedio los flujos un 10.07%
-
-- Al aumentar un 10% la distancia, los flujos de salida decaen en un 2.05% en promedio
-
 - La variable de límites compartidos no devuelve resultado coherentes (VER)
 
 - Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores (VER)
 
+**(AGREGAR CUADRO CON TODOS LOS COEF?)**
+**(AGREGAR FORMULA?)**
+
+Luego se re-estima el modelo con Montevideo como categoría de referencia, obteniendo los siguientes resultados:
 
 \input{tablas/poisson_rest_origen_MVO_ref.tex}
+
+
+En tercer lugar, siguiendo los ejemplos ejemplos relevados [@dennett2018; @devillanova1998], se estimó un modelo basado en la distrubición binomial negativa con las mismas variables independientes.
+
+Los resultados según el error mínimo cuadrado favorecen el modelo Poisson. Por el contratio, para el AIC los resultados son opuestos, favoreciendo el modelo con la Binomial negativa:
+
+RMSE Poisson: 242,52
+
+AIC Poisson: 18965,45
+
+RMSE Binomial negativa = 4698,92
+
+AIC Binomial negativa = 3797,29
+
 
 
 

@@ -78,6 +78,10 @@ model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km)
 # resumen
 summary(model1)
 
+q = 1.1
+(q^coefficients(model1)[20:23]-1)*100
+(q^coefficients(model1)-1)*100
+
 # exporta resumen a Latex
 titulo = "MIE restringido en origen con Montevideo como categoría de referencia"
 stargazer(model1, title=titulo,
@@ -89,6 +93,8 @@ stargazer(model1, title=titulo,
 # la interpretación es similar, pero los parámetros de las dummy son más razonables de interpretar
 # quedan todos negativos respecto a Montevideo, o sea si se está en un departamento
 # del interior, los flujos de salida en promedio decaen, si se los compara con Montevideo.
+
+
 
 # me queda la duda ahora de si usar la distancia en lugar del logaritmo, es más fácil de interpretar
 
@@ -106,9 +112,10 @@ summary(model2)
 library(Metrics)
 
 rmse0=rmse(dd_deptos$personas_mig, fitted(model))
-rmse1=rmse(dd_deptos$personas_mig, fitted(model2))
+rmse2=rmse(dd_deptos$personas_mig, fitted(model2))
+
 rmse0
-rmse1
+rmse2
 
 model$aic
 model2$aic
