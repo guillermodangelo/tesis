@@ -887,8 +887,7 @@ Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 
 \input{tablas/poisson_rest_origen.tex}
 
-
-Los coeficientes presentados pueden ser interpretados de la siguiente manera. 
+Los coeficientes presentados pueden ser interpretados de la siguiente manera.
 
 - Con respecto a la variable "largo_limite", el aumento de un 10% en largo del límite compartido redundaría en un aumento de los flujos de salida del 2,93%.
 
@@ -907,7 +906,6 @@ Luego se re-estima el modelo con Montevideo como categoría de referencia, obten
 
 \input{tablas/poisson_rest_origen_MVO_ref.tex}
 
-
 En tercer lugar, siguiendo los ejemplos ejemplos relevados [@dennett2018; @devillanova1998], se estimó un modelo basado en la distrubición binomial negativa con las mismas variables independientes.
 
 Los resultados según el error mínimo cuadrado favorecen el modelo Poisson. Por el contrario, para el AIC los resultados son opuestos, favoreciendo el modelo con la Binomial negativa:
@@ -924,6 +922,8 @@ AIC Binomial negativa = 3797,29
 
 
 ## Escenarios
+
+En este apartado se presentan escenarios de migración interna, producto de la aplicación de los modelos estimados anteriormente, pero con diferentes valores para las variables independientes.
 
 
 
