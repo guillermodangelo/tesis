@@ -888,7 +888,7 @@ Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 \input{tablas/poisson_rest_origen.tex}
 
 
-Los coeficientes presentados pueden ser itnerpretados de la siguiete manera. 
+Los coeficientes presentados pueden ser interpretados de la siguiente manera. 
 
 - Con respecto a la variable "largo_limite", el aumento de un 10% en largo del límite compartido redundaría en un aumento de los flujos de salida del 2,93%.
 
@@ -896,7 +896,7 @@ Los coeficientes presentados pueden ser itnerpretados de la siguiete manera.
 
 - Al aumentar la distancia un 10%, los flujos de salida decaen en un 2.08% en promedio
 
-- La variable de límites compartidos no devuelve resultado coherentes (VER)
+- La variable de límites compartidos no devuelve resultados coherentes (VER)
 
 - Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores (VER)
 
@@ -910,7 +910,7 @@ Luego se re-estima el modelo con Montevideo como categoría de referencia, obten
 
 En tercer lugar, siguiendo los ejemplos ejemplos relevados [@dennett2018; @devillanova1998], se estimó un modelo basado en la distrubición binomial negativa con las mismas variables independientes.
 
-Los resultados según el error mínimo cuadrado favorecen el modelo Poisson. Por el contratio, para el AIC los resultados son opuestos, favoreciendo el modelo con la Binomial negativa:
+Los resultados según el error mínimo cuadrado favorecen el modelo Poisson. Por el contrario, para el AIC los resultados son opuestos, favoreciendo el modelo con la Binomial negativa:
 
 RMSE Poisson: 242,52
 
@@ -919,6 +919,13 @@ AIC Poisson: 18965,45
 RMSE Binomial negativa = 4698,92
 
 AIC Binomial negativa = 3797,29
+
+
+
+
+## Escenarios
+
+
 
 
 
