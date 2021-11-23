@@ -31,6 +31,9 @@ dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
 
 dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 
+dd_deptos$dummy_limit <- as.logical(dd_deptos$dummy_limit)
+
+
 # model poisson regression using glm()
 # restringido en origen
 model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
@@ -121,3 +124,6 @@ model$aic
 model2$aic
 
 # es mejor el Poisson según el RMSE
+
+
+
