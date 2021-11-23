@@ -125,5 +125,14 @@ model2$aic
 
 # es mejor el Poisson según el RMSE
 
+### Escenarios
+
+pbi2021 <- read.csv('tablas/pbi_2021.csv')
+
+
+dd_escen <- merge(dd_deptos, pbi2021, by="depto_destino")
+
+
+
 
 
