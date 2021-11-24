@@ -6,6 +6,10 @@ library(rgdal)
 library(spatialreg)
 library(foreign)
 library(stargazer)
+library(Metrics)
+library(MASS)
+library(MLmetrics)
+
 
 # ubuntu
 setwd('/home/guillermo/Documentos/GitHub/tesis/')
@@ -102,8 +106,6 @@ stargazer(model1, title=titulo,
 # me queda la duda ahora de si usar la distancia en lugar del logaritmo, es más fácil de interpretar
 
 # por último pruebo el modelo de la binomial negativa en este contexto, a ver si mejora la predicción
-
-library(MASS)
 model2 <- glm.nb(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
                 log(pbi_destino_millardos) + log(dist_km),
               data = dd_deptos)
@@ -112,7 +114,6 @@ summary(model2)
 
 
 # medidas de ajuste
-library(Metrics)
 
 rmse0=rmse(dd_deptos$personas_mig, fitted(model))
 rmse2=rmse(dd_deptos$personas_mig, fitted(model2))
@@ -123,6 +124,9 @@ rmse2
 model$aic
 model2$aic
 
+
+R2_Score(fitted(model), dd_deptos$personas_mig)
+
 # es mejor el Poisson según el RMSE
 
 ### Escenarios
@@ -132,13 +136,14 @@ pbi2021 <- read.csv('tablas/pbi_2021.csv')
 
 dd_escen <- merge(dd_deptos, pbi2021, by="depto_destino")
 
+dd_escen$pbi_destino_millardos_2021 <- dd_escen$pbi_destino_2021/100000
 
 model_esc_1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
-                log(pbi_destino_2021) + log(dist_km),
+                log(pbi_destino_millardos_2021) + log(dist_km),
                  family = poisson(link = "log"),
                  data = dd_escen)
 
 # resumen
 summary(model_esc_1)
-
+fitted(model_esc_1)
 
