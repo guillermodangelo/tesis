@@ -133,6 +133,12 @@ pbi2021 <- read.csv('tablas/pbi_2021.csv')
 dd_escen <- merge(dd_deptos, pbi2021, by="depto_destino")
 
 
+model_esc_1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
+                log(pbi_destino_2021) + log(dist_km),
+                 family = poisson(link = "log"),
+                 data = dd_escen)
 
+# resumen
+summary(model_esc_1)
 
 
