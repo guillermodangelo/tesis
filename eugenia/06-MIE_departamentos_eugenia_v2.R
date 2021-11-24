@@ -9,13 +9,14 @@ library(stargazer)
 library(Metrics)
 library(MASS)
 library(MLmetrics)
+library(ggplot2)
 
+if( Sys.info()['sysname'] == "Windows") {
+  setwd("C:/Users/user/Documents/GitHub/tesis")
+} else {
+  setwd("/home/guillermo/Documentos/GitHub/tesis/")
+}
 
-# ubuntu
-setwd('/home/guillermo/Documentos/GitHub/tesis/')
-
-# windows
-#setwd("C:/Users/user/Documents/GitHub/tesis")
 
 # eugenia
 #setwd("C:/Users/Eugenia/Dropbox/d'angelo")
@@ -85,6 +86,15 @@ model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km)
 # resumen
 summary(model1)
 
+ggplot(data=dd_deptos, aes(model1$residuals)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "purple4") +
+  theme(panel.background = element_rect(fill = "white"),
+        axis.line.x=element_line(),
+        axis.line.y=element_line()) +
+  ggtitle("Histogram for Model Residuals")
+
+
+
 q = 1.1
 (q^coefficients(model1)[20:23]-1)*100
 (q^coefficients(model1)-1)*100
@@ -129,21 +139,24 @@ R2_Score(fitted(model), dd_deptos$personas_mig)
 
 # es mejor el Poisson según el RMSE
 
-### Escenarios
 
+##################
+### Escenarios ###
+##################
 pbi2021 <- read.csv('tablas/pbi_2021.csv')
 
 
 dd_escen <- merge(dd_deptos, pbi2021, by="depto_destino")
 
-dd_escen$pbi_destino_millardos_2021 <- dd_escen$pbi_destino_2021/100000
+dd_escen$pbi_destino_millardos <- dd_escen$pbi_destino_2021/100000
 
-model_esc_1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
-                log(pbi_destino_millardos_2021) + log(dist_km),
-                 family = poisson(link = "log"),
-                 data = dd_escen)
+dd_escen$pred_mig <- predict(model1, newdata = dd_escen, type = "response")
 
-# resumen
-summary(model_esc_1)
-fitted(model_esc_1)
+
+migrantes = sort(dd_escen$personas_mig)
+prediccion = sort(dd_escen$pred_mig)
+
+plot(migrantes, prediccion, type = "l")
+
+
 
