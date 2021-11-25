@@ -1,9 +1,9 @@
 library(tidyr)
 library(dplyr)
-library(spdep)
-library(sf)
-library(rgdal)
-library(spatialreg)
+#library(spdep)
+#library(sf)
+#library(rgdal)
+#library(spatialreg)
 library(foreign)
 library(stargazer)
 library(Metrics)
@@ -34,14 +34,22 @@ dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
 # convierte PBI departamental a miles de millones de pesos
 dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
 
+# convierte variable de límites s tipo logical
+dd_deptos$dummy_limit <- as.logical(dd_deptos$dummy_limit)
+
+# convierte unidades de población a miles
+dd_deptos$pob_destino <- dd_deptos$pob_destino/1000
+dd_deptos$pob_origen <- dd_deptos$pob_origen/1000
+
+# nombre de deptos a factor
 dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 
-dd_deptos$dummy_limit <- as.logical(dd_deptos$dummy_limit)
 
 
 # model poisson regression using glm()
 # restringido en origen
-model <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
+model <- glm(personas_mig ~ nom_depto_orig + log(pob_destino) + 
+               dummy_limit + log(largo_limite_km) +
                log(pbi_destino_millardos) + log(dist_km) - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
@@ -55,6 +63,9 @@ stargazer(model, title="MIE restringido en origen",
           dep.var.caption='Variable dependiente',
           header=FALSE, align=FALSE, ci=TRUE, df=TRUE,
           table.placement = "H", single.row=TRUE, no.space=TRUE)
+
+
+plot(dd_deptos$personas_mig, fitted(model))
 
 # intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
 # de un 10%, q=1.1
@@ -78,22 +89,14 @@ q = 1.1
 # agregar la constante y avisarle que tome como categoría de referencia a Montevideo.
 dd_deptos$nom_depto_orig <- relevel(dd_deptos$nom_depto_orig, ref = "MONTEVIDEO")
 
-model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
-               log(pbi_destino_millardos) + log(dist_km),
+model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit +
+                log(largo_limite_km) + log(pbi_destino_millardos) +
+                log(dist_km),
               family = poisson(link = "log"),
               data = dd_deptos)
 
 # resumen
 summary(model1)
-
-ggplot(data=dd_deptos, aes(model1$residuals)) +
-  geom_histogram(binwidth = 1, color = "black", fill = "purple4") +
-  theme(panel.background = element_rect(fill = "white"),
-        axis.line.x=element_line(),
-        axis.line.y=element_line()) +
-  ggtitle("Histogram for Model Residuals")
-
-
 
 q = 1.1
 (q^coefficients(model1)[20:23]-1)*100
@@ -137,26 +140,59 @@ model2$aic
 
 R2_Score(fitted(model), dd_deptos$personas_mig)
 
+R2_Score(fitted(model1), dd_deptos$personas_mig)
+
 # es mejor el Poisson según el RMSE
 
 
 ##################
 ### Escenarios ###
 ##################
+
+# recarga datos
+dd_deptos <- read.csv('tablas/dd_deptos.csv', sep=";", dec=",")
+dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
+dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
+dd_deptos$pbi_destino_millardos <- dd_deptos$pbi_destino/100000
+dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
+dd_deptos$dummy_limit <- as.logical(dd_deptos$dummy_limit)
+dd_deptos$pob_destino <- dd_deptos$pob_destino/1000
+dd_deptos$pob_origen <- dd_deptos$pob_origen/1000
+
+# carga PBI
 pbi2021 <- read.csv('tablas/pbi_2021.csv')
 
-
+# actualiza PBI
 dd_escen <- merge(dd_deptos, pbi2021, by="depto_destino")
-
 dd_escen$pbi_destino_millardos <- dd_escen$pbi_destino_2021/100000
 
-dd_escen$pred_mig <- predict(model1, newdata = dd_escen, type = "response")
+# reduce las distancias
+dd_escen$dist_km <- dd_escen$dist_km*0.85
+
+# aumenta la población en destino
+dd_deptos$pob_destino <- dd_deptos$pob_destino*1.3
+
+# predice con las nuevas variables
+dd_escen$pred_mig <- predict(model, newdata = dd_escen, type = "response")
+
+migrantes  = dd_escen$personas_mig
+prediccion = dd_escen$pred_mig
+
+plot(migrantes, prediccion)
 
 
-migrantes = sort(dd_escen$personas_mig)
-prediccion = sort(dd_escen$pred_mig)
+dd_escen['depto_origen']
 
-plot(migrantes, prediccion, type = "l")
+newdata <- mydata[ which(mydata$gender=='F'
+                         & mydata$age > 65), ]
+
+
+migrantes_sin_mvo <- dd_escen[which(dd_escen$depto_origen > 1
+                                    & dd_escen$depto_destino > 1), "personas_mig"]
+
+prediccion_sin_mvo <- dd_escen[which(dd_escen$depto_origen > 1
+                                    & dd_escen$depto_destino > 1), "pred_mig"]
 
 
 
+plot(migrantes_sin_mvo, prediccion_sin_mvo)
