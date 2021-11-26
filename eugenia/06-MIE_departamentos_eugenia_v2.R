@@ -49,7 +49,8 @@ dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 # model poisson regression using glm()
 # restringido en origen
 model <- glm(personas_mig ~ nom_depto_orig + log(pob_destino) + log(edad_prom_des) +
-               log(pbi_destino_millardos) + log(dist_km) - 1 ,
+               log(pbi_destino_millardos) + log(porc_ocupados_des) + 
+               log(dist_km) - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
 

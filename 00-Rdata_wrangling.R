@@ -1,27 +1,27 @@
 # guarda como RData (corre en Ubuntu)
 library(foreign)
-setwd("/mnt/c1e28322-6237-43a1-bcf0-c89831b4d46d/censo2011")
+setwd("/mnt/hd/censo2011")
+# 
+# p <- read.dbf("Personas.dbf")
+# 
+# save(p, file="personas_censo.RData")
+# rm(list=ls())
+# gc()
 
-p <- read.dbf("Personas.dbf")
-
-save(p, file="personas_censo.RData")
-rm(list=ls())
-gc()
-
-setwd("/home/guille/Documentos/proy_municipios_censo")
-load("personas_censo.RData")
-
-save(p, file="personas_censo.RData")
-
-rm(p)
-gc()
+# setwd("/mnt/hd/censo2011")
+# load("personas_censo.RData")
+# 
+# save(p, file="personas_censo.RData")
+# 
+# rm(p)
+# gc()
 
 # recarga
 library(foreign)
-setwd("/mnt/c1e28322-6237-43a1-bcf0-c89831b4d46d/censo2011")
+setwd("/mnt/hd/censo2011")
 load("personas_censo.RData")
 
-
+colnames(p)
 
 vars <- c('DPTO',
           'LOC',
@@ -69,7 +69,8 @@ vars <- c('DPTO',
           'PERED06_R',
           'CODIGO_CAR',
           'PERED08',
-          'NIVELEDU_R')
+          'NIVELEDU_R',
+          'POBPCOAC')
 
 
 p_filter <- p[vars]
@@ -79,11 +80,11 @@ save(p_filter, file="personas_censo_migrac.RData")
 gc()
 
 # guarda como GZIP
-write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
 
 setwd("/home/guillermo/Documentos/GitHub/tesis/tablas")
 
-write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
+write.csv(p_filter, file=gzfile('personas_censo_2011.gz'), row.names=F)
 
 #write.csv(p_filter, file='personas_censo_2011.csv', row.names=F)
 
@@ -93,16 +94,18 @@ write.csv(p_filter, file=gzfile('personas_censo_1996.gz'), row.names=F)
 # censo 1996 (corre en Windows)
 library(foreign)
 
-setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
+setwd("/mnt/hd/censo1996/MICRODATOS DBF=CD")
 
 p <- read.dbf("pob_96.DBF")
+
+setws('/mnt/hd/censo1996')
 
 save(p, file="personas_censo_96.RData")
 rm(list=ls())
 gc()
 
 # carga lo ya guardado
-setwd("C:/Users/user/Documents/censo1996/MICRODATOS DBF=CD/CPV96 CD75/")
+setwd("/mnt/hd/censo1996")
 load("personas_censo_96.RData")
 
 vars <- c('DPTO',
