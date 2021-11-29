@@ -183,9 +183,6 @@ plot(migrantes, prediccion)
 
 dd_escen['depto_origen']
 
-newdata <- mydata[ which(mydata$gender=='F'
-                         & mydata$age > 65), ]
-
 
 migrantes_sin_mvo <- dd_escen[which(dd_escen$depto_origen > 1
                                     & dd_escen$depto_destino > 1), "personas_mig"]
