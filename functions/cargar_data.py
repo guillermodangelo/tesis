@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import geopandas as gpd
 
+
 def cargar_dd_deptos():
     dd_deptos = pd.read_csv('tablas/dd_deptos.csv', sep=';', decimal=',')
     dd_deptos.loc[dd_deptos.largo_limite.isna(), 'largo_limite'] = 0.0001
@@ -12,11 +13,13 @@ def cargar_dd_deptos():
 
 def pad(df, series, nzfill):
     series_padded = df[series].astype(str).str.zfill(nzfill)
+
     return series_padded
 
 
 def get_codseg(df):
     codseg = df.DPTO.astype(str) + pad(df, 'SECC', 2) + pad(df, 'SEGM', 3)
+
     return codseg
 
 
@@ -24,6 +27,7 @@ def cargar_censo_96():
     "Carga datos del Censo INE 1996"
     # Datos censales
     censo96 = pd.read_csv('tablas/personas_censo_1996.gz', compression='gzip', header=0, sep=',', quotechar='"')
+
     return censo96
 
 
@@ -33,14 +37,14 @@ def cargar_marco_96():
     file = 'marcos_censales/MARCO96.xls'
     marco96 = pd.read_excel(file)
     marco96['codseg'] = get_codseg(marco96)
-    
+
     return marco96
 
 
 def cargar_censo():
     "Carga datos del Censo INE 2011"
-    # Datos censales
-    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"')
+    name = 'tablas/personas_censo_2011.gz'
+    censo = pd.read_csv(name, compression='gzip', header=0, sep=',', quotechar='"')
     # reemplaza el valor 5555 en edad (variable PERNA01) por NaNs
     censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
     # crea código de hogar
@@ -53,20 +57,21 @@ def cargar_censo():
     return censo
 
 
-def cargar_censo_muestra(muestra, variables):
+def cargar_censo_muestra(muestra, cols):
     "Carga muestra datos del Censo INE 2011"
-    # Datos censales
-    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
+    name = 'tablas/personas_censo_2011.gz'
+    censo = pd.read_csv(name, compression='gzip', header=0, sep=',', quotechar='"', usecols=cols)
     # reemplaza el valor 5555 en edad (variable PERNA01) por NaNs
     censo.loc[censo.PERNA01 == 5555, 'PERNA01'] = np.nan
 
     return censo.sample(muestra).reset_index(drop=True)
 
 
-def cargar_censo_vars(variables):
+def cargar_censo_vars(cols):
     "Carga datos del Censo INE 2011"
-    # Datos censales
-    censo = pd.read_csv('tablas/personas_censo_2011.gz', compression='gzip', header=0, sep=',', quotechar='"', usecols=variables)
+    name = 'tablas/personas_censo_2011.gz'
+    censo = pd.read_csv(name, compression='gzip', header=0, sep=',', quotechar='"', usecols=cols)
+
     return censo
 
 
@@ -110,6 +115,7 @@ def recuperar_poblacion_2011():
                 90051,
                 48134]
     data_tuples = list(zip(depid, poblacion))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 
@@ -136,6 +142,7 @@ def recuperar_poblacion_2011_5años():
                  83814,
                  44939]
     data_tuples = list(zip(depid, poblacion))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 
@@ -162,6 +169,7 @@ def recuperar_poblacion_1996():
                  84919,
                  49502]
     data_tuples = list(zip(depid, poblacion))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 
@@ -189,6 +197,7 @@ def recuperar_poblacion_1996_5años():
                     72781,
                     43071]
     data_tuples = list(zip(depid, poblacion))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','poblacion'])
 
 
@@ -206,6 +215,7 @@ def recuperar_empresas_por_depto():
     depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     empresas =  [3124, 55, 563, 88, 60, 40, 28, 101, 54, 188, 144, 54, 67, 62, 97, 154, 85, 61, 38]
     data_tuples = list(zip(depid, empresas))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','empresas'])
 
 
@@ -216,6 +226,7 @@ def recuperar_parti_pbi():
     depid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     porc_pbi =  [49.1, 1.5, 10.5, 1.9, 4.9, 1.5, 0.8, 2.0, 1.6, 5.7, 2.7, 2.6, 2.1, 1.9, 2.7, 3.1, 2.2, 2.1, 1.2]
     data_tuples = list(zip(depid, porc_pbi))
+
     return pd.DataFrame(data_tuples, columns=['DPTO','porc_pbi'])
 
 
@@ -232,6 +243,7 @@ def cargar_matriz_distancias():
     # matriz de distancias
     md = pd.read_csv('tablas/df_distancias_centro_poblacion.csv')
     md.drop(['latlon_ori', 'latlon_des'], axis=1, inplace=True)
+
     return md
 
 
@@ -239,6 +251,7 @@ def cargar_matriz_dist_loc():
     "Carga matriz de distancias entre localidades INE 2011"
     cols = ['cod_ori', 'cod_des', 'cod', 'distancia_m']
     md = pd.read_csv('tablas/df_distancias_localidades.csv', usecols=cols)
+
     return md
 
 
@@ -257,7 +270,7 @@ def cargar_datos_geo():
     centro_pobl = gpd.read_file('capas/centro_poblacion.gpkg')
     # filtra capitales departamentales de las localidades INE
     capital = localidad[localidad.CAPITAL==True].reset_index(drop=True)
-    
+
     return deptos, deptos_sim, localidad, centro_pobl, capital
 
 
@@ -301,6 +314,7 @@ def cargar_nombres():
 def cargar_matriz_deptos():
     "Carga matriz de migrantes internos entre deptos"
     matrix = pd.read_csv('tablas/matriz_deptos.csv', skiprows=2, index_col='depto_origen').values.tolist()   
+
     return matrix
 
 
@@ -357,6 +371,7 @@ def decode_depto(df, column):
     18: 'TACUAREMBO',
     19: 'TREINTA Y TRES'
         }
+
     return df[column].map(deptos_dict)
 
 
@@ -383,6 +398,7 @@ def decode_depto_short(array):
     18:	'Tacuarembó',
     19:	'T. y Tres'
         }
+
     return array.map(deptos_dict)
 
 
@@ -409,14 +425,16 @@ def decode_depto_pretty(array):
     18:	'Tacuarembó',
     19:	'Treinta y Tres'
         }
+
     return array.map(deptos_dict)
+
 
 def loc_decode(df):
     "Decodifica codlocs INE"
     locs = pd.read_csv('tablas/localidades_censales_2011.csv',
                   dtype= {'departamento': str,'localidad': str, 'codloc': str,},
                   usecols=['departamento','localidad','codloc'])
-                  
+
     merge_loc = df.merge(locs, left_on='loc_destino', right_on='codloc').drop('codloc', axis=1)
 
     return  merge_loc
@@ -424,9 +442,10 @@ def loc_decode(df):
 
 def codif_diada_depto(df):
     "Codifica díadas por departamento"
-    cod_depto_destino_str = df['depto_destino'].astype(str).str.zfill(2)
-    cod_diada_depto = (df['depto_origen'].astype(str) + cod_depto_destino_str).astype(int)
-    return cod_diada_depto
+    cod_des_str = df['depto_destino'].astype(str).str.zfill(2)
+    cod_diada = (df['depto_origen'].astype(str) + cod_des_str).astype(int)
+
+    return cod_diada
 
 
 def recuperar_crecimiento_pbi():
@@ -434,5 +453,5 @@ def recuperar_crecimiento_pbi():
     años = list(range(2015,2022))
     pbi_porc = [0.37, 1.69, 1.63, 0.48, 0.35, -6, 2]
     data_tuples = list(zip(años, pbi_porc))
-    
+
     return pd.DataFrame(data_tuples, columns=['año','pbi_porc'])
