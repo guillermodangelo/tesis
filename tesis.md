@@ -87,7 +87,7 @@ La pregunta general que guiará este trabajo de investigación es la siguiente: 
 
 Objetivo general
 
-- Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial (MIE) con base en los censos de 1996 y 2011.
+- Generar escenarios de migración interna en Uruguay mediante la utilización de modelos de interacción espacial (MIE) con base en los datos del censo 2011.
 
 Objetivos específicos
 
@@ -108,7 +108,7 @@ Como preguntas de investigación se proponen las siguientes:
 
 - ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
 
-- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas? ¿Existe autocorrelación espacial en los datos de migración?
+- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?
 
 \newpage
 
@@ -639,6 +639,10 @@ Dicha matriz se puede representar en forma gráfica.
 La representación gráfica de las diferencias entre ambas matrices indica una tendencia general a la estabilidad o reducción de la atractividad entre díadas, con algunas excepciones.
 
 ![Diferencia en matrices de atracción mutua 1996-2011.](mapas_graficas/003_eda_delta_coef_1996_2011.pdf)
+
+
+De la comparación surgen 14 díadas que aumentan su ceficiente de atractividad, 186 que lo mantienen y 142 que lo reducen.
+
 
 
 ## El rol de la distancia en las migraciones internas

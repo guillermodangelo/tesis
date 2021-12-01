@@ -50,9 +50,8 @@ def agrupar_por_edades(df, col_edad):
     col_pegue = pd.DataFrame(np.arange(0, 112), columns=['edad'])
     # pega con edades
     df_group_pegue = col_pegue.merge(df_group, how='left', on='edad')
-    
-    return df_group_pegue
 
+    return df_group_pegue
 
 
 def grupos_de_edad(df, col_edad):
@@ -62,14 +61,14 @@ def grupos_de_edad(df, col_edad):
     df.loc[df[col_edad].between(18, 64),  'grupo_edad'] = 3
     df.loc[df[col_edad] > 64,  'grupo_edad'] = 4
     df_group = df.groupby(['grupo_edad']).size().reset_index()
-    
+
     # renombra vars
     df_group.rename(columns={0:'personas'}, inplace=True)
     # calcula porcentajes
     df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
     # enlista resultados
     lista_valores = df_group.porc_pers.values.tolist()
-    
+
     # chequea que todos lo tramos de edad tengan valor, o pone 0 en la lista
     if sum(df.grupo_edad==1) == 0:
         lista_valores.insert(0, 0)
@@ -79,7 +78,7 @@ def grupos_de_edad(df, col_edad):
         lista_valores.insert(2, 0)
     if sum(df.grupo_edad==4) == 0:
         lista_valores.insert(3, 0)
-    
+
     return lista_valores
 
 
@@ -92,14 +91,14 @@ def grupos_de_edad_mig(df, col_edad):
     df.loc[df[col_edad].between(35, 64),  'grupo_edad'] = 4
     df.loc[df[col_edad] > 64,  'grupo_edad'] = 5
     df_group = df.groupby(['grupo_edad']).size().reset_index()
-    
+
     # renombra vars
     df_group.rename(columns={0:'personas'}, inplace=True)
     # calcula porcentajes
     df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
     # enlista resultados
     lista_valores = df_group.porc_pers.values.tolist()
-    
+
     # chequea que todos lo tramos de edad tengan valor, sino pone 0 en la lista
     if sum(df.grupo_edad==1) == 0:
         lista_valores.insert(0, 0)
@@ -111,7 +110,7 @@ def grupos_de_edad_mig(df, col_edad):
         lista_valores.insert(3, 0)
     if sum(df.grupo_edad==5) == 0:
         lista_valores.insert(4, 0)
-    
+
     return lista_valores
 
 
@@ -121,14 +120,14 @@ def grupos_de_dependencia(df, col_edad):
     df.loc[df[col_edad].between(15, 64),  'grupo_edad'] = 2
     df.loc[df[col_edad] > 64,  'grupo_edad'] = 3
     df_group = df.groupby(['grupo_edad']).size().reset_index()
-    
+
     # renombra vars
     df_group.rename(columns={0:'personas'}, inplace=True)
     # calcula porcentajes
     df_group['porc_pers'] = (df_group.personas / df_group.personas.sum())*100
     # enlista resultados
     lista_valores = df_group.porc_pers.values.tolist()
-    
+
     # chequea que todos lo tramos de edad tengan valor, o pone 0 en la lista
     if sum(df.grupo_edad==1) == 0:
         lista_valores.insert(0, 0)
@@ -136,6 +135,5 @@ def grupos_de_dependencia(df, col_edad):
         lista_valores.insert(1, 0)
     if sum(df.grupo_edad==3) == 0:
         lista_valores.insert(2, 0)
-    
-    return lista_valores
 
+    return lista_valores
