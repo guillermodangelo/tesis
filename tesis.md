@@ -104,7 +104,7 @@ Como preguntas de investigación se proponen las siguientes:
 
 - ¿Cuál es la estructura demográfica de la población migrante interna? ¿Cuál es su nivel educativo?
   
-- ¿Han variado los coeficientes de atractividad entre departamentos? ¿Con qué magnitud?
+- ¿Han variado los coeficientes de atracción mutua entre departamentos? ¿Con qué magnitud?
 
 - ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
 
@@ -129,7 +129,7 @@ La migración es más intensa en las edades económicamente activas y en los jó
 Quienes migran desde Montevideo tienen un perfil más joven y feminizado de quienes migran hacia Montevideo [@bengochea2011]. Por otro lado, se ha caracterizado a quienes migran desde Montevideo como familias integradas por parejas de entre 30 y 40 años con niños, probablemente debido a un ciclo de expansión de dichas familias [@bengochea2011].
 
 
-[^1]:Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la consolidación de la situación de pandemia que vive el mundo en la actualidad, con la consecuente abrupta reducción de la movilidad de las personas.
+[^1]:Dicha situación cambió radicalmente desde la emergencia y expansión del coronavirus “SARS-CoV-2” y la situación de pandemia, con la consecuente reducción abrupta de la movilidad de las personas.
 
 [^2]:La distinción entre ciencias nomotéticas e ideográficas proviene del filósofo alemán W. Windelband. Las ciencias nomotéticas son aquellas que buscan generalidades, coincidentes con las denominadas ciencias naturales o exactas, en tanto las ciencias ideográficas estudian los fenómenos particulares e individuales, con características irrepetibles, y coinciden con las disciplinas sociales e históricas [@solis2005].
 
@@ -662,6 +662,7 @@ De la comparación surgen 14 díadas que aumentan su coeficiente de atractividad
 | Paysandú       | Cerro Largo     |          0 |          1 |          35 |
 
 
+Se destacan en las díadas Colonia-Montevideo y viceversa, posiblemente asociado a un mayor dinamismo económico en ambos departamentos.
 
 
 ## El rol de la distancia en las migraciones internas
@@ -712,7 +713,7 @@ Los modelos incluyen datos para cada conjunto de díadas, es decir relaciones un
 
 ### Matriz de distancia
 
-Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19). Luego se calculó el logaritmo de dicho valor.
+Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
 
 Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, en el entendido de que representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
@@ -732,7 +733,12 @@ Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se
 
 Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
 
-En cuanto a la visualización gráfica de dichos datos, los diagramas Sankey son muy adecuados. Para una visualización adecuada se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
+\newpage
+\begin{landscape}
+\input{tablas/matriz_orig_dest.tex}
+\end{landscape}
+
+En cuanto a la representación gráfica de dichos datos, los diagramas Sankey son adecuados. Dado que las diferencias en las magnitudes de los flujos son grande, se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
 
 ![Diagrama Sankey de migraciones internas recientes con orígen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
 
