@@ -48,9 +48,12 @@ dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 
 # model poisson regression using glm()
 # restringido en origen
-model <- glm(personas_mig ~ nom_depto_orig + log(pob_destino) + log(edad_prom_des) +
-               log(pbi_destino_millardos) + log(porc_ocupados_des) + 
-               log(dist_km) - 1 ,
+model <- glm(personas_mig ~  nom_depto_orig +
+                             log(pob_destino) +
+                             log(edad_prom_des) +
+                             log(pbi_destino_millardos) +
+                             log(porc_ocupados_des) + 
+                             log(dist_km) - 1 ,
                family = poisson(link = "log"),
                data = dd_deptos)
 
@@ -119,9 +122,12 @@ stargazer(model1, title=titulo,
 # me queda la duda ahora de si usar la distancia en lugar del logaritmo, es más fácil de interpretar
 
 # por último pruebo el modelo de la binomial negativa en este contexto, a ver si mejora la predicción
-model2 <- glm.nb(personas_mig ~ nom_depto_orig + dummy_limit + log(largo_limite_km) +
-                log(pbi_destino_millardos) + log(dist_km),
-              data = dd_deptos)
+model2 <- glm.nb(personas_mig ~ nom_depto_orig +
+                                dummy_limit +
+                                log(largo_limite_km) +
+                                log(pbi_destino_millardos) +
+                                log(dist_km),
+                  data = dd_deptos)
 # resumen
 summary(model2)
 
