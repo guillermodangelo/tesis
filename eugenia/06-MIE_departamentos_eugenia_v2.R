@@ -135,13 +135,13 @@ summary(model2)
 # medidas de ajuste
 
 rmse0=rmse(dd_deptos$personas_mig, fitted(model))
-rmse2=rmse(dd_deptos$personas_mig, fitted(model2))
+rmse1=rmse(dd_deptos$personas_mig, fitted(model1))
 
 rmse0
-rmse2
-
 model$aic
-model2$aic
+
+rmse1
+model1$aic
 
 
 R2_Score(fitted(model), dd_deptos$personas_mig)
