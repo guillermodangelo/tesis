@@ -553,6 +553,8 @@ A continuación se presentarán diversos indicadores referidos a dichos tres gru
 
 ## Estructura de la población
 
+A continuación se presenta un breve análisis de la población migrante interna en función de su estructura. A parte del análisis siguiente, se elaboró un tablero interactivo, que permite visualizar parte de esta información en forma dinámica, pudiendo acceder al mismo mediante el siguiente enlace: [https://share.streamlit.io/guillermodangelo/migraciones_internas/main/app.py](https://share.streamlit.io/guillermodangelo/migraciones_internas/main/app.py).
+
 ### Distribución por sexo
 
 El índice de masculinidad para el grupo 1 es de 80 hombres por cada 100 mujeres, para el grupo 2 de 92.4 y para el grupo tres es de 102.2 hombres por cada 100 mujeres. Dichos datos se presentan en forma gráfica en la\ [@fig:barras_mascul].
