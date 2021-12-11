@@ -664,7 +664,7 @@ De la comparación surgen 14 díadas que aumentan su coeficiente de atractividad
 | Paysandú       | Cerro Largo     |          0 |          1 |          35 |
 
 
-Se destacan en las díadas Colonia-Montevideo y viceversa, posiblemente asociado a un mayor dinamismo económico en ambos departamentos.
+Se destacan las díadas Colonia-Montevideo y viceversa, posiblemente asociado a un mayor dinamismo económico en ambos departamentos.
 
 
 ## El rol de la distancia en las migraciones internas

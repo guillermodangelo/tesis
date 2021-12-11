@@ -1,7 +1,5 @@
-cd /home/guillermo/Documentos/GitHub/tesis/
 
 ./pandoc_export_pdf.sh tesis.md tesis.pdf
-
 
 ./pandoc_export_word.sh tesis.md tesis.docx
 
