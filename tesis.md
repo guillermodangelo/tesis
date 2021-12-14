@@ -951,7 +951,6 @@ AIC Binomial negativa = 3797,29
 
 
 
-
 ## Escenarios
 
 En este apartado se presentan escenarios de migración interna, producto de la aplicación de los modelos estimados anteriormente, pero con diferentes valores para las variables independientes.
@@ -959,41 +958,14 @@ En este apartado se presentan escenarios de migración interna, producto de la a
 En el caso del PBI departamental, dado que no se cuenta con nuevas estimaciones, se asume un crecimiento distribuido en forma regular entre los departamentos, según los datos publicados por en la web del Banco Mundial.
 
 
-
-
-
 \newpage
 
 
+# Pendientes
 
-
-
-
-# Cómo seguir.
-
-Con respecto al marco teórico y los antecedentes:
-
-- Profundizar en la imbricación entre el marco y el enfoque que se pretende en esta investigación
-
-Con respecto a la metodología y resultados:
-- Explorar diferentes funciones de decaimiento por la distancia.
 - Modelar excluyendo Montevideo.
 - Generación de escenarios
-
-Cosas concretas:
-
-1. Escribir capítulo de modelos restringidos en origen
-
-2. Escenarios
-
-3. Tablero streamlit:
-
-    - Que permita seleccionar un flujo, depto_ori <-> depto_des
-    - Pirámides de población para ese flujo
-    - Porcentaje del total de los flujos
-    - Distancia entre centros medios de población
-    - Mapita web
-
+- Tablero: agregar modelación y escenarios
 
 \newpage
 
