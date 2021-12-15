@@ -717,7 +717,7 @@ Los modelos incluyen datos para cada conjunto de díadas, es decir relaciones un
 
 Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
 
-Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, en el entendido de que representa con mayor fidelidad la concentración de población. El centro medio de población se calcula transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
+Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, entendiendo que este representa con mayor fidelidad la concentración de población. El centro medio de población se calculó transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
 
 (@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
 
@@ -726,6 +726,9 @@ Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al.
 En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
 
 ![Centroides, capitales y centros medios de población de cada departamento.](mapas_graficas/centro_poblacion.pdf)
+
+Los casos de Salto, Paysandú, Rivera y Florida son ilustrativos, dado que la concentrar gran parte de su población de la capital departamental, su centro medio se encuentra próximo a la misma y muy alejado del centroide.
+
 
 ### Población y migrantes internos
 
@@ -966,6 +969,8 @@ En el caso del PBI departamental, dado que no se cuenta con nuevas estimaciones,
 - Modelar excluyendo Montevideo.
 - Generación de escenarios
 - Tablero: agregar modelación y escenarios
+- Conclusiones
+- Discusión
 
 \newpage
 
