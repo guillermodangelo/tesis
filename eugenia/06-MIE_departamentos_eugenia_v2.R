@@ -12,7 +12,7 @@ library(MLmetrics)
 library(ggplot2)
 
 if( Sys.info()['sysname'] == "Windows") {
-  setwd("C:/Users/user/Documents/GitHub/tesis")
+  setwd("C:/Users/59898/Documents/GitHub/tesis")
 } else {
   setwd("/home/guillermo/Documentos/GitHub/tesis/")
 }
