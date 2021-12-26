@@ -553,7 +553,7 @@ A continuación se presentarán diversos indicadores referidos a dichos tres gru
 
 ## Estructura de la población
 
-A continuación se presenta un breve análisis de la población migrante interna en función de su estructura. A parte del análisis siguiente, se elaboró un tablero interactivo, que permite visualizar parte de esta información en forma dinámica, pudiendo acceder al mismo mediante el siguiente enlace: [https://share.streamlit.io/guillermodangelo/migraciones_internas/main/app.py](https://share.streamlit.io/guillermodangelo/migraciones_internas/main/app.py).
+A continuación se presenta un breve análisis de la población migrante interna en función de su estructura. A parte del análisis siguiente, se elaboró un tablero interactivo, que permite visualizar parte de esta información en forma dinámica, pudiendo acceder al mismo mediante el siguiente enlace: https://share.streamlit.io/guillermodangelo/migraciones_internas/main/app.py
 
 ### Distribución por sexo
 
