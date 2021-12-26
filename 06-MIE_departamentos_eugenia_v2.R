@@ -11,16 +11,6 @@ library(MASS)
 library(MLmetrics)
 library(ggplot2)
 
-if( Sys.info()['sysname'] == "Windows") {
-  setwd("C:/Users/59898/Documents/GitHub/tesis")
-} else {
-  setwd("/home/guillermo/Documentos/GitHub/tesis/")
-}
-
-
-# eugenia
-#setwd("C:/Users/Eugenia/Dropbox/d'angelo")
-
 
 # modelo poisson R
 dd_deptos <- read.csv('tablas/dd_deptos.csv', sep=";", dec=",")
@@ -48,14 +38,16 @@ dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
 
 # model poisson regression using glm()
 # restringido en origen
-model <- glm(personas_mig ~  nom_depto_orig +
-                             log(pob_destino) +
-                             log(edad_prom_des) +
-                             log(pbi_destino_millardos) +
-                             log(porc_ocupados_des) + 
-                             log(dist_km) - 1 ,
-               family = poisson(link = "log"),
-               data = dd_deptos)
+model <- glm(personas_mig ~
+             nom_depto_orig +
+             log_pob_destino_k +
+             log_edad_prom_des + 
+             log_pbi_destino_millardos +
+             log_porc_ocupados_des + 
+             log_dist_km -1 ,
+            family = poisson(link = "log"),
+            data = dd_deptos)
+
 
 # resumen
 summary(model)
