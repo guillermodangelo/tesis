@@ -56,9 +56,11 @@ header-includes: |
 
 \newpage
 
-# Fundamentación
+# Introducción
 
-Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015], es decir que la migración es un fenómeno de naturaleza espacial [@rogers2002]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en tanto otorga una relevancia particular al componente espacial de los fenómenos [@puyol1995].
+REESCRIBIR!
+
+~~Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015], es decir que la migración es un fenómeno de naturaleza espacial [@rogers2002]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en tanto otorga una relevancia particular al componente espacial de los fenómenos [@puyol1995].
 
 Consideramos valiosa la posibilidad de explorar que papel tiene el espacio geográfico en las migraciones internas, ya que desde nuestro enfoque teórico, el espacio geográfico no debería ser considerado como un mero escenario contenedor de las sociedades, sino como agente activo en la construcción de las mismas, es decir que existe una relación recíproca, aunque no lineal, entre el espacio y los fenómenos sociales [@puyol1995]. A modo de ejemplo vale mencionar como las migraciones se ven influidas por el espacio geográfico, generándose migraciones más intensas entre localidades cercanas o migraciones muy débiles entre localidades remotas, y en ese proceso también modifican y (re)construyen el espacio.
 
@@ -76,7 +78,7 @@ Luego se pueden aplicar restricciones en origen o destino y sumar variables que 
 
 En el Uruguay existe un antecedente de investigación utilizando modelos de interacción espacial, pero orientada a la movilidad por trabajo [^3]. No existen antecedentes nacionales de uso de modelos de interacción espacial aplicados a migraciones internas. En ese sentido, la presente investigación cubre un vacío en la literatura académica al respecto.
 
-[^3]:Trabajo inédito, dirigido por la Lic. Eugenia Riaño.
+[^3]:Trabajo inédito, dirigido por la Lic. Eugenia Riaño.~~
 
 \newpage
 
@@ -94,24 +96,17 @@ Objetivo general
 
 Objetivos específicos
 
-- Describir las migraciones internas en Uruguay en función de variables demográficas específicas.
-  
+- Describir el perfil sociodemográfico de la población migrante interna, intentando identificar diferencias según el tipo de flujo migratorio.
+
+Preguntas de investigación: *¿Cuál es la estructura demográfica de la población migrante interna? ¿Cuál es su nivel educativo?*
+
 - Explorar el rol del espacio geográfico en las migraciones internas en Uruguay.
+
+Preguntas de investigación: *¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011? ¿Es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?*
 
 - Calibrar y aplicar un modelo de interacción espacial de las migraciones entre departamentos.
 
 - Explorar la aplicabilidad de modelos de interacción espacial para la estimación de escenarios de migración interna.
-
-
-Como preguntas de investigación se proponen las siguientes:
-
-- ¿Cuál es la estructura demográfica de la población migrante interna? ¿Cuál es su nivel educativo?
-  
-- ¿Han variado los coeficientes de atracción mutua entre departamentos? ¿Con qué magnitud?
-
-- ¿Es la distancia un factor de relevancia en las migraciones internas? ¿Ha cambiado el papel que tiene la distancia como factor de disuasión según los datos del Censo 1996 y 2011?
-
-- En el caso de los departamentos ¿es relevante la contigüidad geográfica, es decir la existencia de fronteras compartidas?
 
 \newpage
 
@@ -145,6 +140,8 @@ ESQUEMA DE TEORÍAS MIGRATORIAS, A SUGERENCIA DE MARTÍN: VER ARANGO (EN REALIDA
 
 Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@prates1977; @petruccelli1979; @macadar2008]. Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
 
+**Sobre CAM: habría que agregar que lo empezó a calcular Petrucelli por los 70 (creo 1979 usando datos Censo 1975) y luego Calvo en Doc. Trabajo 1996 (datos Censo 1985). Esto igual se puede poner en antecedentes y no es necesario aquí MK**
+
 Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José y Colonia tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
 
 \input{tablas/mig_censos.tex}
@@ -170,15 +167,15 @@ Referido a España, Santos -@santos1994 aplicó modelos de interacción espacial
 
 En ambos casos (1970 y 1990) el volumen de población de los lugares de origen y destino, o “jerarquía urbana”, se identifican como los factores más estables y relevantes para explicar las causas de la migración.
 
-Por su parte, Devillanova y García-Fontes -@devillanova1998 estudiaron la migración interna en España con datos de la seguridad social, utilizando un modelo de regresión binomial negativa, abarcando los períodos 1978-1984 y 1986-1992. Los autores identificaron como variables relevantes el desempleo y el bajo crecimiento del empleo para el período 1986-1992, en tanto que en el período anterior no tuvieron un papel de relevancia.
+Por su parte, Devillanova y García-Fontes -@devillanova1998 estudiaron la migración interna en España con datos de la seguridad social, utilizando un modelo de regresión con especificación Binomial Negativa, abarcando los períodos 1978-1984 y 1986-1992. Los autores identificaron como variables relevantes el desempleo y el bajo crecimiento del empleo para el período 1986-1992, en tanto que en el período anterior no tuvieron un papel de relevancia.
 
 Garrocho -@garrocho1996 utilizó un modelo de interacción espacial condicionado en origen para simular flujos de migración interna en México, también a escala interregional, y sobre esa base genera escenarios migratorios hipotéticos.
 
-La aplicación del modelo se divide en dos partes: la calibración y la simulación. La calibración consiste en el cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria, para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la aplicación del modelo con los parámetros calibrados, pero modificando los valores de las variables estratégicas, para generar escenarios posibles [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
+La aplicación del modelo se divide en dos partes: la calibración y la simulación. La calibración consiste en el cálculo de los valores de las variables y parámetros de las unidades espaciales y la atractividad migratoria, para encontrar los valores que mejor replican los datos del Censo. En segundo lugar la simulación, es decir la aplicación del modelo con los parámetros calibrados, pero modificando los valores de las variables explicativas, para generar escenarios posibles [@garrocho1996]. Mediante el proceso de calibración llega a un factor de bondad de ajuste aceptable y un error promedio de asignación bajo, con algunas incongruencias derivadas de las particularidades de las migraciones internas mexicanas, por ejemplo la migración a estados fronterizos con EE.UU. como parte de una estrategia de migración internacional hacia EE.UU. Dicho modelo calibrado es utilizado para aventurar algunos escenarios futuros.
 
 Boyle et al. -@boyle1998 modelaron la migración entre los distritos electorales de Hereford y Worcester, Inglaterra, entre 1990 y 1991. Como conclusión se destacan que la función de distancia más apropiada fue la exponencial negativa, en lugar de la función potencial. Con respecto a las variables adicionales, se encuentran asociaciones positivas con el tamaño poblacional, la finalización de viviendas privadas nuevas durante el período de estudio y la presencia de vivienda pública (*council housing*).
 
-Yano el al. -@yano2003 aplicaron modelos de interacción espacial para comparar las conductas migratorias en Japón y Gran Bretaña con datos de principios de los años 90s, identificando que en ambos casos el grado en que afecta la distancia como factor de disuasión de la migración se mantiene en ambos países. Por otro lado, encuentran diferencias en las preferencias de hacia donde migrar, siendo las grande áreas urbanas más atractivas para los migrantes internos en Japón, siendo lo contrario para Gran Bretaña, hecho que los autores relacionan con diferencias culturales y por encontrarse ambos países en momentos diferentes del desarrollo.
+Yano el al. -@yano2003 aplicaron modelos de interacción espacial para comparar las conductas migratorias en Japón y Gran Bretaña con datos de principios de los años 90s, identificando que en ambos casos el grado en que afecta la distancia como factor de disuasión de la migración se mantiene en ambos países. Por otro lado, encuentran diferencias en las preferencias de hacia donde migrar, siendo las grandes áreas urbanas más atractivas para los migrantes internos en Japón, en tanto en Gran Bretaña se da lo contrario, hecho que los autores relacionan con diferencias culturales y por encontrarse ambos países en momentos diferentes del desarrollo.
 
 He y Pooler -@he2003 aplicaron un modelo de interacción espacial restringido en origen y con variables adicionales, para modelar la migración inter-provincial en China, a partir de datos de los períodos 1982-87 y 1985-90. Utilizaron como función de la distancia una función de potencia inversa. Las variables adicionales incorporadas al modelo fueron: la migración pasada en origen y destino (llamada *stock* de migrantes) y una medida de inversión promedio anual, llegando a la siguiente formulación del modelo:
 
@@ -204,9 +201,7 @@ Para seleccionar la variable adicional en destino, analizaron la correlación en
 
 Shen -@shen2017 también analizó la migración interna en China, identificando como variables relevantes la distancia, la población en origen y destino, un indice de severidad de la temperatura en 2005 en destino, las exportaciones como porcentaje del producto bruto interno en 2005 en destino, los ingresos per cápita en población rural en 2005 en destino y la densidad de población de 2005 en destino.
 
-Yaojung et al. -@yaojun2019 realizaron un índice de atractividad relativa para las prefecturas de China, siguiendo el trabajo desarrollado por Fotheringham et al. -@fotheringham2000. Los autores concluyen que la región central de China es la menos atractiva para los migrantes, que las grandes ciudades son más atractivas que las medianas y pequeñas y que la atractividad es variables según los grupos de edad y el nivel educativo de los migrantes.
-
-En el caso de Li et al. -@li2017 se tuvo preferencia por el modelo de radiación por sobre los modelos de interacción espacial, aduciendo la mayor simplicidad del mismo.
+Yaojung et al. -@yaojun2019 realizaron un índice de atractividad relativa para las prefecturas de China, siguiendo el trabajo desarrollado por Fotheringham et al. -@fotheringham2000. Los autores concluyen que la región central de China es la menos atractiva para los migrantes, que las grandes ciudades son más atractivas que las medianas y pequeñas y que la atractividad es variable según los grupos de edad y el nivel educativo de los migrantes.
 
 Sarra y Del Signore -@sarra2010 aplicaron un modelo de interacción espacial restringido en origen para Polonia. Las autoras concluyen que el producto bruto interno *per cápita* es la variable que más peso tienen en la explicación de los flujos, pero a su vez destacan el escaso peso de la variable distancia y el signo negativo del coeficiente de la variable población, que atribuyen a un contexto de declive urbano, es decir características propias de la economía polaca a principio del siglo XXI.
 
@@ -219,11 +214,11 @@ Existen dos antecedentes de gran relevancia, ya que son aplicaciones guiadas imp
 
 Del mismo autor se relevó un el desarrollo de un modelo de interacción espacial multinivel para la estimación de la migración interregional en Europa [@dennett2013].
 
-Una de las limitantes de los modelos de interacción espacial presentes en la literatura, refiere al sesgo de endogeneidad por variables omitidas. Tal como se establece en la revisión teórica, la migración no es considerada un proceso aleatorio, sino que emerge de las decisiones de los migrantes, las cuales son tomadas en determinados contextos espaciales [@peeters2012]. Peeters -@peeters2012 propone dar cuenta de las particularidades de la estrucutra espacial utilizando pendientes bilatereales, es decir entre cada díada. El mismo problema es mencionado por Patuelli et al. -@patuelli2016a y fue abordado por Lamonica -@lamonica2018, quien analizó alternativas para el problema de la dependencia espacial o autocorrelación espacial, utilizando datos de cambios de residencia entre regiones de Italia, y también por Mitze -@mitze2016, quien analizó la migración interregional en Alemania.
+Una de las limitantes de los modelos de interacción espacial presentes en la literatura, refiere al sesgo de endogeneidad por variables omitidas. Tal como se establece en la revisión teórica, la migración no es considerada un proceso aleatorio, sino que emerge de las decisiones de los migrantes, las cuales son tomadas en determinados contextos espaciales [@peeters2012]. Peeters -@peeters2012 propone dar cuenta de las particularidades de la estrucutra espacial utilizando pendientes bilaterales, es decir entre cada díada. El mismo problema es mencionado por Patuelli et al. -@patuelli2016a y fue abordado por Lamonica -@lamonica2018, quien analizó alternativas para el problema de la dependencia espacial o autocorrelación espacial, utilizando datos de cambios de residencia entre regiones de Italia, y también por Mitze -@mitze2016, quien analizó la migración interregional en Alemania.
 
 Otro problema emergente, muy conocido en el ámbito del análisis espacial, es el Problema de la Unidad Espacial Modificable (PUEM), según el cual las unidades espaciales utilizadas para analizar un fenómeno determinado repercutirán sensiblemente tanto en la representación cartográfica como en el análisis estadístico [@mcnamara2016, @arbia2016]. En el caso de las migraciones internas, la modificación de las unidades espaciales de análisis también reviste una importancia absoluta, dado que si por ejemplo agrupamos dos departamentos, esos flujos desaparecen del sistema (se convertirían en cambios de residencia en lugar de migraciones internas). Una opción para dar cuenta de este problema es probar el modelo con diferentes unidades espaciales, para validar la robustez del análisis [@flowerdew2010].
 
-A modo de cierre, vale destacar la diversidad de variables explicativas usadas por todos los casos referenciados. Sin embargo, en varios se utiliza una metodología *stepwise* para identificar la relevancia de cada variable, es decir que se corren varias veces los modelos agregando y quintando variables (seleccionadas previamente con un criterio teórico) hasta llegar a aquel conjunto reducido de variables que presentan mayor poder explicativo.
+A modo de cierre, vale destacar la diversidad de variables explicativas usadas por todos los casos referenciados. Sin embargo, en varios se utiliza una metodología *stepwise* para identificar la relevancia de cada variable, es decir que se corren varias veces los modelos agregando y quitando variables (seleccionadas previamente con un criterio teórico) hasta llegar a aquel conjunto reducido de variables que presentan mayor poder explicativo.
 
 \newpage
 
@@ -248,7 +243,7 @@ Aquí surge una primera complejidad, asociada a los ya mencionados solapamientos
   
 Se encuentran al menos dos limitaciones. En primer lugar se excluyen habitantes de zonas rurales de población dispersa, es decir aquellas asignadas a la localidad INE rural, cuya expresión geográfica se limita a toda la superficie del departamento que no se considera urbana, por ende es demasiado amplia. Para estudiar las migraciones referidas al ámbito rural, habría que tomar otra estrategia u otra fuente de datos. En segundo lugar, residir en otro departamento con anterioridad no necesariamente debería ser una migración. Por ejemplo, una hogar con residencia en Ciudad del Plata o Ciudad de la Costa, cuya residencia 5 años antes era en Montevideo, ¿migró o simplemente cambió de residencia?. Aquí es donde la distancia del movimiento realizado puede servir como variable auxiliar para determinar a que categoría corresponde.
 
-En lo que refiere a capas de información geográfica, fueron empleadas las capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, las localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
+En lo que refiere a capas de información geográfica, fueron empleadas la capa de departamentos y la de localidades del INE como información básica. Los departamentos son unidades geoestadísticas y político-administrativas de segundo nivel de gobierno, las localidades definidas por el INE son unidades geoestadísticas que, en general, corresponden a zonas urbanas.
 
 Con la combinación de los datos geográficos y los censales se realizaron ciertas operaciones para producir nueva información geográfica, las cuales se detalla en el apartado "Generación de datos diádicos".
 
@@ -260,7 +255,7 @@ Existen varias razones que pueden estar detrás del interés de migrar de una pe
 
 Como variables demográficas, la edad y sexo/género se consideran determinantes en los procesos migratorios, ya que la propensión a migrar varía notablemente con la edad, asociada al ciclo vital de los individuos [@champion1998; @vandergaag2003]. En general, se constata un alta tasa en niños pequeños, con un posterior declive que repunta al comienzo de los 20 años, asociado a las oportunidades educativas y de trabajo. Luego hay un declive asociada a la edad de crianza de los niños, pudiendo aumentar en la edad del retiro [@vandergaag2003]. Esas aseveraciones varían según las características de la sociedad que se analize.
 
-Varias investigaciones han identificado variables económicas relacionadas con la atracción de migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [vandergaag2003; @lucas1997, @aldashev2011; @aldashev2014; @andrienko2004; @fang2003, @etzo2011; @weidlich1988, @cebula2005; @cebula2006; @filiztekin2008; @piras2017; @royuela2018]. También la recepción de inversión extrangera directa a sido usada como variable explicativa, en función del dinamismo económico que implica para determinadas regiones [@fang2003].
+Varias investigaciones han identificado variables económicas relacionadas con la atracción de migración interna como ser ingresos per cápita, puestos de trabajo vacantes, empleo [vandergaag2003; @lucas1997, @aldashev2011; @aldashev2014; @andrienko2004; @fang2003, @etzo2011; @weidlich1988, @cebula2005; @cebula2006; @filiztekin2008; @piras2017; @royuela2018]. También la recepción de inversión extranjera directa ha sido usada como variable explicativa, en función del dinamismo económico que implica para determinadas regiones [@fang2003].
 
 La disponibilidad de vivienda pública [@champion1998; @andrienko2004] o variables relativas a los mercados de vivienda también han sido incorporadas en algunas investigaciones [@vandergaag2003].
 
@@ -268,9 +263,9 @@ Otros han incorporado factores relativos a la calidad de vida, como la incidenci
 
 Entre los aspectos sociales, vale mencionar los años de escolarización como factor relevante [@royuela2018; @piras2017].
 
-Algunos estudios también se refieren a variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias (por ejemplo Fang y Dewen -fang2003 toman las distancias entre provincias por vías férreas para el caso de China), la combinación de la distancia y factores étnicos [@aldashev2014], o variables *dummies* para representar particularidades de determinado país o región [@filiztekin2008; @etzo2011]
+Algunos estudios también se refieren a variables de stock, por ejemplo el stock de migrantes anteriores entre provincias, o a las variables geográficas, como la distancia entre provincias (por ejemplo Fang y Dewen -@fang2003 toman las distancias entre provincias por vías férreas para el caso de China), la combinación de la distancia y factores étnicos [@aldashev2014], o variables *dummies* para representar particularidades de determinado país o región [@filiztekin2008; @etzo2011]
 
-Dada la relevancia de ciertos aspectos micro que hacen a la desición de migrar, Van Der Gaag et al. -@vandergaag2003 recomiendan incorporar una perspectiva de ciclo de vida, en particular la edad, a la modelación. A su vez, ateniéndonos a la realidad Uruguaya, según el análisis realizado por Macadar y Domínguez -@macadar2008 a partir de datos de la Encuesta de Hogares Ampliada el año 2006, la razón principal de los migrantes es la de "motivos familiares",quedando os motivos laborales y educativos en segundo y tercer lugar. Esas afirmaciones destacan la importancia de considerar otros factores a nivel micro que pueden ser minimizados en abordajes basados exclusivamente en factores macro.
+Dada la relevancia de ciertos aspectos micro que hacen a la desición de migrar, Van Der Gaag et al. -@vandergaag2003 recomiendan incorporar una perspectiva de ciclo de vida, en particular la edad, a la modelación. A su vez, ateniéndonos a la realidad Uruguaya, según el análisis realizado por Macadar y Domínguez -@macadar2008 a partir de datos de la Encuesta de Hogares Ampliada el año 2006, la razón principal de los migrantes es la de "motivos familiares", quedando los motivos laborales y educativos en segundo y tercer lugar. Esas afirmaciones destacan la importancia de considerar otros factores a nivel micro que pueden ser minimizados en abordajes basados exclusivamente en factores macro.
 
 \newpage
 
@@ -376,7 +371,7 @@ La pirámide de los migrantes internos, como es de esperar, concentra población
 
 ![Pirámides de población del total de población y de los migrantes internos.](mapas_graficas/eda_011_piramide_mig.pdf)
 
-Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec], se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad. En particular la estructura de la pimrámide correspondiente al grupo 2, que estará indicando hogares conformados por parejas de mediana edad y con niños, posiblemente muchos refieran a movimientos desde Montevideo hacia la costa de Canelones, en el marco del proceso de metropolización anteriomente mencionado.
+Comparando las pirámides de los grupos 1, 2 y 3 en la\ [@fig:piramides_mig_rec], se pueden identificar visualmente varias de las afirmaciones hechas con anterioridad. En particular la estructura de la pirámide correspondiente al grupo 2, que estará indicando hogares conformados por parejas de mediana edad y con niños, posiblemente muchos refieran a movimientos desde Montevideo hacia la costa de Canelones, en el marco del proceso de metropolización anteriomente mencionado.
 
 ![Pirámides de población migrantes internos desde el Interior hacia Montevideo, desde Montevideo al interior o entre departamentos del interior.](mapas_graficas/eda_012_piramides_mig_recientes.pdf){#fig:piramides_mig_rec}
 
@@ -398,7 +393,7 @@ El grupo 1 también se diferencia en cuánto al nivel educativo actual en el mom
 
 ![Nivel educativo actual.](mapas_graficas/eda_008_nivel_educativo_actual.pdf)
 
-En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población.
+En cuanto al nivel educativo más alto alcanzado, se puede apreciar que los grupos 1 y 2 tienen una distribución prácticamente similar, en tanto el grupo 3 presenta menor porcentaje de personas que han alcanzado los estudios universitarios, aún en comparación con los porcentajes de toda la población.
 
 ![Máximo nivel educativo alcanzado.](mapas_graficas/eda_009_nivel_mas_alto_alcanzado.pdf)
 
@@ -412,11 +407,12 @@ Los coeficientes de atracción mutua dan información sobre la intensidad de flu
 
 Macadar y Dominguez -@macadar2008 lo calcularon a partir de los datos del Censo 1996.
 
-\input{tablas/matriz_atr1996.tex}
+**VER ANEXO**
 
 Filtrando los datos del censo 2011 y aplicando la fórmula mencionada se pueden calcular los mismos coeficientes para el 2011.
 
-\input{tablas/matriz_atr2011.tex}
+**VER ANEXO**
+
 
 Dicha matriz se puede representar en forma gráfica.
 
@@ -455,7 +451,7 @@ Se destacan las díadas Colonia-Montevideo y viceversa, posiblemente asociado a 
 
 ## El rol de la distancia en las migraciones internas
 
-A continuación se presenta un breve análiis descriptivo relativo a la distancia en las migraciones internas, a partir de los censos 1996 y 2011.
+A continuación se presenta un breve análisis descriptivo relativo a la distancia en las migraciones internas, a partir de los censos 1996 y 2011.
 
 Siguiendo los análisis presentes en la literatura, la distancia implica un reducción de flujos migratorios internos, que se puede visualizar graficando la cantidad de flujos contra la distancia de los mismos.
 
@@ -463,7 +459,7 @@ Utilizando la totalidad de flujos del censo 2011 se obtiene la siguiente gráfic
 
 ![Migraciones internas contra distancia en el Censo 2011.](mapas_graficas/003_eda_flujos_vs_distancia_2011.pdf)
 
-En la misma se puede apreciar el rol disuasorio de la distancia, aunque dado el carácter atípico de los flujos con origen y destino Montevideo, es conveniente graficar excluyendo dicho departamento.
+En la misma se puede apreciar el rol disuasorio de la distancia, aunque dado el carácter atípico de los flujos con origen y destino en Montevideo, es conveniente graficar excluyendo dicho departamento.
 
 ![Migraciones internas contra distancia en el Censo 2011, sin Montevideo.](mapas_graficas/003_eda_flujos_vs_distancia_2011_noMVO.pdf)
 
@@ -473,7 +469,7 @@ Atendiendo a los valores absolutos de los flujos migratorios de 1996 y 2011, en 
 
 ![Migraciones internas por tramos de distancias 1996 y 2011, valores absolutos.](mapas_graficas/flujos_censo96vs2011_absolutos.pdf)
 
-Por otro lado, si graficamos la distribución percentual, los datos del 2011 indican mayor concentración en distancias más cortas, en tanto que los del 1996 en ditancias más largas.
+Por otro lado, si graficamos la distribución percentual, los datos del 2011 indican mayor concentración en distancias más cortas, en tanto que los del 1996 en distancias más largas.
 
 ![Migraciones internas por tramos de distancias 1996 y 2011, en porcentajes.](mapas_graficas/flujos_censo96vs2011_porcentajes.pdf)
 
@@ -495,63 +491,11 @@ En lo que refiere a las diferencias por sexo y su relación con la distancia de 
 
 A continuación se presenta una aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 publicados en su página web [@ine2011c]. A su vez, se utilizan las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
 
-## Generación de datos diádicos
-
-Los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, también podrían ser entidades aespaciales, dependiendo de la red que se esté analizando). Dado que la recolección y ordenamiento de los datos requirió un gran esfuerzo, se considera conveniente dar cuenta de dicho proceso.
-
-### Matriz de distancia
-
-Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
-
-Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, entendiendo que este representa con mayor fidelidad la concentración de población. El centro medio de población se calculó transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
-
-(@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
-
-(@) $$\overline{Y}_w=\frac{\sum_{i=1}^{n}w_{i}Y_{i}}{\sum_{i=1}^{n} w_{i}}$$
-
-En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
-
-![Centroides, capitales y centros medios de población de cada departamento.](mapas_graficas/centro_poblacion.pdf)
-
-Los casos de Salto, Paysandú, Rivera y Florida son ilustrativos, dado que la concentrar gran parte de su población de la capital departamental, su centro medio se encuentra próximo a la misma y muy alejado del centroide.
-
-
-### Población y migrantes internos
-
-La población, que en la biliografía puede econtrarse referida como "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es el conteo de personas de cada entidad.
-
-Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádico direccional que representa el flujo de migrantes recientes del departamento A la B.
-
-Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
-
-\newpage
-\begin{landscape}
-\input{tablas/matriz_orig_dest.tex}
-\end{landscape}
-
-En cuanto a la representación gráfica de dichos datos, los diagramas Sankey son adecuados. Dado que las diferencias en las magnitudes de los flujos son grande, se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
-
-![Diagrama Sankey de migraciones internas recientes con orígen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
-
-Los flujos con orígen en Montevideo y Canelones, a parte de ellos mismos como destino (algo ya analizado previamente), se dirigen con mayor intensidad a Maldonado y San José.
-
-![Diagrama Sankey de migraciones internas recientes con orígen en otros departamentos, exceptuando Montevideo o Canelones.](mapas_graficas/sankey/sankey_no_mvo_no_can.png)
-
-A partir de ambos gráficos se resalta el rol de Montevideo y Canelones, tanto como origen como destino. En segundo lugar se destaca Maldonado, fundamentalmente como destino. En un lejano cuarto lugar, aparece el departamento de Colonia como destino.
-
-
-
-### Vecindad
-
-Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
-
-Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requeire gran precisión, y se corrigieron los errores topológicos presentes, utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
-
-De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se adiciona el datos del largo del límite compartido.
+**ver anexo**
 
 ## Especificación y calibración de modelos de interacción espacial restringidos en origen
 
-A continuación se presenta una aplicación de un modelo restringido en origen, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia". El procesamiento es similar al aplicado por [@dennett2018] y su adaptación al lenguaje de programación Python [@lewis2018].
+A continuación se presenta una aplicación de un modelo restringido en origen, seleccionando solo las variables "logaritmo del PBI en destino" y "logaritmo de la distancia". El procesamiento es similar al aplicado por Dennet -@dennett2018 y su adaptación al lenguaje de programación Python [@lewis2018].
 
 El modelo se define de la siguiente forma:
 
@@ -640,7 +584,7 @@ El parámetro $\beta$ relativo al decaimiento por la distancia es de -0,7130.
 
 El coeficiente para cada origen o destino es el valor registrado $A_{i}O_{i}$ para ese origen o destino.
 
-A continuación de presenta la matriz de origen destino con los valores estimados a partir de los coeficientes calculados anteriormente.
+A continuación se presenta la matriz de origen destino con los valores estimados a partir de los coeficientes calculados anteriormente.
 
 \newpage
 \begin{landscape}
@@ -661,7 +605,7 @@ y
 
 La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
 
-En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
+En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por son valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
 
 ![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
 
@@ -673,7 +617,7 @@ Con respecto a la población en origen, utilizando una relación lineal, la repr
 
 ![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
 
-Elimnando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
+Eliminando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
 
 ![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
 
@@ -691,7 +635,7 @@ El PBI en destino evidencia una leve correlación con los flujos migratorios sob
 Al momento se ha ejemplificado con dos modelos, con objetivos descriptivos y para conocer su funcionamiento.
 Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
-En función del relevamiento bibliográfico y de los datos diponibles se deicidió modelar los flujos entre departamentos a partir de las siguientes variables indepedientes:
+En función del relevamiento bibliográfico y de los datos disponibles se decidió modelar los flujos entre departamentos a partir de las siguientes variables indepedientes:
 
 - Departamento de origen
 
@@ -762,4 +706,71 @@ En el caso del PBI departamental, dado que no se cuenta con nuevas estimaciones,
 
 # Bibliografía
 
+# Anexo
+
+## Matrices de coeficientes de atracción mutua
+\input{tablas/matriz_atr1996.tex}
+
+\input{tablas/matriz_atr2011.tex}
+
+
+## Generación de datos diádicos
+
+Los modelos incluyen datos para cada conjunto de díadas, es decir relaciones uno a uno de entidades espaciales (en este caso, también podrían ser entidades aespaciales, dependiendo de la red que se esté analizando). Dado que la recolección y ordenamiento de los datos requirió un gran esfuerzo, se considera conveniente dar cuenta de dicho proceso.
+
+### Matriz de distancia
+
+Se generó una matriz de distancias entre cada centro medio de población, calculada con la API Google Distance Matrix [@google2017a], que consta de distancias siguiendo el camino recomendado por la API Google Maps [@google2017], por la red de caminería, entre el centro medio de población de cada departamento, obteniendo una matriz con 342 valores ((19x19)-19).
+
+Al igual que en las investigaciones de Poot et al. -@poot2016 y Flowerdew et al. -@flowerdew2010, se prefirió usar el centro medio de población en lugar del centroide del departamento, entendiendo que este representa con mayor fidelidad la concentración de población. El centro medio de población se calculó transfiriendo el conteo de habitantes del segmento censal al centroide de dicho segmento y luego aplicando la siguiente fórmula [@burt2009]:
+
+(@) $$\overline{X}_w=\frac{\sum_{i=1}^{n}w_{i}X_{i}}{\sum_{i=1}^{n} w_{i}}$$
+
+(@) $$\overline{Y}_w=\frac{\sum_{i=1}^{n}w_{i}Y_{i}}{\sum_{i=1}^{n} w_{i}}$$
+
+En este caso el "peso" ($w$) sería la población, en tanto que "x" e "y" son las coordenadas cartográficas de cada centroide. De esta forma se obtiene un par de coordenadas para cada departamento, que representa ese centro medio.
+
+![Centroides, capitales y centros medios de población de cada departamento.](mapas_graficas/centro_poblacion.pdf)
+
+Los casos de Salto, Paysandú, Rivera y Florida son ilustrativos, dado que al concentrar gran parte de su población de la capital departamental, su centro medio se encuentra próximo a la misma y muy alejado del centroide.
+
+
+### Población y migrantes internos
+
+La población, que en la biliografía puede encontrarse referida como "masa", en referencia a los antecedentes newtonianos de los modelos gravitatorios, es el conteo de personas de cada entidad.
+
+Del procesamiento inicial de la variable "Lugar de residencia 5 años antes", se obtiene una tabla que contiene un departamento de origen, uno de destino y una cantidad de personas que declaran haber vivido antes en el departamento de "origen", habiendo sido relevadas en el departamento de "destino" al momento de la aplicación del formulario censal. Es decir, el dato diádico direccional que representa el flujo de migrantes recientes del departamento A al B.
+
+Los datos pueden ser representados como una matriz, en la cual se utilizan los códigos INE de departamentos como identificadores en el eje X, para una representación adecuada.
+
+### Producto interno bruto departamental
+
+*Desarrollar*
+
+\newpage
+\begin{landscape}
+\input{tablas/matriz_orig_dest.tex}
+\end{landscape}
+
+En cuanto a la representación gráfica de dichos datos, los diagramas Sankey son adecuados. Dado que las diferencias en las magnitudes de los flujos son grandes, se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
+
+![Diagrama Sankey de migraciones internas recientes con orígen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
+
+Los flujos con orígen en Montevideo y Canelones, a parte de ellos mismos como destino (algo ya analizado previamente), se dirigen con mayor intensidad a Maldonado y San José.
+
+![Diagrama Sankey de migraciones internas recientes con orígen en otros departamentos, exceptuando Montevideo o Canelones.](mapas_graficas/sankey/sankey_no_mvo_no_can.png)
+
+A partir de ambos gráficos se resalta el rol de Montevideo y Canelones, tanto como origen como destino. En segundo lugar se destaca Maldonado, fundamentalmente como destino. En un lejano cuarto lugar, aparece el departamento de Colonia como destino.
+
+
+### Vecindad
+
+Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vecindad entre entidades geográficas, es decir la existencia de un límite geográfico compartido, influye positivamente en la cantidad de flujos entre díadas.
+
+Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requiere gran precisión, y se corrigieron los errores topológicos presentes, utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
+
+De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se adiciona el dato del largo del límite compartido.
+
 </div>
+
+
