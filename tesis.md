@@ -503,9 +503,8 @@ En lo que refiere a las diferencias por sexo y su relación con la distancia de 
 
 # Aplicación de modelos de interación espacial
 
-A continuación se presenta una aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 publicados en su página web [@ine2011c]. A su vez, se utilizan las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c].
+A continuación se presenta una aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 publicados en su página web [@ine2011c]. A su vez, se utilizan las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c]. La construcción de la base de datos asociados a cada díada queda documentada en el Anexo.
 
-**ver anexo**
 
 ## Modelos de interacción espacial restringidos en origen
 
@@ -624,36 +623,7 @@ y
 (@) $$\sum_{i}T_{ij} = \sum_{i}\lambda_{ij} = D_{j}$$
 
 
-## Visualización de los flujos migratorios y las variables independientes
-
-La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
-
-En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por son valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
-
-![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
-
-Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, se puede apreciar mejor la correlación.
-
-![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
-
-Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos
-
-![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
-
-Eliminando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
-
-![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
-
-El PBI en destino evidencia una leve correlación con los flujos migratorios sobre todo al excluir Montevideo del análisis.
-
-![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino.pdf){#fig:flujos_vs_pbi_destino}
-
-![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino_sin_MVO.pdf){#fig:flujos_vs_pbi_destino_sin_mvo}
-
-
-
-
-## Selección de modelos de interacción espacial restringidos en origen
+## Calibración y estimación de un modelo de interacción espacial restringido en origen
 
 Por razones operativas se decidió continuar con la aplicación de modelos en el lenguaje de programación R.
 
@@ -703,6 +673,34 @@ AIC Poisson: 18965,45
 RMSE Binomial negativa = 4698,92
 
 AIC Binomial negativa = 3797,29
+
+
+## REHACER CON NUEVOS DATOS: Visualización de los flujos migratorios y las variables independientes
+
+La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
+
+En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por son valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
+
+![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
+
+Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, se puede apreciar mejor la correlación.
+
+![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
+
+Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
+
+Eliminando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
+
+El PBI en destino evidencia una leve correlación con los flujos migratorios sobre todo al excluir Montevideo del análisis.
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino.pdf){#fig:flujos_vs_pbi_destino}
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino_sin_MVO.pdf){#fig:flujos_vs_pbi_destino_sin_mvo}
+
 
 
 
@@ -783,6 +781,9 @@ Según la bibliografía relevada [@lesage2016] y los supuestos teóricos, la vec
 Para calcular la misma, se simplificó la geometría de la capa de departamentos del INE, dado que no se requiere gran precisión, y se corrigieron los errores topológicos presentes, utilizando el software QGIS [@qgisassociation2021]. También se calculó la distancia del límite compartido en el caso de haberlo.
 
 De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se adiciona el dato del largo del límite compartido.
+
+
+# Bibliografía
 
 </div>
 
