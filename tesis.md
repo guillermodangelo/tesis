@@ -300,7 +300,7 @@ Los 7 principales destinos corresponden a localidades del área metropolitana, y
 
 ![Migrantes internos con origen en Montevideo, zoom a área metropolitana de Montevideo](mapas_graficas/eda_mapa_migrantes_ori_mvo_zoom_am.pdf){#fig:mig_ori_mvo_zoom}
 
-En el mismo sentido, considerando las localidades del área metropolitana como una entidad conjunta que aglomera partes de Canelones y San José (Ciudad del Plata), el resultado del destino de los migrantes recientes con orígen en Montevideo se puede apreciar en la\ [@tbl:mig_am].
+En el mismo sentido, considerando las localidades del área metropolitana como una entidad conjunta que aglomera partes de Canelones y San José (Ciudad del Plata), el resultado del destino de los migrantes recientes con origen en Montevideo se puede apreciar en la\ [@tbl:mig_am].
 
 | Entidad geográfica   |   personas |   porcentaje |
 |:---------------------|-----------:|-------------:|
@@ -325,7 +325,7 @@ En el mismo sentido, considerando las localidades del área metropolitana como u
 | Treinta y Tres       |        730 |         1.3  |
 | Total                |      56028 |       100    |
 
-Table: Migrantes recientes con origen en Montevideo, por departamentos y area metropolitana de Montevideo. {#tbl:mig_am}
+Table: Migrantes recientes con origen en Montevideo, por departamentos y área metropolitana de Montevideo. {#tbl:mig_am}
 
 Esta realidad plantea un debate: **¿es adecuado considerar esos movimientos como migraciones internas o sería más preciso categorizarlas como simples cambios de residencia?**
 
@@ -452,18 +452,20 @@ Se destacan las díadas Colonia-Montevideo y viceversa, posiblemente asociado a 
 
 ## Magnitud de la migración interna
 
-En cuanto a la representación gráfica la magnitud de la migración interna, los diagramas Sankey son adecuados. Dado que las diferencias en las magnitudes de los flujos son grandes, se presentan los flujos con orígen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los orígenes.
+En cuanto a la representación gráfica la magnitud de la migración interna, los diagramas Sankey son adecuados. Dado que las diferencias en las magnitudes de los flujos son grandes, se presentan los flujos con origen en Montevideo y Canelones en un gráfico, y en otro gráfico el resto de los origenes.
 
-![Diagrama Sankey de migraciones internas recientes con orígen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
+![Diagrama Sankey de migraciones internas recientes con origen en Montevideo o Canelones.](mapas_graficas/sankey/sankey_mvo_can.png)
 
-Los flujos con orígen en Montevideo y Canelones, a parte de ellos mismos como destino (algo ya analizado previamente), se dirigen con mayor intensidad a Maldonado y San José.
+Los flujos con origen en Montevideo y Canelones, a parte de ellos mismos como destino (algo ya analizado previamente), se dirigen con mayor intensidad a Maldonado y San José.
 
-![Diagrama Sankey de migraciones internas recientes con orígen en otros departamentos, exceptuando Montevideo o Canelones.](mapas_graficas/sankey/sankey_no_mvo_no_can.png)
+![Diagrama Sankey de migraciones internas recientes con origen en otros departamentos, exceptuando Montevideo o Canelones.](mapas_graficas/sankey/sankey_no_mvo_no_can.png)
 
 A partir de ambos gráficos se resalta el rol de Montevideo y Canelones, tanto como origen como destino. En segundo lugar se destaca Maldonado, fundamentalmente como destino. En un lejano cuarto lugar, aparece el departamento de Colonia como destino.
 
 
-## El rol de la distancia en las migraciones internas
+## Visualización de los flujos migratorios y las variables independientes
+
+### El rol de la distancia en las migraciones internas
 
 A continuación se presenta un breve análisis descriptivo relativo a la distancia en las migraciones internas, a partir de los censos 1996 y 2011.
 
@@ -479,7 +481,7 @@ En la misma se puede apreciar el rol disuasorio de la distancia, aunque dado el 
 
 Dicha disposición es relativamente similar con los datos del Censo 1996.
 
-Atendiendo a los valores absolutos de los flujos migratorios de 1996 y 2011, en el período 1991-1996 estos eran mayores en general
+Atendiendo a los valores absolutos de los flujos migratorios de 1996 y 2011, en el período 1991-1996 estos eran mayores en general.
 
 ![Migraciones internas por tramos de distancias 1996 y 2011, valores absolutos.](mapas_graficas/flujos_censo96vs2011_absolutos.pdf)
 
@@ -499,9 +501,25 @@ En lo que refiere a las diferencias por sexo y su relación con la distancia de 
 ![Migraciones internas: distancia según sexo, 2011.](mapas_graficas/003_eda_edad_y_sexo_vs_distancia_2011.pdf)
 
 
+### Otras variables independientes
+
+Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos.
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
+
+Eliminando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
+
+![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
+
+El PBI en destino evidencia una leve correlación con los flujos migratorios sobre todo al excluir Montevideo del análisis.
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino.pdf){#fig:flujos_vs_pbi_destino}
+
+![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino_sin_MVO.pdf){#fig:flujos_vs_pbi_destino_sin_mvo}
+
 \newpage
 
-# Aplicación de modelos de interación espacial
+# Aplicación de modelos de interacción espacial
 
 A continuación se presenta una aplicación de modelos de interacción espacial, basada en los datos del Censo INE 2011 publicados en su página web [@ine2011c]. A su vez, se utilizan las capas de polígonos de departamentos y de puntos de localidades del INE, identificando las capitales departamentales en esta última capa [@ine2011c]. La construcción de la base de datos asociados a cada díada queda documentada en el Anexo.
 
@@ -520,7 +538,7 @@ dónde
 
 En el modelo restringido en origen $O_{i}$ no tiene parámetro dado que refiere valores conocidos. $A_{i}$ es un factor de balance que refiere a cada origen $i$. Más específicamente $A_{i}$ permite que la suma de los valores estimados sea igual al total conocido $O_{i}$
 
-La forma multiplicativa del modelo puede ser modificada, re-especificado el modelo como un modelo de regresión de Poisson [@dennett2018]. Para ello se aplica el logaritmo al lado derecho de la ecuación, y asumiendo que están logarítmicamente vinculados a la media con distribución de Poisson ($\lambda_{ij}$) de la variable $T_{ij}$, se obtiene
+La forma multiplicativa del modelo puede ser modificada, representando el modelo como un modelo de regresión de Poisson [@dennett2018]. Para ello se aplica el logaritmo al lado derecho de la ecuación, y asumiendo que están logarítmicamente vinculados a la media con distribución de Poisson ($\lambda_{ij}$) de la variable $T_{ij}$, se obtiene
 
 (@) $$ \lambda_{ij} = \exp( \mu_{i} + \alpha \ln W_{j} - \beta \ln d_{ij} )$$
 
@@ -655,9 +673,6 @@ Los coeficientes presentados pueden ser interpretados de la siguiente manera.
 
 - Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores (VER)
 
-**(AGREGAR CUADRO CON TODOS LOS COEF?)**
-**(AGREGAR FORMULA?)**
-
 Luego se re-estima el modelo con Montevideo como categoría de referencia, obteniendo los siguientes resultados:
 
 \input{tablas/poisson_rest_origen_MVO_ref.tex}
@@ -675,31 +690,7 @@ RMSE Binomial negativa = 4698,92
 AIC Binomial negativa = 3797,29
 
 
-## REHACER CON NUEVOS DATOS: Visualización de los flujos migratorios y las variables independientes
 
-La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
-
-En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por son valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
-
-![Flujos migratorios contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia.pdf){#fig:flujos_vs_distancias}
-
-Realizando la misma gráfica extrayendo los valores de Montevideo y Canelones, se puede apreciar mejor la correlación.
-
-![Flujos migratorios (sin Montevideo ni Canelones) contra distancia entre centros medios de población.](mapas_graficas/modelos_flujos_vs_distancia_sin_MVO.pdf){#fig:flujos_vs_distancias_sin_mvo}
-
-Con respecto a la población en origen, utilizando una relación lineal, la representación gráfica no evidencia correlación entre dicha variable y la cantidad de flujos
-
-![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen.pdf){#fig:flujos_vs_pob_origen}
-
-Eliminando los valores de Montevideo y Canelones, tampoco se obtiene un gráfico que exprese una correlación relevante.
-
-![Flujos migratorios contra población en origen.](mapas_graficas/modelos_flujos_vs_pob_origen_sin_MVO.pdf){#fig:flujos_vs_pob_origen_sin_mvo}
-
-El PBI en destino evidencia una leve correlación con los flujos migratorios sobre todo al excluir Montevideo del análisis.
-
-![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino.pdf){#fig:flujos_vs_pbi_destino}
-
-![Flujos migratorios contra PBI en destino.](mapas_graficas/modelos_flujos_vs_pbi_destino_sin_MVO.pdf){#fig:flujos_vs_pbi_destino_sin_mvo}
 
 
 
@@ -766,7 +757,8 @@ Los datos pueden ser representados como una matriz, en la cual se utilizan los c
 
 ### Producto interno bruto departamental
 
-*Desarrollar*
+El PBI departamental fue estimado por la Dirección de Descentralización e Inversión Pública de la Oficina de Planeamiento y Presupuesto (OPP) de Uruguay [@opp2016].
+**desaroollar**
 
 \newpage
 \begin{landscape}

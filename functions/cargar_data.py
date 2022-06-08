@@ -429,6 +429,33 @@ def decode_depto_pretty(array):
     return array.map(deptos_dict)
 
 
+def encode_depto_pretty(array):
+    "Decodifica departamento INE, formateado"
+    deptos_dict = {
+    'Montevideo':	1	,
+    'Artigas':  	2	,
+    'Canelones':	3	,
+    'Cerro Largo':	4	,
+    'Colonia':	    5	,
+    'Durazno':  	6	,
+    'Flores':	    7	,
+    'Florida':  	8	,
+    'Lavalleja':	9	,
+    'Maldonado':	10	,
+    'Paysandú': 	11	,
+    'Río Negro':	12	,
+    'Rivera':	    13	,
+    'Rocha':	    14	,
+    'Salto':	    15	,
+    'San José': 	16	,
+    'Soriano':  	17	,
+    'Tacuarembó':	18	,
+    'Treinta y Tres':19	
+        }
+
+    return array.map(deptos_dict)
+
+
 def loc_decode(df):
     "Decodifica codlocs INE"
     locs = pd.read_csv('tablas/localidades_censales_2011.csv',
