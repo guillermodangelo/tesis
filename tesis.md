@@ -873,7 +873,7 @@ y
 
 ## Visualización de los flujos migratorios y las variables independientes
 
-La visualización de las variables independientes y la variables dependiente nos puede dar una noción sobre la correlación entre ambas. 
+La visualización de las variables independientes y la variable dependiente nos puede dar una noción sobre la correlación entre ambas.
 
 En el caso de los flujos contra la distancia, se puede ver una leve correlación, opacada por sos valores atípicos, Montevideo y Canelones. Se escalaron los valores usando una función de potencia, lo que quiere decir que para el aumento de la distancia en 1 unidad habrá un descenso en los flujos de 1 a la -2 [@dennett2018].
 
