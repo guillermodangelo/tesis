@@ -57,7 +57,7 @@ header-includes: |
 
 # Introducción
 
-*(La introducción será escrita cuando se llegue a etapas finales de la investigación)*
+*(La introducción se redactará cuando se llegue a etapas finales de la investigación)*
 
 <!-- Este proyecto de investigación se enmarca en la geografía de la población, subdisciplina de la geografía humana, también llamada “geodemografía”. Situada en la intersección entre la demografía y la geografía, su objeto de estudio se puede definir como la organización geográfica de los grupos humanos y sus conexiones entre sí [@gregory2009], o más específicamente como la interacción entre las dinámicas demográficas y el espacio geográfico [@lopeztrigal2015; @puyol1995]. Dicho enfoque resulta pertinente en tanto las causas y consecuencias de las migraciones vinculan las relaciones sociales, económicas y espaciales, en particular los desequilibrios o desigualdades territoriales [@lopeztrigal2015], es decir que la migración es un fenómeno de naturaleza espacial [@rogers2002]. Los límites disciplinares son difusos, dado que los objetos de estudio y los métodos suelen ser compartidos, no obstante es posible afirmar que la geografía de la población complementa el abordaje puramente demográfico, en tanto otorga una relevancia particular al componente espacial de los fenómenos [@puyol1995].
 
@@ -137,12 +137,17 @@ A su vez, los autores identifican dos paradigmas principales en los cuales agrup
 -------------------------------------------------------------
 AGREGAR ESQUEMA DE TEORÍAS MIGRATORIAS, A SUGERENCIA DE MARTÍN: VER ARANGO (EN REALIDAD CREO QUE ESTÁ EN DE HASS)
 
+CUADRO DE LA PRESENTACIÓN AD 2 ?
 ------------------------------------------------------------
 
 
 ## La migración interna en Uruguay
 
-Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@prates1977; @petruccelli1979; @macadar2008]. Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
+Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@prates1977; @petruccelli1979; @macadar2008].
+
+El trabajo de Petruccelli [-@petruccelli1979] se basa en los censo 1936 y 1975, y en el mismo se realiza un análisis de atracción/repulsión a nivel departamental. En su trabajo ya se apunta a la metropolización de Montevideo como factor determinante en la reducción de las migraciones a Montevideo. Otro factor que el autor identifica es la migración internacional, cuyo origen se define mayoritariamente como Montevideo (atender a los años que abarca el estudio, el período de implantación de gobierno dictatorial). A su vez presenta el cálculo del coeficiente de atracción mutua (CAM).
+
+Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
 
 -------------------------------------------------------------
 
