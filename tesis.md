@@ -145,15 +145,11 @@ CUADRO DE LA PRESENTACIÓN AD 2 ?
 
 Los primeros antecedentes del estudio de la migración interna en Uruguay se centraron en la exploración de las causas de la migración rural-urbana y el consecuente declive de la cantidad de personas viviendo en zonas rurales [@prates1977; @petruccelli1979; @macadar2008].
 
-El trabajo de Petruccelli [-@petruccelli1979] se basa en los censo 1936 y 1975, y en el mismo se realiza un análisis de atracción/repulsión a nivel departamental. En su trabajo ya se apunta a la metropolización de Montevideo como factor determinante en la reducción de las migraciones a Montevideo. Otro factor que el autor identifica es la migración internacional, cuyo origen se define mayoritariamente como Montevideo (atender a los años que abarca el estudio, el período de implantación de gobierno dictatorial). A su vez presenta el cálculo del coeficiente de atracción mutua (CAM).
+El trabajo de Petruccelli [-@petruccelli1979] se basa en los censo 1963 y 1975, y en el mismo se realiza un análisis de atracción/repulsión a nivel departamental. En su trabajo ya se apunta a la metropolización de Montevideo como factor determinante en la reducción de las migraciones a Montevideo. Otro factor que el autor identifica es la migración internacional, cuyo origen se define mayoritariamente como Montevideo (atender a los años que abarca el estudio, el período de implantación de gobierno dictatorial). A su vez presenta el cálculo del coeficiente de atracción mutua (CAM).
 
-Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @calvo1995; @pellegrino2009].
+Posteriormente, Calvo [-@calvo1995] realiza un análisis similar pero con el censo 1985, complementado con un abordaje a nivel de secciones censales.
 
--------------------------------------------------------------
-
-**Sobre CAM: habría que agregar que lo empezó a calcular Petrucelli por los 70 (creo 1979 usando datos Censo 1975) y luego Calvo en Doc. Trabajo 1996 (datos Censo 1985). Esto igual se puede poner en antecedentes y no es necesario aquí MK**
-
--------------------------------------------------------------
+Más recientemente se realizaron algunos estudios descriptivos, usando datos censales, Encuesta Continua de Hogares y Encuesta de Hogares Ampliada [@bengochea2011; @koolhaas2013; @macadar2008; @macadar1995; @pellegrino2009].
 
 Según los datos del Censo INE 2011, solamente los departamentos de Maldonado, Canelones, San José, Colonia, Salto y Río Negro ha habido un aumento de la población [@koolhaas2013]. A su vez, dentro de esos departamentos, solo Maldonado, Canelones, San José y Colonia tuvieron un saldo migratorio interno positivo [@koolhaas2013]. En particular Canelones y Maldonado, ambos departamentos costeros, presentan crecimiento poblacional desde el censo de 1963 [@koolhaas2013; @bengochea2011], en parte asociado a la expansión de la ciudad de Montevideo (procesos de suburbanización), la generación de nuevas centralidades y el crecimiento de Maldonado (y su propio proceso de suburbanización).
 
