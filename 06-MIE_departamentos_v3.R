@@ -6,6 +6,7 @@ library(Metrics)
 library(MASS)
 library(MLmetrics)
 library(ggplot2)
+library (plyr)
 #library(spdep)
 #library(sf)
 #library(rgdal)
@@ -58,6 +59,44 @@ stargazer(model, title="MIE restringido en origen",
 
 plot(dd_deptos$personas_mig, fitted(model))
 
+
+
+
+library(ggplot2)
+library(ggpubr)
+theme_set(
+  theme_minimal() +
+    theme(legend.position = "top")
+)
+
+
+# ggplot example
+df1 <- ldply(dd_deptos$personas_mig, data.frame)
+df2 <- ldply(fitted(model))
+
+test = cbind(df1, df2)
+colnames(test) = c('gt', 'id', 'predicted')
+
+b <- ggplot(test, aes(x = gt, y = predicted))
+
+# Scatter plot with regression line
+b + geom_point()+
+  geom_smooth(method = "lm") 
+
+# Add a loess smoothed fit curve
+b + geom_point()+
+  geom_smooth(method = "loess")
+
+test2 = test[which(test$gt < 9000),]
+
+b <- ggplot(test2, aes(x = gt, y = predicted))
+             
+b + geom_point()+geom_smooth(method = "lm") 
+             
+# Add a loess smoothed fit curve
+b + geom_point()+geom_smooth(method = "loess") 
+             
+             
 # intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
 # de un 10%, q=1.1
 
