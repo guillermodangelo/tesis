@@ -700,7 +700,15 @@ AIC Binomial negativa = 3797,29
 
 En este apartado se presentan escenarios de migración interna, producto de la aplicación de los modelos estimados anteriormente, pero con diferentes valores para las variables independientes.
 
+### Escenario 1
+
 En el caso del PBI departamental, dado que no se cuenta con nuevas estimaciones, se asume un crecimiento distribuido en forma regular entre los departamentos, según los datos publicados por en la web del Banco Mundial.
+
+### Escenario 2
+
+Se hipotetiza un aumento considerable de ocupados en el departamento X. Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de madera para la fabricación de celulosa, "pastera". DIcha actividad puntual puede implicar migraciones internas temporales de gran porte, pero que se concentran en las fases de alta demanda de trabajadores, para luego reducirse rápidamente.
+
+### Escenario 3
 
 
 \newpage
