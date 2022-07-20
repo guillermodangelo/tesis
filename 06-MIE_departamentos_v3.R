@@ -7,6 +7,8 @@ library(MASS)
 library(MLmetrics)
 library(ggplot2)
 library (plyr)
+library(ggplot2)
+library(ggpubr)
 #library(spdep)
 #library(sf)
 #library(rgdal)
@@ -59,11 +61,6 @@ stargazer(model, title="MIE restringido en origen",
 
 plot(dd_deptos$personas_mig, fitted(model))
 
-
-
-
-library(ggplot2)
-library(ggpubr)
 theme_set(
   theme_minimal() +
     theme(legend.position = "top")

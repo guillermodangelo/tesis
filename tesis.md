@@ -431,7 +431,7 @@ La representación gráfica de las diferencias entre ambas matrices indica una t
 De la comparación surgen 14 díadas que aumentan su coeficiente de atractividad, 186 que lo mantienen y 142 que lo reducen. A continuación se presentan las díadas que aumentan su atractividad, evidenciando que en todos los casos los aumentos son de 1 unidad máximo.
 
 
-| depto_origen   | depto_destino   |   CAM 1996 |   CAM 2011 |   migrantes |
+| Dpto. Origen   | Dpto. Destino   |   CAM 1996 |   CAM 2011 | n Migrantes |
 |:---------------|:----------------|-----------:|-----------:|------------:|
 | Colonia        | Montevideo      |          3 |          4 |        2690 |
 | Montevideo     | Colonia         |          3 |          4 |        2100 |
@@ -447,6 +447,8 @@ De la comparación surgen 14 díadas que aumentan su coeficiente de atractividad
 | Lavalleja      | Tacuarembó      |          0 |          1 |          45 |
 | San José       | Lavalleja       |          0 |          1 |          44 |
 | Paysandú       | Cerro Largo     |          0 |          1 |          35 |
+
+Table: Cambios más pronunciados en los coeficientes de atracción mutua 1996-2011.
 
 
 Se destacan las díadas Colonia-Montevideo y viceversa, posiblemente asociado a un mayor dinamismo económico en ambos departamentos.
@@ -702,11 +704,27 @@ En este apartado se presentan escenarios de migración interna, producto de la a
 
 ### Escenario 1
 
-En el caso del PBI departamental, dado que no se cuenta con nuevas estimaciones, se asume un crecimiento distribuido en forma regular entre los departamentos, según los datos publicados por en la web del Banco Mundial.
+El primer escenario considera sólo cambios en el PBI. Dado que no se cuenta con estimaciones actualizadas del PBI departamental, se asume un crecimiento uniforme entre los departamentos, es decir se aplica un mismo valor de crecimiento para cada departamento, a partir del crecimiento acumulado 2015-2020, según los datos originales de 2014 calculados por OPP y los datos de crecimiento el PBI de Uruguay reportados por el Banco Mundial.
+
+Lo ideal para este escenario sería contar con nuevos datos de PBI departamental, estimados con un metodología similar a la aplicada por OPP.
+
+
+|   Año | Crecimiento PBI (%) |
+|------:|-----------:|
+|  2015 |       0.37 |
+|  2016 |       1.69 |
+|  2017 |       1.63 |
+|  2018 |       0.48 |
+|  2019 |       0.35 |
+|  2020 |      -6    |
+|  2021 |       2    |
+
+Table: Crecimiento del PBI de Uruguay por año, según datos del Banco Mundial.
+
 
 ### Escenario 2
 
-Se hipotetiza un aumento considerable de ocupados en el departamento X. Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de madera para la fabricación de celulosa, "pastera". DIcha actividad puntual puede implicar migraciones internas temporales de gran porte, pero que se concentran en las fases de alta demanda de trabajadores, para luego reducirse rápidamente.
+Se hipotetiza un aumento considerable de ocupados en el departamento X. Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
 
 ### Escenario 3
 
