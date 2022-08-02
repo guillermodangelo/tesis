@@ -83,40 +83,58 @@ b = ggplot(test, aes(x = gt, y = predicted))
 # Scatter plot with regression line
 b + geom_point() + geom_smooth(method = "lm")
 
-
 # Add a loess smoothed fit curve
-b = b + geom_point()+
-  geom_smooth(method = "loess")
+b = b + geom_point() + 
+  geom_smooth(method = "loess") + 
+  theme(text = element_text(size = 9))
 
 b + xlab("Ground truth (personas)") + ylab("Estimaciones")
 
+# guarda
+ggsave(
+  'mapas_graficas/ggplot_gt_vs_esc1.pdf',
+  plot = last_plot(),
+  scale = 1,
+  units = "mm",
+  dpi = 300,
+  limitsize = TRUE,
+  bg = NULL
+)
+
+###########################
+# Sin Mvdeo. ni Canelones #
+###########################
+
+test2 = test[which(test$gt < 9000),]
+
+
+b = ggplot(test2, aes(x = gt, y = predicted))
+
+# Scatter plot with regression line
+b + geom_point() + geom_smooth(method = "lm")
+
+# Add a loess smoothed fit curve
+b = b + geom_point() + 
+  geom_smooth(method = "loess") + 
+  theme(text = element_text(size = 9))
 
 b + xlab("Ground truth (personas)") + ylab("Estimaciones")
 
 ggsave(
-  filename,
+  'mapas_graficas/ggplot_gt_vs_esc1_menor_9000.pdf',
   plot = last_plot(),
-  device = NULL,
-  path = NULL,
   scale = 1,
-  width = NA,
-  height = NA,
-  units = c("in", "cm", "mm", "px"),
+  units = "mm",
   dpi = 300,
   limitsize = TRUE,
-  bg = NULL,
-  ...
+  bg = NULL
 )
 
 
-test2 = test[which(test$gt < 9000),]
 
-b <- ggplot(test2, aes(x = gt, y = predicted))
-             
-b + geom_point()+geom_smooth(method = "lm") 
-             
-# Add a loess smoothed fit curve
-b + geom_point()+geom_smooth(method = "loess") 
+
+
+
              
              
 # intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
