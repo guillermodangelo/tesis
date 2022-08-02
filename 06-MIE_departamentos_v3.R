@@ -67,6 +67,10 @@ theme_set(
 )
 
 
+#######################
+# Gráficas con ggPlot #
+#######################
+
 # ggplot example
 df1 <- ldply(dd_deptos$personas_mig, data.frame)
 df2 <- ldply(fitted(model))
@@ -74,15 +78,36 @@ df2 <- ldply(fitted(model))
 test = cbind(df1, df2)
 colnames(test) = c('gt', 'id', 'predicted')
 
-b <- ggplot(test, aes(x = gt, y = predicted))
+b = ggplot(test, aes(x = gt, y = predicted))
 
 # Scatter plot with regression line
-b + geom_point()+
-  geom_smooth(method = "lm") 
+b + geom_point() + geom_smooth(method = "lm")
+
 
 # Add a loess smoothed fit curve
-b + geom_point()+
+b = b + geom_point()+
   geom_smooth(method = "loess")
+
+b + xlab("Ground truth (personas)") + ylab("Estimaciones")
+
+
+b + xlab("Ground truth (personas)") + ylab("Estimaciones")
+
+ggsave(
+  filename,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = NA,
+  height = NA,
+  units = c("in", "cm", "mm", "px"),
+  dpi = 300,
+  limitsize = TRUE,
+  bg = NULL,
+  ...
+)
+
 
 test2 = test[which(test$gt < 9000),]
 

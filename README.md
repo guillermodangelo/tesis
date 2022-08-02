@@ -1,2 +1,4 @@
 # tesis
-Repositorio tesis de maestría de Guillermo D'Angelo.
+Ttesis de maestría en Demografía y Estudios de la Población (FCS - Universidad de la República).
+
+*Guillermo D'Angelo*

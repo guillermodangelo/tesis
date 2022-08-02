@@ -664,6 +664,16 @@ Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 
 \input{tablas/poisson_rest_origen.tex}
 
+
+A continuación se presenta en forma gráfica los valores originales contra las estimaciones del modelo.
+
+![Datos contra estimaciones del modelo.](mapas_graficas/ggplot_gt_vs_esc1.pdf)
+
+Dado que los outliers de Montevideo y Canelones, se reproduce la misma gráfica excluyendo ambos valores.
+
+![Datos contra estimaciones del modelo, excluyendo Montevideo y Canelones.](mapas_graficas/ggplot_gt_vs_esc1_menor_9000.pdf)
+
+
 Los coeficientes presentados pueden ser interpretados de la siguiente manera.
 
 - Con respecto a la variable "largo_limite", el aumento de un 10% en largo del límite compartido redundaría en un aumento de los flujos de salida del 2,93%.
@@ -721,10 +731,20 @@ Lo ideal para este escenario sería contar con nuevos datos de PBI departamental
 
 Table: Crecimiento del PBI de Uruguay por año, según datos del Banco Mundial.
 
+A continuación se presenta una representación gráfica de la diferencia entre los datos reales y los estimados por el escenario 1.
+
+![Diferencia entre datos reales y estimaciones del escenario 1.](mapas_graficas/escenarios_gt_vs_esc1.pdf)
+
+
 
 ### Escenario 2
 
-Se hipotetiza un aumento considerable de ocupados en el departamento X. Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
+Se hipotetiza un aumento considerable de ocupados en el departamento de Durazno, imputando un valor de porcentaje de ocupados de 100%. El porcentaje de ocupados se calcula como la cantidad de ocupados sobre la población en edad de trabajar, por 100.
+
+Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
+
+La diferencias entre los resultado del escenario 1 y el 2 son mínimas, por lo cual se puede afirmar que el modelo no resulta lo suficientemente sensible ante cambios tan particulares.
+
 
 ### Escenario 3
 
@@ -738,7 +758,7 @@ Se hipotetiza un aumento considerable de ocupados en el departamento X. Esta sit
 - Generación de escenarios
 - Tablero: agregar modelación y escenarios
 - Conclusiones
-- Discusión
+- Discusión, "motivos familiares" como factores micro
 
 \newpage
 
