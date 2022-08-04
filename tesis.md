@@ -664,16 +664,6 @@ Los resultados del modelo se pueden apreciar en el siguiente cuadro resumen:
 
 \input{tablas/poisson_rest_origen.tex}
 
-
-A continuación se presenta en forma gráfica los valores originales contra las estimaciones del modelo.
-
-![Datos contra estimaciones del modelo.](mapas_graficas/ggplot_gt_vs_esc1.pdf)
-
-Dado que los outliers de Montevideo y Canelones, se reproduce la misma gráfica excluyendo ambos valores.
-
-![Datos contra estimaciones del modelo, excluyendo Montevideo y Canelones.](mapas_graficas/ggplot_gt_vs_esc1_menor_9000.pdf)
-
-
 Los coeficientes presentados pueden ser interpretados de la siguiente manera.
 
 - Con respecto a la variable "largo_limite", el aumento de un 10% en largo del límite compartido redundaría en un aumento de los flujos de salida del 2,93%.
@@ -682,9 +672,18 @@ Los coeficientes presentados pueden ser interpretados de la siguiente manera.
 
 - Al aumentar la distancia un 10%, los flujos de salida decaen en un 2.08% en promedio
 
-- La variable de límites compartidos no devuelve resultados coherentes (VER)
+- La variable de límites compartidos no devuelve resultados coherentes.
 
-- Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores (VER)
+- **Las variables dummies de cada departamento devuelven todas coeficientes positivos, interpretándose todos como expulsores.** COMENTARIO: esto me parece que no tiene sentido, alguno tiene que ser receptor.
+
+A continuación se presenta en forma gráfica los valores originales contra las estimaciones del modelo.
+
+![Datos contra estimaciones del modelo.](mapas_graficas/ggplot_gt_vs_esc1.pdf)
+
+Dado que los *outliers* de Montevideo y Canelones no facilitan una correcta visualización, se reproduce la misma gráfica excluyendo ambos valores.
+
+![Datos contra estimaciones del modelo, excluyendo Montevideo y Canelones.](mapas_graficas/ggplot_gt_vs_esc1_menor_9000.pdf)
+
 
 Luego se re-estima el modelo con Montevideo como categoría de referencia, obteniendo los siguientes resultados:
 

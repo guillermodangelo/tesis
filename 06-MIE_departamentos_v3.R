@@ -88,7 +88,10 @@ b = b + geom_point() +
   geom_smooth(method = "loess") + 
   theme(text = element_text(size = 9))
 
-b + xlab("Ground truth (personas)") + ylab("Estimaciones")
+eje_x = "Ground truth (migrantes internos)"
+eje_y = "Estimaciones"
+
+b + xlab(eje_x) + ylab(eje_y)
 
 # guarda
 ggsave(
@@ -118,7 +121,7 @@ b = b + geom_point() +
   geom_smooth(method = "loess") + 
   theme(text = element_text(size = 9))
 
-b + xlab("Ground truth (personas)") + ylab("Estimaciones")
+b + xlab(eje_x) + ylab(eje_y)
 
 ggsave(
   'mapas_graficas/ggplot_gt_vs_esc1_menor_9000.pdf',
@@ -132,10 +135,6 @@ ggsave(
 
 
 
-
-
-
-             
              
 # intepretación de coeficientes con variables con logaritmos, por ejemplo un aumento
 # de un 10%, q=1.1
