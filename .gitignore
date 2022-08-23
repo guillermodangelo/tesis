@@ -6,4 +6,6 @@ capas/ine_deptos_generalizada.gpkg-wal
 *.gpkg-shm
 *.lof
 *.docx#
-.vscode/launch.json
+vscode/
+ipynb_checkpoints/
+.Rhistory
