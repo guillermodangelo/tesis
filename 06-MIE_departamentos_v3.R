@@ -23,16 +23,11 @@ dd_deptos$largo_limite_km <- dd_deptos$largo_limite/1000
 # reemplaza nulos del largo del límite por 0.0001
 dd_deptos <- dd_deptos %>% replace_na(list(largo_limite_km = 0.0001))
 
-
-
 # convierte variable de límites s tipo logical
 dd_deptos$dummy_limit <- as.logical(dd_deptos$dummy_limit)
 
-
-
 # nombre de deptos a factor
 dd_deptos$nom_depto_orig <- as.factor(dd_deptos$nom_depto_orig)
-
 
 
 # model poisson regression using glm()
@@ -55,8 +50,13 @@ summary(model)
 stargazer(model, title="MIE restringido en origen",
           out="tablas/poisson_rest_origen.tex",
           dep.var.caption='Variable dependiente',
-          header=FALSE, align=FALSE, ci=TRUE, df=TRUE,
-          table.placement = "H", single.row=TRUE, no.space=TRUE)
+          header=FALSE,
+          align=FALSE,
+          ci=TRUE,
+          df=TRUE,
+          table.placement = "H",
+          single.row=TRUE,
+          no.space=TRUE)
 
 
 plot(dd_deptos$personas_mig, fitted(model))
@@ -157,7 +157,7 @@ q = 1.1
 # agregar la constante y avisarle que tome como categoría de referencia a Montevideo.
 dd_deptos$nom_depto_orig <- relevel(dd_deptos$nom_depto_orig, ref = "MONTEVIDEO")
 
-model1 <- glm(personas_mig ~ nom_depto_orig + dummy_limit +
+model1 <- glm(personas_mig ~ nom_depto_orig + 
                 log(largo_limite_km) + log(pbi_destino_millardos) +
                 log(dist_km),
               family = poisson(link = "log"),

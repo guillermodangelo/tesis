@@ -711,7 +711,7 @@ AIC Binomial negativa = 3797,29
 
 En este apartado se presentan escenarios de migración interna, producto de la aplicación de los modelos estimados anteriormente, pero con diferentes valores para las variables independientes.
 
-### Escenario 1
+### Escenario 1: crecimiento del PBI departamental
 
 El primer escenario considera sólo cambios en el PBI. Dado que no se cuenta con estimaciones actualizadas del PBI departamental, se asume un crecimiento uniforme entre los departamentos, es decir se aplica un mismo valor de crecimiento para cada departamento, a partir del crecimiento acumulado 2015-2020, según los datos originales de 2014 calculados por OPP y los datos de crecimiento el PBI de Uruguay reportados por el Banco Mundial.
 
@@ -736,13 +736,13 @@ A continuación se presenta una representación gráfica de la diferencia entre 
 
 
 
-### Escenario 2
+### Escenario 2: megaproyecto
 
 Se hipotetiza un aumento considerable de ocupados en el departamento de Durazno, imputando un valor de porcentaje de ocupados de 100%. El porcentaje de ocupados se calcula como la cantidad de ocupados sobre la población en edad de trabajar, por 100.
 
 Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
 
-La diferencias entre los resultado del escenario 1 y el 2 son mínimas, por lo cual se puede afirmar que el modelo no resulta lo suficientemente sensible ante cambios tan particulares.
+La diferencias entre los resultados del escenario 1 y el 2 son mínimas, por lo cual se puede afirmar que el modelo no resulta lo suficientemente sensible ante cambios tan particulares.
 
 
 ### Escenario 3
@@ -754,12 +754,20 @@ La diferencias entre los resultado del escenario 1 y el 2 son mínimas, por lo c
 # Pendientes
 
 - Modelar excluyendo Montevideo.
-- Generación de escenarios
 - Tablero: agregar modelación y escenarios
-- Conclusiones
-- Discusión, "motivos familiares" como factores micro
+
 
 \newpage
+
+# Conclusiones y discusión
+
+NOTAS:
+
+- *Repasar cada objetivo*
+
+- *Discusión, "motivos familiares" como factores micro*
+
+
 
 # Bibliografía
 
