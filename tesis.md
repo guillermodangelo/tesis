@@ -740,9 +740,15 @@ A continuación se presenta una representación gráfica de la diferencia entre 
 
 Se hipotetiza un aumento considerable de ocupados en el departamento de Durazno, imputando un valor de porcentaje de ocupados de 100%. El porcentaje de ocupados se calcula como la cantidad de ocupados sobre la población en edad de trabajar, por 100.
 
-Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo. El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
+Esta situación podría darse en el contexto de un megaproyecto, que requiera trabajadores en forma extraordinaria, pero que sea acotado en el tiempo.
 
-La diferencias entre los resultados del escenario 1 y el 2 son mínimas, por lo cual se puede afirmar que el modelo no resulta lo suficientemente sensible ante cambios tan particulares.
+El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de contingente importantes de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
+
+Este escenario deriva, como es de esperar, en una mayor actractivdad del departamento de Durazno, aumentando la magnitud de migrantes con dicho destino, considerando a los migrantes efectivos del censo 2011 como "ground truth"
+
+
+![Diferencia entre estimaciones del escenario 1 y 2.](mapas_graficas/escenarios_esc1_vs_esc2.pdf)
+
 
 
 ### Escenario 3
