@@ -744,10 +744,10 @@ Esta situación podría darse en el contexto de un megaproyecto, que requiera tr
 
 El ejemplo más actual es la construcción de la tercera planta procesadora de celulosa. Dicha actividad puntual puede implicar migraciones internas temporales considerables, pero que se concentran en el momento de alta demanda de contingente importantes de trabajadores, fundamentalmente la fase de construcción, para luego reducirse rápidamente.
 
-Este escenario deriva, como es de esperar, en una mayor actractivdad del departamento de Durazno, aumentando la magnitud de migrantes con dicho destino, considerando a los migrantes efectivos del censo 2011 como "ground truth"
-
+La comparación gráfico de este escenario con el escenario 1, revela una mayor actractivdad del departamento de Durazno, aumentando la magnitud de migrantes con dicho destino.
 
 ![Diferencia entre estimaciones del escenario 1 y 2.](mapas_graficas/escenarios_esc1_vs_esc2.pdf)
+
 
 
 
