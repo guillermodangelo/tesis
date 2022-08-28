@@ -774,8 +774,8 @@ NOTAS:
 - *Discusión, "motivos familiares" como factores micro*
 
 
+\newpage
 
-# Bibliografía
 
 # Anexo
 
@@ -835,7 +835,13 @@ Para calcular la misma, se simplificó la geometría de la capa de departamentos
 De esa forma se genera una variable *dummy* para cada díada, identificando cuales departamentos comparten límites, y para aquellos que los comparten se adiciona el dato del largo del límite compartido.
 
 
+\newpage
+
+
 # Bibliografía
+
+::: {#refs}
+:::
 
 </div>
 
